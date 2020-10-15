@@ -1,0 +1,56 @@
+{
+	"name": "react-native-restyled",
+	"version": "0.1.0",
+	"description": "The Missing Styling Library for React Native",
+	"license": "MIT",
+	"author": "Ahmed T. Ali",
+	"repository": "z0al/react-native-restyled",
+	"sideEffects": false,
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"expo",
+		"react-native",
+		"react-native-web",
+		"tailwindcss",
+		"tailwind"
+	],
+	"scripts": {
+		"build": "expo-module build",
+		"clean": "expo-module clean",
+		"lint": "expo-module lint",
+		"test": "expo-module test"
+	},
+	"dependencies": {
+		"tailwind-rn": "^2.0.0"
+	},
+	"devDependencies": {
+		"@types/jest": "^26.0.14",
+		"@types/react": "^16.9.52",
+		"@types/react-native": "^0.63.25",
+		"eslint": "^7.11.0",
+		"expo-module-scripts": "^1.2.0",
+		"prettier": "^2.1.2",
+		"react": "^16.14.0",
+		"react-native": "^0.63.3",
+		"react-native-web": "^0.14.1"
+	},
+	"peerDependencies": {
+		"react": ">=16.11.0",
+		"react-native": ">=0.62.0"
+	},
+	"prettier": {
+		"printWidth": 72,
+		"semi": true,
+		"singleQuote": true,
+		"trailingComma": "es5",
+		"useTabs": true
+	},
+	"jest": {
+		"preset": "expo-module-scripts"
+	}
+}
