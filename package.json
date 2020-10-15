@@ -1,6 +1,6 @@
 {
 	"name": "react-native-restyled",
-	"version": "0.1.0",
+	"version": "0.0.0-development",
 	"description": "The Missing Styling Library for React Native",
 	"license": "MIT",
 	"author": "Ahmed T. Ali",
@@ -24,7 +24,8 @@
 		"clean": "expo-module clean",
 		"lint": "expo-module lint",
 		"test": "expo-module test",
-		"prepublishOnly": "expo-module prepublishOnly"
+		"prepublishOnly": "expo-module prepublishOnly",
+		"semantic-release": "semantic-release"
 	},
 	"dependencies": {
 		"tailwind-rn": "^2.0.0"
@@ -38,7 +39,8 @@
 		"prettier": "^2.1.2",
 		"react": "^16.14.0",
 		"react-native": "^0.63.3",
-		"react-native-web": "^0.14.1"
+		"react-native-web": "^0.14.1",
+		"semantic-release": "^17.2.1"
 	},
 	"peerDependencies": {
 		"react": ">=16.11.0",
@@ -53,5 +55,8 @@
 	},
 	"jest": {
 		"preset": "expo-module-scripts"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
