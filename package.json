@@ -23,7 +23,8 @@
 		"build": "expo-module build",
 		"clean": "expo-module clean",
 		"lint": "expo-module lint",
-		"test": "expo-module test"
+		"test": "expo-module test",
+		"prepublishOnly": "expo-module prepublishOnly"
 	},
 	"dependencies": {
 		"tailwind-rn": "^2.0.0"
