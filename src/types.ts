@@ -1,8 +1,8 @@
 // @noflow
 
-export type StyledVariants = {
-	default: any[];
-	[variant: string]: any[];
+export type StyledVariant = {
+	variant: string;
+	style: Record<string, any>;
 };
 
 export type ToggleVariants = Record<string, boolean>;

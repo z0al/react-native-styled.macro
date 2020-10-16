@@ -1,1 +1,1 @@
-export { createStyledVariants } from './styling';
+export {} from './styled';

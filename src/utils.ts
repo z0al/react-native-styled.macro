@@ -1,23 +1,46 @@
-export const DEFAULT_KEY = 'default';
+const DEFAULT_VARIANT = 'default';
 
 /**
- * Trim unnecessary whitespaces.
+ * Check whether a given variant name equals to the default variant.
  */
-export function formatTokens(tokens: string) {
-	return tokens.trim().replace(/\s+/g, ' ');
+export function isDefaultVariant(variant: string) {
+	return variant === DEFAULT_VARIANT;
+}
+
+export function extractTokenInfo(token: string, separator: string) {
+	const sepIndex = token.lastIndexOf(separator);
+
+	const styleName = token.slice(sepIndex + 1);
+	const variant =
+		sepIndex > 0 ? token.slice(0, sepIndex) : DEFAULT_VARIANT;
+
+	return { styleName, variant };
 }
 
 /**
- * Sort variant names to group relevant styles under the same styleKey
- * regardless of the order. E.g, "dark:sm" should equal "sm:dark".
+ * Transform given `tokens` string to a list of tokens. The list of
+ * tokens is ordered such that default variant styles always applied
+ * first.
  */
-export function getUniqueVariant(
-	variants: string | string[],
-	sep: string
-) {
-	if (typeof variants === 'string') {
-		variants = variants.split(sep);
-	}
+export function getOrderedTokens(tokens: string, separator: string) {
+	const getTokens = (tokens: string) => {
+		return tokens.trim().replace(/\s+/g, ' ').split(' ');
+	};
 
-	return variants.sort().join(sep);
+	const compareByVariant = (a: string, b: string) => {
+		const isDefaultA = isDefaultVariant(
+			extractTokenInfo(a, separator).variant
+		);
+		const isDefaultB = isDefaultVariant(
+			extractTokenInfo(b, separator).variant
+		);
+
+		return isDefaultA && !isDefaultB
+			? -1 // A comes first
+			: !isDefaultA && isDefaultB
+			? 1 // B comes first
+			: 0; // Keep the same order
+	};
+
+	return getTokens(tokens).sort(compareByVariant);
 }

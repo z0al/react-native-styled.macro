@@ -1,9 +1,10 @@
 // Ours
 import { Configuration } from '../types';
 
-const defaultConfig: Configuration = {
+export const defaultConfigs: Configuration = {
 	variants: [],
 	separator: ':',
 };
 
-export default defaultConfig;
+// TODO: fix me
+export const config = defaultConfigs;

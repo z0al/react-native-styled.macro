@@ -1,43 +1,75 @@
 // Ours
 import * as utils from '../utils';
 
-test('formatTokens', () => {
+const separator = ':';
+
+test('extractTokenInfo', () => {
 	const Tests = [
 		{
 			input: 'bg-white',
-			expected: 'bg-white',
+			expected: {
+				styleName: 'bg-white',
+				variant: 'default',
+			},
 		},
 		{
-			input: '    sm:bg-white  ',
-			expected: 'sm:bg-white',
+			input: 'sm:bg-white',
+			expected: {
+				styleName: 'bg-white',
+				variant: 'sm',
+			},
 		},
 		{
-			input: 'sm:bg-white   \t  dark:sm:bg-black ',
-			expected: 'sm:bg-white dark:sm:bg-black',
+			input: 'dark:sm:focus:bg-black',
+			expected: {
+				styleName: 'bg-black',
+				variant: 'dark:sm:focus',
+			},
 		},
 	];
 
 	Tests.forEach((t) => {
-		expect(utils.formatTokens(t.input)).toEqual(t.expected);
+		expect(utils.extractTokenInfo(t.input, separator)).toEqual(
+			t.expected
+		);
 	});
 });
 
-test('getUniqueVariant', () => {
-	const sep = ':';
-
-	// It sorts the values
-	expect(utils.getUniqueVariant(['dark', 'active'], sep)).toEqual(
-		'active:dark'
-	);
-
-	const SameVariants = [
-		'sm:dark:active',
-		'sm:active:dark',
-		'dark:sm:active',
-		'active:sm:dark',
+test('getOrderedTokens', () => {
+	const Tests = [
+		{
+			input: 'bg-white',
+			expected: ['bg-white'],
+		},
+		{
+			input: '    sm:bg-white text-black ',
+			expected: ['text-black', 'sm:bg-white'],
+		},
+		{
+			input: 'sm:bg-white   \t  dark:sm:bg-black ',
+			expected: ['sm:bg-white', 'dark:sm:bg-black'],
+		},
+		{
+			input: `
+			sm:bg-white 
+			rounded 
+			dark:sm:bg-black
+			bg-orange 
+			lg:w-full
+			`,
+			expected: [
+				'rounded',
+				'bg-orange',
+				'sm:bg-white',
+				'dark:sm:bg-black',
+				'lg:w-full',
+			],
+		},
 	];
 
-	SameVariants.forEach((v) => {
-		expect(utils.getUniqueVariant(v, sep)).toEqual('active:dark:sm');
+	Tests.forEach((t) => {
+		expect(utils.getOrderedTokens(t.input, separator)).toEqual(
+			t.expected
+		);
 	});
 });
