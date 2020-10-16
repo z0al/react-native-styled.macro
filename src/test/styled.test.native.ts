@@ -1,23 +1,20 @@
-// Packages
-import tw from 'tailwind-rn';
-
 // Ours
-import { StyledVariant } from '../types';
-import { defaultConfigs } from '../configs';
+import configs from '../configs';
 import { createStyledVariants } from '../styled';
+import { StyledVariant } from '../types';
 
 describe('createStyledVariants', () => {
 	it('should map style names to relevant styles', () => {
 		expect(
-			createStyledVariants('bg-white text-black', defaultConfigs)
+			createStyledVariants('bg-white text-black', configs)
 		).toEqual([
 			{
 				variant: 'default',
-				style: tw('bg-white'),
+				style: configs.styles['bg-white'],
 			},
 			{
 				variant: 'default',
-				style: tw('text-black'),
+				style: configs.styles['text-black'],
 			},
 		] as StyledVariant[]);
 	});
@@ -26,24 +23,24 @@ describe('createStyledVariants', () => {
 		expect(
 			createStyledVariants(
 				'sm:bg-white sm:text-black dark:bg-black dark:text-white',
-				defaultConfigs
+				configs
 			)
 		).toEqual([
 			{
 				variant: 'sm',
-				style: tw('bg-white'),
+				style: configs.styles['bg-white'],
 			},
 			{
 				variant: 'sm',
-				style: tw('text-black'),
+				style: configs.styles['text-black'],
 			},
 			{
 				variant: 'dark',
-				style: tw('bg-black'),
+				style: configs.styles['bg-black'],
 			},
 			{
 				variant: 'dark',
-				style: tw('text-white'),
+				style: configs.styles['text-white'],
 			},
 		] as StyledVariant[]);
 	});
@@ -52,29 +49,29 @@ describe('createStyledVariants', () => {
 		expect(
 			createStyledVariants(
 				'bg-white active:rounded dark:active:text-black text-lg active:dark:bg-black',
-				defaultConfigs
+				configs
 			)
 		).toEqual([
 			{
 				variant: 'default',
-				style: tw('bg-white'),
+				style: configs.styles['bg-white'],
 			},
 			{
 				variant: 'default',
-				style: tw('text-lg'),
+				style: configs.styles['text-lg'],
 			},
 			{
 				variant: 'active',
-				style: tw('rounded'),
+				style: configs.styles['rounded'],
 			},
 
 			{
 				variant: 'dark:active',
-				style: tw('text-black'),
+				style: configs.styles['text-black'],
 			},
 			{
 				variant: 'active:dark',
-				style: tw('bg-black'),
+				style: configs.styles['bg-black'],
 			},
 		] as StyledVariant[]);
 	});

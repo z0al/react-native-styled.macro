@@ -21,26 +21,30 @@
 	],
 	"scripts": {
 		"build": "expo-module build",
-		"prepare": "expo-module build",
+		"prepublishOnly": "expo-module build",
 		"clean": "expo-module clean",
 		"lint": "expo-module lint",
 		"test": "expo-module test",
 		"semantic-release": "semantic-release"
 	},
 	"dependencies": {
-		"tailwind-rn": "^2.0.0"
+		"lodash.merge": "^4.6.2"
 	},
 	"devDependencies": {
 		"@types/jest": "^26.0.14",
-		"@types/react": "^16.9.52",
+		"@types/lodash.merge": "^4.6.6",
+		"@types/react": "^16.9.53",
 		"@types/react-native": "^0.63.25",
 		"eslint": "^7.11.0",
 		"expo-module-scripts": "^1.2.0",
 		"prettier": "^2.1.2",
 		"react": "^16.14.0",
+		"react-dom": "^16.14.0",
 		"react-native": "^0.63.3",
-		"react-native-web": "^0.14.1",
-		"semantic-release": "^17.2.1"
+		"react-native-tailwindcss": "^1.1.11",
+		"react-native-web": "^0.13.18",
+		"semantic-release": "^17.2.1",
+		"typescript": "^3.9.7"
 	},
 	"peerDependencies": {
 		"react": ">=16.11.0",
@@ -54,7 +58,7 @@
 		"useTabs": true
 	},
 	"jest": {
-		"preset": "expo-module-scripts"
+		"preset": "expo-module-scripts/enzyme"
 	},
 	"publishConfig": {
 		"access": "public"

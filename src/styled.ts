@@ -1,8 +1,5 @@
-// Packages
-import tw from 'tailwind-rn';
-
 // Ours
-import { config } from './configs';
+import configs from './configs';
 import { Configuration, StyledVariant, ToggleVariants } from './types';
 import {
 	isDefaultVariant,
@@ -10,8 +7,8 @@ import {
 	extractTokenInfo,
 } from './utils';
 
-function getStyle(stylename: string) {
-	return tw(stylename);
+function getStyle(styleName: string) {
+	return configs.styles[styleName];
 }
 
 /**
@@ -43,7 +40,7 @@ export function styled(
 	tokens: string,
 	variants?: ToggleVariants
 ): StyledVariant['style'][] {
-	const styleList = createStyledVariants(tokens, config);
+	const styleList = createStyledVariants(tokens, configs);
 
 	const isVariantEnabled = ({ variant }: StyledVariant) => {
 		// We always add the default styles
@@ -53,7 +50,7 @@ export function styled(
 
 		// Variant name could possibly be nested e.g. dark:focus
 		return variant
-			.split(config.separator)
+			.split(configs.separator)
 			.every((key) => Boolean(variants && variants[key]));
 	};
 

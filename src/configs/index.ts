@@ -1,10 +1,9 @@
 // Ours
-import { Configuration } from '../types';
+import createStyles from '../styles';
+import defaultConfigs from './default';
 
-export const defaultConfigs: Configuration = {
-	variants: [],
-	separator: ':',
+// TODO: support custom config
+export default {
+	...defaultConfigs,
+	styles: createStyles(defaultConfigs.theme),
 };
-
-// TODO: fix me
-export const config = defaultConfigs;

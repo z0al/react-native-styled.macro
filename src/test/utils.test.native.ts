@@ -51,10 +51,10 @@ test('getOrderedTokens', () => {
 		},
 		{
 			input: `
-			sm:bg-white 
-			rounded 
+			sm:bg-white
+			rounded
 			dark:sm:bg-black
-			bg-orange 
+			bg-orange
 			lg:w-full
 			`,
 			expected: [
