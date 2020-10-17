@@ -5,7 +5,7 @@ import merge from 'lodash.merge';
 import { Theme } from '../types';
 import { styleName } from './utils/styleName';
 
-const backgroundColor = (theme: Theme) => {
+export const backgroundColor = (theme: Theme) => {
 	return Object.keys(theme.backgroundColor)
 		.map((key) => ({
 			[styleName('bg', key)]: {

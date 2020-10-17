@@ -5,7 +5,7 @@ import merge from 'lodash.merge';
 import { Theme } from '../types';
 import { styleName } from './utils/styleName';
 
-const opacity = (theme: Theme) => {
+export const opacity = (theme: Theme) => {
 	return Object.keys(theme.opacity)
 		.map((key) => ({
 			[styleName('opacity', key)]: {

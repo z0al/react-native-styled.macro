@@ -5,7 +5,7 @@ import merge from 'lodash.merge';
 import { Theme } from '../types';
 import { styleName } from './utils/styleName';
 
-const width = (theme: Theme) => {
+export const width = (theme: Theme) => {
 	return Object.keys(theme.width)
 		.map((key) => ({
 			[styleName('w', key)]: {
@@ -15,7 +15,7 @@ const width = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const minWidth = (theme: Theme) => {
+export const minWidth = (theme: Theme) => {
 	return Object.keys(theme.minWidth)
 		.map((key) => ({
 			[styleName('min-w', key)]: {
@@ -25,7 +25,7 @@ const minWidth = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const maxWidth = (theme: Theme) => {
+export const maxWidth = (theme: Theme) => {
 	return Object.keys(theme.maxWidth)
 		.map((key) => ({
 			[styleName('max-w', key)]: {
@@ -35,7 +35,7 @@ const maxWidth = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const height = (theme: Theme) => {
+export const height = (theme: Theme) => {
 	return Object.keys(theme.height)
 		.map((key) => ({
 			[styleName('h', key)]: {
@@ -45,7 +45,7 @@ const height = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const minHeight = (theme: Theme) => {
+export const minHeight = (theme: Theme) => {
 	return Object.keys(theme.minHeight)
 		.map((key) => ({
 			[styleName('min-h', key)]: {
@@ -55,7 +55,7 @@ const minHeight = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const maxHeight = (theme: Theme) => {
+export const maxHeight = (theme: Theme) => {
 	return Object.keys(theme.maxHeight)
 		.map((key) => ({
 			[styleName('max-h', key)]: {

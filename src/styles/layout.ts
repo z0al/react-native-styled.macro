@@ -5,7 +5,7 @@ import merge from 'lodash.merge';
 import { Theme } from '../types';
 import { styleName } from './utils/styleName';
 
-const container = (theme: Theme) => {
+export const container = (theme: Theme) => {
 	const baseStyle: Record<string, any> = {
 		container: {
 			width: theme.width.full,
@@ -22,7 +22,7 @@ const container = (theme: Theme) => {
 		.reduce(merge, baseStyle);
 };
 
-const display = () => ({
+export const display = () => ({
 	flex: {
 		display: 'flex',
 	},
@@ -31,7 +31,7 @@ const display = () => ({
 	},
 });
 
-const overflow = () => {
+export const overflow = () => {
 	return ['hidden', 'scroll', 'visible']
 		.map((value) => ({
 			[styleName('overflow', value)]: {
@@ -41,7 +41,7 @@ const overflow = () => {
 		.reduce(merge, {});
 };
 
-const zIndex = (theme: Theme) => {
+export const zIndex = (theme: Theme) => {
 	return ['0', '10', '20', '30', '40', '50']
 		.map((key) => ({
 			[styleName('z', key)]: {
@@ -51,12 +51,12 @@ const zIndex = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const position = () => ({
+export const position = () => ({
 	absolute: { position: 'absolute' },
 	relative: { position: 'relative' },
 });
 
-const topRightBottomLeft = () => ({
+export const topRightBottomLeft = () => ({
 	'inset-0': { top: 0, right: 0, bottom: 0, left: 0 },
 	'inset-y-0': { top: 0, bottom: 0 },
 	'inset-x-0': { right: 0, left: 0 },

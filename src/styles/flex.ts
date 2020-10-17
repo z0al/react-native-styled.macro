@@ -5,7 +5,7 @@ import merge from 'lodash.merge';
 import { Theme } from '../types';
 import { styleName } from './utils/styleName';
 
-const flexDirection = () => ({
+export const flexDirection = () => ({
 	'flex-row': {
 		flexDirection: 'row',
 	},
@@ -20,7 +20,7 @@ const flexDirection = () => ({
 	},
 });
 
-const flexWrap = () => {
+export const flexWrap = () => {
 	const baseStyles = {
 		'flex-no-wrap': {
 			flexWrap: 'nowrap',
@@ -36,7 +36,7 @@ const flexWrap = () => {
 		.reduce(merge, baseStyles);
 };
 
-const flex = (theme: Theme) => {
+export const flex = (theme: Theme) => {
 	return Object.keys(theme.flex)
 		.map((key) => ({
 			[styleName('flex', key)]: {
@@ -46,7 +46,7 @@ const flex = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const flexGrow = (theme: Theme) => {
+export const flexGrow = (theme: Theme) => {
 	return Object.keys(theme.flexGrow)
 		.map((key) => ({
 			[styleName('flex-grow', key)]: {
@@ -56,7 +56,7 @@ const flexGrow = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const flexShrink = (theme: Theme) => {
+export const flexShrink = (theme: Theme) => {
 	return Object.keys(theme.flexShrink)
 		.map((key) => ({
 			[styleName('flex-shrink', key)]: {
@@ -66,7 +66,7 @@ const flexShrink = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const justifyContent = () => {
+export const justifyContent = () => {
 	const center = {
 		'justify-center': {
 			justifyContent: 'center',
@@ -92,7 +92,7 @@ const justifyContent = () => {
 	return [center, startEnd, space].reduce(merge, {});
 };
 
-const alignContent = () => {
+export const alignContent = () => {
 	const centerStretch = ['stretch', 'center']
 		.map((value) => ({
 			[styleName('content', value)]: {
@@ -120,7 +120,7 @@ const alignContent = () => {
 	return [centerStretch, startEnd, space].reduce(merge, {});
 };
 
-const alignItems = () => {
+export const alignItems = () => {
 	const startEnd = ['start', 'end']
 		.map((value) => ({
 			[styleName('items', value)]: {
@@ -138,7 +138,7 @@ const alignItems = () => {
 		.reduce(merge, startEnd);
 };
 
-const alignSelf = () => {
+export const alignSelf = () => {
 	const startEnd = ['start', 'end']
 		.map((value) => ({
 			[styleName('self', value)]: {

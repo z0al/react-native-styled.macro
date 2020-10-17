@@ -5,7 +5,7 @@ import merge from 'lodash.merge';
 import { Theme } from '../types';
 import { styleName } from './utils/styleName';
 
-const borderRadius = (theme: Theme) => {
+export const borderRadius = (theme: Theme) => {
 	const sizes = Object.keys(theme.borderRadius);
 	const rounded = sizes
 		.map((key) => ({
@@ -114,7 +114,7 @@ const borderRadius = (theme: Theme) => {
 	].reduce(merge, {});
 };
 
-const borderWidth = (theme: Theme) => {
+export const borderWidth = (theme: Theme) => {
 	const sizes = Object.keys(theme.borderWidth);
 
 	const border = sizes
@@ -184,7 +184,7 @@ const borderWidth = (theme: Theme) => {
 	].reduce(merge, {});
 };
 
-const borderStyle = () => {
+export const borderStyle = () => {
 	return ['solid', 'dotted', 'dashed']
 		.map((value) => ({
 			[styleName('border', value)]: {
@@ -194,7 +194,7 @@ const borderStyle = () => {
 		.reduce(merge, {});
 };
 
-const borderColor = (theme: Theme) => {
+export const borderColor = (theme: Theme) => {
 	return Object.keys(theme.borderColor)
 		.map((key) => ({
 			[styleName('border', key)]: {

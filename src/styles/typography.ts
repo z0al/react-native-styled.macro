@@ -5,7 +5,7 @@ import merge from 'lodash.merge';
 import { Theme } from '../types';
 import { styleName } from './utils/styleName';
 
-const fontFamily = (theme: Theme) => {
+export const fontFamily = (theme: Theme) => {
 	return Object.keys(theme.fontFamily)
 		.map((key) => ({
 			[styleName('font', key)]: {
@@ -15,7 +15,7 @@ const fontFamily = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const fontWeight = (theme: Theme) => {
+export const fontWeight = (theme: Theme) => {
 	return Object.keys(theme.fontWeight)
 		.map((key) => ({
 			[styleName('font', key)]: {
@@ -25,7 +25,7 @@ const fontWeight = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const fontSize = (theme: Theme) => {
+export const fontSize = (theme: Theme) => {
 	return Object.keys(theme.fontSize)
 		.map((key) => ({
 			[styleName('text', key)]: {
@@ -35,7 +35,7 @@ const fontSize = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const fontStyle = () => ({
+export const fontStyle = () => ({
 	italic: {
 		fontStyle: 'italic',
 	},
@@ -44,7 +44,7 @@ const fontStyle = () => ({
 	},
 });
 
-const fontVariant = () => {
+export const fontVariant = () => {
 	return [
 		'small-caps',
 		'oldstyle-nums',
@@ -60,7 +60,7 @@ const fontVariant = () => {
 		.reduce(merge, {});
 };
 
-const letterSpacing = (theme: Theme) => {
+export const letterSpacing = (theme: Theme) => {
 	return Object.keys(theme.letterSpacing)
 		.map((key) => ({
 			[styleName('letter', key)]: {
@@ -70,7 +70,7 @@ const letterSpacing = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const lineHeight = (theme: Theme) => {
+export const lineHeight = (theme: Theme) => {
 	return Object.keys(theme.lineHeight)
 		.map((key) => ({
 			[styleName('line-h', key)]: {
@@ -80,7 +80,7 @@ const lineHeight = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const textAlign = () => {
+export const textAlignment = () => {
 	return ['auto', 'left', 'right', 'center', 'justify']
 		.map((value) => ({
 			[styleName('text', value)]: {
@@ -90,7 +90,7 @@ const textAlign = () => {
 		.reduce(merge, {});
 };
 
-const textAlignVertical = () => {
+export const textAlignVertical = () => {
 	return ['auto', 'top', 'bottom', 'center']
 		.map((value) => ({
 			[styleName('text-v', value)]: {
@@ -100,7 +100,7 @@ const textAlignVertical = () => {
 		.reduce(merge, {});
 };
 
-const textColor = (theme: Theme) => {
+export const textColor = (theme: Theme) => {
 	return Object.keys(theme.textColor)
 		.map((key) => ({
 			[styleName('text', key)]: {
@@ -110,7 +110,7 @@ const textColor = (theme: Theme) => {
 		.reduce(merge, {});
 };
 
-const textDecoration = () => ({
+export const textDecoration = () => ({
 	underline: {
 		textDecorationLine: 'underline',
 	},
@@ -122,7 +122,7 @@ const textDecoration = () => ({
 	},
 });
 
-const textTransform = () => ({
+export const textTransform = () => ({
 	uppercase: {
 		textTransform: 'uppercase',
 	},
@@ -145,7 +145,7 @@ export default (theme: Theme) => ({
 	...fontWeight(theme),
 	...letterSpacing(theme),
 	...lineHeight(theme),
-	...textAlign(),
+	...textAlignment(),
 	...textAlignVertical(),
 	...textColor(theme),
 	...textDecoration(),

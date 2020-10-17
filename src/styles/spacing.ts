@@ -5,7 +5,7 @@ import merge from 'lodash.merge';
 import { Theme } from '../types';
 import { styleName } from './utils/styleName';
 
-const padding = (theme: Theme) => {
+export const padding = (theme: Theme) => {
 	const sizes = Object.keys(theme.padding);
 
 	const p = sizes
@@ -83,7 +83,7 @@ const padding = (theme: Theme) => {
 	return [p, pt, pl, pr, pb, ps, pe, px, py].reduce(merge, {});
 };
 
-const margin = (theme: Theme) => {
+export const margin = (theme: Theme) => {
 	const sizes = Object.keys(theme.margin);
 
 	const m = sizes
