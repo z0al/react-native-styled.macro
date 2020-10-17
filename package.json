@@ -1,7 +1,7 @@
 {
 	"name": "react-native-restyled",
 	"version": "0.0.0-development",
-	"description": "The Missing Styling Library for React Native",
+	"description": "A Utility-first Styling Library for React Native",
 	"license": "MIT",
 	"author": "Ahmed T. Ali",
 	"repository": "z0al/react-native-restyled",
