@@ -62,7 +62,7 @@ TODO
 
 ### Backgrounds
 
-<details><summary><strong>Background Color</strong></summary>
+<details><summary>Background Color</summary>
 
 | Style          | Properties                          |
 | -------------- | ----------------------------------- |
@@ -164,7 +164,7 @@ TODO
 
 ### Borders
 
-<details><summary><strong>Border Color</strong></summary>
+<details><summary>Border Color</summary>
 
 | Style              | Properties                      |
 | ------------------ | ------------------------------- |
@@ -264,7 +264,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Border Radius</strong></summary>
+<details><summary>Border Radius</summary>
 
 | Style           | Properties                                                       |
 | --------------- | ---------------------------------------------------------------- |
@@ -370,7 +370,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Border Style</strong></summary>
+<details><summary>Border Style</summary>
 
 | Style         | Properties                 |
 | ------------- | -------------------------- |
@@ -380,7 +380,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Border Width</strong></summary>
+<details><summary>Border Width</summary>
 
 | Style      | Properties                |
 | ---------- | ------------------------- |
@@ -424,7 +424,7 @@ TODO
 
 ### Effects
 
-<details><summary><strong>Opacity</strong></summary>
+<details><summary>Opacity</summary>
 
 | Style       | Properties         |
 | ----------- | ------------------ |
@@ -438,7 +438,7 @@ TODO
 
 ### Flex
 
-<details><summary><strong>Align Content</strong></summary>
+<details><summary>Align Content</summary>
 
 | Style           | Properties                         |
 | --------------- | ---------------------------------- |
@@ -451,7 +451,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Align Items</strong></summary>
+<details><summary>Align Items</summary>
 
 | Style          | Properties                    |
 | -------------- | ----------------------------- |
@@ -463,7 +463,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Align Self</strong></summary>
+<details><summary>Align Self</summary>
 
 | Style        | Properties                   |
 | ------------ | ---------------------------- |
@@ -475,7 +475,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Flex Direction</strong></summary>
+<details><summary>Flex Direction</summary>
 
 | Style            | Properties                           |
 | ---------------- | ------------------------------------ |
@@ -486,7 +486,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Flex Grow</strong></summary>
+<details><summary>Flex Grow</summary>
 
 | Style       | Properties       |
 | ----------- | ---------------- |
@@ -495,7 +495,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Flex Shrink</strong></summary>
+<details><summary>Flex Shrink</summary>
 
 | Style         | Properties         |
 | ------------- | ------------------ |
@@ -504,7 +504,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Flex Wrap</strong></summary>
+<details><summary>Flex Wrap</summary>
 
 | Style             | Properties                    |
 | ----------------- | ----------------------------- |
@@ -514,7 +514,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Flex</strong></summary>
+<details><summary>Flex</summary>
 
 | Style        | Properties                                         |
 | ------------ | -------------------------------------------------- |
@@ -525,7 +525,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Justify Content</strong></summary>
+<details><summary>Justify Content</summary>
 
 | Style           | Properties                           |
 | --------------- | ------------------------------------ |
@@ -540,7 +540,7 @@ TODO
 
 ### Layout
 
-<details><summary><strong>Container</strong></summary>
+<details><summary>Container</summary>
 
 | Style        | Properties                         |
 | ------------ | ---------------------------------- |
@@ -552,7 +552,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Display</strong></summary>
+<details><summary>Display</summary>
 
 | Style  | Properties           |
 | ------ | -------------------- |
@@ -561,7 +561,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Overflow</strong></summary>
+<details><summary>Overflow</summary>
 
 | Style            | Properties               |
 | ---------------- | ------------------------ |
@@ -571,7 +571,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Position</strong></summary>
+<details><summary>Position</summary>
 
 | Style    | Properties                |
 | -------- | ------------------------- |
@@ -580,7 +580,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Top / Right / Bottom / Left</strong></summary>
+<details><summary>Top / Right / Bottom / Left</summary>
 
 | Style     | Properties                                |
 | --------- | ----------------------------------------- |
@@ -594,7 +594,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Z-Index</strong></summary>
+<details><summary>Z-Index</summary>
 
 | Style | Properties      |
 | ----- | --------------- |
@@ -609,7 +609,7 @@ TODO
 
 ### Sizing
 
-<details><summary><strong>Height</strong></summary>
+<details><summary>Height</summary>
 
 | Style | Properties       |
 | ----- | ---------------- |
@@ -635,7 +635,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Max-Height</strong></summary>
+<details><summary>Max-Height</summary>
 
 | Style      | Properties             |
 | ---------- | ---------------------- |
@@ -643,7 +643,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Max-Width</strong></summary>
+<details><summary>Max-Width</summary>
 
 | Style           | Properties            |
 | --------------- | --------------------- |
@@ -666,7 +666,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Min-Height</strong></summary>
+<details><summary>Min-Height</summary>
 
 | Style      | Properties             |
 | ---------- | ---------------------- |
@@ -675,7 +675,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Min-Width</strong></summary>
+<details><summary>Min-Width</summary>
 
 | Style      | Properties            |
 | ---------- | --------------------- |
@@ -684,7 +684,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Width</strong></summary>
+<details><summary>Width</summary>
 
 | Style   | Properties               |
 | ------- | ------------------------ |
@@ -739,7 +739,7 @@ TODO
 
 ### Spacing
 
-<details><summary><strong>Margin</strong></summary>
+<details><summary>Margin</summary>
 
 | Style  | Properties                  |
 | ------ | --------------------------- |
@@ -1088,7 +1088,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Padding</strong></summary>
+<details><summary>Padding</summary>
 
 | Style | Properties                  |
 | ----- | --------------------------- |
@@ -1268,7 +1268,7 @@ TODO
 
 ### Typography
 
-<details><summary><strong>Font Family</strong></summary>
+<details><summary>Font Family</summary>
 
 | Style | Properties |
 | ----- | ---------- |
@@ -1276,7 +1276,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Font Size</strong></summary>
+<details><summary>Font Size</summary>
 
 | Style     | Properties         |
 | --------- | ------------------ |
@@ -1293,7 +1293,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Font Style</strong></summary>
+<details><summary>Font Style</summary>
 
 | Style      | Properties               |
 | ---------- | ------------------------ |
@@ -1302,7 +1302,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Font Variant</strong></summary>
+<details><summary>Font Variant</summary>
 
 | Style             | Properties                              |
 | ----------------- | --------------------------------------- |
@@ -1314,7 +1314,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Font Weight</strong></summary>
+<details><summary>Font Weight</summary>
 
 | Style          | Properties             |
 | -------------- | ---------------------- |
@@ -1330,7 +1330,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Letter Spacing</strong></summary>
+<details><summary>Letter Spacing</summary>
 
 | Style          | Properties               |
 | -------------- | ------------------------ |
@@ -1343,7 +1343,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Line Height</strong></summary>
+<details><summary>Line Height</summary>
 
 | Style          | Properties             |
 | -------------- | ---------------------- |
@@ -1364,7 +1364,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Text Alignment</strong></summary>
+<details><summary>Text Alignment</summary>
 
 | Style        | Properties                |
 | ------------ | ------------------------- |
@@ -1376,7 +1376,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Text Color</strong></summary>
+<details><summary>Text Color</summary>
 
 | Style            | Properties                |
 | ---------------- | ------------------------- |
@@ -1476,7 +1476,7 @@ TODO
 
 </details>
 
-<details><summary><strong>Text Decoration</strong></summary>
+<details><summary>Text Decoration</summary>
 
 | Style        | Properties                              |
 | ------------ | --------------------------------------- |
