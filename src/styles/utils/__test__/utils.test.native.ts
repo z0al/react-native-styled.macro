@@ -1,5 +1,5 @@
 // Ours
-import * as utils from '../utils';
+import { StyleUtils } from '..';
 
 const separator = ':';
 
@@ -29,7 +29,7 @@ test('extractTokenInfo', () => {
 	];
 
 	Tests.forEach((t) => {
-		expect(utils.extractTokenInfo(t.input, separator)).toEqual(
+		expect(StyleUtils.extractTokenInfo(t.input, separator)).toEqual(
 			t.expected
 		);
 	});
@@ -68,7 +68,7 @@ test('getOrderedTokens', () => {
 	];
 
 	Tests.forEach((t) => {
-		expect(utils.getOrderedTokens(t.input, separator)).toEqual(
+		expect(StyleUtils.getOrderedTokens(t.input, separator)).toEqual(
 			t.expected
 		);
 	});

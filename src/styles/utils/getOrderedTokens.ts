@@ -1,21 +1,6 @@
-const DEFAULT_VARIANT = 'default';
-
-/**
- * Check whether a given variant name equals to the default variant.
- */
-export function isDefaultVariant(variant: string) {
-	return variant === DEFAULT_VARIANT;
-}
-
-export function extractTokenInfo(token: string, separator: string) {
-	const sepIndex = token.lastIndexOf(separator);
-
-	const styleName = token.slice(sepIndex + 1);
-	const variant =
-		sepIndex > 0 ? token.slice(0, sepIndex) : DEFAULT_VARIANT;
-
-	return { styleName, variant };
-}
+// Ours
+import { isDefaultVariant } from './defaultVariant';
+import { extractTokenInfo } from './extractTokenInfo';
 
 /**
  * Transform given `tokens` string to a list of tokens. The list of

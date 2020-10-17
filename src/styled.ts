@@ -1,11 +1,7 @@
 // Ours
 import configs from './configs';
+import { StyleUtils } from './styles/utils';
 import { Configuration, StyledVariant, ToggleVariants } from './types';
-import {
-	isDefaultVariant,
-	getOrderedTokens,
-	extractTokenInfo,
-} from './utils';
 
 function getStyle(styleName: string) {
 	return configs.styles[styleName];
@@ -20,12 +16,11 @@ export function createStyledVariants(
 ): StyledVariant[] {
 	const { separator } = config;
 
-	return getOrderedTokens(tokens, separator).map(
+	return StyleUtils.getOrderedTokens(tokens, separator).map(
 		(token) => {
 			// Style Key is either the DEFAULT_VARIANT or a variant
 			// e.g. "sm" or "dark:focus"
-			// prettier-ignore
-			const { styleName, variant } = extractTokenInfo(
+			const { styleName, variant } = StyleUtils.extractTokenInfo(
 				token,
 				separator
 			);
@@ -43,8 +38,8 @@ export function styled(
 	const styleList = createStyledVariants(tokens, configs);
 
 	const isVariantEnabled = ({ variant }: StyledVariant) => {
-		// We always add the default styles
-		if (isDefaultVariant(variant)) {
+		// The default styles are always applied
+		if (StyleUtils.isDefaultVariant(variant)) {
 			return true;
 		}
 
