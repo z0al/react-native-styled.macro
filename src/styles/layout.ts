@@ -15,6 +15,7 @@ const container = (theme: Theme) => {
 	return Object.keys(theme.screens)
 		.map((screen) => ({
 			[styleName('container', screen)]: {
+				width: theme.width.full,
 				maxWidth: theme.screens[screen],
 			},
 		}))
