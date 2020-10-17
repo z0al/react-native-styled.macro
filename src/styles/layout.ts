@@ -3,6 +3,7 @@ import merge from 'lodash.merge';
 
 // Ours
 import { Theme } from '../types';
+import { styleName } from './utils/styleName';
 
 const container = (theme: Theme) => {
 	const baseStyle: Record<string, any> = {
@@ -13,7 +14,7 @@ const container = (theme: Theme) => {
 
 	return Object.keys(theme.screens)
 		.map((screen) => ({
-			['container-' + screen]: {
+			[styleName('container', screen)]: {
 				maxWidth: theme.screens[screen],
 			},
 		}))
@@ -32,7 +33,7 @@ const display = () => ({
 const overflow = () => {
 	return ['hidden', 'scroll', 'visible']
 		.map((value) => ({
-			['overflow-' + value]: {
+			[styleName('overflow', value)]: {
 				overflow: value,
 			},
 		}))
@@ -42,7 +43,7 @@ const overflow = () => {
 const zIndex = (theme: Theme) => {
 	return ['0', '10', '20', '30', '40', '50']
 		.map((key) => ({
-			['z-' + key]: {
+			[styleName('z', key)]: {
 				zIndex: theme.zIndex[key],
 			},
 		}))

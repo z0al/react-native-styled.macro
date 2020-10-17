@@ -3,13 +3,14 @@ import merge from 'lodash.merge';
 
 // Ours
 import { Theme } from '../types';
+import { styleName } from './utils/styleName';
 
 const padding = (theme: Theme) => {
 	const sizes = Object.keys(theme.padding);
 
 	const p = sizes
 		.map((size) => ({
-			['p-' + size]: {
+			[styleName('p', size)]: {
 				padding: theme.padding[size],
 			},
 		}))
@@ -17,7 +18,7 @@ const padding = (theme: Theme) => {
 
 	const pt = sizes
 		.map((size) => ({
-			['pt-' + size]: {
+			[styleName('pt', size)]: {
 				paddingTop: theme.padding[size],
 			},
 		}))
@@ -25,7 +26,7 @@ const padding = (theme: Theme) => {
 
 	const pl = sizes
 		.map((size) => ({
-			['pl-' + size]: {
+			[styleName('pl', size)]: {
 				paddingLeft: theme.padding[size],
 			},
 		}))
@@ -33,7 +34,7 @@ const padding = (theme: Theme) => {
 
 	const pr = sizes
 		.map((size) => ({
-			['pr-' + size]: {
+			[styleName('pr', size)]: {
 				paddingRight: theme.padding[size],
 			},
 		}))
@@ -41,7 +42,7 @@ const padding = (theme: Theme) => {
 
 	const pb = sizes
 		.map((size) => ({
-			['pb-' + size]: {
+			[styleName('pb', size)]: {
 				paddingBottom: theme.padding[size],
 			},
 		}))
@@ -49,7 +50,7 @@ const padding = (theme: Theme) => {
 
 	const ps = sizes
 		.map((size) => ({
-			['ps-' + size]: {
+			[styleName('ps', size)]: {
 				paddingStart: theme.padding[size],
 			},
 		}))
@@ -57,7 +58,7 @@ const padding = (theme: Theme) => {
 
 	const pe = sizes
 		.map((size) => ({
-			['pe-' + size]: {
+			[styleName('pe', size)]: {
 				paddingEnd: theme.padding[size],
 			},
 		}))
@@ -65,7 +66,7 @@ const padding = (theme: Theme) => {
 
 	const px = sizes
 		.map((size) => ({
-			['px-' + size]: {
+			[styleName('px', size)]: {
 				paddingHorizontal: theme.padding[size],
 			},
 		}))
@@ -73,7 +74,7 @@ const padding = (theme: Theme) => {
 
 	const py = sizes
 		.map((size) => ({
-			['py-' + size]: {
+			[styleName('py', size)]: {
 				paddingVertical: theme.padding[size],
 			},
 		}))
@@ -84,12 +85,6 @@ const padding = (theme: Theme) => {
 
 const margin = (theme: Theme) => {
 	const sizes = Object.keys(theme.margin);
-
-	const styleName = (prefix: string, size: string) => {
-		return size.startsWith('-')
-			? '-' + prefix + size
-			: prefix + '-' + size;
-	};
 
 	const m = sizes
 		.map((size) => ({

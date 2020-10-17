@@ -3,11 +3,12 @@ import merge from 'lodash.merge';
 
 // Ours
 import { Theme } from '../types';
+import { styleName } from './utils/styleName';
 
 const fontFamily = (theme: Theme) => {
 	return Object.keys(theme.fontFamily)
 		.map((key) => ({
-			['font-' + key]: {
+			[styleName('font', key)]: {
 				fontFamily: theme.fontFamily[key],
 			},
 		}))
@@ -17,7 +18,7 @@ const fontFamily = (theme: Theme) => {
 const fontWeight = (theme: Theme) => {
 	return Object.keys(theme.fontWeight)
 		.map((key) => ({
-			['font-' + key]: {
+			[styleName('font', key)]: {
 				fontWeight: theme.fontWeight[key],
 			},
 		}))
@@ -27,7 +28,7 @@ const fontWeight = (theme: Theme) => {
 const fontSize = (theme: Theme) => {
 	return Object.keys(theme.fontSize)
 		.map((key) => ({
-			['text-' + key]: {
+			[styleName('text', key)]: {
 				fontSize: theme.fontSize[key],
 			},
 		}))
@@ -62,7 +63,7 @@ const fontVariant = () => {
 const letterSpacing = (theme: Theme) => {
 	return Object.keys(theme.letterSpacing)
 		.map((key) => ({
-			['letter-' + key]: {
+			[styleName('letter', key)]: {
 				letterSpacing: theme.letterSpacing[key],
 			},
 		}))
@@ -72,7 +73,7 @@ const letterSpacing = (theme: Theme) => {
 const lineHeight = (theme: Theme) => {
 	return Object.keys(theme.lineHeight)
 		.map((key) => ({
-			['line-h-' + key]: {
+			[styleName('line-h', key)]: {
 				lineHeight: theme.lineHeight[key],
 			},
 		}))
@@ -82,7 +83,7 @@ const lineHeight = (theme: Theme) => {
 const textAlign = () => {
 	return ['auto', 'left', 'right', 'center', 'justify']
 		.map((value) => ({
-			['text-' + value]: {
+			[styleName('text', value)]: {
 				textAlign: value,
 			},
 		}))
@@ -92,7 +93,7 @@ const textAlign = () => {
 const textAlignVertical = () => {
 	return ['auto', 'top', 'bottom', 'center']
 		.map((value) => ({
-			['text-v-' + value]: {
+			[styleName('text-v', value)]: {
 				textAlignVertical: value,
 			},
 		}))
@@ -102,7 +103,7 @@ const textAlignVertical = () => {
 const textColor = (theme: Theme) => {
 	return Object.keys(theme.textColor)
 		.map((key) => ({
-			['text-' + key]: {
+			[styleName('text', key)]: {
 				color: theme.textColor[key],
 			},
 		}))

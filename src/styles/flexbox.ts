@@ -3,10 +3,7 @@ import merge from 'lodash.merge';
 
 // Ours
 import { Theme } from '../types';
-
-const styleName = (prefix: string, key: string) => {
-	return key === 'default' ? prefix : prefix + '-' + key;
-};
+import { styleName } from './utils/styleName';
 
 const flexDirection = () => ({
 	'flex-row': {
@@ -32,7 +29,7 @@ const flexWrap = () => {
 
 	return ['wrap', 'wrap-reverse']
 		.map((value) => ({
-			['flex-' + value]: {
+			[styleName('flex', value)]: {
 				flexWrap: value,
 			},
 		}))
@@ -42,7 +39,7 @@ const flexWrap = () => {
 const flex = (theme: Theme) => {
 	return Object.keys(theme.flex)
 		.map((key) => ({
-			['flex-' + key]: {
+			[styleName('flex', key)]: {
 				...theme.flex[key],
 			},
 		}))

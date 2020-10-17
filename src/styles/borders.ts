@@ -3,10 +3,7 @@ import merge from 'lodash.merge';
 
 // Ours
 import { Theme } from '../types';
-
-const styleName = (prefix: string, key: string) => {
-	return key === 'default' ? prefix : prefix + '-' + key;
-};
+import { styleName } from './utils/styleName';
 
 const borderRadius = (theme: Theme) => {
 	const sizes = Object.keys(theme.borderRadius);
@@ -190,7 +187,7 @@ const borderWidth = (theme: Theme) => {
 const borderStyle = () => {
 	return ['solid', 'dotted', 'dashed']
 		.map((value) => ({
-			['border-' + value]: {
+			[styleName('border', value)]: {
 				borderStyle: value,
 			},
 		}))
@@ -200,7 +197,7 @@ const borderStyle = () => {
 const borderColor = (theme: Theme) => {
 	return Object.keys(theme.borderColor)
 		.map((key) => ({
-			['border-' + key]: {
+			[styleName('border', key)]: {
 				borderColor: theme.borderColor[key],
 			},
 		}))

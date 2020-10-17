@@ -2,6 +2,8 @@
 import merge from 'lodash.merge';
 
 // Ours
+import { styleName } from './utils/styleName';
+
 const justifyContent = () => {
 	const center = {
 		'justify-center': {
@@ -11,7 +13,7 @@ const justifyContent = () => {
 
 	const startEnd = ['start', 'end']
 		.map((value) => ({
-			['justify-' + value]: {
+			[styleName('justify', value)]: {
 				justifyContent: 'flex-' + value,
 			},
 		}))
@@ -19,7 +21,7 @@ const justifyContent = () => {
 
 	const space = ['between', 'around', 'evenly']
 		.map((value) => ({
-			['justify-' + value]: {
+			[styleName('justify', value)]: {
 				justifyContent: 'space-' + value,
 			},
 		}))
@@ -31,7 +33,7 @@ const justifyContent = () => {
 const alignContent = () => {
 	const centerStretch = ['stretch', 'center']
 		.map((value) => ({
-			['content-' + value]: {
+			[styleName('content', value)]: {
 				alignContent: value,
 			},
 		}))
@@ -39,7 +41,7 @@ const alignContent = () => {
 
 	const startEnd = ['start', 'end']
 		.map((value) => ({
-			['content-' + value]: {
+			[styleName('content', value)]: {
 				alignContent: 'flex-' + value,
 			},
 		}))
@@ -47,7 +49,7 @@ const alignContent = () => {
 
 	const space = ['between', 'around']
 		.map((value) => ({
-			['content-' + value]: {
+			[styleName('content', value)]: {
 				alignContent: 'space-' + value,
 			},
 		}))
@@ -59,7 +61,7 @@ const alignContent = () => {
 const alignItems = () => {
 	const startEnd = ['start', 'end']
 		.map((value) => ({
-			['items-' + value]: {
+			[styleName('items', value)]: {
 				alignItems: 'flex-' + value,
 			},
 		}))
@@ -67,7 +69,7 @@ const alignItems = () => {
 
 	return ['baseline', 'stretch', 'center']
 		.map((value) => ({
-			['items-' + value]: {
+			[styleName('items', value)]: {
 				alignItems: value,
 			},
 		}))
@@ -77,7 +79,7 @@ const alignItems = () => {
 const alignSelf = () => {
 	const startEnd = ['start', 'end']
 		.map((value) => ({
-			['self-' + value]: {
+			[styleName('self', value)]: {
 				alignSelf: 'flex-' + value,
 			},
 		}))
@@ -85,7 +87,7 @@ const alignSelf = () => {
 
 	return ['auto', 'stretch', 'center']
 		.map((value) => ({
-			['self-' + value]: {
+			[styleName('self', value)]: {
 				alignSelf: value,
 			},
 		}))

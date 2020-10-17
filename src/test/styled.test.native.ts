@@ -22,7 +22,7 @@ describe('createStyledVariants', () => {
 	it('should resolve & group variant styles together', () => {
 		expect(
 			createStyledVariants(
-				'sm:bg-white sm:text-black dark:bg-black dark:text-white',
+				'sm:bg-white sm:text-black dark:bg-black dark:text-white sm:-m-2',
 				configs
 			)
 		).toEqual([
@@ -41,6 +41,10 @@ describe('createStyledVariants', () => {
 			{
 				variant: 'dark',
 				style: configs.styles['text-white'],
+			},
+			{
+				variant: 'sm',
+				style: configs.styles['-m-2'],
 			},
 		] as StyledVariant[]);
 	});
