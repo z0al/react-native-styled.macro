@@ -1,2 +1,3 @@
 export { styled } from './styled';
-export { Configuration } from './types';
+export { Configuration, Theme } from './types';
+export { ThemeUtils } from './themeUtils';
