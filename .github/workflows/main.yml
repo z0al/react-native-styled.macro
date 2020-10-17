@@ -28,7 +28,7 @@ jobs:
   release:
     name: Release
     needs: test
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'never'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
