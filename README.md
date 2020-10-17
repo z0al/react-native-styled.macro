@@ -62,7 +62,7 @@ TODO
 
 ### Backgrounds
 
-**Background Color**
+<details><summary><strong>Background Color</strong></summary>
 
 | Style          | Properties                          |
 | -------------- | ----------------------------------- |
@@ -160,9 +160,11 @@ TODO
 | bg-pink-800    | `{"backgroundColor":"#97266d"}`     |
 | bg-pink-900    | `{"backgroundColor":"#702459"}`     |
 
+</details>
+
 ### Borders
 
-**Border Color**
+<details><summary><strong>Border Color</strong></summary>
 
 | Style              | Properties                      |
 | ------------------ | ------------------------------- |
@@ -260,7 +262,9 @@ TODO
 | border-pink-800    | `{"borderColor":"#97266d"}`     |
 | border-pink-900    | `{"borderColor":"#702459"}`     |
 
-**Border Radius**
+</details>
+
+<details><summary><strong>Border Radius</strong></summary>
 
 | Style           | Properties                                                       |
 | --------------- | ---------------------------------------------------------------- |
@@ -364,7 +368,9 @@ TODO
 | rounded-te-full | `{"borderTopEndRadius":9999}`                                    |
 | rounded-te      | `{"borderTopEndRadius":8}`                                       |
 
-**Border Style**
+</details>
+
+<details><summary><strong>Border Style</strong></summary>
 
 | Style         | Properties                 |
 | ------------- | -------------------------- |
@@ -372,7 +378,9 @@ TODO
 | border-dotted | `{"borderStyle":"dotted"}` |
 | border-dashed | `{"borderStyle":"dashed"}` |
 
-**Border Width**
+</details>
+
+<details><summary><strong>Border Width</strong></summary>
 
 | Style      | Properties                |
 | ---------- | ------------------------- |
@@ -412,9 +420,11 @@ TODO
 | border-e-8 | `{"borderEndWidth":8}`    |
 | border-e   | `{"borderEndWidth":1}`    |
 
+</details>
+
 ### Effects
 
-**Opacity**
+<details><summary><strong>Opacity</strong></summary>
 
 | Style       | Properties         |
 | ----------- | ------------------ |
@@ -424,9 +434,11 @@ TODO
 | opacity-75  | `{"opacity":0.75}` |
 | opacity-100 | `{"opacity":1}`    |
 
+</details>
+
 ### Flex
 
-**Align Content**
+<details><summary><strong>Align Content</strong></summary>
 
 | Style           | Properties                         |
 | --------------- | ---------------------------------- |
@@ -437,7 +449,9 @@ TODO
 | content-between | `{"alignContent":"space-between"}` |
 | content-around  | `{"alignContent":"space-around"}`  |
 
-**Align Items**
+</details>
+
+<details><summary><strong>Align Items</strong></summary>
 
 | Style          | Properties                    |
 | -------------- | ----------------------------- |
@@ -447,7 +461,9 @@ TODO
 | items-stretch  | `{"alignItems":"stretch"}`    |
 | items-center   | `{"alignItems":"center"}`     |
 
-**Align Self**
+</details>
+
+<details><summary><strong>Align Self</strong></summary>
 
 | Style        | Properties                   |
 | ------------ | ---------------------------- |
@@ -457,7 +473,9 @@ TODO
 | self-stretch | `{"alignSelf":"stretch"}`    |
 | self-center  | `{"alignSelf":"center"}`     |
 
-**Flex Direction**
+</details>
+
+<details><summary><strong>Flex Direction</strong></summary>
 
 | Style            | Properties                           |
 | ---------------- | ------------------------------------ |
@@ -466,21 +484,27 @@ TODO
 | flex-col         | `{"flexDirection":"column"}`         |
 | flex-col-reverse | `{"flexDirection":"column-reverse"}` |
 
-**Flex Grow**
+</details>
+
+<details><summary><strong>Flex Grow</strong></summary>
 
 | Style       | Properties       |
 | ----------- | ---------------- |
 | flex-grow-0 | `{"flexGrow":0}` |
 | flex-grow   | `{"flexGrow":1}` |
 
-**Flex Shrink**
+</details>
+
+<details><summary><strong>Flex Shrink</strong></summary>
 
 | Style         | Properties         |
 | ------------- | ------------------ |
 | flex-shrink-0 | `{"flexShrink":0}` |
 | flex-shrink   | `{"flexShrink":1}` |
 
-**Flex Wrap**
+</details>
+
+<details><summary><strong>Flex Wrap</strong></summary>
 
 | Style             | Properties                    |
 | ----------------- | ----------------------------- |
@@ -488,7 +512,9 @@ TODO
 | flex-wrap         | `{"flexWrap":"wrap"}`         |
 | flex-wrap-reverse | `{"flexWrap":"wrap-reverse"}` |
 
-**Flex**
+</details>
+
+<details><summary><strong>Flex</strong></summary>
 
 | Style        | Properties                                         |
 | ------------ | -------------------------------------------------- |
@@ -497,7 +523,9 @@ TODO
 | flex-initial | `{"flexGrow":0,"flexShrink":1,"flexBasis":"auto"}` |
 | flex-none    | `{"flexGrow":0,"flexShrink":0,"flexBasis":"auto"}` |
 
-**Justify Content**
+</details>
+
+<details><summary><strong>Justify Content</strong></summary>
 
 | Style           | Properties                           |
 | --------------- | ------------------------------------ |
@@ -508,9 +536,11 @@ TODO
 | justify-around  | `{"justifyContent":"space-around"}`  |
 | justify-evenly  | `{"justifyContent":"space-evenly"}`  |
 
+</details>
+
 ### Layout
 
-**Container**
+<details><summary><strong>Container</strong></summary>
 
 | Style        | Properties                         |
 | ------------ | ---------------------------------- |
@@ -520,14 +550,18 @@ TODO
 | container-lg | `{"width":"100%","maxWidth":1024}` |
 | container-xl | `{"width":"100%","maxWidth":1280}` |
 
-**Display**
+</details>
+
+<details><summary><strong>Display</strong></summary>
 
 | Style  | Properties           |
 | ------ | -------------------- |
 | flex   | `{"display":"flex"}` |
 | hidden | `{"display":"none"}` |
 
-**Overflow**
+</details>
+
+<details><summary><strong>Overflow</strong></summary>
 
 | Style            | Properties               |
 | ---------------- | ------------------------ |
@@ -535,14 +569,18 @@ TODO
 | overflow-scroll  | `{"overflow":"scroll"}`  |
 | overflow-visible | `{"overflow":"visible"}` |
 
-**Position**
+</details>
+
+<details><summary><strong>Position</strong></summary>
 
 | Style    | Properties                |
 | -------- | ------------------------- |
 | absolute | `{"position":"absolute"}` |
 | relative | `{"position":"relative"}` |
 
-**Top / Right / Bottom / Left**
+</details>
+
+<details><summary><strong>Top / Right / Bottom / Left</strong></summary>
 
 | Style     | Properties                                |
 | --------- | ----------------------------------------- |
@@ -554,7 +592,9 @@ TODO
 | bottom-0  | `{"bottom":0}`                            |
 | left-0    | `{"left":0}`                              |
 
-**Z-Index**
+</details>
+
+<details><summary><strong>Z-Index</strong></summary>
 
 | Style | Properties      |
 | ----- | --------------- |
@@ -565,9 +605,11 @@ TODO
 | z-40  | `{"zIndex":40}` |
 | z-50  | `{"zIndex":50}` |
 
+</details>
+
 ### Sizing
 
-**Height**
+<details><summary><strong>Height</strong></summary>
 
 | Style | Properties       |
 | ----- | ---------------- |
@@ -591,13 +633,17 @@ TODO
 | h-64  | `{"height":512}` |
 | h-px  | `{"height":1}`   |
 
-**Max-Height**
+</details>
+
+<details><summary><strong>Max-Height</strong></summary>
 
 | Style      | Properties             |
 | ---------- | ---------------------- |
 | max-h-full | `{"maxHeight":"100%"}` |
 
-**Max-Width**
+</details>
+
+<details><summary><strong>Max-Width</strong></summary>
 
 | Style           | Properties            |
 | --------------- | --------------------- |
@@ -618,21 +664,27 @@ TODO
 | max-w-screen-lg | `{"maxWidth":1024}`   |
 | max-w-screen-xl | `{"maxWidth":1280}`   |
 
-**Min-Height**
+</details>
+
+<details><summary><strong>Min-Height</strong></summary>
 
 | Style      | Properties             |
 | ---------- | ---------------------- |
 | min-h-0    | `{"minHeight":0}`      |
 | min-h-full | `{"minHeight":"100%"}` |
 
-**Min-Width**
+</details>
+
+<details><summary><strong>Min-Width</strong></summary>
 
 | Style      | Properties            |
 | ---------- | --------------------- |
 | min-w-0    | `{"minWidth":0}`      |
 | min-w-full | `{"minWidth":"100%"}` |
 
-**Width**
+</details>
+
+<details><summary><strong>Width</strong></summary>
 
 | Style   | Properties               |
 | ------- | ------------------------ |
@@ -683,9 +735,11 @@ TODO
 | w-11/12 | `{"width":"91.666667%"}` |
 | w-full  | `{"width":"100%"}`       |
 
+</details>
+
 ### Spacing
 
-**Margin**
+<details><summary><strong>Margin</strong></summary>
 
 | Style  | Properties                  |
 | ------ | --------------------------- |
@@ -1032,7 +1086,9 @@ TODO
 | -my-64 | `{"marginVertical":-512}`   |
 | -my-px | `{"marginVertical":-1}`     |
 
-**Padding**
+</details>
+
+<details><summary><strong>Padding</strong></summary>
 
 | Style | Properties                  |
 | ----- | --------------------------- |
@@ -1208,15 +1264,19 @@ TODO
 | py-64 | `{"paddingVertical":512}`   |
 | py-px | `{"paddingVertical":1}`     |
 
+</details>
+
 ### Typography
 
-**Font Family**
+<details><summary><strong>Font Family</strong></summary>
 
 | Style | Properties |
 | ----- | ---------- |
 
 
-**Font Size**
+</details>
+
+<details><summary><strong>Font Size</strong></summary>
 
 | Style     | Properties         |
 | --------- | ------------------ |
@@ -1231,14 +1291,18 @@ TODO
 | text-5xl  | `{"fontSize":96}`  |
 | text-6xl  | `{"fontSize":128}` |
 
-**Font Style**
+</details>
+
+<details><summary><strong>Font Style</strong></summary>
 
 | Style      | Properties               |
 | ---------- | ------------------------ |
 | italic     | `{"fontStyle":"italic"}` |
 | not-italic | `{"fontStyle":"normal"}` |
 
-**Font Variant**
+</details>
+
+<details><summary><strong>Font Variant</strong></summary>
 
 | Style             | Properties                              |
 | ----------------- | --------------------------------------- |
@@ -1248,7 +1312,9 @@ TODO
 | tabular-nums      | `{"fontVariant":["tabular-nums"]}`      |
 | proportional-nums | `{"fontVariant":["proportional-nums"]}` |
 
-**Font Weight**
+</details>
+
+<details><summary><strong>Font Weight</strong></summary>
 
 | Style          | Properties             |
 | -------------- | ---------------------- |
@@ -1262,7 +1328,9 @@ TODO
 | font-extrabold | `{"fontWeight":"800"}` |
 | font-black     | `{"fontWeight":"900"}` |
 
-**Letter Spacing**
+</details>
+
+<details><summary><strong>Letter Spacing</strong></summary>
 
 | Style          | Properties               |
 | -------------- | ------------------------ |
@@ -1273,7 +1341,9 @@ TODO
 | letter-wider   | `{"letterSpacing":1.6}`  |
 | letter-widest  | `{"letterSpacing":3.2}`  |
 
-**Line Height**
+</details>
+
+<details><summary><strong>Line Height</strong></summary>
 
 | Style          | Properties             |
 | -------------- | ---------------------- |
@@ -1292,7 +1362,9 @@ TODO
 | line-h-relaxed | `{"lineHeight":1.625}` |
 | line-h-loose   | `{"lineHeight":2}`     |
 
-**Text Alignment**
+</details>
+
+<details><summary><strong>Text Alignment</strong></summary>
 
 | Style        | Properties                |
 | ------------ | ------------------------- |
@@ -1302,7 +1374,9 @@ TODO
 | text-center  | `{"textAlign":"center"}`  |
 | text-justify | `{"textAlign":"justify"}` |
 
-**Text Color**
+</details>
+
+<details><summary><strong>Text Color</strong></summary>
 
 | Style            | Properties                |
 | ---------------- | ------------------------- |
@@ -1400,13 +1474,17 @@ TODO
 | text-pink-800    | `{"color":"#97266d"}`     |
 | text-pink-900    | `{"color":"#702459"}`     |
 
-**Text Decoration**
+</details>
+
+<details><summary><strong>Text Decoration</strong></summary>
 
 | Style        | Properties                              |
 | ------------ | --------------------------------------- |
 | underline    | `{"textDecorationLine":"underline"}`    |
 | no-underline | `{"textDecorationLine":"none"}`         |
 | line-through | `{"textDecorationLine":"line-through"}` |
+
+</details>
 
 <!-- UTILITIES-END -->
 
