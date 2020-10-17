@@ -39,6 +39,7 @@
 		"camel-case": "^4.1.1",
 		"eslint": "^7.11.0",
 		"expo-module-scripts": "^1.2.0",
+		"jest-expo": "^39.0.0",
 		"prettier": "^2.1.2",
 		"react": "^16.14.0",
 		"react-dom": "^16.14.0",
@@ -60,7 +61,17 @@
 		"useTabs": true
 	},
 	"jest": {
-		"preset": "expo-module-scripts"
+		"projects": [
+			{
+				"preset": "jest-expo/android"
+			},
+			{
+				"preset": "jest-expo/ios"
+			},
+			{
+				"preset": "jest-expo/node"
+			}
+		]
 	},
 	"publishConfig": {
 		"access": "public"
