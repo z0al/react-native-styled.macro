@@ -6,9 +6,9 @@
 
 ## Features
 
-- **Zero-overhead:** A Babel macro is used to compile the style string to optimized `StyleSheet.create` objects.
-- **Variants support:** For having two Button variants, Responsive layout, Platform specific styles, or event Dark mode. Variants can do it all.
-- **Customizable:** Simply add a `styled.config.js` and get creative.
+- **Rich:** There is a utility for almost everything.
+- **Variants:** For having two Button variants, Responsive layout, Platform specific styles, or event Dark mode. Variants can do it all.
+- **Customization:** Simply add a `styled.config.js` and get creative.
 
 ## Usage
 
@@ -16,34 +16,6 @@
 
 ```
 yarn add react-native-restyled
-```
-
-**Example:**
-
-```jsx
-import { styled } from 'react-native-restyled';
-
-const Button = ({ primary, text }) => (
-	<Pressable
-		onPress={() => {}}
-		style={styled(
-			`mx-2 px-4 py-2
-			 border rounded-md border-gray-300 bg-white
-			 primary:border-indigo-600 primary:bg-indigo-600`,
-			{ primary }
-		)}
-	>
-		<Text
-			style={styled(
-				`text-base text-indigo-600
-				 primary:text-white`,
-				{ primary }
-			)}
-		>
-			{text}
-		</Text>
-	</Pressable>
-);
 ```
 
 ## Concepts
@@ -96,7 +68,7 @@ TODO
 
 ## Utilities
 
-> _Note:_ The value of `rem(value)` is calculated as follows:
+> _Note:_ The output of `rem(value)` is calculated as follows:
 >
 > ```javascript
 > Platform.select({
