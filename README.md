@@ -38,7 +38,7 @@ TODO
    styled('dark:bg-black dark:text-white bg-white text-black');
    ```
 
-   Since the default variant styles will _always_ be applied first, the code above is misleading which can be a source of bugs.
+   Since the default variant styles will _**always**_ get applied first, the code above is misleading, which in turn can be a source of bugs.
 
 2. Group variant styles together
 
@@ -54,7 +54,7 @@ TODO
    styled('web:bg-gray-100 bg-white text-black web:rounded');
    ```
 
-   In addition to the readability concern, it also enables compile time optimizations in the future to be added.
+   In addition to the readability concern, it also enables compile-time optimizations in the future to be added.
 
 ## Prior Art
 
