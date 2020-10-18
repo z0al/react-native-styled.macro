@@ -25,7 +25,8 @@
 		"clean": "expo-module clean",
 		"lint": "expo-module lint",
 		"test": "expo-module test",
-		"semantic-release": "semantic-release"
+		"semantic-release": "semantic-release",
+		"utils-gen": "ts-node ./tools/utils-gen.ts"
 	},
 	"dependencies": {
 		"lodash.merge": "^4.6.2"
@@ -47,6 +48,7 @@
 		"react-native-tailwindcss": "^1.1.11",
 		"react-native-web": "^0.13.18",
 		"semantic-release": "^17.2.1",
+		"ts-node": "^9.0.0",
 		"typescript": "^3.9.7"
 	},
 	"peerDependencies": {

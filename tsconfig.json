@@ -2,8 +2,9 @@
 {
 	"extends": "expo-module-scripts/tsconfig.base",
 	"compilerOptions": {
-		"outDir": "./dist"
+		"outDir": "./dist",
+		"types": ["@types/node"]
 	},
-	"include": ["./src"],
+	"include": ["./src", "tools"],
 	"exclude": ["**/__mocks__/*", "**/__tests__/*"]
 }
