@@ -4,11 +4,31 @@
 
 ![](./docs/demo.png)
 
+## Table of Contents
+
+- [Features](#features)
+- [Usage](#usage)
+- [How it works](#how-it-works)
+- [Best Practices](#best-practices)
+- [Prior Art](#prior-art)
+- [Utilities](#utilities)
+	- [Backgrounds](#backgrounds)
+	- [Borders](#borders)
+	- [Effects](#effects)
+	- [Flex](#flex)
+	- [Layout](#layout)
+	- [Sizing](#sizing)
+	- [Spacing](#spacing)
+	- [Typography](#typography)
+	- [Transforms](#transforms)
+- [Variants](#variants)
+- [License](#license)
+
 ## Features
 
 - **Rich Styling support:** There is a utility for almost everything.
 - **Variants:** Built-in support for Responsive layout, Dark mode, and more.
-- **Customization:** You can optionally add `styled.config.js` and override various configs.
+- **Customization:** You can optionally add `styled.config.js` and override theme and/or variants.
 
 ## Usage
 
@@ -1730,6 +1750,10 @@ TODO
 ## Variants
 
 TODO
+
+## License
+
+MIT © Ahmed T. Ali
 
 [rn]: https://reactnative.dev
 [tw]: https://tailwindcss.com/
