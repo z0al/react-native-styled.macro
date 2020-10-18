@@ -515,6 +515,566 @@ Object {
   "-my-px": Object {
     "marginVertical": -1,
   },
+  "-rotate-1": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-1deg",
+      },
+    ],
+  },
+  "-rotate-12": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-12deg",
+      },
+    ],
+  },
+  "-rotate-180": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-180deg",
+      },
+    ],
+  },
+  "-rotate-2": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-2deg",
+      },
+    ],
+  },
+  "-rotate-3": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-3deg",
+      },
+    ],
+  },
+  "-rotate-45": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-45deg",
+      },
+    ],
+  },
+  "-rotate-6": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-6deg",
+      },
+    ],
+  },
+  "-rotate-90": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-90deg",
+      },
+    ],
+  },
+  "-rotate-x-1": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-1deg",
+      },
+    ],
+  },
+  "-rotate-x-12": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-12deg",
+      },
+    ],
+  },
+  "-rotate-x-180": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-180deg",
+      },
+    ],
+  },
+  "-rotate-x-2": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-2deg",
+      },
+    ],
+  },
+  "-rotate-x-3": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-3deg",
+      },
+    ],
+  },
+  "-rotate-x-45": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-45deg",
+      },
+    ],
+  },
+  "-rotate-x-6": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-6deg",
+      },
+    ],
+  },
+  "-rotate-x-90": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-90deg",
+      },
+    ],
+  },
+  "-rotate-y-1": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-1deg",
+      },
+    ],
+  },
+  "-rotate-y-12": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-12deg",
+      },
+    ],
+  },
+  "-rotate-y-180": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-180deg",
+      },
+    ],
+  },
+  "-rotate-y-2": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-2deg",
+      },
+    ],
+  },
+  "-rotate-y-3": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-3deg",
+      },
+    ],
+  },
+  "-rotate-y-45": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-45deg",
+      },
+    ],
+  },
+  "-rotate-y-6": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-6deg",
+      },
+    ],
+  },
+  "-rotate-y-90": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-90deg",
+      },
+    ],
+  },
+  "-rotate-z-1": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-1deg",
+      },
+    ],
+  },
+  "-rotate-z-12": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-12deg",
+      },
+    ],
+  },
+  "-rotate-z-180": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-180deg",
+      },
+    ],
+  },
+  "-rotate-z-2": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-2deg",
+      },
+    ],
+  },
+  "-rotate-z-3": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-3deg",
+      },
+    ],
+  },
+  "-rotate-z-45": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-45deg",
+      },
+    ],
+  },
+  "-rotate-z-6": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-6deg",
+      },
+    ],
+  },
+  "-rotate-z-90": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-90deg",
+      },
+    ],
+  },
+  "-skew-x-1": Object {
+    "transform": Array [
+      Object {
+        "skewX": "-1deg",
+      },
+    ],
+  },
+  "-skew-x-12": Object {
+    "transform": Array [
+      Object {
+        "skewX": "-12deg",
+      },
+    ],
+  },
+  "-skew-x-2": Object {
+    "transform": Array [
+      Object {
+        "skewX": "-2deg",
+      },
+    ],
+  },
+  "-skew-x-3": Object {
+    "transform": Array [
+      Object {
+        "skewX": "-3deg",
+      },
+    ],
+  },
+  "-skew-x-6": Object {
+    "transform": Array [
+      Object {
+        "skewX": "-6deg",
+      },
+    ],
+  },
+  "-skew-y-1": Object {
+    "transform": Array [
+      Object {
+        "skewY": "-1deg",
+      },
+    ],
+  },
+  "-skew-y-12": Object {
+    "transform": Array [
+      Object {
+        "skewY": "-12deg",
+      },
+    ],
+  },
+  "-skew-y-2": Object {
+    "transform": Array [
+      Object {
+        "skewY": "-2deg",
+      },
+    ],
+  },
+  "-skew-y-3": Object {
+    "transform": Array [
+      Object {
+        "skewY": "-3deg",
+      },
+    ],
+  },
+  "-skew-y-6": Object {
+    "transform": Array [
+      Object {
+        "skewY": "-6deg",
+      },
+    ],
+  },
+  "-translate-x-0": Object {
+    "transform": Array [
+      Object {
+        "translateX": -0,
+      },
+    ],
+  },
+  "-translate-x-1": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-0.25rem",
+      },
+    ],
+  },
+  "-translate-x-10": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-2.5rem",
+      },
+    ],
+  },
+  "-translate-x-12": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-3rem",
+      },
+    ],
+  },
+  "-translate-x-16": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-4rem",
+      },
+    ],
+  },
+  "-translate-x-2": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-0.5rem",
+      },
+    ],
+  },
+  "-translate-x-20": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-5rem",
+      },
+    ],
+  },
+  "-translate-x-24": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-6rem",
+      },
+    ],
+  },
+  "-translate-x-3": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-0.75rem",
+      },
+    ],
+  },
+  "-translate-x-32": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-8rem",
+      },
+    ],
+  },
+  "-translate-x-4": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-1rem",
+      },
+    ],
+  },
+  "-translate-x-40": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-10rem",
+      },
+    ],
+  },
+  "-translate-x-48": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-12rem",
+      },
+    ],
+  },
+  "-translate-x-5": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-1.25rem",
+      },
+    ],
+  },
+  "-translate-x-56": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-14rem",
+      },
+    ],
+  },
+  "-translate-x-6": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-1.5rem",
+      },
+    ],
+  },
+  "-translate-x-64": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-16rem",
+      },
+    ],
+  },
+  "-translate-x-8": Object {
+    "transform": Array [
+      Object {
+        "translateX": "-2rem",
+      },
+    ],
+  },
+  "-translate-x-px": Object {
+    "transform": Array [
+      Object {
+        "translateX": -1,
+      },
+    ],
+  },
+  "-translate-y-0": Object {
+    "transform": Array [
+      Object {
+        "translateY": -0,
+      },
+    ],
+  },
+  "-translate-y-1": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-0.25rem",
+      },
+    ],
+  },
+  "-translate-y-10": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-2.5rem",
+      },
+    ],
+  },
+  "-translate-y-12": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-3rem",
+      },
+    ],
+  },
+  "-translate-y-16": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-4rem",
+      },
+    ],
+  },
+  "-translate-y-2": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-0.5rem",
+      },
+    ],
+  },
+  "-translate-y-20": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-5rem",
+      },
+    ],
+  },
+  "-translate-y-24": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-6rem",
+      },
+    ],
+  },
+  "-translate-y-3": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-0.75rem",
+      },
+    ],
+  },
+  "-translate-y-32": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-8rem",
+      },
+    ],
+  },
+  "-translate-y-4": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-1rem",
+      },
+    ],
+  },
+  "-translate-y-40": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-10rem",
+      },
+    ],
+  },
+  "-translate-y-48": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-12rem",
+      },
+    ],
+  },
+  "-translate-y-5": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-1.25rem",
+      },
+    ],
+  },
+  "-translate-y-56": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-14rem",
+      },
+    ],
+  },
+  "-translate-y-6": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-1.5rem",
+      },
+    ],
+  },
+  "-translate-y-64": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-16rem",
+      },
+    ],
+  },
+  "-translate-y-8": Object {
+    "transform": Array [
+      Object {
+        "translateY": "-2rem",
+      },
+    ],
+  },
+  "-translate-y-px": Object {
+    "transform": Array [
+      Object {
+        "translateY": -1,
+      },
+    ],
+  },
   "absolute": Object {
     "position": "absolute",
   },
@@ -2638,6 +3198,258 @@ Object {
   "right-0": Object {
     "right": 0,
   },
+  "rotate-0": Object {
+    "transform": Array [
+      Object {
+        "rotate": "0",
+      },
+    ],
+  },
+  "rotate-1": Object {
+    "transform": Array [
+      Object {
+        "rotate": "1deg",
+      },
+    ],
+  },
+  "rotate-12": Object {
+    "transform": Array [
+      Object {
+        "rotate": "12deg",
+      },
+    ],
+  },
+  "rotate-180": Object {
+    "transform": Array [
+      Object {
+        "rotate": "180deg",
+      },
+    ],
+  },
+  "rotate-2": Object {
+    "transform": Array [
+      Object {
+        "rotate": "2deg",
+      },
+    ],
+  },
+  "rotate-3": Object {
+    "transform": Array [
+      Object {
+        "rotate": "3deg",
+      },
+    ],
+  },
+  "rotate-45": Object {
+    "transform": Array [
+      Object {
+        "rotate": "45deg",
+      },
+    ],
+  },
+  "rotate-6": Object {
+    "transform": Array [
+      Object {
+        "rotate": "6deg",
+      },
+    ],
+  },
+  "rotate-90": Object {
+    "transform": Array [
+      Object {
+        "rotate": "90deg",
+      },
+    ],
+  },
+  "rotate-x-0": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "0",
+      },
+    ],
+  },
+  "rotate-x-1": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "1deg",
+      },
+    ],
+  },
+  "rotate-x-12": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "12deg",
+      },
+    ],
+  },
+  "rotate-x-180": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "180deg",
+      },
+    ],
+  },
+  "rotate-x-2": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "2deg",
+      },
+    ],
+  },
+  "rotate-x-3": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "3deg",
+      },
+    ],
+  },
+  "rotate-x-45": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "45deg",
+      },
+    ],
+  },
+  "rotate-x-6": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "6deg",
+      },
+    ],
+  },
+  "rotate-x-90": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "90deg",
+      },
+    ],
+  },
+  "rotate-y-0": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "0",
+      },
+    ],
+  },
+  "rotate-y-1": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "1deg",
+      },
+    ],
+  },
+  "rotate-y-12": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "12deg",
+      },
+    ],
+  },
+  "rotate-y-180": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "180deg",
+      },
+    ],
+  },
+  "rotate-y-2": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "2deg",
+      },
+    ],
+  },
+  "rotate-y-3": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "3deg",
+      },
+    ],
+  },
+  "rotate-y-45": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "45deg",
+      },
+    ],
+  },
+  "rotate-y-6": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "6deg",
+      },
+    ],
+  },
+  "rotate-y-90": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "90deg",
+      },
+    ],
+  },
+  "rotate-z-0": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "0",
+      },
+    ],
+  },
+  "rotate-z-1": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "1deg",
+      },
+    ],
+  },
+  "rotate-z-12": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "12deg",
+      },
+    ],
+  },
+  "rotate-z-180": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "180deg",
+      },
+    ],
+  },
+  "rotate-z-2": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "2deg",
+      },
+    ],
+  },
+  "rotate-z-3": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "3deg",
+      },
+    ],
+  },
+  "rotate-z-45": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "45deg",
+      },
+    ],
+  },
+  "rotate-z-6": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "6deg",
+      },
+    ],
+  },
+  "rotate-z-90": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "90deg",
+      },
+    ],
+  },
   "rounded": Object {
     "borderRadius": "0.25rem",
   },
@@ -2971,6 +3783,216 @@ Object {
   "rounded-xl": Object {
     "borderRadius": "0.75rem",
   },
+  "scale-0": Object {
+    "transform": Array [
+      Object {
+        "scale": 0,
+      },
+    ],
+  },
+  "scale-100": Object {
+    "transform": Array [
+      Object {
+        "scale": 1,
+      },
+    ],
+  },
+  "scale-105": Object {
+    "transform": Array [
+      Object {
+        "scale": 1.05,
+      },
+    ],
+  },
+  "scale-110": Object {
+    "transform": Array [
+      Object {
+        "scale": 1.1,
+      },
+    ],
+  },
+  "scale-125": Object {
+    "transform": Array [
+      Object {
+        "scale": 1.25,
+      },
+    ],
+  },
+  "scale-150": Object {
+    "transform": Array [
+      Object {
+        "scale": 1.5,
+      },
+    ],
+  },
+  "scale-50": Object {
+    "transform": Array [
+      Object {
+        "scale": 0.5,
+      },
+    ],
+  },
+  "scale-75": Object {
+    "transform": Array [
+      Object {
+        "scale": 0.75,
+      },
+    ],
+  },
+  "scale-90": Object {
+    "transform": Array [
+      Object {
+        "scale": 0.9,
+      },
+    ],
+  },
+  "scale-95": Object {
+    "transform": Array [
+      Object {
+        "scale": 0.95,
+      },
+    ],
+  },
+  "scale-x-0": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 0,
+      },
+    ],
+  },
+  "scale-x-100": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 1,
+      },
+    ],
+  },
+  "scale-x-105": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 1.05,
+      },
+    ],
+  },
+  "scale-x-110": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 1.1,
+      },
+    ],
+  },
+  "scale-x-125": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 1.25,
+      },
+    ],
+  },
+  "scale-x-150": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 1.5,
+      },
+    ],
+  },
+  "scale-x-50": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 0.5,
+      },
+    ],
+  },
+  "scale-x-75": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 0.75,
+      },
+    ],
+  },
+  "scale-x-90": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 0.9,
+      },
+    ],
+  },
+  "scale-x-95": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 0.95,
+      },
+    ],
+  },
+  "scale-y-0": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 0,
+      },
+    ],
+  },
+  "scale-y-100": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 1,
+      },
+    ],
+  },
+  "scale-y-105": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 1.05,
+      },
+    ],
+  },
+  "scale-y-110": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 1.1,
+      },
+    ],
+  },
+  "scale-y-125": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 1.25,
+      },
+    ],
+  },
+  "scale-y-150": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 1.5,
+      },
+    ],
+  },
+  "scale-y-50": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 0.5,
+      },
+    ],
+  },
+  "scale-y-75": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 0.75,
+      },
+    ],
+  },
+  "scale-y-90": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 0.9,
+      },
+    ],
+  },
+  "scale-y-95": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 0.95,
+      },
+    ],
+  },
   "self-auto": Object {
     "alignSelf": "auto",
   },
@@ -2985,6 +4007,90 @@ Object {
   },
   "self-stretch": Object {
     "alignSelf": "stretch",
+  },
+  "skew-x-0": Object {
+    "transform": Array [
+      Object {
+        "skewX": "0",
+      },
+    ],
+  },
+  "skew-x-1": Object {
+    "transform": Array [
+      Object {
+        "skewX": "1deg",
+      },
+    ],
+  },
+  "skew-x-12": Object {
+    "transform": Array [
+      Object {
+        "skewX": "12deg",
+      },
+    ],
+  },
+  "skew-x-2": Object {
+    "transform": Array [
+      Object {
+        "skewX": "2deg",
+      },
+    ],
+  },
+  "skew-x-3": Object {
+    "transform": Array [
+      Object {
+        "skewX": "3deg",
+      },
+    ],
+  },
+  "skew-x-6": Object {
+    "transform": Array [
+      Object {
+        "skewX": "6deg",
+      },
+    ],
+  },
+  "skew-y-0": Object {
+    "transform": Array [
+      Object {
+        "skewY": "0",
+      },
+    ],
+  },
+  "skew-y-1": Object {
+    "transform": Array [
+      Object {
+        "skewY": "1deg",
+      },
+    ],
+  },
+  "skew-y-12": Object {
+    "transform": Array [
+      Object {
+        "skewY": "12deg",
+      },
+    ],
+  },
+  "skew-y-2": Object {
+    "transform": Array [
+      Object {
+        "skewY": "2deg",
+      },
+    ],
+  },
+  "skew-y-3": Object {
+    "transform": Array [
+      Object {
+        "skewY": "3deg",
+      },
+    ],
+  },
+  "skew-y-6": Object {
+    "transform": Array [
+      Object {
+        "skewY": "6deg",
+      },
+    ],
   },
   "small-caps": Object {
     "fontVariant": Array [
@@ -3334,6 +4440,272 @@ Object {
   },
   "top-0": Object {
     "top": 0,
+  },
+  "translate-x-0": Object {
+    "transform": Array [
+      Object {
+        "translateX": 0,
+      },
+    ],
+  },
+  "translate-x-1": Object {
+    "transform": Array [
+      Object {
+        "translateX": "0.25rem",
+      },
+    ],
+  },
+  "translate-x-10": Object {
+    "transform": Array [
+      Object {
+        "translateX": "2.5rem",
+      },
+    ],
+  },
+  "translate-x-12": Object {
+    "transform": Array [
+      Object {
+        "translateX": "3rem",
+      },
+    ],
+  },
+  "translate-x-16": Object {
+    "transform": Array [
+      Object {
+        "translateX": "4rem",
+      },
+    ],
+  },
+  "translate-x-2": Object {
+    "transform": Array [
+      Object {
+        "translateX": "0.5rem",
+      },
+    ],
+  },
+  "translate-x-20": Object {
+    "transform": Array [
+      Object {
+        "translateX": "5rem",
+      },
+    ],
+  },
+  "translate-x-24": Object {
+    "transform": Array [
+      Object {
+        "translateX": "6rem",
+      },
+    ],
+  },
+  "translate-x-3": Object {
+    "transform": Array [
+      Object {
+        "translateX": "0.75rem",
+      },
+    ],
+  },
+  "translate-x-32": Object {
+    "transform": Array [
+      Object {
+        "translateX": "8rem",
+      },
+    ],
+  },
+  "translate-x-4": Object {
+    "transform": Array [
+      Object {
+        "translateX": "1rem",
+      },
+    ],
+  },
+  "translate-x-40": Object {
+    "transform": Array [
+      Object {
+        "translateX": "10rem",
+      },
+    ],
+  },
+  "translate-x-48": Object {
+    "transform": Array [
+      Object {
+        "translateX": "12rem",
+      },
+    ],
+  },
+  "translate-x-5": Object {
+    "transform": Array [
+      Object {
+        "translateX": "1.25rem",
+      },
+    ],
+  },
+  "translate-x-56": Object {
+    "transform": Array [
+      Object {
+        "translateX": "14rem",
+      },
+    ],
+  },
+  "translate-x-6": Object {
+    "transform": Array [
+      Object {
+        "translateX": "1.5rem",
+      },
+    ],
+  },
+  "translate-x-64": Object {
+    "transform": Array [
+      Object {
+        "translateX": "16rem",
+      },
+    ],
+  },
+  "translate-x-8": Object {
+    "transform": Array [
+      Object {
+        "translateX": "2rem",
+      },
+    ],
+  },
+  "translate-x-px": Object {
+    "transform": Array [
+      Object {
+        "translateX": 1,
+      },
+    ],
+  },
+  "translate-y-0": Object {
+    "transform": Array [
+      Object {
+        "translateY": 0,
+      },
+    ],
+  },
+  "translate-y-1": Object {
+    "transform": Array [
+      Object {
+        "translateY": "0.25rem",
+      },
+    ],
+  },
+  "translate-y-10": Object {
+    "transform": Array [
+      Object {
+        "translateY": "2.5rem",
+      },
+    ],
+  },
+  "translate-y-12": Object {
+    "transform": Array [
+      Object {
+        "translateY": "3rem",
+      },
+    ],
+  },
+  "translate-y-16": Object {
+    "transform": Array [
+      Object {
+        "translateY": "4rem",
+      },
+    ],
+  },
+  "translate-y-2": Object {
+    "transform": Array [
+      Object {
+        "translateY": "0.5rem",
+      },
+    ],
+  },
+  "translate-y-20": Object {
+    "transform": Array [
+      Object {
+        "translateY": "5rem",
+      },
+    ],
+  },
+  "translate-y-24": Object {
+    "transform": Array [
+      Object {
+        "translateY": "6rem",
+      },
+    ],
+  },
+  "translate-y-3": Object {
+    "transform": Array [
+      Object {
+        "translateY": "0.75rem",
+      },
+    ],
+  },
+  "translate-y-32": Object {
+    "transform": Array [
+      Object {
+        "translateY": "8rem",
+      },
+    ],
+  },
+  "translate-y-4": Object {
+    "transform": Array [
+      Object {
+        "translateY": "1rem",
+      },
+    ],
+  },
+  "translate-y-40": Object {
+    "transform": Array [
+      Object {
+        "translateY": "10rem",
+      },
+    ],
+  },
+  "translate-y-48": Object {
+    "transform": Array [
+      Object {
+        "translateY": "12rem",
+      },
+    ],
+  },
+  "translate-y-5": Object {
+    "transform": Array [
+      Object {
+        "translateY": "1.25rem",
+      },
+    ],
+  },
+  "translate-y-56": Object {
+    "transform": Array [
+      Object {
+        "translateY": "14rem",
+      },
+    ],
+  },
+  "translate-y-6": Object {
+    "transform": Array [
+      Object {
+        "translateY": "1.5rem",
+      },
+    ],
+  },
+  "translate-y-64": Object {
+    "transform": Array [
+      Object {
+        "translateY": "16rem",
+      },
+    ],
+  },
+  "translate-y-8": Object {
+    "transform": Array [
+      Object {
+        "translateY": "2rem",
+      },
+    ],
+  },
+  "translate-y-px": Object {
+    "transform": Array [
+      Object {
+        "translateY": 1,
+      },
+    ],
   },
   "underline": Object {
     "textDecorationLine": "underline",

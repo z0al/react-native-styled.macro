@@ -10,6 +10,7 @@ import flex from './flex';
 import layout from './layout';
 import sizing from './sizing';
 import spacing from './spacing';
+import transforms from './transforms';
 import typography from './typography';
 
 export default (theme: Theme) =>
@@ -22,4 +23,5 @@ export default (theme: Theme) =>
 		...borders(theme),
 		...effects(theme),
 		...typography(theme),
+		...transforms(theme),
 	});

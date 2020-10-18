@@ -38,11 +38,15 @@ export const flexWrap = () => {
 
 export const flex = (theme: Theme) => {
 	return Object.keys(theme.flex)
-		.map((key) => ({
-			[styleName('flex', key)]: {
-				...theme.flex[key],
-			},
-		}))
+		.map((key) => {
+			const value = theme.flex[key] || {};
+
+			return {
+				[styleName('flex', key)]: {
+					...(typeof value === 'number' ? { flex: value } : value),
+				},
+			};
+		})
 		.reduce(merge, {});
 };
 

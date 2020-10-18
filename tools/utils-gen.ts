@@ -2,7 +2,7 @@
 import { camelCase } from 'camel-case';
 
 // Ours
-import generateConfigs from '../src/configs/default';
+import generateConfigs from '../src/configs/base';
 import * as backgrounds from '../src/styles/backgrounds';
 import * as borders from '../src/styles/borders';
 import * as effects from '../src/styles/effects';
@@ -10,6 +10,7 @@ import * as flex from '../src/styles/flex';
 import * as layout from '../src/styles/layout';
 import * as sizing from '../src/styles/sizing';
 import * as spacing from '../src/styles/spacing';
+import * as transforms from '../src/styles/transforms';
 import * as typography from '../src/styles/typography';
 import {
 	formatTableData,
@@ -101,6 +102,11 @@ const Data = [
 			'Text Decoration',
 		],
 	},
+	{
+		title: 'Transforms',
+		module: transforms,
+		sections: ['Rotate', 'Scale', 'Skew', 'Translate'],
+	},
 ];
 
 const MARK_START = '<!-- UTILS-GEN-START -->';
@@ -121,12 +127,12 @@ const doc = Data.map((utility) => {
 
 			return true;
 		})
+		.sort()
 		.map((section) => {
 			const styles = utility.module[camelCase(section)](theme);
-			const values = Object.keys(styles).map((key) => [
-				key,
-				formatTableData(styles[key]),
-			]);
+			const values = Object.keys(styles)
+				.sort()
+				.map((key) => [key, formatTableData(styles[key])]);
 
 			const table = generateTable(['Style', 'Properties'], values);
 

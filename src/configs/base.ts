@@ -1,13 +1,16 @@
 // Ours
 import { Configuration } from '../types';
 
-const negative = (styles: Record<string, string | number>) => {
-	const newStyles: Record<string, string | number> = {};
+const negative = (styles: Record<string, number>) => {
+	const newStyles: Record<string, number> = {};
 
 	Object.keys(styles).forEach((key) => {
 		const unit = styles[key];
+
+		// The value always a number except when using rem on Web.
+		// @ts-expect-error
 		newStyles['-' + key] =
-			typeof unit === 'number' ? -1 * unit : '-' + unit;
+			typeof unit === 'string' ? '-' + unit : -1 * unit;
 	});
 
 	return newStyles;
@@ -27,7 +30,7 @@ const breakpoints = (styles: Record<string, number>) => {
  * We accept the `rem` helper instead of importing it directly to
  * avoid compilation errors when used in tools.
  */
-export default (rem: (value: number) => string | number) => {
+export default (rem: (value: number) => number) => {
 	const screens = {
 		sm: 640,
 		md: 768,
@@ -340,6 +343,54 @@ export default (rem: (value: number) => string | number) => {
 				30: 30,
 				40: 40,
 				50: 50,
+			},
+			scale: {
+				0: 0,
+				50: 0.5,
+				75: 0.75,
+				90: 0.9,
+				95: 0.95,
+				100: 1,
+				105: 1.05,
+				110: 1.1,
+				125: 1.25,
+				150: 1.5,
+			},
+			rotate: {
+				'-180': '-180deg',
+				'-90': '-90deg',
+				'-45': '-45deg',
+				'-12': '-12deg',
+				'-6': '-6deg',
+				'-3': '-3deg',
+				'-2': '-2deg',
+				'-1': '-1deg',
+				'0': '0',
+				'1': '1deg',
+				'2': '2deg',
+				'3': '3deg',
+				'6': '6deg',
+				'12': '12deg',
+				'45': '45deg',
+				'90': '90deg',
+				'180': '180deg',
+			},
+			translate: {
+				...spacing,
+				...negative(spacing),
+			},
+			skew: {
+				'-12': '-12deg',
+				'-6': '-6deg',
+				'-3': '-3deg',
+				'-2': '-2deg',
+				'-1': '-1deg',
+				'0': '0',
+				'1': '1deg',
+				'2': '2deg',
+				'3': '3deg',
+				'6': '6deg',
+				'12': '12deg',
 			},
 		},
 	};

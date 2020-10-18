@@ -14,8 +14,8 @@ export const StyleUtils = {
 	},
 
 	rem: (value: number) =>
-		Platform.select({
-			web: `${value}rem`,
-			default: (PixelRatio.getFontScale() * 16 * value) as any,
+		Platform.select<number>({
+			web: (`${value}rem` as unknown) as number,
+			default: PixelRatio.getFontScale() * 16 * value,
 		}),
 };

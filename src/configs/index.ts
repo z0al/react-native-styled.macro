@@ -1,12 +1,12 @@
 // Ours
 import { StyleUtils } from '../style-utils';
 import createStyles from '../styles';
-import generateDefaultConfigs from './default';
+import generateBaseConfigs from './base';
 
-const defaultConfigs = generateDefaultConfigs(StyleUtils.rem);
+const baseConfigs = generateBaseConfigs(StyleUtils.rem);
 
 // TODO: support custom config
 export default {
-	...defaultConfigs,
-	styles: createStyles(defaultConfigs.theme),
+	...baseConfigs,
+	styles: createStyles(baseConfigs.theme),
 };

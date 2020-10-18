@@ -36,15 +36,21 @@ export function writeToReadMe(
 }
 
 export function rem(value: number) {
-	return `rem(${value})`;
+	return (`rem(${value})` as unknown) as number;
 }
 
 export function formatTableData(value: any, root = true) {
-	if (typeof value !== 'object' || Array.isArray(value)) {
-		if (typeof value === 'string' && value.startsWith('rem')) {
-			return value;
-		}
+	if (Array.isArray(value)) {
+		return `[${value
+			.map((val) => formatTableData(val, false))
+			.join(', ')}]`;
+	}
 
+	if (typeof value === 'string' && value.startsWith('rem')) {
+		return value;
+	}
+
+	if (typeof value !== 'object') {
 		return JSON.stringify(value);
 	}
 
