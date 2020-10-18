@@ -7,12 +7,12 @@
 ## Features
 
 - **Rich Styling support:** There is a utility for almost everything.
-- **Variants:** Built-in support for Responsive layout, Platform specific styles, and Dark mode.
+- **Variants:** Built-in support for Responsive layout, Dark mode, and more.
 - **Customization:** You can optionally add `styled.config.js` and override various configs.
 
 ## Usage
 
-> _Requires React Native v0.62.0 or higher_
+> _Compatible with React Native v0.62.0 or higher_
 
 ```
 yarn add react-native-restyled
@@ -54,11 +54,11 @@ TODO
    styled('web:bg-gray-100 bg-white text-black web:rounded');
    ```
 
-   In addition to making the code easier to read it also enables compile time optimizations in the future to be added.
+   In addition to the readability concern, it also enables compile time optimizations in the future to be added.
 
 ## Prior Art
 
-- **Tailwind CSS** ([website][tw]): Our work is heavily inspired by Tailwind which is a great utility-first CSS framework. We borrowed the utility-first approach from Tailwind and re-imagined how it can be used in React Native apps to build user interfaces faster without additional Runtime overhead.
+- **Tailwind CSS** ([website][tw]): Tailwind is a great utility-first CSS framework. We borrowed the utility-first approach from there and re-imagined how it can be used in React Native apps to build user interfaces faster without additional Runtime overhead.
 
 ## Utilities
 
@@ -66,9 +66,9 @@ TODO
 >
 > ```javascript
 > Platform.select({
->  web: `${value}rem`,
->  default: PixelRatio.getFontScale() * 16 * value),
-> })
+> 	web: `${value}rem`,
+> 	default: PixelRatio.getFontScale() * 16 * value,
+> });
 > ```
 
 <!-- UTILS-GEN-START -->
