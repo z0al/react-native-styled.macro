@@ -1,41 +1,42 @@
 // Packages
-import merge from 'lodash.merge';
+import { TextStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
+import { mergeStyles } from './utils/mergeStyles';
 import { styleName } from './utils/styleName';
 
-export const fontFamily = (theme: Theme) => {
+export const fontFamily = (theme: Theme): Record<string, TextStyle> => {
 	return Object.keys(theme.fontFamily)
 		.map((key) => ({
 			[styleName('font', key)]: {
 				fontFamily: theme.fontFamily[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
-export const fontWeight = (theme: Theme) => {
+export const fontWeight = (theme: Theme): Record<string, TextStyle> => {
 	return Object.keys(theme.fontWeight)
 		.map((key) => ({
 			[styleName('font', key)]: {
 				fontWeight: theme.fontWeight[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
-export const fontSize = (theme: Theme) => {
+export const fontSize = (theme: Theme): Record<string, TextStyle> => {
 	return Object.keys(theme.fontSize)
 		.map((key) => ({
 			[styleName('text', key)]: {
 				fontSize: theme.fontSize[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
-export const fontStyle = () => ({
+export const fontStyle = (): Record<string, TextStyle> => ({
 	italic: {
 		fontStyle: 'italic',
 	},
@@ -44,61 +45,78 @@ export const fontStyle = () => ({
 	},
 });
 
-export const fontVariant = () => {
-	return [
-		'small-caps',
-		'oldstyle-nums',
-		'lining-nums',
-		'tabular-nums',
-		'proportional-nums',
-	]
-		.map((value) => ({
-			[value]: {
-				fontVariant: [value],
-			},
-		}))
-		.reduce(merge, {});
-};
+export const fontVariant = (): Record<string, TextStyle> => ({
+	'small-caps': {
+		fontVariant: ['small-caps'],
+	},
+	'oldstyle-nums': {
+		fontVariant: ['oldstyle-nums'],
+	},
+	'lining-nums': {
+		fontVariant: ['lining-nums'],
+	},
+	'tabular-nums': {
+		fontVariant: ['tabular-nums'],
+	},
+	'proportional-nums': {
+		fontVariant: ['proportional-nums'],
+	},
+});
 
-export const letterSpacing = (theme: Theme) => {
+export const letterSpacing = (
+	theme: Theme
+): Record<string, TextStyle> => {
 	return Object.keys(theme.letterSpacing)
 		.map((key) => ({
 			[styleName('letter', key)]: {
 				letterSpacing: theme.letterSpacing[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
-export const lineHeight = (theme: Theme) => {
+export const lineHeight = (theme: Theme): Record<string, TextStyle> => {
 	return Object.keys(theme.lineHeight)
 		.map((key) => ({
 			[styleName('line-h', key)]: {
 				lineHeight: theme.lineHeight[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
-export const textAlignment = () => {
-	return ['auto', 'left', 'right', 'center', 'justify']
-		.map((value) => ({
-			[styleName('text', value)]: {
-				textAlign: value,
-			},
-		}))
-		.reduce(merge, {});
-};
+export const textAlignment = (): Record<string, TextStyle> => ({
+	[styleName('text', 'auto')]: {
+		textAlign: 'auto',
+	},
+	[styleName('text', 'left')]: {
+		textAlign: 'left',
+	},
+	[styleName('text', 'right')]: {
+		textAlign: 'right',
+	},
+	[styleName('text', 'center')]: {
+		textAlign: 'center',
+	},
+	[styleName('text', 'justify')]: {
+		textAlign: 'justify',
+	},
+});
 
-export const textAlignVertical = () => {
-	return ['auto', 'top', 'bottom', 'center']
-		.map((value) => ({
-			[styleName('text-v', value)]: {
-				textAlignVertical: value,
-			},
-		}))
-		.reduce(merge, {});
-};
+export const textAlignVertical = (): Record<string, TextStyle> => ({
+	[styleName('text-v', 'auto')]: {
+		textAlignVertical: 'auto',
+	},
+	[styleName('text-v', 'top')]: {
+		textAlignVertical: 'top',
+	},
+	[styleName('text-v', 'bottom')]: {
+		textAlignVertical: 'bottom',
+	},
+	[styleName('text-v', 'center')]: {
+		textAlignVertical: 'center',
+	},
+});
 
 export const textColor = (theme: Theme) => {
 	return Object.keys(theme.textColor)
@@ -107,10 +125,10 @@ export const textColor = (theme: Theme) => {
 				color: theme.textColor[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
-export const textDecoration = () => ({
+export const textDecoration = (): Record<string, TextStyle> => ({
 	underline: {
 		textDecorationLine: 'underline',
 	},
@@ -122,7 +140,7 @@ export const textDecoration = () => ({
 	},
 });
 
-export const textTransform = () => ({
+export const textTransform = (): Record<string, TextStyle> => ({
 	uppercase: {
 		textTransform: 'uppercase',
 	},

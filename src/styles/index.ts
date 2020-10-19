@@ -15,8 +15,8 @@ import typography from './typography';
 
 export default (theme: Theme) =>
 	StyleSheet.create({
-		...layout(theme),
-		...flex(theme),
+		...(layout(theme) as any),
+		...(flex(theme) as any),
 		...spacing(theme),
 		...sizing(theme),
 		...backgrounds(theme),

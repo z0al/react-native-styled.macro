@@ -1,8 +1,6 @@
-// Packages
-import merge from 'lodash.merge';
-
 // Ours
 import { Theme } from '../types';
+import { mergeStyles } from './utils/mergeStyles';
 import { styleName } from './utils/styleName';
 
 export const opacity = (theme: Theme) => {
@@ -12,7 +10,7 @@ export const opacity = (theme: Theme) => {
 				opacity: theme.opacity[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
 export default (theme: Theme) => ({

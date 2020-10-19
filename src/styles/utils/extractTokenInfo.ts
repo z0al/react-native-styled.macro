@@ -1,8 +1,8 @@
 // Ours
 import { DEFAULT_VARIANT } from './defaultVariant';
 
-export function extractTokenInfo(token: string, separator: string) {
-	const sepIndex = token.lastIndexOf(separator);
+export function extractTokenInfo(token: string) {
+	const sepIndex = token.lastIndexOf(':');
 
 	const styleName = token.slice(sepIndex + 1);
 	const variant =

@@ -28,9 +28,7 @@
 		"semantic-release": "semantic-release",
 		"utils-gen": "ts-node ./tools/utils-gen.ts"
 	},
-	"dependencies": {
-		"lodash.merge": "^4.6.2"
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"@types/jest": "^26.0.14",
 		"@types/lodash.merge": "^4.6.6",
@@ -49,6 +47,7 @@
 		"react-native-web": "^0.13.18",
 		"semantic-release": "^17.2.1",
 		"ts-node": "^9.0.0",
+		"type-fest": "^0.18.0",
 		"typescript": "^4.0.3"
 	},
 	"peerDependencies": {

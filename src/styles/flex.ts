@@ -1,11 +1,12 @@
 // Packages
-import merge from 'lodash.merge';
+import { FlexStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
+import { mergeStyles } from './utils/mergeStyles';
 import { styleName } from './utils/styleName';
 
-export const flexDirection = () => ({
+export const flexDirection = (): Record<string, FlexStyle> => ({
 	'flex-row': {
 		flexDirection: 'row',
 	},
@@ -20,23 +21,19 @@ export const flexDirection = () => ({
 	},
 });
 
-export const flexWrap = () => {
-	const baseStyles = {
-		'flex-no-wrap': {
-			flexWrap: 'nowrap',
-		},
-	};
+export const flexWrap = (): Record<string, FlexStyle> => ({
+	'flex-no-wrap': {
+		flexWrap: 'nowrap',
+	},
+	'flex-wrap': {
+		flexWrap: 'wrap',
+	},
+	'flex-wrap-reverse': {
+		flexWrap: 'wrap-reverse',
+	},
+});
 
-	return ['wrap', 'wrap-reverse']
-		.map((value) => ({
-			[styleName('flex', value)]: {
-				flexWrap: value,
-			},
-		}))
-		.reduce(merge, baseStyles);
-};
-
-export const flex = (theme: Theme) => {
+export const flex = (theme: Theme): Record<string, FlexStyle> => {
 	return Object.keys(theme.flex)
 		.map((key) => {
 			const value = theme.flex[key] || {};
@@ -47,27 +44,27 @@ export const flex = (theme: Theme) => {
 				},
 			};
 		})
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
-export const flexGrow = (theme: Theme) => {
+export const flexGrow = (theme: Theme): Record<string, FlexStyle> => {
 	return Object.keys(theme.flexGrow)
 		.map((key) => ({
 			[styleName('flex-grow', key)]: {
 				flexGrow: theme.flexGrow[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
-export const flexShrink = (theme: Theme) => {
+export const flexShrink = (theme: Theme): Record<string, FlexStyle> => {
 	return Object.keys(theme.flexShrink)
 		.map((key) => ({
 			[styleName('flex-shrink', key)]: {
 				flexShrink: theme.flexShrink[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
 export const justifyContent = () => {
@@ -83,7 +80,7 @@ export const justifyContent = () => {
 				justifyContent: 'flex-' + value,
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const space = ['between', 'around', 'evenly']
 		.map((value) => ({
@@ -91,9 +88,9 @@ export const justifyContent = () => {
 				justifyContent: 'space-' + value,
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
-	return [center, startEnd, space].reduce(merge, {});
+	return [center, startEnd, space].reduce(mergeStyles, {});
 };
 
 export const alignContent = () => {
@@ -103,7 +100,7 @@ export const alignContent = () => {
 				alignContent: value,
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const startEnd = ['start', 'end']
 		.map((value) => ({
@@ -111,7 +108,7 @@ export const alignContent = () => {
 				alignContent: 'flex-' + value,
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const space = ['between', 'around']
 		.map((value) => ({
@@ -119,9 +116,9 @@ export const alignContent = () => {
 				alignContent: 'space-' + value,
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
-	return [centerStretch, startEnd, space].reduce(merge, {});
+	return [centerStretch, startEnd, space].reduce(mergeStyles, {});
 };
 
 export const alignItems = () => {
@@ -131,7 +128,7 @@ export const alignItems = () => {
 				alignItems: 'flex-' + value,
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	return ['baseline', 'stretch', 'center']
 		.map((value) => ({
@@ -139,7 +136,7 @@ export const alignItems = () => {
 				alignItems: value,
 			},
 		}))
-		.reduce(merge, startEnd);
+		.reduce(mergeStyles, startEnd);
 };
 
 export const alignSelf = () => {
@@ -149,7 +146,7 @@ export const alignSelf = () => {
 				alignSelf: 'flex-' + value,
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	return ['auto', 'stretch', 'center']
 		.map((value) => ({
@@ -157,7 +154,7 @@ export const alignSelf = () => {
 				alignSelf: value,
 			},
 		}))
-		.reduce(merge, startEnd);
+		.reduce(mergeStyles, startEnd);
 };
 
 export default (theme: Theme) => ({

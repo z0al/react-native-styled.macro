@@ -14,16 +14,11 @@ export function createStyledVariants(
 	tokens: string,
 	config: Configuration
 ): StyledVariant[] {
-	const { separator } = config;
-
-	return StyleUtils.getOrderedTokens(tokens, separator).map(
+	return StyleUtils.getOrderedTokens(tokens).map(
 		(token) => {
 			// Style Key is either the DEFAULT_VARIANT or a variant
 			// e.g. "sm" or "dark:focus"
-			const { styleName, variant } = StyleUtils.extractTokenInfo(
-				token,
-				separator
-			);
+			const { styleName, variant } = StyleUtils.extractTokenInfo(token);
 
 			return { variant, style: getStyle(styleName) };
 		},
@@ -45,7 +40,7 @@ export function styled(
 
 		// Variant name could possibly be nested e.g. dark:focus
 		return variant
-			.split(configs.separator)
+			.split(':')
 			.every((key) => Boolean(variants && variants[key]));
 	};
 

@@ -1,8 +1,6 @@
-// Packages
-import merge from 'lodash.merge';
-
 // Ours
 import { Theme } from '../types';
+import { mergeStyles } from './utils/mergeStyles';
 import { styleName } from './utils/styleName';
 
 export const padding = (theme: Theme) => {
@@ -14,7 +12,7 @@ export const padding = (theme: Theme) => {
 				padding: theme.padding[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const pt = sizes
 		.map((size) => ({
@@ -22,7 +20,7 @@ export const padding = (theme: Theme) => {
 				paddingTop: theme.padding[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const pl = sizes
 		.map((size) => ({
@@ -30,7 +28,7 @@ export const padding = (theme: Theme) => {
 				paddingLeft: theme.padding[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const pr = sizes
 		.map((size) => ({
@@ -38,7 +36,7 @@ export const padding = (theme: Theme) => {
 				paddingRight: theme.padding[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const pb = sizes
 		.map((size) => ({
@@ -46,7 +44,7 @@ export const padding = (theme: Theme) => {
 				paddingBottom: theme.padding[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const ps = sizes
 		.map((size) => ({
@@ -54,7 +52,7 @@ export const padding = (theme: Theme) => {
 				paddingStart: theme.padding[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const pe = sizes
 		.map((size) => ({
@@ -62,7 +60,7 @@ export const padding = (theme: Theme) => {
 				paddingEnd: theme.padding[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const px = sizes
 		.map((size) => ({
@@ -70,7 +68,7 @@ export const padding = (theme: Theme) => {
 				paddingHorizontal: theme.padding[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const py = sizes
 		.map((size) => ({
@@ -78,9 +76,9 @@ export const padding = (theme: Theme) => {
 				paddingVertical: theme.padding[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
-	return [p, pt, pl, pr, pb, ps, pe, px, py].reduce(merge, {});
+	return [p, pt, pl, pr, pb, ps, pe, px, py].reduce(mergeStyles, {});
 };
 
 export const margin = (theme: Theme) => {
@@ -92,7 +90,7 @@ export const margin = (theme: Theme) => {
 				margin: theme.margin[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const mt = sizes
 		.map((size) => ({
@@ -100,7 +98,7 @@ export const margin = (theme: Theme) => {
 				marginTop: theme.margin[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const ml = sizes
 		.map((size) => ({
@@ -108,7 +106,7 @@ export const margin = (theme: Theme) => {
 				marginLeft: theme.margin[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const mr = sizes
 		.map((size) => ({
@@ -116,7 +114,7 @@ export const margin = (theme: Theme) => {
 				marginRight: theme.margin[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const mb = sizes
 		.map((size) => ({
@@ -124,7 +122,7 @@ export const margin = (theme: Theme) => {
 				marginBottom: theme.margin[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const ms = sizes
 		.map((size) => ({
@@ -132,7 +130,7 @@ export const margin = (theme: Theme) => {
 				marginStart: theme.margin[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const me = sizes
 		.map((size) => ({
@@ -140,7 +138,7 @@ export const margin = (theme: Theme) => {
 				marginEnd: theme.margin[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const mx = sizes
 		.map((size) => ({
@@ -148,7 +146,7 @@ export const margin = (theme: Theme) => {
 				marginHorizontal: theme.margin[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const my = sizes
 		.map((size) => ({
@@ -156,9 +154,9 @@ export const margin = (theme: Theme) => {
 				marginVertical: theme.margin[size],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
-	return [m, mt, ml, mr, mb, ms, me, mx, my].reduce(merge, {});
+	return [m, mt, ml, mr, mb, ms, me, mx, my].reduce(mergeStyles, {});
 };
 
 export default (theme: Theme) => ({

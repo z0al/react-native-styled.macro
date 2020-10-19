@@ -16,28 +16,11 @@ const negative = (styles: Record<string, number>) => {
 	return newStyles;
 };
 
-const breakpoints = (styles: Record<string, number>) => {
-	const newStyles: Record<string, number> = {};
-
-	Object.keys(styles).forEach((key) => {
-		newStyles[`screen-${key}`] = styles[key];
-	});
-
-	return newStyles;
-};
-
 /**
  * We accept the `rem` helper instead of importing it directly to
  * avoid compilation errors when used in tools.
  */
 export default (rem: (value: number) => number) => {
-	const screens = {
-		sm: 640,
-		md: 768,
-		lg: 1024,
-		xl: 1280,
-	};
-
 	const colors = {
 		black: 'black',
 		white: 'white',
@@ -185,9 +168,7 @@ export default (rem: (value: number) => number) => {
 	};
 
 	const configs: Configuration = {
-		separator: ':',
 		theme: {
-			screens,
 			colors,
 			spacing,
 			backgroundColor: colors,
@@ -293,7 +274,6 @@ export default (rem: (value: number) => number) => {
 				'5xl': rem(64),
 				'6xl': rem(72),
 				full: '100%',
-				...breakpoints(screens),
 			},
 			minHeight: {
 				0: 0,

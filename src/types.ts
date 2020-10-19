@@ -26,7 +26,6 @@ type StringOrNumber = Record<string, string | number>;
 type Colors = Record<string, ColorValue>;
 
 export type Theme = {
-	screens: StringOrNumber;
 	colors: Colors;
 	spacing: StringOrNumber;
 	backgroundColor: Colors;
@@ -63,6 +62,5 @@ export type Theme = {
 };
 
 export type Configuration = {
-	separator: string;
 	theme: Theme;
 };

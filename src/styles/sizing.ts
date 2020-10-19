@@ -1,8 +1,6 @@
-// Packages
-import merge from 'lodash.merge';
-
 // Ours
 import { Theme } from '../types';
+import { mergeStyles } from './utils/mergeStyles';
 import { styleName } from './utils/styleName';
 
 export const width = (theme: Theme) => {
@@ -12,7 +10,7 @@ export const width = (theme: Theme) => {
 				width: theme.width[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
 export const minWidth = (theme: Theme) => {
@@ -22,7 +20,7 @@ export const minWidth = (theme: Theme) => {
 				minWidth: theme.minWidth[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
 export const maxWidth = (theme: Theme) => {
@@ -32,7 +30,7 @@ export const maxWidth = (theme: Theme) => {
 				maxWidth: theme.maxWidth[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
 export const height = (theme: Theme) => {
@@ -42,7 +40,7 @@ export const height = (theme: Theme) => {
 				height: theme.height[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
 export const minHeight = (theme: Theme) => {
@@ -52,7 +50,7 @@ export const minHeight = (theme: Theme) => {
 				minHeight: theme.minHeight[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
 export const maxHeight = (theme: Theme) => {
@@ -62,7 +60,7 @@ export const maxHeight = (theme: Theme) => {
 				maxHeight: theme.maxHeight[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
 export default (theme: Theme) => ({

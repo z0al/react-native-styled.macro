@@ -1,25 +1,14 @@
-// Packages
-import merge from 'lodash.merge';
-
 // Ours
 import { Theme } from '../types';
+import { mergeStyles } from './utils/mergeStyles';
 import { styleName } from './utils/styleName';
 
 export const container = (theme: Theme) => {
-	const baseStyle: Record<string, any> = {
+	return {
 		container: {
 			width: theme.width.full,
 		},
 	};
-
-	return Object.keys(theme.screens)
-		.map((screen) => ({
-			[styleName('container', screen)]: {
-				width: theme.width.full,
-				maxWidth: theme.screens[screen],
-			},
-		}))
-		.reduce(merge, baseStyle);
 };
 
 export const display = () => ({
@@ -38,7 +27,7 @@ export const overflow = () => {
 				overflow: value,
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
 export const zIndex = (theme: Theme) => {
@@ -48,7 +37,7 @@ export const zIndex = (theme: Theme) => {
 				zIndex: theme.zIndex[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
 export const position = () => ({

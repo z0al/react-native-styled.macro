@@ -1,8 +1,6 @@
-// Packages
-import merge from 'lodash.merge';
-
 // Ours
 import { Theme } from '../types';
+import { mergeStyles } from './utils/mergeStyles';
 import { styleName } from './utils/styleName';
 
 export const borderRadius = (theme: Theme) => {
@@ -13,7 +11,7 @@ export const borderRadius = (theme: Theme) => {
 				borderRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const roundedT = sizes
 		.map((key) => ({
@@ -22,7 +20,7 @@ export const borderRadius = (theme: Theme) => {
 				borderTopRightRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const roundedR = sizes
 		.map((key) => ({
@@ -31,7 +29,7 @@ export const borderRadius = (theme: Theme) => {
 				borderBottomRightRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const roundedB = sizes
 		.map((key) => ({
@@ -40,7 +38,7 @@ export const borderRadius = (theme: Theme) => {
 				borderBottomLeftRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const roundedL = sizes
 		.map((key) => ({
@@ -49,7 +47,7 @@ export const borderRadius = (theme: Theme) => {
 				borderBottomLeftRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const roundedTS = sizes
 		.map((key) => ({
@@ -57,7 +55,7 @@ export const borderRadius = (theme: Theme) => {
 				borderTopStartRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const roundedTE = sizes
 		.map((key) => ({
@@ -65,7 +63,7 @@ export const borderRadius = (theme: Theme) => {
 				borderTopEndRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const roundedTL = sizes
 		.map((key) => ({
@@ -73,7 +71,7 @@ export const borderRadius = (theme: Theme) => {
 				borderTopLeftRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const roundedTR = sizes
 		.map((key) => ({
@@ -81,7 +79,7 @@ export const borderRadius = (theme: Theme) => {
 				borderTopRightRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const roundedBR = sizes
 		.map((key) => ({
@@ -89,7 +87,7 @@ export const borderRadius = (theme: Theme) => {
 				borderBottomRightRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const roundedBL = sizes
 		.map((key) => ({
@@ -97,7 +95,7 @@ export const borderRadius = (theme: Theme) => {
 				borderBottomLeftRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	return [
 		rounded,
@@ -111,7 +109,7 @@ export const borderRadius = (theme: Theme) => {
 		roundedBR,
 		roundedTS,
 		roundedTE,
-	].reduce(merge, {});
+	].reduce(mergeStyles, {});
 };
 
 export const borderWidth = (theme: Theme) => {
@@ -123,7 +121,7 @@ export const borderWidth = (theme: Theme) => {
 				borderWidth: theme.borderWidth[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const borderT = sizes
 		.map((key) => ({
@@ -131,7 +129,7 @@ export const borderWidth = (theme: Theme) => {
 				borderTopWidth: theme.borderWidth[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const borderL = sizes
 		.map((key) => ({
@@ -139,7 +137,7 @@ export const borderWidth = (theme: Theme) => {
 				borderLeftWidth: theme.borderWidth[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const borderR = sizes
 		.map((key) => ({
@@ -147,7 +145,7 @@ export const borderWidth = (theme: Theme) => {
 				borderRightWidth: theme.borderWidth[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const borderB = sizes
 		.map((key) => ({
@@ -155,7 +153,7 @@ export const borderWidth = (theme: Theme) => {
 				borderBottomWidth: theme.borderWidth[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const borderS = sizes
 		.map((key) => ({
@@ -163,7 +161,7 @@ export const borderWidth = (theme: Theme) => {
 				borderStartWidth: theme.borderWidth[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const borderE = sizes
 		.map((key) => ({
@@ -171,7 +169,7 @@ export const borderWidth = (theme: Theme) => {
 				borderEndWidth: theme.borderWidth[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	return [
 		border,
@@ -181,7 +179,7 @@ export const borderWidth = (theme: Theme) => {
 		borderB,
 		borderS,
 		borderE,
-	].reduce(merge, {});
+	].reduce(mergeStyles, {});
 };
 
 export const borderStyle = () => {
@@ -191,7 +189,7 @@ export const borderStyle = () => {
 				borderStyle: value,
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
 export const borderColor = (theme: Theme) => {
@@ -201,7 +199,7 @@ export const borderColor = (theme: Theme) => {
 				borderColor: theme.borderColor[key],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 };
 
 export default (theme: Theme) => ({

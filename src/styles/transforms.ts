@@ -1,9 +1,9 @@
 // Packages
-import merge from 'lodash.merge';
 import { TransformsStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
+import { mergeStyles } from './utils/mergeStyles';
 import { styleName } from './utils/styleName';
 
 export const scale = (
@@ -21,7 +21,7 @@ export const scale = (
 				],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const y = sizes
 		.map((key) => ({
@@ -33,7 +33,7 @@ export const scale = (
 				],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const xy = sizes
 		.map((key) => ({
@@ -45,9 +45,9 @@ export const scale = (
 				],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
-	return [x, y, xy].reduce(merge, {});
+	return [x, y, xy].reduce(mergeStyles, {});
 };
 
 export const rotate = (
@@ -65,7 +65,7 @@ export const rotate = (
 				],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const y = sizes
 		.map((key) => ({
@@ -77,7 +77,7 @@ export const rotate = (
 				],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const z = sizes
 		.map((key) => ({
@@ -89,7 +89,7 @@ export const rotate = (
 				],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const xy = sizes
 		.map((key) => ({
@@ -101,9 +101,9 @@ export const rotate = (
 				],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
-	return [x, y, z, xy].reduce(merge, {});
+	return [x, y, z, xy].reduce(mergeStyles, {});
 };
 
 export const translate = (
@@ -121,7 +121,7 @@ export const translate = (
 				],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const y = sizes
 		.map((key) => ({
@@ -133,9 +133,9 @@ export const translate = (
 				],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
-	return [x, y].reduce(merge, {});
+	return [x, y].reduce(mergeStyles, {});
 };
 
 export const skew = (theme: Theme): Record<string, TransformsStyle> => {
@@ -151,7 +151,7 @@ export const skew = (theme: Theme): Record<string, TransformsStyle> => {
 				],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
 	const y = sizes
 		.map((key) => ({
@@ -163,9 +163,9 @@ export const skew = (theme: Theme): Record<string, TransformsStyle> => {
 				],
 			},
 		}))
-		.reduce(merge, {});
+		.reduce(mergeStyles, {});
 
-	return [x, y].reduce(merge, {});
+	return [x, y].reduce(mergeStyles, {});
 };
 
 export default (theme: Theme) => ({
