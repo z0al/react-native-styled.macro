@@ -7,11 +7,7 @@ import { extractTokenInfo } from './extractTokenInfo';
  * tokens is ordered such that default variant styles always applied
  * first.
  */
-export function getOrderedTokens(tokens: string) {
-	const getTokens = (tokens: string) => {
-		return tokens.trim().replace(/\s+/g, ' ').split(' ');
-	};
-
+export function getOrderedTokens(tokens: string[]) {
 	const compareByVariant = (a: string, b: string) => {
 		const isDefaultA = isDefaultVariant(extractTokenInfo(a).variant);
 		const isDefaultB = isDefaultVariant(extractTokenInfo(b).variant);
@@ -23,5 +19,5 @@ export function getOrderedTokens(tokens: string) {
 			: 0; // Keep the same order
 	};
 
-	return getTokens(tokens).sort(compareByVariant);
+	return tokens.sort(compareByVariant);
 }

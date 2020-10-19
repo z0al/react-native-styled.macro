@@ -1,50 +1,49 @@
+// @noflow
+// Packages
+import { StyleSheet } from 'react-native';
+
 // Ours
 import configs from './configs';
 import { StyleUtils } from './styles/utils';
-import { Configuration, StyledVariant, ToggleVariants } from './types';
+// import { Configuration, StyledVariant, ToggleVariants } from './types';
 
 function getStyle(styleName: string) {
 	return configs.styles[styleName];
 }
 
-/**
- * Resolve styles for given token(s) e.g. "dark:bg-white".
- */
-export function createStyledVariants(
-	tokens: string,
-	config: Configuration
-): StyledVariant[] {
-	return StyleUtils.getOrderedTokens(tokens).map(
-		(token) => {
-			// Style Key is either the DEFAULT_VARIANT or a variant
-			// e.g. "sm" or "dark:focus"
-			const { styleName, variant } = StyleUtils.extractTokenInfo(token);
-
-			return { variant, style: getStyle(styleName) };
-		},
-		{ default: [] }
-	);
+function getStyleProps(styleName: string) {
+	return {};
 }
 
-export function styled(
-	tokens: string,
-	variants?: ToggleVariants
-): StyledVariant['style'][] {
-	const styleList = createStyledVariants(tokens, configs);
+// TODO: use TS v4.1 Template Literal types
+export type StyleTokens = string[];
+export type StyledToken = {
+	variant: string;
+	style?: any; // TODO
+	props?: any; // TODO
+};
 
-	const isVariantEnabled = ({ variant }: StyledVariant) => {
-		// The default styles are always applied
-		if (StyleUtils.isDefaultVariant(variant)) {
-			return true;
-		}
+export function toStyledArray(tokens: StyleTokens) {
+	return StyleUtils.getOrderedTokens(tokens)
+		.map((token) => {
+			const { styleName, variant } = StyleUtils.extractTokenInfo(token);
 
-		// Variant name could possibly be nested e.g. dark:focus
-		return variant
-			.split(':')
-			.every((key) => Boolean(variants && variants[key]));
-	};
+			const style = getStyle(styleName);
+			const props = getStyleProps(styleName);
 
-	return styleList
-		.filter(isVariantEnabled)
-		.map((styledVariant) => styledVariant.style);
+			// TODO: if both style and props are empty then raise an error
+			return { variant, style, props };
+		})
+		.reduce((styles: StyledToken[], next: StyledToken) => {
+			const current = styles.slice(-1)[0];
+
+			// Merge styles if possible
+			if (current?.variant === next.variant) {
+				styles = styles.slice(0, -1);
+				next.style = StyleSheet.flatten([current.style, next.style]);
+				next.props = { ...current.props, ...next.props };
+			}
+
+			return [...styles, next];
+		}, []);
 }
