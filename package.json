@@ -49,7 +49,7 @@
 		"react-native-web": "^0.13.18",
 		"semantic-release": "^17.2.1",
 		"ts-node": "^9.0.0",
-		"typescript": "^3.9.7"
+		"typescript": "^4.0.3"
 	},
 	"peerDependencies": {
 		"react": ">=16.11.0",
