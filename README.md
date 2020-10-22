@@ -4,26 +4,6 @@
 
 ![](./docs/demo.png)
 
-## Table of Contents
-
-- [Features](#features)
-- [Usage](#usage)
-- [How it works](#how-it-works)
-- [Best Practices](#best-practices)
-- [Prior Art](#prior-art)
-- [Utilities](#utilities)
-	- [Backgrounds](#backgrounds)
-	- [Borders](#borders)
-	- [Effects](#effects)
-	- [Flex](#flex)
-	- [Layout](#layout)
-	- [Sizing](#sizing)
-	- [Spacing](#spacing)
-	- [Typography](#typography)
-	- [Transforms](#transforms)
-- [Variants](#variants)
-- [License](#license)
-
 ## Features
 
 - **Rich Styling support:** There is a utility for almost everything.
