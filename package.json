@@ -44,7 +44,7 @@
 		"react-dom": "^16.14.0",
 		"react-native": "^0.63.3",
 		"react-native-tailwindcss": "^1.1.11",
-		"react-native-web": "^0.13.18",
+		"react-native-web": "^0.14.3",
 		"semantic-release": "^17.2.1",
 		"ts-node": "^9.0.0",
 		"type-fest": "^0.18.0",
