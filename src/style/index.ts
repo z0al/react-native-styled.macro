@@ -1,7 +1,5 @@
 // Ours
 import { Theme } from '../types';
-
-// Utils
 import { alignContent } from './alignContent';
 import { alignItems } from './alignItems';
 import { alignSelf } from './alignSelf';
@@ -10,7 +8,6 @@ import { borderColor } from './borderColor';
 import { borderRadius } from './borderRadius';
 import { borderStyle } from './borderStyle';
 import { borderWidth } from './borderWidth';
-import { container } from './container';
 import { display } from './display';
 import { flex } from './flex';
 import { flexDirection } from './flexDirection';
@@ -38,8 +35,8 @@ import { position } from './position';
 import { rotate } from './rotate';
 import { scale } from './scale';
 import { skew } from './skew';
+import { textAlign } from './textAlign';
 import { textAlignVertical } from './textAlignVertical';
-import { textAlignment } from './textAlignment';
 import { textColor } from './textColor';
 import { textDecoration } from './textDecoration';
 import { textTransform } from './textTransform';
@@ -57,7 +54,6 @@ export default (theme: Theme) => ({
 	...borderRadius(theme),
 	...borderStyle(),
 	...borderWidth(theme),
-	...container(theme),
 	...display(),
 	...flex(theme),
 	...flexDirection(),
@@ -85,7 +81,7 @@ export default (theme: Theme) => ({
 	...rotate(theme),
 	...scale(theme),
 	...skew(theme),
-	...textAlignment(),
+	...textAlign(),
 	...textAlignVertical(),
 	...textColor(theme),
 	...textDecoration(),

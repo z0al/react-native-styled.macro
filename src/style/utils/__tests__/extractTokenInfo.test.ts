@@ -6,21 +6,21 @@ test('extractTokenInfo', () => {
 		{
 			input: 'bg-white',
 			expected: {
-				styleName: 'bg-white',
+				styleId: 'bg-white',
 				variant: 'default',
 			},
 		},
 		{
 			input: 'sm:bg-white',
 			expected: {
-				styleName: 'bg-white',
+				styleId: 'bg-white',
 				variant: 'sm',
 			},
 		},
 		{
 			input: 'dark:sm:focus:bg-black',
 			expected: {
-				styleName: 'bg-black',
+				styleId: 'bg-black',
 				variant: 'dark:sm:focus',
 			},
 		},

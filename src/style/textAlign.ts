@@ -4,7 +4,7 @@ import { TextStyle } from 'react-native';
 // Ours
 import { StyleUtils } from './utils';
 
-export const textAlignment = (): Record<string, TextStyle> => ({
+export const textAlign = (): Record<string, TextStyle> => ({
 	[StyleUtils.id('text', 'auto')]: {
 		textAlign: 'auto',
 	},

@@ -1,6 +1,7 @@
 // Ours
 import { isDefaultVariant } from './defaultVariant';
 import { extractTokenInfo } from './extractTokenInfo';
+import { getOrderedTokens } from './getOrderedTokens';
 import { id } from './id';
 import { merge } from './merge';
 import { reduce } from './reduce';
@@ -15,4 +16,5 @@ export const StyleUtils = {
 	id,
 	isDefaultVariant,
 	extractTokenInfo,
+	getOrderedTokens,
 };
