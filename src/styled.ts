@@ -1,55 +1,17 @@
 // Ours
-import configs from './configs';
-import { StyleUtils } from './styles/utils';
-import { Configuration, StyledVariant, ToggleVariants } from './types';
+import createStyles from './style';
+import { StyleUtils } from './style/utils';
+import theme from './theme';
+import { VariantStyle } from './types';
 
-function getStyle(styleName: string) {
-	return configs.styles[styleName];
-}
+const styles = createStyles(theme);
 
-/**
- * Resolve styles for given token(s) e.g. "dark:bg-white".
- */
-export function createStyledVariants(
-	tokens: string,
-	config: Configuration
-): StyledVariant[] {
-	const { separator } = config;
+const resolveToken = (token: string): VariantStyle => {
+	const { styleId, variant } = StyleUtils.extractTokenInfo(token);
+	return { variant, style: styles[styleId] };
+};
 
-	return StyleUtils.getOrderedTokens(tokens, separator).map(
-		(token) => {
-			// Style Key is either the DEFAULT_VARIANT or a variant
-			// e.g. "sm" or "dark:focus"
-			const { styleName, variant } = StyleUtils.extractTokenInfo(
-				token,
-				separator
-			);
-
-			return { variant, style: getStyle(styleName) };
-		},
-		{ default: [] }
+export const styled = (tokens: string[]) =>
+	StyleUtils.reduce(
+		StyleUtils.getOrderedTokens(tokens).map(resolveToken)
 	);
-}
-
-export function styled(
-	tokens: string,
-	variants?: ToggleVariants
-): StyledVariant['style'][] {
-	const styleList = createStyledVariants(tokens, configs);
-
-	const isVariantEnabled = ({ variant }: StyledVariant) => {
-		// The default styles are always applied
-		if (StyleUtils.isDefaultVariant(variant)) {
-			return true;
-		}
-
-		// Variant name could possibly be nested e.g. dark:focus
-		return variant
-			.split(configs.separator)
-			.every((key) => Boolean(variants && variants[key]));
-	};
-
-	return styleList
-		.filter(isVariantEnabled)
-		.map((styledVariant) => styledVariant.style);
-}

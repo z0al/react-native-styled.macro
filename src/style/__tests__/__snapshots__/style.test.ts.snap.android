@@ -1,0 +1,4842 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[styles] snapshot 1`] = `
+Object {
+  "-m-0": Object {
+    "margin": -0,
+  },
+  "-m-1": Object {
+    "margin": -8,
+  },
+  "-m-10": Object {
+    "margin": -80,
+  },
+  "-m-12": Object {
+    "margin": -96,
+  },
+  "-m-16": Object {
+    "margin": -128,
+  },
+  "-m-2": Object {
+    "margin": -16,
+  },
+  "-m-20": Object {
+    "margin": -160,
+  },
+  "-m-24": Object {
+    "margin": -192,
+  },
+  "-m-3": Object {
+    "margin": -24,
+  },
+  "-m-32": Object {
+    "margin": -256,
+  },
+  "-m-4": Object {
+    "margin": -32,
+  },
+  "-m-40": Object {
+    "margin": -320,
+  },
+  "-m-48": Object {
+    "margin": -384,
+  },
+  "-m-5": Object {
+    "margin": -40,
+  },
+  "-m-56": Object {
+    "margin": -448,
+  },
+  "-m-6": Object {
+    "margin": -48,
+  },
+  "-m-64": Object {
+    "margin": -512,
+  },
+  "-m-8": Object {
+    "margin": -64,
+  },
+  "-m-px": Object {
+    "margin": -1,
+  },
+  "-mb-0": Object {
+    "marginBottom": -0,
+  },
+  "-mb-1": Object {
+    "marginBottom": -8,
+  },
+  "-mb-10": Object {
+    "marginBottom": -80,
+  },
+  "-mb-12": Object {
+    "marginBottom": -96,
+  },
+  "-mb-16": Object {
+    "marginBottom": -128,
+  },
+  "-mb-2": Object {
+    "marginBottom": -16,
+  },
+  "-mb-20": Object {
+    "marginBottom": -160,
+  },
+  "-mb-24": Object {
+    "marginBottom": -192,
+  },
+  "-mb-3": Object {
+    "marginBottom": -24,
+  },
+  "-mb-32": Object {
+    "marginBottom": -256,
+  },
+  "-mb-4": Object {
+    "marginBottom": -32,
+  },
+  "-mb-40": Object {
+    "marginBottom": -320,
+  },
+  "-mb-48": Object {
+    "marginBottom": -384,
+  },
+  "-mb-5": Object {
+    "marginBottom": -40,
+  },
+  "-mb-56": Object {
+    "marginBottom": -448,
+  },
+  "-mb-6": Object {
+    "marginBottom": -48,
+  },
+  "-mb-64": Object {
+    "marginBottom": -512,
+  },
+  "-mb-8": Object {
+    "marginBottom": -64,
+  },
+  "-mb-px": Object {
+    "marginBottom": -1,
+  },
+  "-me-0": Object {
+    "marginEnd": -0,
+  },
+  "-me-1": Object {
+    "marginEnd": -8,
+  },
+  "-me-10": Object {
+    "marginEnd": -80,
+  },
+  "-me-12": Object {
+    "marginEnd": -96,
+  },
+  "-me-16": Object {
+    "marginEnd": -128,
+  },
+  "-me-2": Object {
+    "marginEnd": -16,
+  },
+  "-me-20": Object {
+    "marginEnd": -160,
+  },
+  "-me-24": Object {
+    "marginEnd": -192,
+  },
+  "-me-3": Object {
+    "marginEnd": -24,
+  },
+  "-me-32": Object {
+    "marginEnd": -256,
+  },
+  "-me-4": Object {
+    "marginEnd": -32,
+  },
+  "-me-40": Object {
+    "marginEnd": -320,
+  },
+  "-me-48": Object {
+    "marginEnd": -384,
+  },
+  "-me-5": Object {
+    "marginEnd": -40,
+  },
+  "-me-56": Object {
+    "marginEnd": -448,
+  },
+  "-me-6": Object {
+    "marginEnd": -48,
+  },
+  "-me-64": Object {
+    "marginEnd": -512,
+  },
+  "-me-8": Object {
+    "marginEnd": -64,
+  },
+  "-me-px": Object {
+    "marginEnd": -1,
+  },
+  "-ml-0": Object {
+    "marginLeft": -0,
+  },
+  "-ml-1": Object {
+    "marginLeft": -8,
+  },
+  "-ml-10": Object {
+    "marginLeft": -80,
+  },
+  "-ml-12": Object {
+    "marginLeft": -96,
+  },
+  "-ml-16": Object {
+    "marginLeft": -128,
+  },
+  "-ml-2": Object {
+    "marginLeft": -16,
+  },
+  "-ml-20": Object {
+    "marginLeft": -160,
+  },
+  "-ml-24": Object {
+    "marginLeft": -192,
+  },
+  "-ml-3": Object {
+    "marginLeft": -24,
+  },
+  "-ml-32": Object {
+    "marginLeft": -256,
+  },
+  "-ml-4": Object {
+    "marginLeft": -32,
+  },
+  "-ml-40": Object {
+    "marginLeft": -320,
+  },
+  "-ml-48": Object {
+    "marginLeft": -384,
+  },
+  "-ml-5": Object {
+    "marginLeft": -40,
+  },
+  "-ml-56": Object {
+    "marginLeft": -448,
+  },
+  "-ml-6": Object {
+    "marginLeft": -48,
+  },
+  "-ml-64": Object {
+    "marginLeft": -512,
+  },
+  "-ml-8": Object {
+    "marginLeft": -64,
+  },
+  "-ml-px": Object {
+    "marginLeft": -1,
+  },
+  "-mr-0": Object {
+    "marginRight": -0,
+  },
+  "-mr-1": Object {
+    "marginRight": -8,
+  },
+  "-mr-10": Object {
+    "marginRight": -80,
+  },
+  "-mr-12": Object {
+    "marginRight": -96,
+  },
+  "-mr-16": Object {
+    "marginRight": -128,
+  },
+  "-mr-2": Object {
+    "marginRight": -16,
+  },
+  "-mr-20": Object {
+    "marginRight": -160,
+  },
+  "-mr-24": Object {
+    "marginRight": -192,
+  },
+  "-mr-3": Object {
+    "marginRight": -24,
+  },
+  "-mr-32": Object {
+    "marginRight": -256,
+  },
+  "-mr-4": Object {
+    "marginRight": -32,
+  },
+  "-mr-40": Object {
+    "marginRight": -320,
+  },
+  "-mr-48": Object {
+    "marginRight": -384,
+  },
+  "-mr-5": Object {
+    "marginRight": -40,
+  },
+  "-mr-56": Object {
+    "marginRight": -448,
+  },
+  "-mr-6": Object {
+    "marginRight": -48,
+  },
+  "-mr-64": Object {
+    "marginRight": -512,
+  },
+  "-mr-8": Object {
+    "marginRight": -64,
+  },
+  "-mr-px": Object {
+    "marginRight": -1,
+  },
+  "-ms-0": Object {
+    "marginStart": -0,
+  },
+  "-ms-1": Object {
+    "marginStart": -8,
+  },
+  "-ms-10": Object {
+    "marginStart": -80,
+  },
+  "-ms-12": Object {
+    "marginStart": -96,
+  },
+  "-ms-16": Object {
+    "marginStart": -128,
+  },
+  "-ms-2": Object {
+    "marginStart": -16,
+  },
+  "-ms-20": Object {
+    "marginStart": -160,
+  },
+  "-ms-24": Object {
+    "marginStart": -192,
+  },
+  "-ms-3": Object {
+    "marginStart": -24,
+  },
+  "-ms-32": Object {
+    "marginStart": -256,
+  },
+  "-ms-4": Object {
+    "marginStart": -32,
+  },
+  "-ms-40": Object {
+    "marginStart": -320,
+  },
+  "-ms-48": Object {
+    "marginStart": -384,
+  },
+  "-ms-5": Object {
+    "marginStart": -40,
+  },
+  "-ms-56": Object {
+    "marginStart": -448,
+  },
+  "-ms-6": Object {
+    "marginStart": -48,
+  },
+  "-ms-64": Object {
+    "marginStart": -512,
+  },
+  "-ms-8": Object {
+    "marginStart": -64,
+  },
+  "-ms-px": Object {
+    "marginStart": -1,
+  },
+  "-mt-0": Object {
+    "marginTop": -0,
+  },
+  "-mt-1": Object {
+    "marginTop": -8,
+  },
+  "-mt-10": Object {
+    "marginTop": -80,
+  },
+  "-mt-12": Object {
+    "marginTop": -96,
+  },
+  "-mt-16": Object {
+    "marginTop": -128,
+  },
+  "-mt-2": Object {
+    "marginTop": -16,
+  },
+  "-mt-20": Object {
+    "marginTop": -160,
+  },
+  "-mt-24": Object {
+    "marginTop": -192,
+  },
+  "-mt-3": Object {
+    "marginTop": -24,
+  },
+  "-mt-32": Object {
+    "marginTop": -256,
+  },
+  "-mt-4": Object {
+    "marginTop": -32,
+  },
+  "-mt-40": Object {
+    "marginTop": -320,
+  },
+  "-mt-48": Object {
+    "marginTop": -384,
+  },
+  "-mt-5": Object {
+    "marginTop": -40,
+  },
+  "-mt-56": Object {
+    "marginTop": -448,
+  },
+  "-mt-6": Object {
+    "marginTop": -48,
+  },
+  "-mt-64": Object {
+    "marginTop": -512,
+  },
+  "-mt-8": Object {
+    "marginTop": -64,
+  },
+  "-mt-px": Object {
+    "marginTop": -1,
+  },
+  "-mx-0": Object {
+    "marginHorizontal": -0,
+  },
+  "-mx-1": Object {
+    "marginHorizontal": -8,
+  },
+  "-mx-10": Object {
+    "marginHorizontal": -80,
+  },
+  "-mx-12": Object {
+    "marginHorizontal": -96,
+  },
+  "-mx-16": Object {
+    "marginHorizontal": -128,
+  },
+  "-mx-2": Object {
+    "marginHorizontal": -16,
+  },
+  "-mx-20": Object {
+    "marginHorizontal": -160,
+  },
+  "-mx-24": Object {
+    "marginHorizontal": -192,
+  },
+  "-mx-3": Object {
+    "marginHorizontal": -24,
+  },
+  "-mx-32": Object {
+    "marginHorizontal": -256,
+  },
+  "-mx-4": Object {
+    "marginHorizontal": -32,
+  },
+  "-mx-40": Object {
+    "marginHorizontal": -320,
+  },
+  "-mx-48": Object {
+    "marginHorizontal": -384,
+  },
+  "-mx-5": Object {
+    "marginHorizontal": -40,
+  },
+  "-mx-56": Object {
+    "marginHorizontal": -448,
+  },
+  "-mx-6": Object {
+    "marginHorizontal": -48,
+  },
+  "-mx-64": Object {
+    "marginHorizontal": -512,
+  },
+  "-mx-8": Object {
+    "marginHorizontal": -64,
+  },
+  "-mx-px": Object {
+    "marginHorizontal": -1,
+  },
+  "-my-0": Object {
+    "marginVertical": -0,
+  },
+  "-my-1": Object {
+    "marginVertical": -8,
+  },
+  "-my-10": Object {
+    "marginVertical": -80,
+  },
+  "-my-12": Object {
+    "marginVertical": -96,
+  },
+  "-my-16": Object {
+    "marginVertical": -128,
+  },
+  "-my-2": Object {
+    "marginVertical": -16,
+  },
+  "-my-20": Object {
+    "marginVertical": -160,
+  },
+  "-my-24": Object {
+    "marginVertical": -192,
+  },
+  "-my-3": Object {
+    "marginVertical": -24,
+  },
+  "-my-32": Object {
+    "marginVertical": -256,
+  },
+  "-my-4": Object {
+    "marginVertical": -32,
+  },
+  "-my-40": Object {
+    "marginVertical": -320,
+  },
+  "-my-48": Object {
+    "marginVertical": -384,
+  },
+  "-my-5": Object {
+    "marginVertical": -40,
+  },
+  "-my-56": Object {
+    "marginVertical": -448,
+  },
+  "-my-6": Object {
+    "marginVertical": -48,
+  },
+  "-my-64": Object {
+    "marginVertical": -512,
+  },
+  "-my-8": Object {
+    "marginVertical": -64,
+  },
+  "-my-px": Object {
+    "marginVertical": -1,
+  },
+  "-rotate-1": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-1deg",
+      },
+    ],
+  },
+  "-rotate-12": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-12deg",
+      },
+    ],
+  },
+  "-rotate-180": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-180deg",
+      },
+    ],
+  },
+  "-rotate-2": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-2deg",
+      },
+    ],
+  },
+  "-rotate-3": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-3deg",
+      },
+    ],
+  },
+  "-rotate-45": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-45deg",
+      },
+    ],
+  },
+  "-rotate-6": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-6deg",
+      },
+    ],
+  },
+  "-rotate-90": Object {
+    "transform": Array [
+      Object {
+        "rotate": "-90deg",
+      },
+    ],
+  },
+  "-rotate-x-1": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-1deg",
+      },
+    ],
+  },
+  "-rotate-x-12": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-12deg",
+      },
+    ],
+  },
+  "-rotate-x-180": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-180deg",
+      },
+    ],
+  },
+  "-rotate-x-2": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-2deg",
+      },
+    ],
+  },
+  "-rotate-x-3": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-3deg",
+      },
+    ],
+  },
+  "-rotate-x-45": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-45deg",
+      },
+    ],
+  },
+  "-rotate-x-6": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-6deg",
+      },
+    ],
+  },
+  "-rotate-x-90": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "-90deg",
+      },
+    ],
+  },
+  "-rotate-y-1": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-1deg",
+      },
+    ],
+  },
+  "-rotate-y-12": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-12deg",
+      },
+    ],
+  },
+  "-rotate-y-180": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-180deg",
+      },
+    ],
+  },
+  "-rotate-y-2": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-2deg",
+      },
+    ],
+  },
+  "-rotate-y-3": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-3deg",
+      },
+    ],
+  },
+  "-rotate-y-45": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-45deg",
+      },
+    ],
+  },
+  "-rotate-y-6": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-6deg",
+      },
+    ],
+  },
+  "-rotate-y-90": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "-90deg",
+      },
+    ],
+  },
+  "-rotate-z-1": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-1deg",
+      },
+    ],
+  },
+  "-rotate-z-12": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-12deg",
+      },
+    ],
+  },
+  "-rotate-z-180": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-180deg",
+      },
+    ],
+  },
+  "-rotate-z-2": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-2deg",
+      },
+    ],
+  },
+  "-rotate-z-3": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-3deg",
+      },
+    ],
+  },
+  "-rotate-z-45": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-45deg",
+      },
+    ],
+  },
+  "-rotate-z-6": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-6deg",
+      },
+    ],
+  },
+  "-rotate-z-90": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "-90deg",
+      },
+    ],
+  },
+  "-skew-x-1": Object {
+    "transform": Array [
+      Object {
+        "skewX": "-1deg",
+      },
+    ],
+  },
+  "-skew-x-12": Object {
+    "transform": Array [
+      Object {
+        "skewX": "-12deg",
+      },
+    ],
+  },
+  "-skew-x-2": Object {
+    "transform": Array [
+      Object {
+        "skewX": "-2deg",
+      },
+    ],
+  },
+  "-skew-x-3": Object {
+    "transform": Array [
+      Object {
+        "skewX": "-3deg",
+      },
+    ],
+  },
+  "-skew-x-6": Object {
+    "transform": Array [
+      Object {
+        "skewX": "-6deg",
+      },
+    ],
+  },
+  "-skew-y-1": Object {
+    "transform": Array [
+      Object {
+        "skewY": "-1deg",
+      },
+    ],
+  },
+  "-skew-y-12": Object {
+    "transform": Array [
+      Object {
+        "skewY": "-12deg",
+      },
+    ],
+  },
+  "-skew-y-2": Object {
+    "transform": Array [
+      Object {
+        "skewY": "-2deg",
+      },
+    ],
+  },
+  "-skew-y-3": Object {
+    "transform": Array [
+      Object {
+        "skewY": "-3deg",
+      },
+    ],
+  },
+  "-skew-y-6": Object {
+    "transform": Array [
+      Object {
+        "skewY": "-6deg",
+      },
+    ],
+  },
+  "-translate-x-0": Object {
+    "transform": Array [
+      Object {
+        "translateX": -0,
+      },
+    ],
+  },
+  "-translate-x-1": Object {
+    "transform": Array [
+      Object {
+        "translateX": -8,
+      },
+    ],
+  },
+  "-translate-x-10": Object {
+    "transform": Array [
+      Object {
+        "translateX": -80,
+      },
+    ],
+  },
+  "-translate-x-12": Object {
+    "transform": Array [
+      Object {
+        "translateX": -96,
+      },
+    ],
+  },
+  "-translate-x-16": Object {
+    "transform": Array [
+      Object {
+        "translateX": -128,
+      },
+    ],
+  },
+  "-translate-x-2": Object {
+    "transform": Array [
+      Object {
+        "translateX": -16,
+      },
+    ],
+  },
+  "-translate-x-20": Object {
+    "transform": Array [
+      Object {
+        "translateX": -160,
+      },
+    ],
+  },
+  "-translate-x-24": Object {
+    "transform": Array [
+      Object {
+        "translateX": -192,
+      },
+    ],
+  },
+  "-translate-x-3": Object {
+    "transform": Array [
+      Object {
+        "translateX": -24,
+      },
+    ],
+  },
+  "-translate-x-32": Object {
+    "transform": Array [
+      Object {
+        "translateX": -256,
+      },
+    ],
+  },
+  "-translate-x-4": Object {
+    "transform": Array [
+      Object {
+        "translateX": -32,
+      },
+    ],
+  },
+  "-translate-x-40": Object {
+    "transform": Array [
+      Object {
+        "translateX": -320,
+      },
+    ],
+  },
+  "-translate-x-48": Object {
+    "transform": Array [
+      Object {
+        "translateX": -384,
+      },
+    ],
+  },
+  "-translate-x-5": Object {
+    "transform": Array [
+      Object {
+        "translateX": -40,
+      },
+    ],
+  },
+  "-translate-x-56": Object {
+    "transform": Array [
+      Object {
+        "translateX": -448,
+      },
+    ],
+  },
+  "-translate-x-6": Object {
+    "transform": Array [
+      Object {
+        "translateX": -48,
+      },
+    ],
+  },
+  "-translate-x-64": Object {
+    "transform": Array [
+      Object {
+        "translateX": -512,
+      },
+    ],
+  },
+  "-translate-x-8": Object {
+    "transform": Array [
+      Object {
+        "translateX": -64,
+      },
+    ],
+  },
+  "-translate-x-px": Object {
+    "transform": Array [
+      Object {
+        "translateX": -1,
+      },
+    ],
+  },
+  "-translate-y-0": Object {
+    "transform": Array [
+      Object {
+        "translateY": -0,
+      },
+    ],
+  },
+  "-translate-y-1": Object {
+    "transform": Array [
+      Object {
+        "translateY": -8,
+      },
+    ],
+  },
+  "-translate-y-10": Object {
+    "transform": Array [
+      Object {
+        "translateY": -80,
+      },
+    ],
+  },
+  "-translate-y-12": Object {
+    "transform": Array [
+      Object {
+        "translateY": -96,
+      },
+    ],
+  },
+  "-translate-y-16": Object {
+    "transform": Array [
+      Object {
+        "translateY": -128,
+      },
+    ],
+  },
+  "-translate-y-2": Object {
+    "transform": Array [
+      Object {
+        "translateY": -16,
+      },
+    ],
+  },
+  "-translate-y-20": Object {
+    "transform": Array [
+      Object {
+        "translateY": -160,
+      },
+    ],
+  },
+  "-translate-y-24": Object {
+    "transform": Array [
+      Object {
+        "translateY": -192,
+      },
+    ],
+  },
+  "-translate-y-3": Object {
+    "transform": Array [
+      Object {
+        "translateY": -24,
+      },
+    ],
+  },
+  "-translate-y-32": Object {
+    "transform": Array [
+      Object {
+        "translateY": -256,
+      },
+    ],
+  },
+  "-translate-y-4": Object {
+    "transform": Array [
+      Object {
+        "translateY": -32,
+      },
+    ],
+  },
+  "-translate-y-40": Object {
+    "transform": Array [
+      Object {
+        "translateY": -320,
+      },
+    ],
+  },
+  "-translate-y-48": Object {
+    "transform": Array [
+      Object {
+        "translateY": -384,
+      },
+    ],
+  },
+  "-translate-y-5": Object {
+    "transform": Array [
+      Object {
+        "translateY": -40,
+      },
+    ],
+  },
+  "-translate-y-56": Object {
+    "transform": Array [
+      Object {
+        "translateY": -448,
+      },
+    ],
+  },
+  "-translate-y-6": Object {
+    "transform": Array [
+      Object {
+        "translateY": -48,
+      },
+    ],
+  },
+  "-translate-y-64": Object {
+    "transform": Array [
+      Object {
+        "translateY": -512,
+      },
+    ],
+  },
+  "-translate-y-8": Object {
+    "transform": Array [
+      Object {
+        "translateY": -64,
+      },
+    ],
+  },
+  "-translate-y-px": Object {
+    "transform": Array [
+      Object {
+        "translateY": -1,
+      },
+    ],
+  },
+  "absolute": Object {
+    "position": "absolute",
+  },
+  "bg-black": Object {
+    "backgroundColor": "black",
+  },
+  "bg-blue-100": Object {
+    "backgroundColor": "#ebf8ff",
+  },
+  "bg-blue-200": Object {
+    "backgroundColor": "#bee3f8",
+  },
+  "bg-blue-300": Object {
+    "backgroundColor": "#90cdf4",
+  },
+  "bg-blue-400": Object {
+    "backgroundColor": "#63b3ed",
+  },
+  "bg-blue-500": Object {
+    "backgroundColor": "#4299e1",
+  },
+  "bg-blue-600": Object {
+    "backgroundColor": "#3182ce",
+  },
+  "bg-blue-700": Object {
+    "backgroundColor": "#2b6cb0",
+  },
+  "bg-blue-800": Object {
+    "backgroundColor": "#2c5282",
+  },
+  "bg-blue-900": Object {
+    "backgroundColor": "#2a4365",
+  },
+  "bg-gray-100": Object {
+    "backgroundColor": "#f7fafc",
+  },
+  "bg-gray-200": Object {
+    "backgroundColor": "#edf2f7",
+  },
+  "bg-gray-300": Object {
+    "backgroundColor": "#e2e8f0",
+  },
+  "bg-gray-400": Object {
+    "backgroundColor": "#cbd5e0",
+  },
+  "bg-gray-500": Object {
+    "backgroundColor": "#a0aec0",
+  },
+  "bg-gray-600": Object {
+    "backgroundColor": "#718096",
+  },
+  "bg-gray-700": Object {
+    "backgroundColor": "#4a5568",
+  },
+  "bg-gray-800": Object {
+    "backgroundColor": "#2d3748",
+  },
+  "bg-gray-900": Object {
+    "backgroundColor": "#1a202c",
+  },
+  "bg-green-100": Object {
+    "backgroundColor": "#f0fff4",
+  },
+  "bg-green-200": Object {
+    "backgroundColor": "#c6f6d5",
+  },
+  "bg-green-300": Object {
+    "backgroundColor": "#9ae6b4",
+  },
+  "bg-green-400": Object {
+    "backgroundColor": "#68d391",
+  },
+  "bg-green-500": Object {
+    "backgroundColor": "#48bb78",
+  },
+  "bg-green-600": Object {
+    "backgroundColor": "#38a169",
+  },
+  "bg-green-700": Object {
+    "backgroundColor": "#2f855a",
+  },
+  "bg-green-800": Object {
+    "backgroundColor": "#276749",
+  },
+  "bg-green-900": Object {
+    "backgroundColor": "#22543d",
+  },
+  "bg-indigo-100": Object {
+    "backgroundColor": "#ebf4ff",
+  },
+  "bg-indigo-200": Object {
+    "backgroundColor": "#c3dafe",
+  },
+  "bg-indigo-300": Object {
+    "backgroundColor": "#a3bffa",
+  },
+  "bg-indigo-400": Object {
+    "backgroundColor": "#7f9cf5",
+  },
+  "bg-indigo-500": Object {
+    "backgroundColor": "#667eea",
+  },
+  "bg-indigo-600": Object {
+    "backgroundColor": "#5a67d8",
+  },
+  "bg-indigo-700": Object {
+    "backgroundColor": "#4c51bf",
+  },
+  "bg-indigo-800": Object {
+    "backgroundColor": "#434190",
+  },
+  "bg-indigo-900": Object {
+    "backgroundColor": "#3c366b",
+  },
+  "bg-orange-100": Object {
+    "backgroundColor": "#fffaf0",
+  },
+  "bg-orange-200": Object {
+    "backgroundColor": "#feebc8",
+  },
+  "bg-orange-300": Object {
+    "backgroundColor": "#fbd38d",
+  },
+  "bg-orange-400": Object {
+    "backgroundColor": "#f6ad55",
+  },
+  "bg-orange-500": Object {
+    "backgroundColor": "#ed8936",
+  },
+  "bg-orange-600": Object {
+    "backgroundColor": "#dd6b20",
+  },
+  "bg-orange-700": Object {
+    "backgroundColor": "#c05621",
+  },
+  "bg-orange-800": Object {
+    "backgroundColor": "#9c4221",
+  },
+  "bg-orange-900": Object {
+    "backgroundColor": "#7b341e",
+  },
+  "bg-pink-100": Object {
+    "backgroundColor": "#fff5f7",
+  },
+  "bg-pink-200": Object {
+    "backgroundColor": "#fed7e2",
+  },
+  "bg-pink-300": Object {
+    "backgroundColor": "#fbb6ce",
+  },
+  "bg-pink-400": Object {
+    "backgroundColor": "#f687b3",
+  },
+  "bg-pink-500": Object {
+    "backgroundColor": "#ed64a6",
+  },
+  "bg-pink-600": Object {
+    "backgroundColor": "#d53f8c",
+  },
+  "bg-pink-700": Object {
+    "backgroundColor": "#b83280",
+  },
+  "bg-pink-800": Object {
+    "backgroundColor": "#97266d",
+  },
+  "bg-pink-900": Object {
+    "backgroundColor": "#702459",
+  },
+  "bg-purple-100": Object {
+    "backgroundColor": "#faf5ff",
+  },
+  "bg-purple-200": Object {
+    "backgroundColor": "#e9d8fd",
+  },
+  "bg-purple-300": Object {
+    "backgroundColor": "#d6bcfa",
+  },
+  "bg-purple-400": Object {
+    "backgroundColor": "#b794f4",
+  },
+  "bg-purple-500": Object {
+    "backgroundColor": "#9f7aea",
+  },
+  "bg-purple-600": Object {
+    "backgroundColor": "#805ad5",
+  },
+  "bg-purple-700": Object {
+    "backgroundColor": "#6b46c1",
+  },
+  "bg-purple-800": Object {
+    "backgroundColor": "#553c9a",
+  },
+  "bg-purple-900": Object {
+    "backgroundColor": "#44337a",
+  },
+  "bg-red-100": Object {
+    "backgroundColor": "#fff5f5",
+  },
+  "bg-red-200": Object {
+    "backgroundColor": "#fed7d7",
+  },
+  "bg-red-300": Object {
+    "backgroundColor": "#feb2b2",
+  },
+  "bg-red-400": Object {
+    "backgroundColor": "#fc8181",
+  },
+  "bg-red-500": Object {
+    "backgroundColor": "#f56565",
+  },
+  "bg-red-600": Object {
+    "backgroundColor": "#e53e3e",
+  },
+  "bg-red-700": Object {
+    "backgroundColor": "#c53030",
+  },
+  "bg-red-800": Object {
+    "backgroundColor": "#9b2c2c",
+  },
+  "bg-red-900": Object {
+    "backgroundColor": "#742a2a",
+  },
+  "bg-teal-100": Object {
+    "backgroundColor": "#e6fffa",
+  },
+  "bg-teal-200": Object {
+    "backgroundColor": "#b2f5ea",
+  },
+  "bg-teal-300": Object {
+    "backgroundColor": "#81e6d9",
+  },
+  "bg-teal-400": Object {
+    "backgroundColor": "#4fd1c5",
+  },
+  "bg-teal-500": Object {
+    "backgroundColor": "#38b2ac",
+  },
+  "bg-teal-600": Object {
+    "backgroundColor": "#319795",
+  },
+  "bg-teal-700": Object {
+    "backgroundColor": "#2c7a7b",
+  },
+  "bg-teal-800": Object {
+    "backgroundColor": "#285e61",
+  },
+  "bg-teal-900": Object {
+    "backgroundColor": "#234e52",
+  },
+  "bg-transparent": Object {
+    "backgroundColor": "transparent",
+  },
+  "bg-white": Object {
+    "backgroundColor": "white",
+  },
+  "bg-yellow-100": Object {
+    "backgroundColor": "#fffff0",
+  },
+  "bg-yellow-200": Object {
+    "backgroundColor": "#fefcbf",
+  },
+  "bg-yellow-300": Object {
+    "backgroundColor": "#faf089",
+  },
+  "bg-yellow-400": Object {
+    "backgroundColor": "#f6e05e",
+  },
+  "bg-yellow-500": Object {
+    "backgroundColor": "#ecc94b",
+  },
+  "bg-yellow-600": Object {
+    "backgroundColor": "#d69e2e",
+  },
+  "bg-yellow-700": Object {
+    "backgroundColor": "#b7791f",
+  },
+  "bg-yellow-800": Object {
+    "backgroundColor": "#975a16",
+  },
+  "bg-yellow-900": Object {
+    "backgroundColor": "#744210",
+  },
+  "border": Object {
+    "borderWidth": 1,
+  },
+  "border-0": Object {
+    "borderWidth": 0,
+  },
+  "border-2": Object {
+    "borderWidth": 2,
+  },
+  "border-4": Object {
+    "borderWidth": 4,
+  },
+  "border-8": Object {
+    "borderWidth": 8,
+  },
+  "border-b": Object {
+    "borderBottomWidth": 1,
+  },
+  "border-b-0": Object {
+    "borderBottomWidth": 0,
+  },
+  "border-b-2": Object {
+    "borderBottomWidth": 2,
+  },
+  "border-b-4": Object {
+    "borderBottomWidth": 4,
+  },
+  "border-b-8": Object {
+    "borderBottomWidth": 8,
+  },
+  "border-black": Object {
+    "borderColor": "black",
+  },
+  "border-blue-100": Object {
+    "borderColor": "#ebf8ff",
+  },
+  "border-blue-200": Object {
+    "borderColor": "#bee3f8",
+  },
+  "border-blue-300": Object {
+    "borderColor": "#90cdf4",
+  },
+  "border-blue-400": Object {
+    "borderColor": "#63b3ed",
+  },
+  "border-blue-500": Object {
+    "borderColor": "#4299e1",
+  },
+  "border-blue-600": Object {
+    "borderColor": "#3182ce",
+  },
+  "border-blue-700": Object {
+    "borderColor": "#2b6cb0",
+  },
+  "border-blue-800": Object {
+    "borderColor": "#2c5282",
+  },
+  "border-blue-900": Object {
+    "borderColor": "#2a4365",
+  },
+  "border-dashed": Object {
+    "borderStyle": "dashed",
+  },
+  "border-dotted": Object {
+    "borderStyle": "dotted",
+  },
+  "border-e": Object {
+    "borderEndWidth": 1,
+  },
+  "border-e-0": Object {
+    "borderEndWidth": 0,
+  },
+  "border-e-2": Object {
+    "borderEndWidth": 2,
+  },
+  "border-e-4": Object {
+    "borderEndWidth": 4,
+  },
+  "border-e-8": Object {
+    "borderEndWidth": 8,
+  },
+  "border-gray-100": Object {
+    "borderColor": "#f7fafc",
+  },
+  "border-gray-200": Object {
+    "borderColor": "#edf2f7",
+  },
+  "border-gray-300": Object {
+    "borderColor": "#e2e8f0",
+  },
+  "border-gray-400": Object {
+    "borderColor": "#cbd5e0",
+  },
+  "border-gray-500": Object {
+    "borderColor": "#a0aec0",
+  },
+  "border-gray-600": Object {
+    "borderColor": "#718096",
+  },
+  "border-gray-700": Object {
+    "borderColor": "#4a5568",
+  },
+  "border-gray-800": Object {
+    "borderColor": "#2d3748",
+  },
+  "border-gray-900": Object {
+    "borderColor": "#1a202c",
+  },
+  "border-green-100": Object {
+    "borderColor": "#f0fff4",
+  },
+  "border-green-200": Object {
+    "borderColor": "#c6f6d5",
+  },
+  "border-green-300": Object {
+    "borderColor": "#9ae6b4",
+  },
+  "border-green-400": Object {
+    "borderColor": "#68d391",
+  },
+  "border-green-500": Object {
+    "borderColor": "#48bb78",
+  },
+  "border-green-600": Object {
+    "borderColor": "#38a169",
+  },
+  "border-green-700": Object {
+    "borderColor": "#2f855a",
+  },
+  "border-green-800": Object {
+    "borderColor": "#276749",
+  },
+  "border-green-900": Object {
+    "borderColor": "#22543d",
+  },
+  "border-indigo-100": Object {
+    "borderColor": "#ebf4ff",
+  },
+  "border-indigo-200": Object {
+    "borderColor": "#c3dafe",
+  },
+  "border-indigo-300": Object {
+    "borderColor": "#a3bffa",
+  },
+  "border-indigo-400": Object {
+    "borderColor": "#7f9cf5",
+  },
+  "border-indigo-500": Object {
+    "borderColor": "#667eea",
+  },
+  "border-indigo-600": Object {
+    "borderColor": "#5a67d8",
+  },
+  "border-indigo-700": Object {
+    "borderColor": "#4c51bf",
+  },
+  "border-indigo-800": Object {
+    "borderColor": "#434190",
+  },
+  "border-indigo-900": Object {
+    "borderColor": "#3c366b",
+  },
+  "border-l": Object {
+    "borderLeftWidth": 1,
+  },
+  "border-l-0": Object {
+    "borderLeftWidth": 0,
+  },
+  "border-l-2": Object {
+    "borderLeftWidth": 2,
+  },
+  "border-l-4": Object {
+    "borderLeftWidth": 4,
+  },
+  "border-l-8": Object {
+    "borderLeftWidth": 8,
+  },
+  "border-orange-100": Object {
+    "borderColor": "#fffaf0",
+  },
+  "border-orange-200": Object {
+    "borderColor": "#feebc8",
+  },
+  "border-orange-300": Object {
+    "borderColor": "#fbd38d",
+  },
+  "border-orange-400": Object {
+    "borderColor": "#f6ad55",
+  },
+  "border-orange-500": Object {
+    "borderColor": "#ed8936",
+  },
+  "border-orange-600": Object {
+    "borderColor": "#dd6b20",
+  },
+  "border-orange-700": Object {
+    "borderColor": "#c05621",
+  },
+  "border-orange-800": Object {
+    "borderColor": "#9c4221",
+  },
+  "border-orange-900": Object {
+    "borderColor": "#7b341e",
+  },
+  "border-pink-100": Object {
+    "borderColor": "#fff5f7",
+  },
+  "border-pink-200": Object {
+    "borderColor": "#fed7e2",
+  },
+  "border-pink-300": Object {
+    "borderColor": "#fbb6ce",
+  },
+  "border-pink-400": Object {
+    "borderColor": "#f687b3",
+  },
+  "border-pink-500": Object {
+    "borderColor": "#ed64a6",
+  },
+  "border-pink-600": Object {
+    "borderColor": "#d53f8c",
+  },
+  "border-pink-700": Object {
+    "borderColor": "#b83280",
+  },
+  "border-pink-800": Object {
+    "borderColor": "#97266d",
+  },
+  "border-pink-900": Object {
+    "borderColor": "#702459",
+  },
+  "border-purple-100": Object {
+    "borderColor": "#faf5ff",
+  },
+  "border-purple-200": Object {
+    "borderColor": "#e9d8fd",
+  },
+  "border-purple-300": Object {
+    "borderColor": "#d6bcfa",
+  },
+  "border-purple-400": Object {
+    "borderColor": "#b794f4",
+  },
+  "border-purple-500": Object {
+    "borderColor": "#9f7aea",
+  },
+  "border-purple-600": Object {
+    "borderColor": "#805ad5",
+  },
+  "border-purple-700": Object {
+    "borderColor": "#6b46c1",
+  },
+  "border-purple-800": Object {
+    "borderColor": "#553c9a",
+  },
+  "border-purple-900": Object {
+    "borderColor": "#44337a",
+  },
+  "border-r": Object {
+    "borderRightWidth": 1,
+  },
+  "border-r-0": Object {
+    "borderRightWidth": 0,
+  },
+  "border-r-2": Object {
+    "borderRightWidth": 2,
+  },
+  "border-r-4": Object {
+    "borderRightWidth": 4,
+  },
+  "border-r-8": Object {
+    "borderRightWidth": 8,
+  },
+  "border-red-100": Object {
+    "borderColor": "#fff5f5",
+  },
+  "border-red-200": Object {
+    "borderColor": "#fed7d7",
+  },
+  "border-red-300": Object {
+    "borderColor": "#feb2b2",
+  },
+  "border-red-400": Object {
+    "borderColor": "#fc8181",
+  },
+  "border-red-500": Object {
+    "borderColor": "#f56565",
+  },
+  "border-red-600": Object {
+    "borderColor": "#e53e3e",
+  },
+  "border-red-700": Object {
+    "borderColor": "#c53030",
+  },
+  "border-red-800": Object {
+    "borderColor": "#9b2c2c",
+  },
+  "border-red-900": Object {
+    "borderColor": "#742a2a",
+  },
+  "border-s": Object {
+    "borderStartWidth": 1,
+  },
+  "border-s-0": Object {
+    "borderStartWidth": 0,
+  },
+  "border-s-2": Object {
+    "borderStartWidth": 2,
+  },
+  "border-s-4": Object {
+    "borderStartWidth": 4,
+  },
+  "border-s-8": Object {
+    "borderStartWidth": 8,
+  },
+  "border-solid": Object {
+    "borderStyle": "solid",
+  },
+  "border-t": Object {
+    "borderTopWidth": 1,
+  },
+  "border-t-0": Object {
+    "borderTopWidth": 0,
+  },
+  "border-t-2": Object {
+    "borderTopWidth": 2,
+  },
+  "border-t-4": Object {
+    "borderTopWidth": 4,
+  },
+  "border-t-8": Object {
+    "borderTopWidth": 8,
+  },
+  "border-teal-100": Object {
+    "borderColor": "#e6fffa",
+  },
+  "border-teal-200": Object {
+    "borderColor": "#b2f5ea",
+  },
+  "border-teal-300": Object {
+    "borderColor": "#81e6d9",
+  },
+  "border-teal-400": Object {
+    "borderColor": "#4fd1c5",
+  },
+  "border-teal-500": Object {
+    "borderColor": "#38b2ac",
+  },
+  "border-teal-600": Object {
+    "borderColor": "#319795",
+  },
+  "border-teal-700": Object {
+    "borderColor": "#2c7a7b",
+  },
+  "border-teal-800": Object {
+    "borderColor": "#285e61",
+  },
+  "border-teal-900": Object {
+    "borderColor": "#234e52",
+  },
+  "border-transparent": Object {
+    "borderColor": "transparent",
+  },
+  "border-white": Object {
+    "borderColor": "white",
+  },
+  "border-yellow-100": Object {
+    "borderColor": "#fffff0",
+  },
+  "border-yellow-200": Object {
+    "borderColor": "#fefcbf",
+  },
+  "border-yellow-300": Object {
+    "borderColor": "#faf089",
+  },
+  "border-yellow-400": Object {
+    "borderColor": "#f6e05e",
+  },
+  "border-yellow-500": Object {
+    "borderColor": "#ecc94b",
+  },
+  "border-yellow-600": Object {
+    "borderColor": "#d69e2e",
+  },
+  "border-yellow-700": Object {
+    "borderColor": "#b7791f",
+  },
+  "border-yellow-800": Object {
+    "borderColor": "#975a16",
+  },
+  "border-yellow-900": Object {
+    "borderColor": "#744210",
+  },
+  "bottom-0": Object {
+    "bottom": 0,
+  },
+  "capitalize": Object {
+    "textTransform": "capitalize",
+  },
+  "content-around": Object {
+    "alignContent": "space-around",
+  },
+  "content-between": Object {
+    "alignContent": "space-between",
+  },
+  "content-center": Object {
+    "alignContent": "center",
+  },
+  "content-end": Object {
+    "alignContent": "flex-end",
+  },
+  "content-start": Object {
+    "alignContent": "flex-start",
+  },
+  "content-stretch": Object {
+    "alignContent": "stretch",
+  },
+  "flex": Object {
+    "display": "flex",
+  },
+  "flex-1": Object {
+    "flexBasis": "0%",
+    "flexGrow": 1,
+    "flexShrink": 1,
+  },
+  "flex-auto": Object {
+    "flexBasis": "auto",
+    "flexGrow": 1,
+    "flexShrink": 1,
+  },
+  "flex-col": Object {
+    "flexDirection": "column",
+  },
+  "flex-col-reverse": Object {
+    "flexDirection": "column-reverse",
+  },
+  "flex-grow": Object {
+    "flexGrow": 1,
+  },
+  "flex-grow-0": Object {
+    "flexGrow": 0,
+  },
+  "flex-initial": Object {
+    "flexBasis": "auto",
+    "flexGrow": 0,
+    "flexShrink": 1,
+  },
+  "flex-no-wrap": Object {
+    "flexWrap": "nowrap",
+  },
+  "flex-none": Object {
+    "flexBasis": "auto",
+    "flexGrow": 0,
+    "flexShrink": 0,
+  },
+  "flex-row": Object {
+    "flexDirection": "row",
+  },
+  "flex-row-reverse": Object {
+    "flexDirection": "row-reverse",
+  },
+  "flex-shrink": Object {
+    "flexShrink": 1,
+  },
+  "flex-shrink-0": Object {
+    "flexShrink": 0,
+  },
+  "flex-wrap": Object {
+    "flexWrap": "wrap",
+  },
+  "flex-wrap-reverse": Object {
+    "flexWrap": "wrap-reverse",
+  },
+  "font-black": Object {
+    "fontWeight": "900",
+  },
+  "font-bold": Object {
+    "fontWeight": "700",
+  },
+  "font-extrabold": Object {
+    "fontWeight": "800",
+  },
+  "font-hairline": Object {
+    "fontWeight": "100",
+  },
+  "font-light": Object {
+    "fontWeight": "300",
+  },
+  "font-medium": Object {
+    "fontWeight": "500",
+  },
+  "font-normal": Object {
+    "fontWeight": "400",
+  },
+  "font-semibold": Object {
+    "fontWeight": "600",
+  },
+  "font-thin": Object {
+    "fontWeight": "200",
+  },
+  "h-0": Object {
+    "height": 0,
+  },
+  "h-1": Object {
+    "height": 8,
+  },
+  "h-10": Object {
+    "height": 80,
+  },
+  "h-12": Object {
+    "height": 96,
+  },
+  "h-16": Object {
+    "height": 128,
+  },
+  "h-2": Object {
+    "height": 16,
+  },
+  "h-20": Object {
+    "height": 160,
+  },
+  "h-24": Object {
+    "height": 192,
+  },
+  "h-3": Object {
+    "height": 24,
+  },
+  "h-32": Object {
+    "height": 256,
+  },
+  "h-4": Object {
+    "height": 32,
+  },
+  "h-40": Object {
+    "height": 320,
+  },
+  "h-48": Object {
+    "height": 384,
+  },
+  "h-5": Object {
+    "height": 40,
+  },
+  "h-56": Object {
+    "height": 448,
+  },
+  "h-6": Object {
+    "height": 48,
+  },
+  "h-64": Object {
+    "height": 512,
+  },
+  "h-8": Object {
+    "height": 64,
+  },
+  "h-px": Object {
+    "height": 1,
+  },
+  "hidden": Object {
+    "display": "none",
+  },
+  "inset-0": Object {
+    "bottom": 0,
+    "left": 0,
+    "right": 0,
+    "top": 0,
+  },
+  "inset-x-0": Object {
+    "left": 0,
+    "right": 0,
+  },
+  "inset-y-0": Object {
+    "bottom": 0,
+    "top": 0,
+  },
+  "italic": Object {
+    "fontStyle": "italic",
+  },
+  "items-baseline": Object {
+    "alignItems": "baseline",
+  },
+  "items-center": Object {
+    "alignItems": "center",
+  },
+  "items-end": Object {
+    "alignItems": "flex-end",
+  },
+  "items-start": Object {
+    "alignItems": "flex-start",
+  },
+  "items-stretch": Object {
+    "alignItems": "stretch",
+  },
+  "justify-around": Object {
+    "justifyContent": "space-around",
+  },
+  "justify-between": Object {
+    "justifyContent": "space-between",
+  },
+  "justify-center": Object {
+    "justifyContent": "center",
+  },
+  "justify-end": Object {
+    "justifyContent": "flex-end",
+  },
+  "justify-evenly": Object {
+    "justifyContent": "space-evenly",
+  },
+  "justify-start": Object {
+    "justifyContent": "flex-start",
+  },
+  "left-0": Object {
+    "left": 0,
+  },
+  "letter-normal": Object {
+    "letterSpacing": 0,
+  },
+  "letter-tight": Object {
+    "letterSpacing": -0.8,
+  },
+  "letter-tighter": Object {
+    "letterSpacing": -1.6,
+  },
+  "letter-wide": Object {
+    "letterSpacing": 0.8,
+  },
+  "letter-wider": Object {
+    "letterSpacing": 1.6,
+  },
+  "letter-widest": Object {
+    "letterSpacing": 3.2,
+  },
+  "line-h-10": Object {
+    "lineHeight": 80,
+  },
+  "line-h-3": Object {
+    "lineHeight": 24,
+  },
+  "line-h-4": Object {
+    "lineHeight": 32,
+  },
+  "line-h-5": Object {
+    "lineHeight": 40,
+  },
+  "line-h-6": Object {
+    "lineHeight": 48,
+  },
+  "line-h-7": Object {
+    "lineHeight": 56,
+  },
+  "line-h-8": Object {
+    "lineHeight": 64,
+  },
+  "line-h-9": Object {
+    "lineHeight": 72,
+  },
+  "line-h-loose": Object {
+    "lineHeight": 2,
+  },
+  "line-h-none": Object {
+    "lineHeight": 1,
+  },
+  "line-h-normal": Object {
+    "lineHeight": 1.5,
+  },
+  "line-h-relaxed": Object {
+    "lineHeight": 1.625,
+  },
+  "line-h-snug": Object {
+    "lineHeight": 1.375,
+  },
+  "line-h-tight": Object {
+    "lineHeight": 1.25,
+  },
+  "line-through": Object {
+    "textDecorationLine": "line-through",
+  },
+  "lining-nums": Object {
+    "fontVariant": Array [
+      "lining-nums",
+    ],
+  },
+  "lowercase": Object {
+    "textTransform": "lowercase",
+  },
+  "m-0": Object {
+    "margin": 0,
+  },
+  "m-1": Object {
+    "margin": 8,
+  },
+  "m-10": Object {
+    "margin": 80,
+  },
+  "m-12": Object {
+    "margin": 96,
+  },
+  "m-16": Object {
+    "margin": 128,
+  },
+  "m-2": Object {
+    "margin": 16,
+  },
+  "m-20": Object {
+    "margin": 160,
+  },
+  "m-24": Object {
+    "margin": 192,
+  },
+  "m-3": Object {
+    "margin": 24,
+  },
+  "m-32": Object {
+    "margin": 256,
+  },
+  "m-4": Object {
+    "margin": 32,
+  },
+  "m-40": Object {
+    "margin": 320,
+  },
+  "m-48": Object {
+    "margin": 384,
+  },
+  "m-5": Object {
+    "margin": 40,
+  },
+  "m-56": Object {
+    "margin": 448,
+  },
+  "m-6": Object {
+    "margin": 48,
+  },
+  "m-64": Object {
+    "margin": 512,
+  },
+  "m-8": Object {
+    "margin": 64,
+  },
+  "m-px": Object {
+    "margin": 1,
+  },
+  "max-h-full": Object {
+    "maxHeight": "100%",
+  },
+  "max-w-2xl": Object {
+    "maxWidth": 1344,
+  },
+  "max-w-3xl": Object {
+    "maxWidth": 1536,
+  },
+  "max-w-4xl": Object {
+    "maxWidth": 1792,
+  },
+  "max-w-5xl": Object {
+    "maxWidth": 2048,
+  },
+  "max-w-6xl": Object {
+    "maxWidth": 2304,
+  },
+  "max-w-full": Object {
+    "maxWidth": "100%",
+  },
+  "max-w-lg": Object {
+    "maxWidth": 1024,
+  },
+  "max-w-md": Object {
+    "maxWidth": 896,
+  },
+  "max-w-none": Object {
+    "maxWidth": "none",
+  },
+  "max-w-sm": Object {
+    "maxWidth": 768,
+  },
+  "max-w-xl": Object {
+    "maxWidth": 1152,
+  },
+  "max-w-xs": Object {
+    "maxWidth": 640,
+  },
+  "mb-0": Object {
+    "marginBottom": 0,
+  },
+  "mb-1": Object {
+    "marginBottom": 8,
+  },
+  "mb-10": Object {
+    "marginBottom": 80,
+  },
+  "mb-12": Object {
+    "marginBottom": 96,
+  },
+  "mb-16": Object {
+    "marginBottom": 128,
+  },
+  "mb-2": Object {
+    "marginBottom": 16,
+  },
+  "mb-20": Object {
+    "marginBottom": 160,
+  },
+  "mb-24": Object {
+    "marginBottom": 192,
+  },
+  "mb-3": Object {
+    "marginBottom": 24,
+  },
+  "mb-32": Object {
+    "marginBottom": 256,
+  },
+  "mb-4": Object {
+    "marginBottom": 32,
+  },
+  "mb-40": Object {
+    "marginBottom": 320,
+  },
+  "mb-48": Object {
+    "marginBottom": 384,
+  },
+  "mb-5": Object {
+    "marginBottom": 40,
+  },
+  "mb-56": Object {
+    "marginBottom": 448,
+  },
+  "mb-6": Object {
+    "marginBottom": 48,
+  },
+  "mb-64": Object {
+    "marginBottom": 512,
+  },
+  "mb-8": Object {
+    "marginBottom": 64,
+  },
+  "mb-px": Object {
+    "marginBottom": 1,
+  },
+  "me-0": Object {
+    "marginEnd": 0,
+  },
+  "me-1": Object {
+    "marginEnd": 8,
+  },
+  "me-10": Object {
+    "marginEnd": 80,
+  },
+  "me-12": Object {
+    "marginEnd": 96,
+  },
+  "me-16": Object {
+    "marginEnd": 128,
+  },
+  "me-2": Object {
+    "marginEnd": 16,
+  },
+  "me-20": Object {
+    "marginEnd": 160,
+  },
+  "me-24": Object {
+    "marginEnd": 192,
+  },
+  "me-3": Object {
+    "marginEnd": 24,
+  },
+  "me-32": Object {
+    "marginEnd": 256,
+  },
+  "me-4": Object {
+    "marginEnd": 32,
+  },
+  "me-40": Object {
+    "marginEnd": 320,
+  },
+  "me-48": Object {
+    "marginEnd": 384,
+  },
+  "me-5": Object {
+    "marginEnd": 40,
+  },
+  "me-56": Object {
+    "marginEnd": 448,
+  },
+  "me-6": Object {
+    "marginEnd": 48,
+  },
+  "me-64": Object {
+    "marginEnd": 512,
+  },
+  "me-8": Object {
+    "marginEnd": 64,
+  },
+  "me-px": Object {
+    "marginEnd": 1,
+  },
+  "min-h-0": Object {
+    "minHeight": 0,
+  },
+  "min-h-full": Object {
+    "minHeight": "100%",
+  },
+  "min-w-0": Object {
+    "minWidth": 0,
+  },
+  "min-w-full": Object {
+    "minWidth": "100%",
+  },
+  "ml-0": Object {
+    "marginLeft": 0,
+  },
+  "ml-1": Object {
+    "marginLeft": 8,
+  },
+  "ml-10": Object {
+    "marginLeft": 80,
+  },
+  "ml-12": Object {
+    "marginLeft": 96,
+  },
+  "ml-16": Object {
+    "marginLeft": 128,
+  },
+  "ml-2": Object {
+    "marginLeft": 16,
+  },
+  "ml-20": Object {
+    "marginLeft": 160,
+  },
+  "ml-24": Object {
+    "marginLeft": 192,
+  },
+  "ml-3": Object {
+    "marginLeft": 24,
+  },
+  "ml-32": Object {
+    "marginLeft": 256,
+  },
+  "ml-4": Object {
+    "marginLeft": 32,
+  },
+  "ml-40": Object {
+    "marginLeft": 320,
+  },
+  "ml-48": Object {
+    "marginLeft": 384,
+  },
+  "ml-5": Object {
+    "marginLeft": 40,
+  },
+  "ml-56": Object {
+    "marginLeft": 448,
+  },
+  "ml-6": Object {
+    "marginLeft": 48,
+  },
+  "ml-64": Object {
+    "marginLeft": 512,
+  },
+  "ml-8": Object {
+    "marginLeft": 64,
+  },
+  "ml-px": Object {
+    "marginLeft": 1,
+  },
+  "mr-0": Object {
+    "marginRight": 0,
+  },
+  "mr-1": Object {
+    "marginRight": 8,
+  },
+  "mr-10": Object {
+    "marginRight": 80,
+  },
+  "mr-12": Object {
+    "marginRight": 96,
+  },
+  "mr-16": Object {
+    "marginRight": 128,
+  },
+  "mr-2": Object {
+    "marginRight": 16,
+  },
+  "mr-20": Object {
+    "marginRight": 160,
+  },
+  "mr-24": Object {
+    "marginRight": 192,
+  },
+  "mr-3": Object {
+    "marginRight": 24,
+  },
+  "mr-32": Object {
+    "marginRight": 256,
+  },
+  "mr-4": Object {
+    "marginRight": 32,
+  },
+  "mr-40": Object {
+    "marginRight": 320,
+  },
+  "mr-48": Object {
+    "marginRight": 384,
+  },
+  "mr-5": Object {
+    "marginRight": 40,
+  },
+  "mr-56": Object {
+    "marginRight": 448,
+  },
+  "mr-6": Object {
+    "marginRight": 48,
+  },
+  "mr-64": Object {
+    "marginRight": 512,
+  },
+  "mr-8": Object {
+    "marginRight": 64,
+  },
+  "mr-px": Object {
+    "marginRight": 1,
+  },
+  "ms-0": Object {
+    "marginStart": 0,
+  },
+  "ms-1": Object {
+    "marginStart": 8,
+  },
+  "ms-10": Object {
+    "marginStart": 80,
+  },
+  "ms-12": Object {
+    "marginStart": 96,
+  },
+  "ms-16": Object {
+    "marginStart": 128,
+  },
+  "ms-2": Object {
+    "marginStart": 16,
+  },
+  "ms-20": Object {
+    "marginStart": 160,
+  },
+  "ms-24": Object {
+    "marginStart": 192,
+  },
+  "ms-3": Object {
+    "marginStart": 24,
+  },
+  "ms-32": Object {
+    "marginStart": 256,
+  },
+  "ms-4": Object {
+    "marginStart": 32,
+  },
+  "ms-40": Object {
+    "marginStart": 320,
+  },
+  "ms-48": Object {
+    "marginStart": 384,
+  },
+  "ms-5": Object {
+    "marginStart": 40,
+  },
+  "ms-56": Object {
+    "marginStart": 448,
+  },
+  "ms-6": Object {
+    "marginStart": 48,
+  },
+  "ms-64": Object {
+    "marginStart": 512,
+  },
+  "ms-8": Object {
+    "marginStart": 64,
+  },
+  "ms-px": Object {
+    "marginStart": 1,
+  },
+  "mt-0": Object {
+    "marginTop": 0,
+  },
+  "mt-1": Object {
+    "marginTop": 8,
+  },
+  "mt-10": Object {
+    "marginTop": 80,
+  },
+  "mt-12": Object {
+    "marginTop": 96,
+  },
+  "mt-16": Object {
+    "marginTop": 128,
+  },
+  "mt-2": Object {
+    "marginTop": 16,
+  },
+  "mt-20": Object {
+    "marginTop": 160,
+  },
+  "mt-24": Object {
+    "marginTop": 192,
+  },
+  "mt-3": Object {
+    "marginTop": 24,
+  },
+  "mt-32": Object {
+    "marginTop": 256,
+  },
+  "mt-4": Object {
+    "marginTop": 32,
+  },
+  "mt-40": Object {
+    "marginTop": 320,
+  },
+  "mt-48": Object {
+    "marginTop": 384,
+  },
+  "mt-5": Object {
+    "marginTop": 40,
+  },
+  "mt-56": Object {
+    "marginTop": 448,
+  },
+  "mt-6": Object {
+    "marginTop": 48,
+  },
+  "mt-64": Object {
+    "marginTop": 512,
+  },
+  "mt-8": Object {
+    "marginTop": 64,
+  },
+  "mt-px": Object {
+    "marginTop": 1,
+  },
+  "mx-0": Object {
+    "marginHorizontal": 0,
+  },
+  "mx-1": Object {
+    "marginHorizontal": 8,
+  },
+  "mx-10": Object {
+    "marginHorizontal": 80,
+  },
+  "mx-12": Object {
+    "marginHorizontal": 96,
+  },
+  "mx-16": Object {
+    "marginHorizontal": 128,
+  },
+  "mx-2": Object {
+    "marginHorizontal": 16,
+  },
+  "mx-20": Object {
+    "marginHorizontal": 160,
+  },
+  "mx-24": Object {
+    "marginHorizontal": 192,
+  },
+  "mx-3": Object {
+    "marginHorizontal": 24,
+  },
+  "mx-32": Object {
+    "marginHorizontal": 256,
+  },
+  "mx-4": Object {
+    "marginHorizontal": 32,
+  },
+  "mx-40": Object {
+    "marginHorizontal": 320,
+  },
+  "mx-48": Object {
+    "marginHorizontal": 384,
+  },
+  "mx-5": Object {
+    "marginHorizontal": 40,
+  },
+  "mx-56": Object {
+    "marginHorizontal": 448,
+  },
+  "mx-6": Object {
+    "marginHorizontal": 48,
+  },
+  "mx-64": Object {
+    "marginHorizontal": 512,
+  },
+  "mx-8": Object {
+    "marginHorizontal": 64,
+  },
+  "mx-px": Object {
+    "marginHorizontal": 1,
+  },
+  "my-0": Object {
+    "marginVertical": 0,
+  },
+  "my-1": Object {
+    "marginVertical": 8,
+  },
+  "my-10": Object {
+    "marginVertical": 80,
+  },
+  "my-12": Object {
+    "marginVertical": 96,
+  },
+  "my-16": Object {
+    "marginVertical": 128,
+  },
+  "my-2": Object {
+    "marginVertical": 16,
+  },
+  "my-20": Object {
+    "marginVertical": 160,
+  },
+  "my-24": Object {
+    "marginVertical": 192,
+  },
+  "my-3": Object {
+    "marginVertical": 24,
+  },
+  "my-32": Object {
+    "marginVertical": 256,
+  },
+  "my-4": Object {
+    "marginVertical": 32,
+  },
+  "my-40": Object {
+    "marginVertical": 320,
+  },
+  "my-48": Object {
+    "marginVertical": 384,
+  },
+  "my-5": Object {
+    "marginVertical": 40,
+  },
+  "my-56": Object {
+    "marginVertical": 448,
+  },
+  "my-6": Object {
+    "marginVertical": 48,
+  },
+  "my-64": Object {
+    "marginVertical": 512,
+  },
+  "my-8": Object {
+    "marginVertical": 64,
+  },
+  "my-px": Object {
+    "marginVertical": 1,
+  },
+  "no-underline": Object {
+    "textDecorationLine": "none",
+  },
+  "normal-case": Object {
+    "textTransform": "none",
+  },
+  "not-italic": Object {
+    "fontStyle": "normal",
+  },
+  "oldstyle-nums": Object {
+    "fontVariant": Array [
+      "oldstyle-nums",
+    ],
+  },
+  "opacity-0": Object {
+    "opacity": 0,
+  },
+  "opacity-100": Object {
+    "opacity": 1,
+  },
+  "opacity-25": Object {
+    "opacity": 0.25,
+  },
+  "opacity-50": Object {
+    "opacity": 0.5,
+  },
+  "opacity-75": Object {
+    "opacity": 0.75,
+  },
+  "overflow-hidden": Object {
+    "overflow": "hidden",
+  },
+  "overflow-scroll": Object {
+    "overflow": "scroll",
+  },
+  "overflow-visible": Object {
+    "overflow": "visible",
+  },
+  "p-0": Object {
+    "padding": 0,
+  },
+  "p-1": Object {
+    "padding": 8,
+  },
+  "p-10": Object {
+    "padding": 80,
+  },
+  "p-12": Object {
+    "padding": 96,
+  },
+  "p-16": Object {
+    "padding": 128,
+  },
+  "p-2": Object {
+    "padding": 16,
+  },
+  "p-20": Object {
+    "padding": 160,
+  },
+  "p-24": Object {
+    "padding": 192,
+  },
+  "p-3": Object {
+    "padding": 24,
+  },
+  "p-32": Object {
+    "padding": 256,
+  },
+  "p-4": Object {
+    "padding": 32,
+  },
+  "p-40": Object {
+    "padding": 320,
+  },
+  "p-48": Object {
+    "padding": 384,
+  },
+  "p-5": Object {
+    "padding": 40,
+  },
+  "p-56": Object {
+    "padding": 448,
+  },
+  "p-6": Object {
+    "padding": 48,
+  },
+  "p-64": Object {
+    "padding": 512,
+  },
+  "p-8": Object {
+    "padding": 64,
+  },
+  "p-px": Object {
+    "padding": 1,
+  },
+  "pb-0": Object {
+    "paddingBottom": 0,
+  },
+  "pb-1": Object {
+    "paddingBottom": 8,
+  },
+  "pb-10": Object {
+    "paddingBottom": 80,
+  },
+  "pb-12": Object {
+    "paddingBottom": 96,
+  },
+  "pb-16": Object {
+    "paddingBottom": 128,
+  },
+  "pb-2": Object {
+    "paddingBottom": 16,
+  },
+  "pb-20": Object {
+    "paddingBottom": 160,
+  },
+  "pb-24": Object {
+    "paddingBottom": 192,
+  },
+  "pb-3": Object {
+    "paddingBottom": 24,
+  },
+  "pb-32": Object {
+    "paddingBottom": 256,
+  },
+  "pb-4": Object {
+    "paddingBottom": 32,
+  },
+  "pb-40": Object {
+    "paddingBottom": 320,
+  },
+  "pb-48": Object {
+    "paddingBottom": 384,
+  },
+  "pb-5": Object {
+    "paddingBottom": 40,
+  },
+  "pb-56": Object {
+    "paddingBottom": 448,
+  },
+  "pb-6": Object {
+    "paddingBottom": 48,
+  },
+  "pb-64": Object {
+    "paddingBottom": 512,
+  },
+  "pb-8": Object {
+    "paddingBottom": 64,
+  },
+  "pb-px": Object {
+    "paddingBottom": 1,
+  },
+  "pe-0": Object {
+    "paddingEnd": 0,
+  },
+  "pe-1": Object {
+    "paddingEnd": 8,
+  },
+  "pe-10": Object {
+    "paddingEnd": 80,
+  },
+  "pe-12": Object {
+    "paddingEnd": 96,
+  },
+  "pe-16": Object {
+    "paddingEnd": 128,
+  },
+  "pe-2": Object {
+    "paddingEnd": 16,
+  },
+  "pe-20": Object {
+    "paddingEnd": 160,
+  },
+  "pe-24": Object {
+    "paddingEnd": 192,
+  },
+  "pe-3": Object {
+    "paddingEnd": 24,
+  },
+  "pe-32": Object {
+    "paddingEnd": 256,
+  },
+  "pe-4": Object {
+    "paddingEnd": 32,
+  },
+  "pe-40": Object {
+    "paddingEnd": 320,
+  },
+  "pe-48": Object {
+    "paddingEnd": 384,
+  },
+  "pe-5": Object {
+    "paddingEnd": 40,
+  },
+  "pe-56": Object {
+    "paddingEnd": 448,
+  },
+  "pe-6": Object {
+    "paddingEnd": 48,
+  },
+  "pe-64": Object {
+    "paddingEnd": 512,
+  },
+  "pe-8": Object {
+    "paddingEnd": 64,
+  },
+  "pe-px": Object {
+    "paddingEnd": 1,
+  },
+  "pl-0": Object {
+    "paddingLeft": 0,
+  },
+  "pl-1": Object {
+    "paddingLeft": 8,
+  },
+  "pl-10": Object {
+    "paddingLeft": 80,
+  },
+  "pl-12": Object {
+    "paddingLeft": 96,
+  },
+  "pl-16": Object {
+    "paddingLeft": 128,
+  },
+  "pl-2": Object {
+    "paddingLeft": 16,
+  },
+  "pl-20": Object {
+    "paddingLeft": 160,
+  },
+  "pl-24": Object {
+    "paddingLeft": 192,
+  },
+  "pl-3": Object {
+    "paddingLeft": 24,
+  },
+  "pl-32": Object {
+    "paddingLeft": 256,
+  },
+  "pl-4": Object {
+    "paddingLeft": 32,
+  },
+  "pl-40": Object {
+    "paddingLeft": 320,
+  },
+  "pl-48": Object {
+    "paddingLeft": 384,
+  },
+  "pl-5": Object {
+    "paddingLeft": 40,
+  },
+  "pl-56": Object {
+    "paddingLeft": 448,
+  },
+  "pl-6": Object {
+    "paddingLeft": 48,
+  },
+  "pl-64": Object {
+    "paddingLeft": 512,
+  },
+  "pl-8": Object {
+    "paddingLeft": 64,
+  },
+  "pl-px": Object {
+    "paddingLeft": 1,
+  },
+  "pr-0": Object {
+    "paddingRight": 0,
+  },
+  "pr-1": Object {
+    "paddingRight": 8,
+  },
+  "pr-10": Object {
+    "paddingRight": 80,
+  },
+  "pr-12": Object {
+    "paddingRight": 96,
+  },
+  "pr-16": Object {
+    "paddingRight": 128,
+  },
+  "pr-2": Object {
+    "paddingRight": 16,
+  },
+  "pr-20": Object {
+    "paddingRight": 160,
+  },
+  "pr-24": Object {
+    "paddingRight": 192,
+  },
+  "pr-3": Object {
+    "paddingRight": 24,
+  },
+  "pr-32": Object {
+    "paddingRight": 256,
+  },
+  "pr-4": Object {
+    "paddingRight": 32,
+  },
+  "pr-40": Object {
+    "paddingRight": 320,
+  },
+  "pr-48": Object {
+    "paddingRight": 384,
+  },
+  "pr-5": Object {
+    "paddingRight": 40,
+  },
+  "pr-56": Object {
+    "paddingRight": 448,
+  },
+  "pr-6": Object {
+    "paddingRight": 48,
+  },
+  "pr-64": Object {
+    "paddingRight": 512,
+  },
+  "pr-8": Object {
+    "paddingRight": 64,
+  },
+  "pr-px": Object {
+    "paddingRight": 1,
+  },
+  "proportional-nums": Object {
+    "fontVariant": Array [
+      "proportional-nums",
+    ],
+  },
+  "ps-0": Object {
+    "paddingStart": 0,
+  },
+  "ps-1": Object {
+    "paddingStart": 8,
+  },
+  "ps-10": Object {
+    "paddingStart": 80,
+  },
+  "ps-12": Object {
+    "paddingStart": 96,
+  },
+  "ps-16": Object {
+    "paddingStart": 128,
+  },
+  "ps-2": Object {
+    "paddingStart": 16,
+  },
+  "ps-20": Object {
+    "paddingStart": 160,
+  },
+  "ps-24": Object {
+    "paddingStart": 192,
+  },
+  "ps-3": Object {
+    "paddingStart": 24,
+  },
+  "ps-32": Object {
+    "paddingStart": 256,
+  },
+  "ps-4": Object {
+    "paddingStart": 32,
+  },
+  "ps-40": Object {
+    "paddingStart": 320,
+  },
+  "ps-48": Object {
+    "paddingStart": 384,
+  },
+  "ps-5": Object {
+    "paddingStart": 40,
+  },
+  "ps-56": Object {
+    "paddingStart": 448,
+  },
+  "ps-6": Object {
+    "paddingStart": 48,
+  },
+  "ps-64": Object {
+    "paddingStart": 512,
+  },
+  "ps-8": Object {
+    "paddingStart": 64,
+  },
+  "ps-px": Object {
+    "paddingStart": 1,
+  },
+  "pt-0": Object {
+    "paddingTop": 0,
+  },
+  "pt-1": Object {
+    "paddingTop": 8,
+  },
+  "pt-10": Object {
+    "paddingTop": 80,
+  },
+  "pt-12": Object {
+    "paddingTop": 96,
+  },
+  "pt-16": Object {
+    "paddingTop": 128,
+  },
+  "pt-2": Object {
+    "paddingTop": 16,
+  },
+  "pt-20": Object {
+    "paddingTop": 160,
+  },
+  "pt-24": Object {
+    "paddingTop": 192,
+  },
+  "pt-3": Object {
+    "paddingTop": 24,
+  },
+  "pt-32": Object {
+    "paddingTop": 256,
+  },
+  "pt-4": Object {
+    "paddingTop": 32,
+  },
+  "pt-40": Object {
+    "paddingTop": 320,
+  },
+  "pt-48": Object {
+    "paddingTop": 384,
+  },
+  "pt-5": Object {
+    "paddingTop": 40,
+  },
+  "pt-56": Object {
+    "paddingTop": 448,
+  },
+  "pt-6": Object {
+    "paddingTop": 48,
+  },
+  "pt-64": Object {
+    "paddingTop": 512,
+  },
+  "pt-8": Object {
+    "paddingTop": 64,
+  },
+  "pt-px": Object {
+    "paddingTop": 1,
+  },
+  "px-0": Object {
+    "paddingHorizontal": 0,
+  },
+  "px-1": Object {
+    "paddingHorizontal": 8,
+  },
+  "px-10": Object {
+    "paddingHorizontal": 80,
+  },
+  "px-12": Object {
+    "paddingHorizontal": 96,
+  },
+  "px-16": Object {
+    "paddingHorizontal": 128,
+  },
+  "px-2": Object {
+    "paddingHorizontal": 16,
+  },
+  "px-20": Object {
+    "paddingHorizontal": 160,
+  },
+  "px-24": Object {
+    "paddingHorizontal": 192,
+  },
+  "px-3": Object {
+    "paddingHorizontal": 24,
+  },
+  "px-32": Object {
+    "paddingHorizontal": 256,
+  },
+  "px-4": Object {
+    "paddingHorizontal": 32,
+  },
+  "px-40": Object {
+    "paddingHorizontal": 320,
+  },
+  "px-48": Object {
+    "paddingHorizontal": 384,
+  },
+  "px-5": Object {
+    "paddingHorizontal": 40,
+  },
+  "px-56": Object {
+    "paddingHorizontal": 448,
+  },
+  "px-6": Object {
+    "paddingHorizontal": 48,
+  },
+  "px-64": Object {
+    "paddingHorizontal": 512,
+  },
+  "px-8": Object {
+    "paddingHorizontal": 64,
+  },
+  "px-px": Object {
+    "paddingHorizontal": 1,
+  },
+  "py-0": Object {
+    "paddingVertical": 0,
+  },
+  "py-1": Object {
+    "paddingVertical": 8,
+  },
+  "py-10": Object {
+    "paddingVertical": 80,
+  },
+  "py-12": Object {
+    "paddingVertical": 96,
+  },
+  "py-16": Object {
+    "paddingVertical": 128,
+  },
+  "py-2": Object {
+    "paddingVertical": 16,
+  },
+  "py-20": Object {
+    "paddingVertical": 160,
+  },
+  "py-24": Object {
+    "paddingVertical": 192,
+  },
+  "py-3": Object {
+    "paddingVertical": 24,
+  },
+  "py-32": Object {
+    "paddingVertical": 256,
+  },
+  "py-4": Object {
+    "paddingVertical": 32,
+  },
+  "py-40": Object {
+    "paddingVertical": 320,
+  },
+  "py-48": Object {
+    "paddingVertical": 384,
+  },
+  "py-5": Object {
+    "paddingVertical": 40,
+  },
+  "py-56": Object {
+    "paddingVertical": 448,
+  },
+  "py-6": Object {
+    "paddingVertical": 48,
+  },
+  "py-64": Object {
+    "paddingVertical": 512,
+  },
+  "py-8": Object {
+    "paddingVertical": 64,
+  },
+  "py-px": Object {
+    "paddingVertical": 1,
+  },
+  "relative": Object {
+    "position": "relative",
+  },
+  "right-0": Object {
+    "right": 0,
+  },
+  "rotate-0": Object {
+    "transform": Array [
+      Object {
+        "rotate": "0",
+      },
+    ],
+  },
+  "rotate-1": Object {
+    "transform": Array [
+      Object {
+        "rotate": "1deg",
+      },
+    ],
+  },
+  "rotate-12": Object {
+    "transform": Array [
+      Object {
+        "rotate": "12deg",
+      },
+    ],
+  },
+  "rotate-180": Object {
+    "transform": Array [
+      Object {
+        "rotate": "180deg",
+      },
+    ],
+  },
+  "rotate-2": Object {
+    "transform": Array [
+      Object {
+        "rotate": "2deg",
+      },
+    ],
+  },
+  "rotate-3": Object {
+    "transform": Array [
+      Object {
+        "rotate": "3deg",
+      },
+    ],
+  },
+  "rotate-45": Object {
+    "transform": Array [
+      Object {
+        "rotate": "45deg",
+      },
+    ],
+  },
+  "rotate-6": Object {
+    "transform": Array [
+      Object {
+        "rotate": "6deg",
+      },
+    ],
+  },
+  "rotate-90": Object {
+    "transform": Array [
+      Object {
+        "rotate": "90deg",
+      },
+    ],
+  },
+  "rotate-x-0": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "0",
+      },
+    ],
+  },
+  "rotate-x-1": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "1deg",
+      },
+    ],
+  },
+  "rotate-x-12": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "12deg",
+      },
+    ],
+  },
+  "rotate-x-180": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "180deg",
+      },
+    ],
+  },
+  "rotate-x-2": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "2deg",
+      },
+    ],
+  },
+  "rotate-x-3": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "3deg",
+      },
+    ],
+  },
+  "rotate-x-45": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "45deg",
+      },
+    ],
+  },
+  "rotate-x-6": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "6deg",
+      },
+    ],
+  },
+  "rotate-x-90": Object {
+    "transform": Array [
+      Object {
+        "rotateX": "90deg",
+      },
+    ],
+  },
+  "rotate-y-0": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "0",
+      },
+    ],
+  },
+  "rotate-y-1": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "1deg",
+      },
+    ],
+  },
+  "rotate-y-12": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "12deg",
+      },
+    ],
+  },
+  "rotate-y-180": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "180deg",
+      },
+    ],
+  },
+  "rotate-y-2": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "2deg",
+      },
+    ],
+  },
+  "rotate-y-3": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "3deg",
+      },
+    ],
+  },
+  "rotate-y-45": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "45deg",
+      },
+    ],
+  },
+  "rotate-y-6": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "6deg",
+      },
+    ],
+  },
+  "rotate-y-90": Object {
+    "transform": Array [
+      Object {
+        "rotateY": "90deg",
+      },
+    ],
+  },
+  "rotate-z-0": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "0",
+      },
+    ],
+  },
+  "rotate-z-1": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "1deg",
+      },
+    ],
+  },
+  "rotate-z-12": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "12deg",
+      },
+    ],
+  },
+  "rotate-z-180": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "180deg",
+      },
+    ],
+  },
+  "rotate-z-2": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "2deg",
+      },
+    ],
+  },
+  "rotate-z-3": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "3deg",
+      },
+    ],
+  },
+  "rotate-z-45": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "45deg",
+      },
+    ],
+  },
+  "rotate-z-6": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "6deg",
+      },
+    ],
+  },
+  "rotate-z-90": Object {
+    "transform": Array [
+      Object {
+        "rotateZ": "90deg",
+      },
+    ],
+  },
+  "rounded": Object {
+    "borderRadius": 8,
+  },
+  "rounded-2xl": Object {
+    "borderRadius": 32,
+  },
+  "rounded-3xl": Object {
+    "borderRadius": 48,
+  },
+  "rounded-b": Object {
+    "borderBottomLeftRadius": 8,
+    "borderBottomRightRadius": 8,
+  },
+  "rounded-b-2xl": Object {
+    "borderBottomLeftRadius": 32,
+    "borderBottomRightRadius": 32,
+  },
+  "rounded-b-3xl": Object {
+    "borderBottomLeftRadius": 48,
+    "borderBottomRightRadius": 48,
+  },
+  "rounded-b-full": Object {
+    "borderBottomLeftRadius": 9999,
+    "borderBottomRightRadius": 9999,
+  },
+  "rounded-b-lg": Object {
+    "borderBottomLeftRadius": 16,
+    "borderBottomRightRadius": 16,
+  },
+  "rounded-b-md": Object {
+    "borderBottomLeftRadius": 12,
+    "borderBottomRightRadius": 12,
+  },
+  "rounded-b-none": Object {
+    "borderBottomLeftRadius": 0,
+    "borderBottomRightRadius": 0,
+  },
+  "rounded-b-sm": Object {
+    "borderBottomLeftRadius": 4,
+    "borderBottomRightRadius": 4,
+  },
+  "rounded-b-xl": Object {
+    "borderBottomLeftRadius": 24,
+    "borderBottomRightRadius": 24,
+  },
+  "rounded-bl": Object {
+    "borderBottomLeftRadius": 8,
+  },
+  "rounded-bl-2xl": Object {
+    "borderBottomLeftRadius": 32,
+  },
+  "rounded-bl-3xl": Object {
+    "borderBottomLeftRadius": 48,
+  },
+  "rounded-bl-full": Object {
+    "borderBottomLeftRadius": 9999,
+  },
+  "rounded-bl-lg": Object {
+    "borderBottomLeftRadius": 16,
+  },
+  "rounded-bl-md": Object {
+    "borderBottomLeftRadius": 12,
+  },
+  "rounded-bl-none": Object {
+    "borderBottomLeftRadius": 0,
+  },
+  "rounded-bl-sm": Object {
+    "borderBottomLeftRadius": 4,
+  },
+  "rounded-bl-xl": Object {
+    "borderBottomLeftRadius": 24,
+  },
+  "rounded-br": Object {
+    "borderBottomRightRadius": 8,
+  },
+  "rounded-br-2xl": Object {
+    "borderBottomRightRadius": 32,
+  },
+  "rounded-br-3xl": Object {
+    "borderBottomRightRadius": 48,
+  },
+  "rounded-br-full": Object {
+    "borderBottomRightRadius": 9999,
+  },
+  "rounded-br-lg": Object {
+    "borderBottomRightRadius": 16,
+  },
+  "rounded-br-md": Object {
+    "borderBottomRightRadius": 12,
+  },
+  "rounded-br-none": Object {
+    "borderBottomRightRadius": 0,
+  },
+  "rounded-br-sm": Object {
+    "borderBottomRightRadius": 4,
+  },
+  "rounded-br-xl": Object {
+    "borderBottomRightRadius": 24,
+  },
+  "rounded-full": Object {
+    "borderRadius": 9999,
+  },
+  "rounded-l": Object {
+    "borderBottomLeftRadius": 8,
+    "borderTopLeftRadius": 8,
+  },
+  "rounded-l-2xl": Object {
+    "borderBottomLeftRadius": 32,
+    "borderTopLeftRadius": 32,
+  },
+  "rounded-l-3xl": Object {
+    "borderBottomLeftRadius": 48,
+    "borderTopLeftRadius": 48,
+  },
+  "rounded-l-full": Object {
+    "borderBottomLeftRadius": 9999,
+    "borderTopLeftRadius": 9999,
+  },
+  "rounded-l-lg": Object {
+    "borderBottomLeftRadius": 16,
+    "borderTopLeftRadius": 16,
+  },
+  "rounded-l-md": Object {
+    "borderBottomLeftRadius": 12,
+    "borderTopLeftRadius": 12,
+  },
+  "rounded-l-none": Object {
+    "borderBottomLeftRadius": 0,
+    "borderTopLeftRadius": 0,
+  },
+  "rounded-l-sm": Object {
+    "borderBottomLeftRadius": 4,
+    "borderTopLeftRadius": 4,
+  },
+  "rounded-l-xl": Object {
+    "borderBottomLeftRadius": 24,
+    "borderTopLeftRadius": 24,
+  },
+  "rounded-lg": Object {
+    "borderRadius": 16,
+  },
+  "rounded-md": Object {
+    "borderRadius": 12,
+  },
+  "rounded-none": Object {
+    "borderRadius": 0,
+  },
+  "rounded-r": Object {
+    "borderBottomRightRadius": 8,
+    "borderTopRightRadius": 8,
+  },
+  "rounded-r-2xl": Object {
+    "borderBottomRightRadius": 32,
+    "borderTopRightRadius": 32,
+  },
+  "rounded-r-3xl": Object {
+    "borderBottomRightRadius": 48,
+    "borderTopRightRadius": 48,
+  },
+  "rounded-r-full": Object {
+    "borderBottomRightRadius": 9999,
+    "borderTopRightRadius": 9999,
+  },
+  "rounded-r-lg": Object {
+    "borderBottomRightRadius": 16,
+    "borderTopRightRadius": 16,
+  },
+  "rounded-r-md": Object {
+    "borderBottomRightRadius": 12,
+    "borderTopRightRadius": 12,
+  },
+  "rounded-r-none": Object {
+    "borderBottomRightRadius": 0,
+    "borderTopRightRadius": 0,
+  },
+  "rounded-r-sm": Object {
+    "borderBottomRightRadius": 4,
+    "borderTopRightRadius": 4,
+  },
+  "rounded-r-xl": Object {
+    "borderBottomRightRadius": 24,
+    "borderTopRightRadius": 24,
+  },
+  "rounded-sm": Object {
+    "borderRadius": 4,
+  },
+  "rounded-t": Object {
+    "borderTopLeftRadius": 8,
+    "borderTopRightRadius": 8,
+  },
+  "rounded-t-2xl": Object {
+    "borderTopLeftRadius": 32,
+    "borderTopRightRadius": 32,
+  },
+  "rounded-t-3xl": Object {
+    "borderTopLeftRadius": 48,
+    "borderTopRightRadius": 48,
+  },
+  "rounded-t-full": Object {
+    "borderTopLeftRadius": 9999,
+    "borderTopRightRadius": 9999,
+  },
+  "rounded-t-lg": Object {
+    "borderTopLeftRadius": 16,
+    "borderTopRightRadius": 16,
+  },
+  "rounded-t-md": Object {
+    "borderTopLeftRadius": 12,
+    "borderTopRightRadius": 12,
+  },
+  "rounded-t-none": Object {
+    "borderTopLeftRadius": 0,
+    "borderTopRightRadius": 0,
+  },
+  "rounded-t-sm": Object {
+    "borderTopLeftRadius": 4,
+    "borderTopRightRadius": 4,
+  },
+  "rounded-t-xl": Object {
+    "borderTopLeftRadius": 24,
+    "borderTopRightRadius": 24,
+  },
+  "rounded-te": Object {
+    "borderTopEndRadius": 8,
+  },
+  "rounded-te-2xl": Object {
+    "borderTopEndRadius": 32,
+  },
+  "rounded-te-3xl": Object {
+    "borderTopEndRadius": 48,
+  },
+  "rounded-te-full": Object {
+    "borderTopEndRadius": 9999,
+  },
+  "rounded-te-lg": Object {
+    "borderTopEndRadius": 16,
+  },
+  "rounded-te-md": Object {
+    "borderTopEndRadius": 12,
+  },
+  "rounded-te-none": Object {
+    "borderTopEndRadius": 0,
+  },
+  "rounded-te-sm": Object {
+    "borderTopEndRadius": 4,
+  },
+  "rounded-te-xl": Object {
+    "borderTopEndRadius": 24,
+  },
+  "rounded-tl": Object {
+    "borderTopLeftRadius": 8,
+  },
+  "rounded-tl-2xl": Object {
+    "borderTopLeftRadius": 32,
+  },
+  "rounded-tl-3xl": Object {
+    "borderTopLeftRadius": 48,
+  },
+  "rounded-tl-full": Object {
+    "borderTopLeftRadius": 9999,
+  },
+  "rounded-tl-lg": Object {
+    "borderTopLeftRadius": 16,
+  },
+  "rounded-tl-md": Object {
+    "borderTopLeftRadius": 12,
+  },
+  "rounded-tl-none": Object {
+    "borderTopLeftRadius": 0,
+  },
+  "rounded-tl-sm": Object {
+    "borderTopLeftRadius": 4,
+  },
+  "rounded-tl-xl": Object {
+    "borderTopLeftRadius": 24,
+  },
+  "rounded-tr": Object {
+    "borderTopRightRadius": 8,
+  },
+  "rounded-tr-2xl": Object {
+    "borderTopRightRadius": 32,
+  },
+  "rounded-tr-3xl": Object {
+    "borderTopRightRadius": 48,
+  },
+  "rounded-tr-full": Object {
+    "borderTopRightRadius": 9999,
+  },
+  "rounded-tr-lg": Object {
+    "borderTopRightRadius": 16,
+  },
+  "rounded-tr-md": Object {
+    "borderTopRightRadius": 12,
+  },
+  "rounded-tr-none": Object {
+    "borderTopRightRadius": 0,
+  },
+  "rounded-tr-sm": Object {
+    "borderTopRightRadius": 4,
+  },
+  "rounded-tr-xl": Object {
+    "borderTopRightRadius": 24,
+  },
+  "rounded-ts": Object {
+    "borderTopStartRadius": 8,
+  },
+  "rounded-ts-2xl": Object {
+    "borderTopStartRadius": 32,
+  },
+  "rounded-ts-3xl": Object {
+    "borderTopStartRadius": 48,
+  },
+  "rounded-ts-full": Object {
+    "borderTopStartRadius": 9999,
+  },
+  "rounded-ts-lg": Object {
+    "borderTopStartRadius": 16,
+  },
+  "rounded-ts-md": Object {
+    "borderTopStartRadius": 12,
+  },
+  "rounded-ts-none": Object {
+    "borderTopStartRadius": 0,
+  },
+  "rounded-ts-sm": Object {
+    "borderTopStartRadius": 4,
+  },
+  "rounded-ts-xl": Object {
+    "borderTopStartRadius": 24,
+  },
+  "rounded-xl": Object {
+    "borderRadius": 24,
+  },
+  "scale-0": Object {
+    "transform": Array [
+      Object {
+        "scale": 0,
+      },
+    ],
+  },
+  "scale-100": Object {
+    "transform": Array [
+      Object {
+        "scale": 1,
+      },
+    ],
+  },
+  "scale-105": Object {
+    "transform": Array [
+      Object {
+        "scale": 1.05,
+      },
+    ],
+  },
+  "scale-110": Object {
+    "transform": Array [
+      Object {
+        "scale": 1.1,
+      },
+    ],
+  },
+  "scale-125": Object {
+    "transform": Array [
+      Object {
+        "scale": 1.25,
+      },
+    ],
+  },
+  "scale-150": Object {
+    "transform": Array [
+      Object {
+        "scale": 1.5,
+      },
+    ],
+  },
+  "scale-50": Object {
+    "transform": Array [
+      Object {
+        "scale": 0.5,
+      },
+    ],
+  },
+  "scale-75": Object {
+    "transform": Array [
+      Object {
+        "scale": 0.75,
+      },
+    ],
+  },
+  "scale-90": Object {
+    "transform": Array [
+      Object {
+        "scale": 0.9,
+      },
+    ],
+  },
+  "scale-95": Object {
+    "transform": Array [
+      Object {
+        "scale": 0.95,
+      },
+    ],
+  },
+  "scale-x-0": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 0,
+      },
+    ],
+  },
+  "scale-x-100": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 1,
+      },
+    ],
+  },
+  "scale-x-105": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 1.05,
+      },
+    ],
+  },
+  "scale-x-110": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 1.1,
+      },
+    ],
+  },
+  "scale-x-125": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 1.25,
+      },
+    ],
+  },
+  "scale-x-150": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 1.5,
+      },
+    ],
+  },
+  "scale-x-50": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 0.5,
+      },
+    ],
+  },
+  "scale-x-75": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 0.75,
+      },
+    ],
+  },
+  "scale-x-90": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 0.9,
+      },
+    ],
+  },
+  "scale-x-95": Object {
+    "transform": Array [
+      Object {
+        "scaleX": 0.95,
+      },
+    ],
+  },
+  "scale-y-0": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 0,
+      },
+    ],
+  },
+  "scale-y-100": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 1,
+      },
+    ],
+  },
+  "scale-y-105": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 1.05,
+      },
+    ],
+  },
+  "scale-y-110": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 1.1,
+      },
+    ],
+  },
+  "scale-y-125": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 1.25,
+      },
+    ],
+  },
+  "scale-y-150": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 1.5,
+      },
+    ],
+  },
+  "scale-y-50": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 0.5,
+      },
+    ],
+  },
+  "scale-y-75": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 0.75,
+      },
+    ],
+  },
+  "scale-y-90": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 0.9,
+      },
+    ],
+  },
+  "scale-y-95": Object {
+    "transform": Array [
+      Object {
+        "scaleY": 0.95,
+      },
+    ],
+  },
+  "self-auto": Object {
+    "alignSelf": "auto",
+  },
+  "self-center": Object {
+    "alignSelf": "center",
+  },
+  "self-end": Object {
+    "alignSelf": "flex-end",
+  },
+  "self-start": Object {
+    "alignSelf": "flex-start",
+  },
+  "self-stretch": Object {
+    "alignSelf": "stretch",
+  },
+  "skew-x-0": Object {
+    "transform": Array [
+      Object {
+        "skewX": "0",
+      },
+    ],
+  },
+  "skew-x-1": Object {
+    "transform": Array [
+      Object {
+        "skewX": "1deg",
+      },
+    ],
+  },
+  "skew-x-12": Object {
+    "transform": Array [
+      Object {
+        "skewX": "12deg",
+      },
+    ],
+  },
+  "skew-x-2": Object {
+    "transform": Array [
+      Object {
+        "skewX": "2deg",
+      },
+    ],
+  },
+  "skew-x-3": Object {
+    "transform": Array [
+      Object {
+        "skewX": "3deg",
+      },
+    ],
+  },
+  "skew-x-6": Object {
+    "transform": Array [
+      Object {
+        "skewX": "6deg",
+      },
+    ],
+  },
+  "skew-y-0": Object {
+    "transform": Array [
+      Object {
+        "skewY": "0",
+      },
+    ],
+  },
+  "skew-y-1": Object {
+    "transform": Array [
+      Object {
+        "skewY": "1deg",
+      },
+    ],
+  },
+  "skew-y-12": Object {
+    "transform": Array [
+      Object {
+        "skewY": "12deg",
+      },
+    ],
+  },
+  "skew-y-2": Object {
+    "transform": Array [
+      Object {
+        "skewY": "2deg",
+      },
+    ],
+  },
+  "skew-y-3": Object {
+    "transform": Array [
+      Object {
+        "skewY": "3deg",
+      },
+    ],
+  },
+  "skew-y-6": Object {
+    "transform": Array [
+      Object {
+        "skewY": "6deg",
+      },
+    ],
+  },
+  "small-caps": Object {
+    "fontVariant": Array [
+      "small-caps",
+    ],
+  },
+  "tabular-nums": Object {
+    "fontVariant": Array [
+      "tabular-nums",
+    ],
+  },
+  "text-2xl": Object {
+    "fontSize": 48,
+  },
+  "text-3xl": Object {
+    "fontSize": 60,
+  },
+  "text-4xl": Object {
+    "fontSize": 72,
+  },
+  "text-5xl": Object {
+    "fontSize": 96,
+  },
+  "text-6xl": Object {
+    "fontSize": 128,
+  },
+  "text-auto": Object {
+    "textAlign": "auto",
+  },
+  "text-base": Object {
+    "fontSize": 32,
+  },
+  "text-black": Object {
+    "color": "black",
+  },
+  "text-blue-100": Object {
+    "color": "#ebf8ff",
+  },
+  "text-blue-200": Object {
+    "color": "#bee3f8",
+  },
+  "text-blue-300": Object {
+    "color": "#90cdf4",
+  },
+  "text-blue-400": Object {
+    "color": "#63b3ed",
+  },
+  "text-blue-500": Object {
+    "color": "#4299e1",
+  },
+  "text-blue-600": Object {
+    "color": "#3182ce",
+  },
+  "text-blue-700": Object {
+    "color": "#2b6cb0",
+  },
+  "text-blue-800": Object {
+    "color": "#2c5282",
+  },
+  "text-blue-900": Object {
+    "color": "#2a4365",
+  },
+  "text-center": Object {
+    "textAlign": "center",
+  },
+  "text-gray-100": Object {
+    "color": "#f7fafc",
+  },
+  "text-gray-200": Object {
+    "color": "#edf2f7",
+  },
+  "text-gray-300": Object {
+    "color": "#e2e8f0",
+  },
+  "text-gray-400": Object {
+    "color": "#cbd5e0",
+  },
+  "text-gray-500": Object {
+    "color": "#a0aec0",
+  },
+  "text-gray-600": Object {
+    "color": "#718096",
+  },
+  "text-gray-700": Object {
+    "color": "#4a5568",
+  },
+  "text-gray-800": Object {
+    "color": "#2d3748",
+  },
+  "text-gray-900": Object {
+    "color": "#1a202c",
+  },
+  "text-green-100": Object {
+    "color": "#f0fff4",
+  },
+  "text-green-200": Object {
+    "color": "#c6f6d5",
+  },
+  "text-green-300": Object {
+    "color": "#9ae6b4",
+  },
+  "text-green-400": Object {
+    "color": "#68d391",
+  },
+  "text-green-500": Object {
+    "color": "#48bb78",
+  },
+  "text-green-600": Object {
+    "color": "#38a169",
+  },
+  "text-green-700": Object {
+    "color": "#2f855a",
+  },
+  "text-green-800": Object {
+    "color": "#276749",
+  },
+  "text-green-900": Object {
+    "color": "#22543d",
+  },
+  "text-indigo-100": Object {
+    "color": "#ebf4ff",
+  },
+  "text-indigo-200": Object {
+    "color": "#c3dafe",
+  },
+  "text-indigo-300": Object {
+    "color": "#a3bffa",
+  },
+  "text-indigo-400": Object {
+    "color": "#7f9cf5",
+  },
+  "text-indigo-500": Object {
+    "color": "#667eea",
+  },
+  "text-indigo-600": Object {
+    "color": "#5a67d8",
+  },
+  "text-indigo-700": Object {
+    "color": "#4c51bf",
+  },
+  "text-indigo-800": Object {
+    "color": "#434190",
+  },
+  "text-indigo-900": Object {
+    "color": "#3c366b",
+  },
+  "text-justify": Object {
+    "textAlign": "justify",
+  },
+  "text-left": Object {
+    "textAlign": "left",
+  },
+  "text-lg": Object {
+    "fontSize": 36,
+  },
+  "text-orange-100": Object {
+    "color": "#fffaf0",
+  },
+  "text-orange-200": Object {
+    "color": "#feebc8",
+  },
+  "text-orange-300": Object {
+    "color": "#fbd38d",
+  },
+  "text-orange-400": Object {
+    "color": "#f6ad55",
+  },
+  "text-orange-500": Object {
+    "color": "#ed8936",
+  },
+  "text-orange-600": Object {
+    "color": "#dd6b20",
+  },
+  "text-orange-700": Object {
+    "color": "#c05621",
+  },
+  "text-orange-800": Object {
+    "color": "#9c4221",
+  },
+  "text-orange-900": Object {
+    "color": "#7b341e",
+  },
+  "text-pink-100": Object {
+    "color": "#fff5f7",
+  },
+  "text-pink-200": Object {
+    "color": "#fed7e2",
+  },
+  "text-pink-300": Object {
+    "color": "#fbb6ce",
+  },
+  "text-pink-400": Object {
+    "color": "#f687b3",
+  },
+  "text-pink-500": Object {
+    "color": "#ed64a6",
+  },
+  "text-pink-600": Object {
+    "color": "#d53f8c",
+  },
+  "text-pink-700": Object {
+    "color": "#b83280",
+  },
+  "text-pink-800": Object {
+    "color": "#97266d",
+  },
+  "text-pink-900": Object {
+    "color": "#702459",
+  },
+  "text-purple-100": Object {
+    "color": "#faf5ff",
+  },
+  "text-purple-200": Object {
+    "color": "#e9d8fd",
+  },
+  "text-purple-300": Object {
+    "color": "#d6bcfa",
+  },
+  "text-purple-400": Object {
+    "color": "#b794f4",
+  },
+  "text-purple-500": Object {
+    "color": "#9f7aea",
+  },
+  "text-purple-600": Object {
+    "color": "#805ad5",
+  },
+  "text-purple-700": Object {
+    "color": "#6b46c1",
+  },
+  "text-purple-800": Object {
+    "color": "#553c9a",
+  },
+  "text-purple-900": Object {
+    "color": "#44337a",
+  },
+  "text-red-100": Object {
+    "color": "#fff5f5",
+  },
+  "text-red-200": Object {
+    "color": "#fed7d7",
+  },
+  "text-red-300": Object {
+    "color": "#feb2b2",
+  },
+  "text-red-400": Object {
+    "color": "#fc8181",
+  },
+  "text-red-500": Object {
+    "color": "#f56565",
+  },
+  "text-red-600": Object {
+    "color": "#e53e3e",
+  },
+  "text-red-700": Object {
+    "color": "#c53030",
+  },
+  "text-red-800": Object {
+    "color": "#9b2c2c",
+  },
+  "text-red-900": Object {
+    "color": "#742a2a",
+  },
+  "text-right": Object {
+    "textAlign": "right",
+  },
+  "text-sm": Object {
+    "fontSize": 28,
+  },
+  "text-teal-100": Object {
+    "color": "#e6fffa",
+  },
+  "text-teal-200": Object {
+    "color": "#b2f5ea",
+  },
+  "text-teal-300": Object {
+    "color": "#81e6d9",
+  },
+  "text-teal-400": Object {
+    "color": "#4fd1c5",
+  },
+  "text-teal-500": Object {
+    "color": "#38b2ac",
+  },
+  "text-teal-600": Object {
+    "color": "#319795",
+  },
+  "text-teal-700": Object {
+    "color": "#2c7a7b",
+  },
+  "text-teal-800": Object {
+    "color": "#285e61",
+  },
+  "text-teal-900": Object {
+    "color": "#234e52",
+  },
+  "text-transparent": Object {
+    "color": "transparent",
+  },
+  "text-v-auto": Object {
+    "textAlignVertical": "auto",
+  },
+  "text-v-bottom": Object {
+    "textAlignVertical": "bottom",
+  },
+  "text-v-center": Object {
+    "textAlignVertical": "center",
+  },
+  "text-v-top": Object {
+    "textAlignVertical": "top",
+  },
+  "text-white": Object {
+    "color": "white",
+  },
+  "text-xl": Object {
+    "fontSize": 40,
+  },
+  "text-xs": Object {
+    "fontSize": 24,
+  },
+  "text-yellow-100": Object {
+    "color": "#fffff0",
+  },
+  "text-yellow-200": Object {
+    "color": "#fefcbf",
+  },
+  "text-yellow-300": Object {
+    "color": "#faf089",
+  },
+  "text-yellow-400": Object {
+    "color": "#f6e05e",
+  },
+  "text-yellow-500": Object {
+    "color": "#ecc94b",
+  },
+  "text-yellow-600": Object {
+    "color": "#d69e2e",
+  },
+  "text-yellow-700": Object {
+    "color": "#b7791f",
+  },
+  "text-yellow-800": Object {
+    "color": "#975a16",
+  },
+  "text-yellow-900": Object {
+    "color": "#744210",
+  },
+  "top-0": Object {
+    "top": 0,
+  },
+  "translate-x-0": Object {
+    "transform": Array [
+      Object {
+        "translateX": 0,
+      },
+    ],
+  },
+  "translate-x-1": Object {
+    "transform": Array [
+      Object {
+        "translateX": 8,
+      },
+    ],
+  },
+  "translate-x-10": Object {
+    "transform": Array [
+      Object {
+        "translateX": 80,
+      },
+    ],
+  },
+  "translate-x-12": Object {
+    "transform": Array [
+      Object {
+        "translateX": 96,
+      },
+    ],
+  },
+  "translate-x-16": Object {
+    "transform": Array [
+      Object {
+        "translateX": 128,
+      },
+    ],
+  },
+  "translate-x-2": Object {
+    "transform": Array [
+      Object {
+        "translateX": 16,
+      },
+    ],
+  },
+  "translate-x-20": Object {
+    "transform": Array [
+      Object {
+        "translateX": 160,
+      },
+    ],
+  },
+  "translate-x-24": Object {
+    "transform": Array [
+      Object {
+        "translateX": 192,
+      },
+    ],
+  },
+  "translate-x-3": Object {
+    "transform": Array [
+      Object {
+        "translateX": 24,
+      },
+    ],
+  },
+  "translate-x-32": Object {
+    "transform": Array [
+      Object {
+        "translateX": 256,
+      },
+    ],
+  },
+  "translate-x-4": Object {
+    "transform": Array [
+      Object {
+        "translateX": 32,
+      },
+    ],
+  },
+  "translate-x-40": Object {
+    "transform": Array [
+      Object {
+        "translateX": 320,
+      },
+    ],
+  },
+  "translate-x-48": Object {
+    "transform": Array [
+      Object {
+        "translateX": 384,
+      },
+    ],
+  },
+  "translate-x-5": Object {
+    "transform": Array [
+      Object {
+        "translateX": 40,
+      },
+    ],
+  },
+  "translate-x-56": Object {
+    "transform": Array [
+      Object {
+        "translateX": 448,
+      },
+    ],
+  },
+  "translate-x-6": Object {
+    "transform": Array [
+      Object {
+        "translateX": 48,
+      },
+    ],
+  },
+  "translate-x-64": Object {
+    "transform": Array [
+      Object {
+        "translateX": 512,
+      },
+    ],
+  },
+  "translate-x-8": Object {
+    "transform": Array [
+      Object {
+        "translateX": 64,
+      },
+    ],
+  },
+  "translate-x-px": Object {
+    "transform": Array [
+      Object {
+        "translateX": 1,
+      },
+    ],
+  },
+  "translate-y-0": Object {
+    "transform": Array [
+      Object {
+        "translateY": 0,
+      },
+    ],
+  },
+  "translate-y-1": Object {
+    "transform": Array [
+      Object {
+        "translateY": 8,
+      },
+    ],
+  },
+  "translate-y-10": Object {
+    "transform": Array [
+      Object {
+        "translateY": 80,
+      },
+    ],
+  },
+  "translate-y-12": Object {
+    "transform": Array [
+      Object {
+        "translateY": 96,
+      },
+    ],
+  },
+  "translate-y-16": Object {
+    "transform": Array [
+      Object {
+        "translateY": 128,
+      },
+    ],
+  },
+  "translate-y-2": Object {
+    "transform": Array [
+      Object {
+        "translateY": 16,
+      },
+    ],
+  },
+  "translate-y-20": Object {
+    "transform": Array [
+      Object {
+        "translateY": 160,
+      },
+    ],
+  },
+  "translate-y-24": Object {
+    "transform": Array [
+      Object {
+        "translateY": 192,
+      },
+    ],
+  },
+  "translate-y-3": Object {
+    "transform": Array [
+      Object {
+        "translateY": 24,
+      },
+    ],
+  },
+  "translate-y-32": Object {
+    "transform": Array [
+      Object {
+        "translateY": 256,
+      },
+    ],
+  },
+  "translate-y-4": Object {
+    "transform": Array [
+      Object {
+        "translateY": 32,
+      },
+    ],
+  },
+  "translate-y-40": Object {
+    "transform": Array [
+      Object {
+        "translateY": 320,
+      },
+    ],
+  },
+  "translate-y-48": Object {
+    "transform": Array [
+      Object {
+        "translateY": 384,
+      },
+    ],
+  },
+  "translate-y-5": Object {
+    "transform": Array [
+      Object {
+        "translateY": 40,
+      },
+    ],
+  },
+  "translate-y-56": Object {
+    "transform": Array [
+      Object {
+        "translateY": 448,
+      },
+    ],
+  },
+  "translate-y-6": Object {
+    "transform": Array [
+      Object {
+        "translateY": 48,
+      },
+    ],
+  },
+  "translate-y-64": Object {
+    "transform": Array [
+      Object {
+        "translateY": 512,
+      },
+    ],
+  },
+  "translate-y-8": Object {
+    "transform": Array [
+      Object {
+        "translateY": 64,
+      },
+    ],
+  },
+  "translate-y-px": Object {
+    "transform": Array [
+      Object {
+        "translateY": 1,
+      },
+    ],
+  },
+  "underline": Object {
+    "textDecorationLine": "underline",
+  },
+  "uppercase": Object {
+    "textTransform": "uppercase",
+  },
+  "w-0": Object {
+    "width": 0,
+  },
+  "w-1": Object {
+    "width": 8,
+  },
+  "w-1/12": Object {
+    "width": "8.333333%",
+  },
+  "w-1/2": Object {
+    "width": "50%",
+  },
+  "w-1/3": Object {
+    "width": "33.333333%",
+  },
+  "w-1/4": Object {
+    "width": "25%",
+  },
+  "w-1/5": Object {
+    "width": "20%",
+  },
+  "w-1/6": Object {
+    "width": "16.666667%",
+  },
+  "w-10": Object {
+    "width": 80,
+  },
+  "w-10/12": Object {
+    "width": "83.333333%",
+  },
+  "w-11/12": Object {
+    "width": "91.666667%",
+  },
+  "w-12": Object {
+    "width": 96,
+  },
+  "w-16": Object {
+    "width": 128,
+  },
+  "w-2": Object {
+    "width": 16,
+  },
+  "w-2/12": Object {
+    "width": "16.666667%",
+  },
+  "w-2/3": Object {
+    "width": "66.666667%",
+  },
+  "w-2/4": Object {
+    "width": "50%",
+  },
+  "w-2/5": Object {
+    "width": "40%",
+  },
+  "w-2/6": Object {
+    "width": "33.333333%",
+  },
+  "w-20": Object {
+    "width": 160,
+  },
+  "w-24": Object {
+    "width": 192,
+  },
+  "w-3": Object {
+    "width": 24,
+  },
+  "w-3/12": Object {
+    "width": "25%",
+  },
+  "w-3/4": Object {
+    "width": "75%",
+  },
+  "w-3/5": Object {
+    "width": "60%",
+  },
+  "w-3/6": Object {
+    "width": "50%",
+  },
+  "w-32": Object {
+    "width": 256,
+  },
+  "w-4": Object {
+    "width": 32,
+  },
+  "w-4/12": Object {
+    "width": "33.333333%",
+  },
+  "w-4/5": Object {
+    "width": "80%",
+  },
+  "w-4/6": Object {
+    "width": "66.666667%",
+  },
+  "w-40": Object {
+    "width": 320,
+  },
+  "w-48": Object {
+    "width": 384,
+  },
+  "w-5": Object {
+    "width": 40,
+  },
+  "w-5/12": Object {
+    "width": "41.666667%",
+  },
+  "w-5/6": Object {
+    "width": "83.333333%",
+  },
+  "w-56": Object {
+    "width": 448,
+  },
+  "w-6": Object {
+    "width": 48,
+  },
+  "w-6/12": Object {
+    "width": "50%",
+  },
+  "w-64": Object {
+    "width": 512,
+  },
+  "w-7/12": Object {
+    "width": "58.333333%",
+  },
+  "w-8": Object {
+    "width": 64,
+  },
+  "w-8/12": Object {
+    "width": "66.666667%",
+  },
+  "w-9/12": Object {
+    "width": "75%",
+  },
+  "w-full": Object {
+    "width": "100%",
+  },
+  "w-px": Object {
+    "width": 1,
+  },
+  "z-0": Object {
+    "zIndex": 0,
+  },
+  "z-10": Object {
+    "zIndex": 10,
+  },
+  "z-20": Object {
+    "zIndex": 20,
+  },
+  "z-30": Object {
+    "zIndex": 30,
+  },
+  "z-40": Object {
+    "zIndex": 40,
+  },
+  "z-50": Object {
+    "zIndex": 50,
+  },
+}
+`;

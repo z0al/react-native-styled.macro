@@ -1,4 +1,5 @@
 // @noflow
+
 // Packages
 import {
 	ColorValue,
@@ -11,12 +12,16 @@ import {
 	SkewXTransform,
 } from 'react-native';
 
-export type StyledVariant = {
-	variant: string;
-	style: Record<string, any>;
+export type StyleProps = {
+	style?: Record<string, any>;
+	[props: string]: unknown;
 };
 
-export type ToggleVariants = Record<string, boolean>;
+export type VariantStyle = StyleProps & {
+	variant: string;
+};
+
+export type ToggleVariants = Record<string, boolean | undefined>;
 
 export type Variant = (
 	cb: (toggle: ToggleVariants) => void
@@ -26,7 +31,6 @@ type StringOrNumber = Record<string, string | number>;
 type Colors = Record<string, ColorValue>;
 
 export type Theme = {
-	screens: StringOrNumber;
 	colors: Colors;
 	spacing: StringOrNumber;
 	backgroundColor: Colors;
@@ -63,6 +67,5 @@ export type Theme = {
 };
 
 export type Configuration = {
-	separator: string;
 	theme: Theme;
 };
