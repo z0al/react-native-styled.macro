@@ -3,16 +3,17 @@ import { TextStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
+import { merge } from './utils/merge';
 
 export const letterSpacing = (
 	theme: Theme
 ): Record<string, TextStyle> => {
 	return Object.keys(theme.letterSpacing)
 		.map((key) => ({
-			[StyleUtils.id('letter', key)]: {
+			[id('letter', key)]: {
 				letterSpacing: theme.letterSpacing[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 };

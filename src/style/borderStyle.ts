@@ -2,16 +2,16 @@
 import { ViewStyle } from 'react-native';
 
 // Ours
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
 
 export const borderStyle = (): Record<string, ViewStyle> => ({
-	[StyleUtils.id('border', 'solid')]: {
+	[id('border', 'solid')]: {
 		borderStyle: 'solid',
 	},
-	[StyleUtils.id('border', 'dotted')]: {
+	[id('border', 'dotted')]: {
 		borderStyle: 'dotted',
 	},
-	[StyleUtils.id('border', 'dashed')]: {
+	[id('border', 'dashed')]: {
 		borderStyle: 'dashed',
 	},
 });

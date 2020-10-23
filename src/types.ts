@@ -27,12 +27,9 @@ export type Variant = (
 	cb: (toggle: ToggleVariants) => void
 ) => () => void;
 
-type StringOrNumber = Record<string, string | number>;
 type Colors = Record<string, ColorValue>;
 
 export type Theme = {
-	colors: Colors;
-	spacing: StringOrNumber;
 	backgroundColor: Colors;
 	borderColor: Colors;
 	borderRadius: Record<string, ViewStyle['borderRadius']>;

@@ -35,10 +35,6 @@ export function writeToReadMe(
 	);
 }
 
-export function rem(value: number) {
-	return (`rem(${value})` as unknown) as number;
-}
-
 export function formatTableData(value: any, root = true) {
 	if (Array.isArray(value)) {
 		return `[${value

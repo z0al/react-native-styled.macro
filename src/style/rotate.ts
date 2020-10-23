@@ -3,7 +3,8 @@ import { TransformsStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
+import { merge } from './utils/merge';
 
 export const rotate = (
 	theme: Theme
@@ -12,7 +13,7 @@ export const rotate = (
 
 	const x = sizes
 		.map((key) => ({
-			[StyleUtils.id('rotate-x', key)]: {
+			[id('rotate-x', key)]: {
 				transform: [
 					{
 						rotateX: theme.rotate[key],
@@ -20,11 +21,11 @@ export const rotate = (
 				],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const y = sizes
 		.map((key) => ({
-			[StyleUtils.id('rotate-y', key)]: {
+			[id('rotate-y', key)]: {
 				transform: [
 					{
 						rotateY: theme.rotate[key],
@@ -32,11 +33,11 @@ export const rotate = (
 				],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const z = sizes
 		.map((key) => ({
-			[StyleUtils.id('rotate-z', key)]: {
+			[id('rotate-z', key)]: {
 				transform: [
 					{
 						rotateZ: theme.rotate[key],
@@ -44,11 +45,11 @@ export const rotate = (
 				],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const xy = sizes
 		.map((key) => ({
-			[StyleUtils.id('rotate', key)]: {
+			[id('rotate', key)]: {
 				transform: [
 					{
 						rotate: theme.rotate[key],
@@ -56,7 +57,7 @@ export const rotate = (
 				],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
-	return [x, y, z, xy].reduce(StyleUtils.merge, {});
+	return [x, y, z, xy].reduce(merge, {});
 };

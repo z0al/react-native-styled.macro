@@ -2,25 +2,25 @@
 import { FlexStyle } from 'react-native';
 
 // Ours
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
 
 export const justifyContent = (): Record<string, FlexStyle> => ({
 	'justify-center': {
 		justifyContent: 'center',
 	},
-	[StyleUtils.id('justify', 'start')]: {
+	[id('justify', 'start')]: {
 		justifyContent: 'flex-start',
 	},
-	[StyleUtils.id('justify', 'end')]: {
+	[id('justify', 'end')]: {
 		justifyContent: 'flex-end',
 	},
-	[StyleUtils.id('justify', 'between')]: {
+	[id('justify', 'between')]: {
 		justifyContent: 'space-between',
 	},
-	[StyleUtils.id('justify', 'around')]: {
+	[id('justify', 'around')]: {
 		justifyContent: 'space-around',
 	},
-	[StyleUtils.id('justify', 'evenly')]: {
+	[id('justify', 'evenly')]: {
 		justifyContent: 'space-evenly',
 	},
 });

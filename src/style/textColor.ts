@@ -3,14 +3,15 @@ import { TextStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
+import { merge } from './utils/merge';
 
 export const textColor = (theme: Theme): Record<string, TextStyle> => {
 	return Object.keys(theme.textColor)
 		.map((key) => ({
-			[StyleUtils.id('text', key)]: {
+			[id('text', key)]: {
 				color: theme.textColor[key] as string,
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 };

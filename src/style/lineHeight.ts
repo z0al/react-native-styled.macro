@@ -3,14 +3,15 @@ import { TextStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
+import { merge } from './utils/merge';
 
 export const lineHeight = (theme: Theme): Record<string, TextStyle> => {
 	return Object.keys(theme.lineHeight)
 		.map((key) => ({
-			[StyleUtils.id('line-h', key)]: {
+			[id('line-h', key)]: {
 				lineHeight: theme.lineHeight[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 };

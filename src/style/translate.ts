@@ -3,7 +3,8 @@ import { TransformsStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
+import { merge } from './utils/merge';
 
 export const translate = (
 	theme: Theme
@@ -12,7 +13,7 @@ export const translate = (
 
 	const x = sizes
 		.map((key) => ({
-			[StyleUtils.id('translate-x', key)]: {
+			[id('translate-x', key)]: {
 				transform: [
 					{
 						translateX: theme.translate[key],
@@ -20,11 +21,11 @@ export const translate = (
 				],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const y = sizes
 		.map((key) => ({
-			[StyleUtils.id('translate-y', key)]: {
+			[id('translate-y', key)]: {
 				transform: [
 					{
 						translateY: theme.translate[key],
@@ -32,7 +33,7 @@ export const translate = (
 				],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
-	return [x, y].reduce(StyleUtils.merge, {});
+	return [x, y].reduce(merge, {});
 };
