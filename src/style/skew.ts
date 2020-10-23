@@ -3,14 +3,15 @@ import { TransformsStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
+import { merge } from './utils/merge';
 
 export const skew = (theme: Theme): Record<string, TransformsStyle> => {
 	const sizes = Object.keys(theme.skew);
 
 	const x = sizes
 		.map((key) => ({
-			[StyleUtils.id('skew-x', key)]: {
+			[id('skew-x', key)]: {
 				transform: [
 					{
 						skewX: theme.skew[key],
@@ -18,11 +19,11 @@ export const skew = (theme: Theme): Record<string, TransformsStyle> => {
 				],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const y = sizes
 		.map((key) => ({
-			[StyleUtils.id('skew-y', key)]: {
+			[id('skew-y', key)]: {
 				transform: [
 					{
 						skewY: theme.skew[key],
@@ -30,7 +31,7 @@ export const skew = (theme: Theme): Record<string, TransformsStyle> => {
 				],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
-	return [x, y].reduce(StyleUtils.merge, {});
+	return [x, y].reduce(merge, {});
 };

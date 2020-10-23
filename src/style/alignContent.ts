@@ -2,25 +2,25 @@
 import { FlexStyle } from 'react-native';
 
 // Ours
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
 
 export const alignContent = (): Record<string, FlexStyle> => ({
-	[StyleUtils.id('content', 'stretch')]: {
+	[id('content', 'stretch')]: {
 		alignContent: 'stretch',
 	},
-	[StyleUtils.id('content', 'center')]: {
+	[id('content', 'center')]: {
 		alignContent: 'center',
 	},
-	[StyleUtils.id('content', 'start')]: {
+	[id('content', 'start')]: {
 		alignContent: 'flex-start',
 	},
-	[StyleUtils.id('content', 'end')]: {
+	[id('content', 'end')]: {
 		alignContent: 'flex-end',
 	},
-	[StyleUtils.id('content', 'between')]: {
+	[id('content', 'between')]: {
 		alignContent: 'space-between',
 	},
-	[StyleUtils.id('content', 'around')]: {
+	[id('content', 'around')]: {
 		alignContent: 'space-around',
 	},
 });

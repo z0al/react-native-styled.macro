@@ -3,7 +3,8 @@ import { TransformsStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
+import { merge } from './utils/merge';
 
 export const scale = (
 	theme: Theme
@@ -12,7 +13,7 @@ export const scale = (
 
 	const x = sizes
 		.map((key) => ({
-			[StyleUtils.id('scale-x', key)]: {
+			[id('scale-x', key)]: {
 				transform: [
 					{
 						scaleX: theme.scale[key],
@@ -20,11 +21,11 @@ export const scale = (
 				],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const y = sizes
 		.map((key) => ({
-			[StyleUtils.id('scale-y', key)]: {
+			[id('scale-y', key)]: {
 				transform: [
 					{
 						scaleY: theme.scale[key],
@@ -32,11 +33,11 @@ export const scale = (
 				],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const xy = sizes
 		.map((key) => ({
-			[StyleUtils.id('scale', key)]: {
+			[id('scale', key)]: {
 				transform: [
 					{
 						scale: theme.scale[key],
@@ -44,7 +45,7 @@ export const scale = (
 				],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
-	return [x, y, xy].reduce(StyleUtils.merge, {});
+	return [x, y, xy].reduce(merge, {});
 };

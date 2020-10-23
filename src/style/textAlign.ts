@@ -2,22 +2,23 @@
 import { TextStyle } from 'react-native';
 
 // Ours
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
+import { merge } from './utils/merge';
 
 export const textAlign = (): Record<string, TextStyle> => ({
-	[StyleUtils.id('text', 'auto')]: {
+	[id('text', 'auto')]: {
 		textAlign: 'auto',
 	},
-	[StyleUtils.id('text', 'left')]: {
+	[id('text', 'left')]: {
 		textAlign: 'left',
 	},
-	[StyleUtils.id('text', 'right')]: {
+	[id('text', 'right')]: {
 		textAlign: 'right',
 	},
-	[StyleUtils.id('text', 'center')]: {
+	[id('text', 'center')]: {
 		textAlign: 'center',
 	},
-	[StyleUtils.id('text', 'justify')]: {
+	[id('text', 'justify')]: {
 		textAlign: 'justify',
 	},
 });

@@ -2,16 +2,16 @@
 import { FlexStyle } from 'react-native';
 
 // Ours
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
 
 export const overflow = (): Record<string, FlexStyle> => ({
-	[StyleUtils.id('overflow', 'hidden')]: {
+	[id('overflow', 'hidden')]: {
 		overflow: 'hidden',
 	},
-	[StyleUtils.id('overflow', 'scroll')]: {
+	[id('overflow', 'scroll')]: {
 		overflow: 'scroll',
 	},
-	[StyleUtils.id('overflow', 'visible')]: {
+	[id('overflow', 'visible')]: {
 		overflow: 'visible',
 	},
 });

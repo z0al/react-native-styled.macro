@@ -3,14 +3,15 @@ import { FlexStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
+import { merge } from './utils/merge';
 
 export const height = (theme: Theme): Record<string, FlexStyle> => {
 	return Object.keys(theme.height)
 		.map((key) => ({
-			[StyleUtils.id('h', key)]: {
+			[id('h', key)]: {
 				height: theme.height[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 };

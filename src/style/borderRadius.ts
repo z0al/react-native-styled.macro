@@ -3,7 +3,8 @@ import { ViewStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
+import { merge } from './utils/merge';
 
 export const borderRadius = (
 	theme: Theme
@@ -11,95 +12,95 @@ export const borderRadius = (
 	const sizes = Object.keys(theme.borderRadius);
 	const rounded = sizes
 		.map((key) => ({
-			[StyleUtils.id('rounded', key)]: {
+			[id('rounded', key)]: {
 				borderRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const roundedT = sizes
 		.map((key) => ({
-			[StyleUtils.id('rounded-t', key)]: {
+			[id('rounded-t', key)]: {
 				borderTopLeftRadius: theme.borderRadius[key],
 				borderTopRightRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const roundedR = sizes
 		.map((key) => ({
-			[StyleUtils.id('rounded-r', key)]: {
+			[id('rounded-r', key)]: {
 				borderTopRightRadius: theme.borderRadius[key],
 				borderBottomRightRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const roundedB = sizes
 		.map((key) => ({
-			[StyleUtils.id('rounded-b', key)]: {
+			[id('rounded-b', key)]: {
 				borderBottomRightRadius: theme.borderRadius[key],
 				borderBottomLeftRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const roundedL = sizes
 		.map((key) => ({
-			[StyleUtils.id('rounded-l', key)]: {
+			[id('rounded-l', key)]: {
 				borderTopLeftRadius: theme.borderRadius[key],
 				borderBottomLeftRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const roundedTS = sizes
 		.map((key) => ({
-			[StyleUtils.id('rounded-ts', key)]: {
+			[id('rounded-ts', key)]: {
 				borderTopStartRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const roundedTE = sizes
 		.map((key) => ({
-			[StyleUtils.id('rounded-te', key)]: {
+			[id('rounded-te', key)]: {
 				borderTopEndRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const roundedTL = sizes
 		.map((key) => ({
-			[StyleUtils.id('rounded-tl', key)]: {
+			[id('rounded-tl', key)]: {
 				borderTopLeftRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const roundedTR = sizes
 		.map((key) => ({
-			[StyleUtils.id('rounded-tr', key)]: {
+			[id('rounded-tr', key)]: {
 				borderTopRightRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const roundedBR = sizes
 		.map((key) => ({
-			[StyleUtils.id('rounded-br', key)]: {
+			[id('rounded-br', key)]: {
 				borderBottomRightRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const roundedBL = sizes
 		.map((key) => ({
-			[StyleUtils.id('rounded-bl', key)]: {
+			[id('rounded-bl', key)]: {
 				borderBottomLeftRadius: theme.borderRadius[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	return [
 		rounded,
@@ -113,5 +114,5 @@ export const borderRadius = (
 		roundedBR,
 		roundedTS,
 		roundedTE,
-	].reduce(StyleUtils.merge, {});
+	].reduce(merge, {});
 };

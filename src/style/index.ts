@@ -14,7 +14,6 @@ import { flexDirection } from './flexDirection';
 import { flexGrow } from './flexGrow';
 import { flexShrink } from './flexShrink';
 import { flexWrap } from './flexWrap';
-import { fontFamily } from './fontFamily';
 import { fontSize } from './fontSize';
 import { fontStyle } from './fontStyle';
 import { fontVariant } from './fontVariant';
@@ -60,7 +59,6 @@ export default (theme: Theme) => ({
 	...flexGrow(theme),
 	...flexShrink(theme),
 	...flexWrap(),
-	...fontFamily(theme),
 	...fontSize(theme),
 	...fontStyle(),
 	...fontVariant(),

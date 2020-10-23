@@ -3,85 +3,83 @@ import { FlexStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
+import { merge } from './utils/merge';
 
 export const padding = (theme: Theme): Record<string, FlexStyle> => {
 	const sizes = Object.keys(theme.padding);
 
 	const p = sizes
 		.map((size) => ({
-			[StyleUtils.id('p', size)]: {
+			[id('p', size)]: {
 				padding: theme.padding[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const pt = sizes
 		.map((size) => ({
-			[StyleUtils.id('pt', size)]: {
+			[id('pt', size)]: {
 				paddingTop: theme.padding[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const pl = sizes
 		.map((size) => ({
-			[StyleUtils.id('pl', size)]: {
+			[id('pl', size)]: {
 				paddingLeft: theme.padding[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const pr = sizes
 		.map((size) => ({
-			[StyleUtils.id('pr', size)]: {
+			[id('pr', size)]: {
 				paddingRight: theme.padding[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const pb = sizes
 		.map((size) => ({
-			[StyleUtils.id('pb', size)]: {
+			[id('pb', size)]: {
 				paddingBottom: theme.padding[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const ps = sizes
 		.map((size) => ({
-			[StyleUtils.id('ps', size)]: {
+			[id('ps', size)]: {
 				paddingStart: theme.padding[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const pe = sizes
 		.map((size) => ({
-			[StyleUtils.id('pe', size)]: {
+			[id('pe', size)]: {
 				paddingEnd: theme.padding[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const px = sizes
 		.map((size) => ({
-			[StyleUtils.id('px', size)]: {
+			[id('px', size)]: {
 				paddingHorizontal: theme.padding[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const py = sizes
 		.map((size) => ({
-			[StyleUtils.id('py', size)]: {
+			[id('py', size)]: {
 				paddingVertical: theme.padding[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
-	return [p, pt, pl, pr, pb, ps, pe, px, py].reduce(
-		StyleUtils.merge,
-		{}
-	);
+	return [p, pt, pl, pr, pb, ps, pe, px, py].reduce(merge, {});
 };

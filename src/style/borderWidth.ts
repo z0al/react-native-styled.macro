@@ -3,7 +3,8 @@ import { ViewStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
+import { merge } from './utils/merge';
 
 export const borderWidth = (
 	theme: Theme
@@ -12,59 +13,59 @@ export const borderWidth = (
 
 	const border = sizes
 		.map((key) => ({
-			[StyleUtils.id('border', key)]: {
+			[id('border', key)]: {
 				borderWidth: theme.borderWidth[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const borderT = sizes
 		.map((key) => ({
-			[StyleUtils.id('border-t', key)]: {
+			[id('border-t', key)]: {
 				borderTopWidth: theme.borderWidth[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const borderL = sizes
 		.map((key) => ({
-			[StyleUtils.id('border-l', key)]: {
+			[id('border-l', key)]: {
 				borderLeftWidth: theme.borderWidth[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const borderR = sizes
 		.map((key) => ({
-			[StyleUtils.id('border-r', key)]: {
+			[id('border-r', key)]: {
 				borderRightWidth: theme.borderWidth[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const borderB = sizes
 		.map((key) => ({
-			[StyleUtils.id('border-b', key)]: {
+			[id('border-b', key)]: {
 				borderBottomWidth: theme.borderWidth[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const borderS = sizes
 		.map((key) => ({
-			[StyleUtils.id('border-s', key)]: {
+			[id('border-s', key)]: {
 				borderStartWidth: theme.borderWidth[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const borderE = sizes
 		.map((key) => ({
-			[StyleUtils.id('border-e', key)]: {
+			[id('border-e', key)]: {
 				borderEndWidth: theme.borderWidth[key],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	return [
 		border,
@@ -74,5 +75,5 @@ export const borderWidth = (
 		borderB,
 		borderS,
 		borderE,
-	].reduce(StyleUtils.merge, {});
+	].reduce(merge, {});
 };

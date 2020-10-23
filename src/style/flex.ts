@@ -3,7 +3,8 @@ import { FlexStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
+import { merge } from './utils/merge';
 
 export const flex = (theme: Theme): Record<string, FlexStyle> => {
 	return Object.keys(theme.flex)
@@ -11,10 +12,10 @@ export const flex = (theme: Theme): Record<string, FlexStyle> => {
 			const value = theme.flex[key] || {};
 
 			return {
-				[StyleUtils.id('flex', key)]: {
+				[id('flex', key)]: {
 					...(typeof value === 'number' ? { flex: value } : value),
 				},
 			};
 		})
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 };

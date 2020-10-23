@@ -150,8 +150,6 @@ const opacity = {
 };
 
 export const baseTheme: Theme = {
-	colors,
-	spacing,
 	backgroundColor: colors,
 	borderColor: colors,
 	borderRadius: {

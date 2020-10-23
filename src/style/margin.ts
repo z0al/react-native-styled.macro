@@ -3,85 +3,83 @@ import { FlexStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
+import { merge } from './utils/merge';
 
 export const margin = (theme: Theme): Record<string, FlexStyle> => {
 	const sizes = Object.keys(theme.margin);
 
 	const m = sizes
 		.map((size) => ({
-			[StyleUtils.id('m', size)]: {
+			[id('m', size)]: {
 				margin: theme.margin[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const mt = sizes
 		.map((size) => ({
-			[StyleUtils.id('mt', size)]: {
+			[id('mt', size)]: {
 				marginTop: theme.margin[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const ml = sizes
 		.map((size) => ({
-			[StyleUtils.id('ml', size)]: {
+			[id('ml', size)]: {
 				marginLeft: theme.margin[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const mr = sizes
 		.map((size) => ({
-			[StyleUtils.id('mr', size)]: {
+			[id('mr', size)]: {
 				marginRight: theme.margin[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const mb = sizes
 		.map((size) => ({
-			[StyleUtils.id('mb', size)]: {
+			[id('mb', size)]: {
 				marginBottom: theme.margin[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const ms = sizes
 		.map((size) => ({
-			[StyleUtils.id('ms', size)]: {
+			[id('ms', size)]: {
 				marginStart: theme.margin[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const me = sizes
 		.map((size) => ({
-			[StyleUtils.id('me', size)]: {
+			[id('me', size)]: {
 				marginEnd: theme.margin[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const mx = sizes
 		.map((size) => ({
-			[StyleUtils.id('mx', size)]: {
+			[id('mx', size)]: {
 				marginHorizontal: theme.margin[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
 	const my = sizes
 		.map((size) => ({
-			[StyleUtils.id('my', size)]: {
+			[id('my', size)]: {
 				marginVertical: theme.margin[size],
 			},
 		}))
-		.reduce(StyleUtils.merge, {});
+		.reduce(merge, {});
 
-	return [m, mt, ml, mr, mb, ms, me, mx, my].reduce(
-		StyleUtils.merge,
-		{}
-	);
+	return [m, mt, ml, mr, mb, ms, me, mx, my].reduce(merge, {});
 };

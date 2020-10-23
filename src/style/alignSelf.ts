@@ -2,22 +2,22 @@
 import { FlexStyle } from 'react-native';
 
 // Ours
-import { StyleUtils } from './utils';
+import { id } from './utils/id';
 
 export const alignSelf = (): Record<string, FlexStyle> => ({
-	[StyleUtils.id('self', 'start')]: {
+	[id('self', 'start')]: {
 		alignSelf: 'flex-start',
 	},
-	[StyleUtils.id('self', 'end')]: {
+	[id('self', 'end')]: {
 		alignSelf: 'flex-end',
 	},
-	[StyleUtils.id('self', 'auto')]: {
+	[id('self', 'auto')]: {
 		alignSelf: 'auto',
 	},
-	[StyleUtils.id('self', 'stretch')]: {
+	[id('self', 'stretch')]: {
 		alignSelf: 'stretch',
 	},
-	[StyleUtils.id('self', 'center')]: {
+	[id('self', 'center')]: {
 		alignSelf: 'center',
 	},
 });
