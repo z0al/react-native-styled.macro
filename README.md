@@ -8,9 +8,61 @@
 
 - **Rich Styling support:** There is a utility for almost everything.
 - **Variants:** Built-in support for Responsive layout, Dark mode, and more.
-- **Customization:** You can optionally add `styled.config.js` and override theme and/or variants.
+- **Customizable:** You can optionally add `styled.config.js` and override theme and/or variants.
 
-## Usage
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [How it works](#how-it-works)
+- [Utilities](#utilities)
+	- [Display](#display)
+	- [Flex](#flex)
+	- [Flex Direction](#flex-direction)
+	- [Flex Grow](#flex-grow)
+	- [Flex Shrink](#flex-shrink)
+	- [Flex Wrap](#flex-wrap)
+	- [Align Self](#align-self)
+	- [Align Items](#align-items)
+	- [Align Content](#align-content)
+	- [Justify Content](#justify-content)
+	- [Font Size](#font-size)
+	- [Font Style](#font-style)
+	- [Font Variant](#font-variant)
+	- [Font Weight](#font-weight)
+	- [Height](#height)
+	- [Width](#width)
+	- [Max-Height](#max-height)
+	- [Max-Width](#max-width)
+	- [Min-Height](#min-height)
+	- [Min-Width](#min-width)
+	- [Border Color](#border-color)
+	- [Border Radius](#border-radius)
+	- [Border Style](#border-style)
+	- [Border Width](#border-width)
+	- [Background Color](#background-color)
+	- [Letter Spacing](#letter-spacing)
+	- [Text Align](#text-align)
+	- [Text Align (Vertical)](#text-align-vertical)
+	- [Text Color](#text-color)
+	- [Text Decoration](#text-decoration)
+	- [Text Transform](#text-transform)
+	- [Margin](#margin)
+	- [Padding](#padding)
+	- [Overflow](#overflow)
+	- [Opacity](#opacity)
+	- [Rotate](#rotate)
+	- [Scale](#scale)
+	- [Skew](#skew)
+	- [Translate](#translate)
+	- [Position](#position)
+	- [Top / Right / Bottom / Left](#top--right--bottom--left)
+	- [Z-Index](#z-index)
+- [Variants](#variants)
+- [Best Practices](#best-practices)
+- [Prior Art](#prior-art)
+- [License](#license)
+
+## Getting Started
 
 > _Compatible with React Native v0.62.0 or higher_
 
