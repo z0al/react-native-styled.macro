@@ -2,7 +2,7 @@
 import { ViewStyle } from 'react-native';
 
 // Ours
-import { id } from './utils/id';
+import { id } from '../utils/id';
 
 export const borderStyle = (): Record<string, ViewStyle> => ({
 	[id('border', 'solid')]: {

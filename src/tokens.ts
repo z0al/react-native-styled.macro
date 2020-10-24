@@ -1,6 +1,6 @@
 // Ours
 import createStyles from './style';
-import { StyleUtils } from './style/utils';
+import { StyleUtils } from './utils';
 import theme from './theme';
 import { VariantStyle } from './types';
 

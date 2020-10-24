@@ -2,8 +2,8 @@
 import { TextStyle } from 'react-native';
 
 // Ours
-import { id } from './utils/id';
-import { merge } from './utils/merge';
+import { id } from '../utils/id';
+import { merge } from '../utils/merge';
 
 export const textAlign = (): Record<string, TextStyle> => ({
 	[id('text', 'auto')]: {

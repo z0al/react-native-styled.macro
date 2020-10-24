@@ -11,7 +11,7 @@ import styled from '../../lib/macro'
       ↓ ↓ ↓ ↓ ↓ ↓
 
 import { StyleSheet as _StyleSheet } from 'react-native';
-import { select as _select } from 'react-native-restyled/lib/style/utils/select';
+import { select as _select } from 'react-native-restyled/lib/utils/select';
 
 const Button = () => {
 	return _select([

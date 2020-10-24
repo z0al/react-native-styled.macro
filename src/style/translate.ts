@@ -3,8 +3,8 @@ import { TransformsStyle } from 'react-native';
 
 // Ours
 import { Theme } from '../types';
-import { id } from './utils/id';
-import { merge } from './utils/merge';
+import { id } from '../utils/id';
+import { merge } from '../utils/merge';
 
 export const translate = (
 	theme: Theme

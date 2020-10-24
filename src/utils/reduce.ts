@@ -2,7 +2,7 @@
 import { StyleSheet } from 'react-native';
 
 // Ours
-import { VariantStyle } from '../../types';
+import { VariantStyle } from '../types';
 
 /**
  * Merging two or more consecutive styles/props into one if they

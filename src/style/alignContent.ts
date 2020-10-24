@@ -2,7 +2,7 @@
 import { FlexStyle } from 'react-native';
 
 // Ours
-import { id } from './utils/id';
+import { id } from '../utils/id';
 
 export const alignContent = (): Record<string, FlexStyle> => ({
 	[id('content', 'stretch')]: {

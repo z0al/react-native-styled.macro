@@ -1,6 +1,6 @@
 // Ours
-import { StyleProps, VariantStyle, ToggleVariants } from '../../types';
-import { builtin } from '../../variants';
+import { StyleProps, VariantStyle, ToggleVariants } from '../types';
+import { builtin } from '../variants';
 
 export const select = (
 	variantStyles: VariantStyle[],

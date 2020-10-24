@@ -1,5 +1,5 @@
 // Ours
-import { rem } from '../style/utils/rem';
+import { rem } from '../utils/rem';
 import { Theme } from '../types';
 import { negative } from './utils';
 

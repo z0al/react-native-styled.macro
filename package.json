@@ -34,6 +34,7 @@
 		"babel-plugin-macros": "^2.8.0"
 	},
 	"devDependencies": {
+		"@babel/types": "^7.12.1",
 		"@types/babel-plugin-macros": "^2.8.3",
 		"@types/babel-plugin-tester": "^9.0.1",
 		"@types/jest": "^26.0.14",
