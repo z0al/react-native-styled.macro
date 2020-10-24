@@ -6,63 +6,62 @@
 
 ## Features
 
-- **Rich Styling support:** There is a utility for almost everything.
+- **Zero-overhead:** Used styles are injected using `StyleSheet.create` API during compilation hence no runtime overhead.
 - **Variants:** Built-in support for Responsive layout, Dark mode, and more.
-- **Customizable:** You can optionally add `styled.config.js` and override theme and/or variants.
+- **Customizable:** You can optionally override the default theme by adding `styled.config.js`.
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
+- [Installation](#installation)
 - [How it works](#how-it-works)
 - [Utilities](#utilities)
-	- [Display](#display)
-	- [Flex](#flex)
-	- [Flex Direction](#flex-direction)
-	- [Flex Grow](#flex-grow)
-	- [Flex Shrink](#flex-shrink)
-	- [Flex Wrap](#flex-wrap)
-	- [Align Self](#align-self)
-	- [Align Items](#align-items)
-	- [Align Content](#align-content)
-	- [Justify Content](#justify-content)
-	- [Font Size](#font-size)
-	- [Font Style](#font-style)
-	- [Font Variant](#font-variant)
-	- [Font Weight](#font-weight)
-	- [Height](#height)
-	- [Width](#width)
-	- [Max-Height](#max-height)
-	- [Max-Width](#max-width)
-	- [Min-Height](#min-height)
-	- [Min-Width](#min-width)
-	- [Border Color](#border-color)
-	- [Border Radius](#border-radius)
-	- [Border Style](#border-style)
-	- [Border Width](#border-width)
-	- [Background Color](#background-color)
-	- [Letter Spacing](#letter-spacing)
-	- [Text Align](#text-align)
-	- [Text Align (Vertical)](#text-align-vertical)
-	- [Text Color](#text-color)
-	- [Text Decoration](#text-decoration)
-	- [Text Transform](#text-transform)
-	- [Margin](#margin)
-	- [Padding](#padding)
-	- [Overflow](#overflow)
-	- [Opacity](#opacity)
-	- [Rotate](#rotate)
-	- [Scale](#scale)
-	- [Skew](#skew)
-	- [Translate](#translate)
-	- [Position](#position)
-	- [Top / Right / Bottom / Left](#top--right--bottom--left)
-	- [Z-Index](#z-index)
-- [Variants](#variants)
+  - [Display](#display)
+  - [Flex](#flex)
+  - [Flex Direction](#flex-direction)
+  - [Flex Grow](#flex-grow)
+  - [Flex Shrink](#flex-shrink)
+  - [Flex Wrap](#flex-wrap)
+  - [Align Self](#align-self)
+  - [Align Items](#align-items)
+  - [Align Content](#align-content)
+  - [Justify Content](#justify-content)
+  - [Font Size](#font-size)
+  - [Font Style](#font-style)
+  - [Font Variant](#font-variant)
+  - [Font Weight](#font-weight)
+  - [Height](#height)
+  - [Width](#width)
+  - [Max-Height](#max-height)
+  - [Max-Width](#max-width)
+  - [Min-Height](#min-height)
+  - [Min-Width](#min-width)
+  - [Border Color](#border-color)
+  - [Border Radius](#border-radius)
+  - [Border Style](#border-style)
+  - [Border Width](#border-width)
+  - [Background Color](#background-color)
+  - [Letter Spacing](#letter-spacing)
+  - [Text Align](#text-align)
+  - [Text Align (Vertical)](#text-align-vertical)
+  - [Text Color](#text-color)
+  - [Text Decoration](#text-decoration)
+  - [Text Transform](#text-transform)
+  - [Margin](#margin)
+  - [Padding](#padding)
+  - [Overflow](#overflow)
+  - [Opacity](#opacity)
+  - [Rotate](#rotate)
+  - [Scale](#scale)
+  - [Skew](#skew)
+  - [Translate](#translate)
+  - [Position](#position)
+  - [Top / Right / Bottom / Left](#top--right--bottom--left)
+  - [Z-Index](#z-index)
 - [Best Practices](#best-practices)
 - [Prior Art](#prior-art)
 - [License](#license)
 
-## Getting Started
+## Installation
 
 > _Compatible with React Native v0.62.0 or higher_
 
@@ -80,7 +79,7 @@ TODO
 
 ### Display
 
-| Name   | Properties            |
+| Name   | Styles                |
 | ------ | --------------------- |
 | flex   | `{ display: "flex" }` |
 | hidden | `{ display: "none" }` |
@@ -89,7 +88,7 @@ TODO
 
 > _Tip:_ The following styles are generated based on `theme.flex` values.
 
-| Name         | Properties                                          |
+| Name         | Styles                                              |
 | ------------ | --------------------------------------------------- |
 | flex-1       | `{ flexGrow: 1, flexShrink: 1, flexBasis: "0%" }`   |
 | flex-auto    | `{ flexGrow: 1, flexShrink: 1, flexBasis: "auto" }` |
@@ -98,7 +97,7 @@ TODO
 
 ### Flex Direction
 
-| Name             | Properties                            |
+| Name             | Styles                                |
 | ---------------- | ------------------------------------- |
 | flex-col         | `{ flexDirection: "column" }`         |
 | flex-col-reverse | `{ flexDirection: "column-reverse" }` |
@@ -109,7 +108,7 @@ TODO
 
 > _Tip:_ The following styles are generated based on `theme.flexGrow` values.
 
-| Name        | Properties        |
+| Name        | Styles            |
 | ----------- | ----------------- |
 | flex-grow   | `{ flexGrow: 1 }` |
 | flex-grow-0 | `{ flexGrow: 0 }` |
@@ -118,14 +117,14 @@ TODO
 
 > _Tip:_ The following styles are generated based on `theme.flexShrink` values.
 
-| Name          | Properties          |
+| Name          | Styles              |
 | ------------- | ------------------- |
 | flex-shrink   | `{ flexShrink: 1 }` |
 | flex-shrink-0 | `{ flexShrink: 0 }` |
 
 ### Flex Wrap
 
-| Name              | Properties                     |
+| Name              | Styles                         |
 | ----------------- | ------------------------------ |
 | flex-no-wrap      | `{ flexWrap: "nowrap" }`       |
 | flex-wrap         | `{ flexWrap: "wrap" }`         |
@@ -133,7 +132,7 @@ TODO
 
 ### Align Self
 
-| Name         | Properties                    |
+| Name         | Styles                        |
 | ------------ | ----------------------------- |
 | self-auto    | `{ alignSelf: "auto" }`       |
 | self-center  | `{ alignSelf: "center" }`     |
@@ -143,7 +142,7 @@ TODO
 
 ### Align Items
 
-| Name           | Properties                     |
+| Name           | Styles                         |
 | -------------- | ------------------------------ |
 | items-baseline | `{ alignItems: "baseline" }`   |
 | items-center   | `{ alignItems: "center" }`     |
@@ -153,7 +152,7 @@ TODO
 
 ### Align Content
 
-| Name            | Properties                          |
+| Name            | Styles                              |
 | --------------- | ----------------------------------- |
 | content-around  | `{ alignContent: "space-around" }`  |
 | content-between | `{ alignContent: "space-between" }` |
@@ -164,7 +163,7 @@ TODO
 
 ### Justify Content
 
-| Name            | Properties                            |
+| Name            | Styles                                |
 | --------------- | ------------------------------------- |
 | justify-around  | `{ justifyContent: "space-around" }`  |
 | justify-between | `{ justifyContent: "space-between" }` |
@@ -177,7 +176,7 @@ TODO
 
 > _Tip:_ The following styles are generated based on `theme.fontSize` values.
 
-| Name      | Properties                 |
+| Name      | Styles                     |
 | --------- | -------------------------- |
 | text-2xl  | `{ fontSize: rem(1.5) }`   |
 | text-3xl  | `{ fontSize: rem(1.875) }` |
@@ -192,14 +191,14 @@ TODO
 
 ### Font Style
 
-| Name       | Properties                |
+| Name       | Styles                    |
 | ---------- | ------------------------- |
 | italic     | `{ fontStyle: "italic" }` |
 | not-italic | `{ fontStyle: "normal" }` |
 
 ### Font Variant
 
-| Name              | Properties                               |
+| Name              | Styles                                   |
 | ----------------- | ---------------------------------------- |
 | lining-nums       | `{ fontVariant: ["lining-nums"] }`       |
 | oldstyle-nums     | `{ fontVariant: ["oldstyle-nums"] }`     |
@@ -211,7 +210,7 @@ TODO
 
 > _Tip:_ The following styles are generated based on `theme.fontWeight` values.
 
-| Name           | Properties              |
+| Name           | Styles                  |
 | -------------- | ----------------------- |
 | font-black     | `{ fontWeight: "900" }` |
 | font-bold      | `{ fontWeight: "700" }` |
@@ -229,7 +228,7 @@ TODO
 
 <details><summary>Show all styles</summary>
 
-| Name | Properties              |
+| Name | Styles                  |
 | ---- | ----------------------- |
 | h-0  | `{ height: 0 }`         |
 | h-1  | `{ height: rem(0.25) }` |
@@ -259,7 +258,7 @@ TODO
 
 <details><summary>Show all styles</summary>
 
-| Name    | Properties                |
+| Name    | Styles                    |
 | ------- | ------------------------- |
 | w-0     | `{ width: 0 }`            |
 | w-1     | `{ width: rem(0.25) }`    |
@@ -314,7 +313,7 @@ TODO
 
 > _Tip:_ The following styles are generated based on `theme.maxHeight` values.
 
-| Name       | Properties              |
+| Name       | Styles                  |
 | ---------- | ----------------------- |
 | max-h-full | `{ maxHeight: "100%" }` |
 
@@ -324,7 +323,7 @@ TODO
 
 <details><summary>Show all styles</summary>
 
-| Name       | Properties              |
+| Name       | Styles                  |
 | ---------- | ----------------------- |
 | max-w-2xl  | `{ maxWidth: rem(42) }` |
 | max-w-3xl  | `{ maxWidth: rem(48) }` |
@@ -345,7 +344,7 @@ TODO
 
 > _Tip:_ The following styles are generated based on `theme.minHeight` values.
 
-| Name       | Properties              |
+| Name       | Styles                  |
 | ---------- | ----------------------- |
 | min-h-0    | `{ minHeight: 0 }`      |
 | min-h-full | `{ minHeight: "100%" }` |
@@ -354,7 +353,7 @@ TODO
 
 > _Tip:_ The following styles are generated based on `theme.minWidth` values.
 
-| Name       | Properties             |
+| Name       | Styles                 |
 | ---------- | ---------------------- |
 | min-w-0    | `{ minWidth: 0 }`      |
 | min-w-full | `{ minWidth: "100%" }` |
@@ -365,7 +364,7 @@ TODO
 
 <details><summary>Show all styles</summary>
 
-| Name               | Properties                       |
+| Name               | Styles                           |
 | ------------------ | -------------------------------- |
 | border-black       | `{ borderColor: "black" }`       |
 | border-blue-100    | `{ borderColor: "#ebf8ff" }`     |
@@ -469,7 +468,7 @@ TODO
 
 <details><summary>Show all styles</summary>
 
-| Name            | Properties                                                                    |
+| Name            | Styles                                                                        |
 | --------------- | ----------------------------------------------------------------------------- |
 | rounded         | `{ borderRadius: rem(0.25) }`                                                 |
 | rounded-2xl     | `{ borderRadius: rem(1) }`                                                    |
@@ -575,7 +574,7 @@ TODO
 
 ### Border Style
 
-| Name          | Properties                  |
+| Name          | Styles                      |
 | ------------- | --------------------------- |
 | border-dashed | `{ borderStyle: "dashed" }` |
 | border-dotted | `{ borderStyle: "dotted" }` |
@@ -587,7 +586,7 @@ TODO
 
 <details><summary>Show all styles</summary>
 
-| Name       | Properties                 |
+| Name       | Styles                     |
 | ---------- | -------------------------- |
 | border     | `{ borderWidth: 1 }`       |
 | border-0   | `{ borderWidth: 0 }`       |
@@ -633,7 +632,7 @@ TODO
 
 <details><summary>Show all styles</summary>
 
-| Name           | Properties                           |
+| Name           | Styles                               |
 | -------------- | ------------------------------------ |
 | bg-black       | `{ backgroundColor: "black" }`       |
 | bg-blue-100    | `{ backgroundColor: "#ebf8ff" }`     |
@@ -735,7 +734,7 @@ TODO
 
 > _Tip:_ The following styles are generated based on `theme.letterSpacing` values.
 
-| Name           | Properties                       |
+| Name           | Styles                           |
 | -------------- | -------------------------------- |
 | letter-normal  | `{ letterSpacing: 0 }`           |
 | letter-tight   | `{ letterSpacing: rem(-0.025) }` |
@@ -746,7 +745,7 @@ TODO
 
 ### Text Align
 
-| Name         | Properties                 |
+| Name         | Styles                     |
 | ------------ | -------------------------- |
 | text-auto    | `{ textAlign: "auto" }`    |
 | text-center  | `{ textAlign: "center" }`  |
@@ -756,7 +755,7 @@ TODO
 
 ### Text Align (Vertical)
 
-| Name          | Properties                        |
+| Name          | Styles                            |
 | ------------- | --------------------------------- |
 | text-v-auto   | `{ textAlignVertical: "auto" }`   |
 | text-v-bottom | `{ textAlignVertical: "bottom" }` |
@@ -769,7 +768,7 @@ TODO
 
 <details><summary>Show all styles</summary>
 
-| Name             | Properties                 |
+| Name             | Styles                     |
 | ---------------- | -------------------------- |
 | text-black       | `{ color: "black" }`       |
 | text-blue-100    | `{ color: "#ebf8ff" }`     |
@@ -869,7 +868,7 @@ TODO
 
 ### Text Decoration
 
-| Name         | Properties                               |
+| Name         | Styles                                   |
 | ------------ | ---------------------------------------- |
 | line-through | `{ textDecorationLine: "line-through" }` |
 | no-underline | `{ textDecorationLine: "none" }`         |
@@ -877,7 +876,7 @@ TODO
 
 ### Text Transform
 
-| Name        | Properties                        |
+| Name        | Styles                            |
 | ----------- | --------------------------------- |
 | capitalize  | `{ textTransform: "capitalize" }` |
 | lowercase   | `{ textTransform: "lowercase" }`  |
@@ -890,7 +889,7 @@ TODO
 
 <details><summary>Show all styles</summary>
 
-| Name   | Properties                           |
+| Name   | Styles                               |
 | ------ | ------------------------------------ |
 | -m-0   | `{ margin: 0 }`                      |
 | -m-1   | `{ margin: "-rem(0.25)" }`           |
@@ -1243,7 +1242,7 @@ TODO
 
 <details><summary>Show all styles</summary>
 
-| Name  | Properties                         |
+| Name  | Styles                             |
 | ----- | ---------------------------------- |
 | p-0   | `{ padding: 0 }`                   |
 | p-1   | `{ padding: rem(0.25) }`           |
@@ -1421,7 +1420,7 @@ TODO
 
 ### Overflow
 
-| Name             | Properties                |
+| Name             | Styles                    |
 | ---------------- | ------------------------- |
 | overflow-hidden  | `{ overflow: "hidden" }`  |
 | overflow-scroll  | `{ overflow: "scroll" }`  |
@@ -1431,7 +1430,7 @@ TODO
 
 > _Tip:_ The following styles are generated based on `theme.opacity` values.
 
-| Name        | Properties          |
+| Name        | Styles              |
 | ----------- | ------------------- |
 | opacity-0   | `{ opacity: 0 }`    |
 | opacity-100 | `{ opacity: 1 }`    |
@@ -1445,7 +1444,7 @@ TODO
 
 <details><summary>Show all styles</summary>
 
-| Name          | Properties                                |
+| Name          | Styles                                    |
 | ------------- | ----------------------------------------- |
 | -rotate-1     | `{ transform: [{ rotate: "-1deg" }] }`    |
 | -rotate-12    | `{ transform: [{ rotate: "-12deg" }] }`   |
@@ -1524,7 +1523,7 @@ TODO
 
 <details><summary>Show all styles</summary>
 
-| Name        | Properties                          |
+| Name        | Styles                              |
 | ----------- | ----------------------------------- |
 | scale-0     | `{ transform: [{ scale: 0 }] }`     |
 | scale-100   | `{ transform: [{ scale: 1 }] }`     |
@@ -1565,7 +1564,7 @@ TODO
 
 <details><summary>Show all styles</summary>
 
-| Name       | Properties                             |
+| Name       | Styles                                 |
 | ---------- | -------------------------------------- |
 | -skew-x-1  | `{ transform: [{ skewX: "-1deg" }] }`  |
 | -skew-x-12 | `{ transform: [{ skewX: "-12deg" }] }` |
@@ -1598,7 +1597,7 @@ TODO
 
 <details><summary>Show all styles</summary>
 
-| Name            | Properties                                      |
+| Name            | Styles                                          |
 | --------------- | ----------------------------------------------- |
 | -translate-x-0  | `{ transform: [{ translateX: 0 }] }`            |
 | -translate-x-1  | `{ transform: [{ translateX: "-rem(0.25)" }] }` |
@@ -1681,14 +1680,14 @@ TODO
 
 ### Position
 
-| Name     | Properties                 |
+| Name     | Styles                     |
 | -------- | -------------------------- |
 | absolute | `{ position: "absolute" }` |
 | relative | `{ position: "relative" }` |
 
 ### Top / Right / Bottom / Left
 
-| Name      | Properties                                 |
+| Name      | Styles                                     |
 | --------- | ------------------------------------------ |
 | bottom-0  | `{ bottom: 0 }`                            |
 | inset-0   | `{ top: 0, right: 0, bottom: 0, left: 0 }` |
@@ -1702,7 +1701,7 @@ TODO
 
 > _Tip:_ The following styles are generated based on `theme.zIndex` values.
 
-| Name | Properties       |
+| Name | Styles           |
 | ---- | ---------------- |
 | z-0  | `{ zIndex: 0 }`  |
 | z-10 | `{ zIndex: 10 }` |
@@ -1712,10 +1711,6 @@ TODO
 | z-50 | `{ zIndex: 50 }` |
 
 <!-- UTILS-GEN-END -->
-
-## Variants
-
-TODO
 
 ## Best Practices
 

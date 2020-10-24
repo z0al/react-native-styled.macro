@@ -85,7 +85,7 @@ const doc = Data.map((row) => {
 
 	const styles = styleOf(theme);
 
-	const columns = ['Name', 'Properties'];
+	const columns = ['Name', 'Styles'];
 
 	const values = Object.keys(styles)
 		.sort()
