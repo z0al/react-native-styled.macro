@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`unknown plugin 1. unknown plugin: 1. unknown plugin 1`] = `
+
+import styled from '../../lib/macro'
+
+   const Button = ()=> {
+	return styled(['bg-white', 'text-xl'])
+}
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import { StyleSheet as _StyleSheet } from 'react-native';
+import { select as _select } from 'react-native-restyled/lib/style/utils/select';
+
+const Button = () => {
+	return _select([
+		{
+			variant: 'default',
+			style: _styles._default,
+		},
+	]);
+};
+
+const _styles = _StyleSheet.create({
+	_default: {
+		backgroundColor: 'white',
+		fontSize: '1.25rem',
+	},
+});
+
+
+`;

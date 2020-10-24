@@ -24,17 +24,24 @@
 		"prepublishOnly": "expo-module build",
 		"clean": "expo-module clean",
 		"lint": "expo-module lint",
-		"test": "expo-module test",
+		"test": "yarn build && expo-module test",
 		"semantic-release": "semantic-release",
 		"utils-gen": "ts-node ./scripts/utils-gen.ts"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"@babel/helper-module-imports": "^7.12.1",
+		"babel-object-to-ast": "^2.1.5",
+		"babel-plugin-macros": "^2.8.0"
+	},
 	"devDependencies": {
+		"@types/babel-plugin-macros": "^2.8.3",
+		"@types/babel-plugin-tester": "^9.0.1",
 		"@types/jest": "^26.0.14",
 		"@types/lodash.merge": "^4.6.6",
 		"@types/node": "^14.11.10",
 		"@types/react": "^16.9.53",
 		"@types/react-native": "^0.63.25",
+		"babel-plugin-tester": "^10.0.0",
 		"camel-case": "^4.1.1",
 		"eslint": "^7.11.0",
 		"expo-module-scripts": "^1.2.0",

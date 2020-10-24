@@ -13,7 +13,7 @@ import {
 } from 'react-native';
 
 export type StyleProps = {
-	style?: Record<string, any>;
+	style: Record<string, any>;
 	[props: string]: unknown;
 };
 

@@ -11,7 +11,7 @@ const resolveToken = (token: string): VariantStyle => {
 	return { variant, style: styles[styleId] };
 };
 
-export const styled = (tokens: string[]) =>
+export const resolveTokens = (tokens: string[]) =>
 	StyleUtils.reduce(
 		StyleUtils.getOrderedTokens(tokens).map(resolveToken)
 	);
