@@ -8,7 +8,14 @@ const styles = createStyles(theme);
 
 const resolveToken = (token: string): VariantStyle => {
 	const { styleId, variant } = StyleUtils.extractTokenInfo(token);
-	return { variant, style: styles[styleId] };
+
+	const style = styles[styleId];
+
+	if (!style) {
+		throw new Error(`Unknown style: '${styleId}'`);
+	}
+
+	return { variant, style };
 };
 
 export const resolveTokens = (tokens: string[]) =>
