@@ -3,10 +3,11 @@ import { NodePath } from '@babel/core';
 import * as importHelper from '@babel/helper-module-imports';
 import * as t from '@babel/types';
 import toAST from 'babel-object-to-ast';
-import * as macro from 'babel-plugin-macros';
+import { createMacro, MacroHandler } from 'babel-plugin-macros';
 
 // Ours
 import { resolveTokens } from './tokens';
+import { StyleError } from './types';
 import { DEFAULT_VARIANT } from './utils/defaultVariant';
 
 const pkg = 'react-native-restyled';
@@ -92,14 +93,14 @@ const createStyleSheet = (
 	module.pushContainer('body' as any, stylesheet);
 };
 
-const styledMacro: macro.MacroHandler = ({ references, state }) => {
-	const modulePath = state.file.path;
+const styledMacro: MacroHandler = ({ references, state }) => {
+	const module = state.file.path;
 
 	// A map that holds the key/value pairs of the generated styles.
 	const styles = new Map<t.Identifier, t.ObjectExpression>();
 
 	// Variable name to be used later with StyleSheet.create
-	const stylesheetId = modulePath.scope.generateUidIdentifier('styles');
+	const stylesheetId = module.scope.generateUidIdentifier('styles');
 
 	references.default?.forEach((refPath) => {
 		if (!t.isCallExpression(refPath.parent)) {
@@ -119,10 +120,10 @@ const styledMacro: macro.MacroHandler = ({ references, state }) => {
 
 		const tokens = tokensArg.elements.map((el) => {
 			if (!t.isStringLiteral(el)) {
-				throw new macro.MacroError(
-					`expected styled to be called with a list of strings. Found:
-					${el?.type}
-					`
+				throw new StyleError(
+					'expected styled to be called with a list of string ' +
+						'literals. Found: ' +
+						el?.type
 				);
 			}
 
@@ -133,34 +134,39 @@ const styledMacro: macro.MacroHandler = ({ references, state }) => {
 		// defautl variant styles.
 		let shouldUseSelect = false;
 
-		// Resolve styles
-		callExpr.arguments[0] = t.arrayExpression(
-			resolveTokens(tokens).map((style) => {
-				if (style.variant !== DEFAULT_VARIANT) {
-					shouldUseSelect = true;
-				}
+		try {
+			// Resolve styles
+			callExpr.arguments[0] = t.arrayExpression(
+				resolveTokens(tokens).map((style) => {
+					if (style.variant !== DEFAULT_VARIANT) {
+						shouldUseSelect = true;
+					}
 
-				// Generate an Id to be used as a key in the StyleSheet later
-				const styleId = modulePath.scope.generateUidIdentifier(
-					style.variant
-				);
+					// Generate an Id to be used as a key in the StyleSheet
+					// later.
+					const styleId = module.scope.generateUidIdentifier(
+						style.variant
+					);
 
-				styles.set(styleId, toAST(style.style));
+					styles.set(styleId, toAST(style.style));
 
-				return t.objectExpression([
-					// => { vairant: style.variant }
-					t.objectProperty(
-						t.identifier('variant'),
-						t.stringLiteral(style.variant)
-					),
-					// => { style: styles.styleId }
-					t.objectProperty(
-						t.identifier('style'),
-						t.memberExpression(stylesheetId, styleId)
-					),
-				]);
-			})
-		);
+					return t.objectExpression([
+						// => { vairant: style.variant }
+						t.objectProperty(
+							t.identifier('variant'),
+							t.stringLiteral(style.variant)
+						),
+						// => { style: styles.styleId }
+						t.objectProperty(
+							t.identifier('style'),
+							t.memberExpression(stylesheetId, styleId)
+						),
+					]);
+				})
+			);
+		} catch (error) {
+			throw new StyleError(error.message);
+		}
 
 		if (!shouldUseSelect) {
 			// We know for sure there is exactly one element (if any)
@@ -179,7 +185,7 @@ const styledMacro: macro.MacroHandler = ({ references, state }) => {
 		// => import { select } from 'path/to/util';
 		//    select([...], ...)
 		callExpr.callee = importHelper.addNamed(
-			modulePath,
+			module,
 			'select',
 			importUtil('select')
 		);
@@ -187,8 +193,8 @@ const styledMacro: macro.MacroHandler = ({ references, state }) => {
 
 	// Inject generated styles to the module
 	if (styles.size > 0) {
-		createStyleSheet(modulePath, stylesheetId, styles);
+		createStyleSheet(module, stylesheetId, styles);
 	}
 };
 
-export default macro.createMacro(styledMacro);
+export default createMacro(styledMacro);

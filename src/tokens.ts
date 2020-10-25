@@ -1,3 +1,6 @@
+// Packages
+import { dequal } from 'dequal';
+
 // Ours
 import createStyles from './style';
 import theme from './theme';
@@ -18,7 +21,15 @@ const resolveToken = (token: string): VariantStyle => {
 	return { variant, style };
 };
 
-export const resolveTokens = (tokens: string[]) =>
-	StyleUtils.reduce(
-		StyleUtils.getOrderedTokens(tokens).map(resolveToken)
-	);
+export const resolveTokens = (tokens: string[]) => {
+	const ordered = StyleUtils.getOrderedTokens(tokens);
+
+	// Different order? warn the user
+	if (!dequal(ordered, tokens)) {
+		throw new Error(
+			'Incorrect order. Default variant styles must always come first.'
+		);
+	}
+
+	return StyleUtils.reduce(ordered.map(resolveToken));
+};

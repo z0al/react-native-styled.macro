@@ -19,5 +19,5 @@ export function getOrderedTokens(tokens: string[]) {
 			: 0; // Keep the same order
 	};
 
-	return tokens.sort(compareByVariant);
+	return Array.from(tokens).sort(compareByVariant);
 }
