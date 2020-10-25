@@ -17,8 +17,8 @@
 		"expo",
 		"react-native",
 		"react-native-web",
-		"tailwindcss",
-		"tailwind"
+		"styled",
+		"babel-plugin-macros"
 	],
 	"scripts": {
 		"build": "CI=true expo-module build",

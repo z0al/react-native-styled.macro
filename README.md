@@ -67,10 +67,42 @@
 
 ## Installation
 
-> _Compatible with React Native v0.62.0 or higher_
+> _Compatible with React Native v0.62.0 or later_
 
 ```
-yarn add react-native-restyled
+yarn add react-native-restyled babel-plugin-macros
+```
+
+Add `babel-plugin-macros` to your Babel config (if you haven't already)
+
+```javascript
+// babel.config.js
+module.exports = function (api) {
+	return {
+		plugins: ['macros'],
+		// ... other stuff
+	};
+};
+```
+
+To use the library simply import the macro as follows:
+
+```jsx
+import styled from 'react-native-restyled/macro';
+
+const Heading = ({ text }) => (
+	<Text
+		{...styled([
+			'my-4',
+			'text-2xl',
+			'text-gray-900',
+			'font-semibold',
+			'letter-wide',
+		])}
+	>
+		{text}
+	</Text>
+);
 ```
 
 ## How it works
