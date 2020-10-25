@@ -22,32 +22,32 @@ describe('[style-utils] select', () => {
 		{ variant: 'dark', style: styles.black },
 		{ variant: 'green', style: styles.green },
 		{ variant: 'orange', style: styles.orange, green: false },
-		{ variant: 'green', style: styles.green },
+		{ variant: 'green', style: styles.green, green: true },
 	];
 
 	test('should always include the "default" variant', () => {
-		const expected = [{ style: styles.white, shouldBeWhite: true }];
+		const expected = { style: [styles.white], shouldBeWhite: true };
 
 		expect(select(variantStyles)).toEqual(expected);
 		expect(select(variantStyles, { default: false })).toEqual(expected);
 	});
 
 	test('should select enabled variants only', () => {
-		const expected = [
-			{ style: styles.white, shouldBeWhite: true },
-			{ style: styles.orange, green: false },
-		];
+		const expected = {
+			style: [styles.white, styles.orange],
+			shouldBeWhite: true,
+			green: false,
+		};
 
 		expect(select(variantStyles, { orange: true })).toEqual(expected);
 	});
 
 	test('should keep the same order', () => {
-		const expected = [
-			{ style: styles.white, shouldBeWhite: true },
-			{ style: styles.green },
-			{ style: styles.orange, green: false },
-			{ style: styles.green },
-		];
+		const expected = {
+			style: [styles.white, styles.green, styles.orange, styles.green],
+			shouldBeWhite: true,
+			green: true,
+		};
 
 		expect(
 			select(variantStyles, { orange: true, green: true })
