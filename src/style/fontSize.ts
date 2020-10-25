@@ -10,7 +10,7 @@ export const fontSize = (theme: Theme): Record<string, TextStyle> => {
 	return Object.keys(theme.fontSize)
 		.map((key) => ({
 			[id('text', key)]: {
-				fontSize: theme.fontSize[key],
+				fontSize: theme.fontSize[key] as number,
 			},
 		}))
 		.reduce(merge, {});

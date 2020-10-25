@@ -16,7 +16,7 @@ export const translate = (
 			[id('translate-x', key)]: {
 				transform: [
 					{
-						translateX: theme.translate[key],
+						translateX: theme.translate[key] as number,
 					},
 				],
 			},
@@ -28,7 +28,7 @@ export const translate = (
 			[id('translate-y', key)]: {
 				transform: [
 					{
-						translateY: theme.translate[key],
+						translateY: theme.translate[key] as number,
 					},
 				],
 			},

@@ -10,7 +10,7 @@ export const lineHeight = (theme: Theme): Record<string, TextStyle> => {
 	return Object.keys(theme.lineHeight)
 		.map((key) => ({
 			[id('line-h', key)]: {
-				lineHeight: theme.lineHeight[key],
+				lineHeight: theme.lineHeight[key] as number,
 			},
 		}))
 		.reduce(merge, {});

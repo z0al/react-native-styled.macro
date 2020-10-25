@@ -7,7 +7,7 @@ import { createMacro, MacroHandler } from 'babel-plugin-macros';
 
 // Ours
 import { resolveTokens } from './tokens';
-import { StyleError } from './types';
+import { StyleError, StyledMacro } from './types';
 import { DEFAULT_VARIANT } from './utils/defaultVariant';
 
 const pkg = 'react-native-restyled';
@@ -197,4 +197,4 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 	}
 };
 
-export default createMacro(styledMacro);
+export default createMacro(styledMacro) as StyledMacro;

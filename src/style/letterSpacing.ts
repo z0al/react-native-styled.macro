@@ -12,7 +12,7 @@ export const letterSpacing = (
 	return Object.keys(theme.letterSpacing)
 		.map((key) => ({
 			[id('letter', key)]: {
-				letterSpacing: theme.letterSpacing[key],
+				letterSpacing: theme.letterSpacing[key] as number,
 			},
 		}))
 		.reduce(merge, {});

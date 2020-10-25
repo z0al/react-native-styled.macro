@@ -183,7 +183,6 @@ export const baseTheme: Theme = {
 		0: 0,
 		default: 1,
 	},
-	fontFamily: {},
 	fontSize: {
 		xs: rem(0.75),
 		sm: rem(0.875),
