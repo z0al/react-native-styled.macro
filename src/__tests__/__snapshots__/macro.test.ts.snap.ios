@@ -1,27 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`unknown plugin 1. unknown plugin: 1. unknown plugin 1`] = `
+exports[`babel-plugin-macros 1. babel-plugin-macros: 1. babel-plugin-macros 1`] = `
 
+import React from 'react'
+import { View } from 'react-native'
 import styled from '../../lib/macro'
 
-const Button = ()=> {
-	return styled(['bg-white', 'text-xl'])
-}
+const Button = ()=> <View {...styled(['bg-white', 'text-xl'])} />
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
 import { rem as _rem } from 'react-native-restyled/lib/utils/rem';
 import { StyleSheet as _StyleSheet } from 'react-native';
-import { select as _select } from 'react-native-restyled/lib/utils/select';
+import React from 'react';
+import { View } from 'react-native';
 
-const Button = () => {
-	return _select([
-		{
-			variant: 'default',
+const Button = () => (
+	<View
+		{...{
 			style: _styles._default,
-		},
-	]);
-};
+		}}
+	/>
+);
 
 const _styles = _StyleSheet.create({
 	_default: {
@@ -33,7 +33,7 @@ const _styles = _StyleSheet.create({
 
 `;
 
-exports[`unknown plugin 2. unknown plugin: 2. unknown plugin 1`] = `
+exports[`babel-plugin-macros 2. babel-plugin-macros: 2. babel-plugin-macros 1`] = `
 
 import styled from '../../lib/macro'
 
@@ -62,6 +62,43 @@ const _styles = _StyleSheet.create({
 		margin: _rem(-0.5),
 	},
 });
+
+
+`;
+
+exports[`babel-plugin-macros 3. babel-plugin-macros: 3. babel-plugin-macros 1`] = `
+
+import styled from '../../lib/macro'
+
+console.log(styled(['-m-2', 'p-4']))
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import { rem as _rem } from 'react-native-restyled/lib/utils/rem';
+import { StyleSheet as _StyleSheet } from 'react-native';
+console.log({
+	style: _styles._default,
+});
+
+const _styles = _StyleSheet.create({
+	_default: {
+		margin: _rem(-0.5),
+		padding: _rem(1),
+	},
+});
+
+
+`;
+
+exports[`babel-plugin-macros 4. babel-plugin-macros: 4. babel-plugin-macros 1`] = `
+
+import styled from '../../lib/macro'
+
+console.log(styled([]))
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+console.log({});
 
 
 `;

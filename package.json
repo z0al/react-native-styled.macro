@@ -6,11 +6,12 @@
 	"author": "Ahmed T. Ali",
 	"repository": "z0al/react-native-restyled",
 	"sideEffects": false,
-	"main": "dist/index.js",
-	"module": "dist/index.js",
-	"types": "dist/index.d.ts",
+	"main": "lib/index.js",
+	"module": "lib/index.js",
+	"types": "lib/index.d.ts",
 	"files": [
-		"dist"
+		"macro",
+		"lib"
 	],
 	"keywords": [
 		"expo",
@@ -40,7 +41,7 @@
 		"@types/babel__core": "^7.1.10",
 		"@types/jest": "^26.0.14",
 		"@types/lodash.merge": "^4.6.6",
-		"@types/node": "^14.11.10",
+		"@types/node": "^14.14.2",
 		"@types/react": "^16.9.53",
 		"@types/react-native": "^0.63.25",
 		"babel-plugin-tester": "^10.0.0",

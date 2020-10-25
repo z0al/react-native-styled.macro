@@ -1,0 +1,6 @@
+{
+	"name": "react-native-restyled/macro",
+	"private": true,
+	"main": "../lib/macro.js",
+	"types": "../lib/macro.d.ts"
+}

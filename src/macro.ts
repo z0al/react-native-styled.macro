@@ -7,6 +7,7 @@ import * as macro from 'babel-plugin-macros';
 
 // Ours
 import { resolveTokens } from './tokens';
+import { DEFAULT_VARIANT } from './utils/defaultVariant';
 
 const pkg = 'react-native-restyled';
 
@@ -128,9 +129,17 @@ const styledMacro: macro.MacroHandler = ({ references, state }) => {
 			return el.value;
 		});
 
+		// Avoid wrapping styles around select(..) call if we only have
+		// defautl variant styles.
+		let shouldUseSelect = false;
+
 		// Resolve styles
 		callExpr.arguments[0] = t.arrayExpression(
 			resolveTokens(tokens).map((style) => {
+				if (style.variant !== DEFAULT_VARIANT) {
+					shouldUseSelect = true;
+				}
+
 				// Generate an Id to be used as a key in the StyleSheet later
 				const styleId = modulePath.scope.generateUidIdentifier(
 					style.variant
@@ -153,8 +162,22 @@ const styledMacro: macro.MacroHandler = ({ references, state }) => {
 			})
 		);
 
+		if (!shouldUseSelect) {
+			// We know for sure there is exactly one element (if any)
+			const defaultStyle = callExpr.arguments[0]
+				.elements[0] as t.ObjectExpression;
+
+			// => { style: defaultStyle , ... }
+			return refPath.parentPath.replaceWith(
+				t.objectExpression(
+					defaultStyle ? [defaultStyle.properties[1]] : []
+				)
+			);
+		}
+
 		// Import StyleUtils.select
 		// => import { select } from 'path/to/util';
+		//    select([...], ...)
 		callExpr.callee = importHelper.addNamed(
 			modulePath,
 			'select',
