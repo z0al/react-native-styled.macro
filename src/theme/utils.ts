@@ -12,3 +12,8 @@ export const negative = (styles: Record<string, number>) => {
 
 	return newStyles;
 };
+
+// All rem strings will be replaced with a function call during build
+// We need to force TS to beleive it's a number for now.
+export const rem = (num: number) =>
+	(`rem(${num})` as unknown) as number;

@@ -4,12 +4,13 @@ exports[`unknown plugin 1. unknown plugin: 1. unknown plugin 1`] = `
 
 import styled from '../../lib/macro'
 
-   const Button = ()=> {
+const Button = ()=> {
 	return styled(['bg-white', 'text-xl'])
 }
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
+import { rem as _rem } from 'react-native-restyled/lib/utils/rem';
 import { StyleSheet as _StyleSheet } from 'react-native';
 import { select as _select } from 'react-native-restyled/lib/utils/select';
 
@@ -25,7 +26,40 @@ const Button = () => {
 const _styles = _StyleSheet.create({
 	_default: {
 		backgroundColor: 'white',
-		fontSize: 40,
+		fontSize: _rem(1.25),
+	},
+});
+
+
+`;
+
+exports[`unknown plugin 2. unknown plugin: 2. unknown plugin 1`] = `
+
+import styled from '../../lib/macro'
+
+styled(['web:-m-2'], {dark: false})
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import { rem as _rem } from 'react-native-restyled/lib/utils/rem';
+import { StyleSheet as _StyleSheet } from 'react-native';
+import { select as _select } from 'react-native-restyled/lib/utils/select';
+
+_select(
+	[
+		{
+			variant: 'web',
+			style: _styles._web,
+		},
+	],
+	{
+		dark: false,
+	}
+);
+
+const _styles = _StyleSheet.create({
+	_web: {
+		margin: _rem(-0.5),
 	},
 });
 

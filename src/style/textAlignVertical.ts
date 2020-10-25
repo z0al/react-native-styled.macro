@@ -3,7 +3,6 @@ import { TextStyle } from 'react-native';
 
 // Ours
 import { id } from '../utils/id';
-import { merge } from '../utils/merge';
 
 export const textAlignVertical = (): Record<string, TextStyle> => ({
 	[id('text-v', 'auto')]: {

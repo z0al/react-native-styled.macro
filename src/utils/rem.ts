@@ -8,7 +8,3 @@ export const rem = (value: number) =>
 		web: (`${value}rem` as unknown) as number,
 		default: PixelRatio.getFontScale() * 16 * value,
 	});
-
-// Uncomment for use with scripts/utils-gen
-// export const rem = (value: number) =>
-// 	(`rem(${value})` as unknown) as number;

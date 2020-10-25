@@ -1,8 +1,8 @@
 // Ours
 import createStyles from './style';
-import { StyleUtils } from './utils';
 import theme from './theme';
 import { VariantStyle } from './types';
+import { StyleUtils } from './utils';
 
 const styles = createStyles(theme);
 

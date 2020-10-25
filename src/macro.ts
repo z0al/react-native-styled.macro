@@ -1,4 +1,5 @@
 // Packages
+import { NodePath } from '@babel/core';
 import * as importHelper from '@babel/helper-module-imports';
 import * as t from '@babel/types';
 import toAST from 'babel-object-to-ast';
@@ -14,15 +15,62 @@ const importUtil = (path: string) => {
 };
 
 const createStyleSheet = (
-	importName: string,
-	variable: t.Identifier,
+	module: NodePath<t.Node>,
+	stylesId: t.Identifier,
 	styles: Map<t.Identifier, t.ObjectExpression>
 ) => {
+	// Import StyleSheet API
+	// => import { StyleSheet } from 'react-native';
+	const api: t.Identifier = importHelper.addNamed(
+		module,
+		'StyleSheet',
+		'react-native'
+	);
+
+	// Reference StyleUtils.rem() import name
+	let remUtil: t.Identifier;
+
 	// Convert styles to Object Expression
 	// => { styleId1: {...}, styleId2: {...}, ...}
 	const stylesObj = t.objectExpression(
 		Array.from(styles).map(([styleId, style]) =>
-			t.objectProperty(styleId, style)
+			t.objectProperty(styleId, {
+				...style,
+				properties: style.properties.map((prop) => {
+					if (!t.isObjectProperty(prop)) {
+						return prop;
+					}
+
+					if (!t.isStringLiteral(prop.value)) {
+						return prop;
+					}
+
+					const { value } = prop.value;
+
+					// Replace Rem values with function calls
+					if (value.match(/rem/)) {
+						// => import { rem } from 'path/to/style/utils'
+						if (!remUtil) {
+							remUtil = importHelper.addNamed(
+								module,
+								'rem',
+								importUtil('rem')
+							);
+						}
+
+						const remValue = parseFloat(
+							value.replace(/rem|\(|\)/g, '')
+						);
+
+						// => { style: rem(number) }
+						prop.value = t.callExpression(remUtil, [
+							t.numericLiteral(remValue),
+						]);
+					}
+
+					return prop;
+				}),
+			})
 		)
 	);
 
@@ -30,18 +78,17 @@ const createStyleSheet = (
 	// => const styles = StyleSheet.create({...})
 	const stylesheet = t.variableDeclaration('const', [
 		t.variableDeclarator(
-			variable,
+			stylesId,
 			t.callExpression(
-				t.memberExpression(
-					t.identifier(importName),
-					t.identifier('create')
-				),
+				t.memberExpression(api, t.identifier('create')),
 				[stylesObj]
 			)
 		),
 	]);
 
-	return stylesheet;
+	// Create stylesheet
+	// => const styles = StyleSheet.create({...})
+	module.pushContainer('body' as any, stylesheet);
 };
 
 const styledMacro: macro.MacroHandler = ({ references, state }) => {
@@ -108,32 +155,16 @@ const styledMacro: macro.MacroHandler = ({ references, state }) => {
 
 		// Import StyleUtils.select
 		// => import { select } from 'path/to/util';
-		const importRef: t.Identifier = importHelper.addNamed(
+		callExpr.callee = importHelper.addNamed(
 			modulePath,
 			'select',
 			importUtil('select')
 		);
-
-		// Replace the call to the macro with StyleUtils.select
-		callExpr.callee = t.identifier(importRef.name);
 	});
 
 	// Inject generated styles to the module
 	if (styles.size > 0) {
-		// Import StyleSheet API
-		// => import { StyleSheet } from 'react-native';
-		const importRef: t.Identifier = importHelper.addNamed(
-			modulePath,
-			'StyleSheet',
-			'react-native'
-		);
-
-		// Create stylesheet
-		// => const styles = StyleSheet.create({...})
-		modulePath.pushContainer(
-			'body' as any,
-			createStyleSheet(importRef.name, stylesheetId, styles)
-		);
+		createStyleSheet(modulePath, stylesheetId, styles);
 	}
 };
 

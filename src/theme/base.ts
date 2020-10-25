@@ -1,7 +1,6 @@
 // Ours
-import { rem } from '../utils/rem';
 import { Theme } from '../types';
-import { negative } from './utils';
+import { negative, rem } from './utils';
 
 const colors = {
 	black: 'black',
