@@ -7,8 +7,8 @@
 ## Features
 
 - **Zero-overhead:** Used styles are injected using `StyleSheet.create` API during compilation hence no runtime overhead.
-- **Variants:** Built-in support for Responsive layout, Dark mode, and more.
-- **Customizable:** You can optionally override the default theme by adding `styled.config.js`.
+- **Variants support:** Easily define style specific to Platform, Layout, Screen size, or your own condition.
+- **Customizable:** Optionally override the default theme by adding `styled.config.js` file.
 
 ## Table of Contents
 
@@ -57,7 +57,11 @@
   - [Position](#position)
   - [Top / Right / Bottom / Left](#top--right--bottom--left)
   - [Z-Index](#z-index)
+- [Built-in Variants](#built-in-variants)
+  - [Platform](#platform)
+  - [Layout](#layout)
 - [Best Practices](#best-practices)
+  - [Group variant styles together](#group-variant-styles-together)
 - [Prior Art](#prior-art)
 - [License](#license)
 
@@ -1712,49 +1716,50 @@ TODO
 
 <!-- UTILS-GEN-END -->
 
+## Built-in Variants
+
+### Platform
+
+Enables Platform-specific style. Based on the value of [Platform.OS][platform-os].
+
+**Example:**
+
+```javascript
+styled([
+	'bg-white',
+	'web:bg-purple-600',
+	'android:bg-green-600',
+	'ios:bg-blue-600',
+]);
+```
+
+### Layout
+
+Enables Layout-specific style. Based on the value of `I18nManager.isRTL`.
+
+**Example:**
+
+```javascript
+styled(['text-auto', 'rtl:text-right', 'ltr:text-left']);
+```
+
 ## Best Practices
 
-1. Define default styles first
+### Group variant styles together
 
-   **Do NOT**
+**Do NOT**
 
-   ```javascript
-   styled([
-   	'dark:bg-black',
-   	'dark:text-white',
-   	'bg-white',
-   	'text-black',
-   ]);
-   ```
+```javascript
+styled(['web:bg-gray-100', 'bg-white', 'text-black', 'web:rounded']);
+```
 
-   **Do**
+**Do**
 
-   ```javascript
-   styled([
-   	'bg-white',
-   	'text-black',
-   	'dark:bg-black',
-   	'dark:text-white',
-   ]);
-   ```
+```javascript
+styled(['bg-white', 'text-black', 'web:rounded', 'web:bg-gray-100']);
+```
 
-   Since the default variant styles will _**always**_ get applied first, the code above is misleading, which in turn can be a source of bugs.
-
-2. Group variant styles together
-
-   **Do NOT**
-
-   ```javascript
-   styled(['web:bg-gray-100', 'bg-white', 'text-black', 'web:rounded']);
-   ```
-
-   **Do**
-
-   ```javascript
-   styled(['bg-white', 'text-black', 'web:rounded', 'web:bg-gray-100']);
-   ```
-
-   In addition to the readability concern, it also enables some compile-time optimizations.
+In addition to the readability concern, it also enables some compile-time optimizations.
 
 ## Prior Art
 
@@ -1767,3 +1772,4 @@ MIT © Ahmed T. Ali
 [rn]: https://reactnative.dev
 [tw]: https://tailwindcss.com/
 [tw-rn]: https://github.com/vadimdemedes/tailwind-rn
+[platform-os]: https://reactnative.dev/docs/platform-specific-code#platform-module
