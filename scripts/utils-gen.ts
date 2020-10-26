@@ -65,6 +65,8 @@ const Data = [
 	{ name: 'Position' },
 	{ name: 'Top / Right / Bottom / Left' },
 	{ name: 'Z-Index', theme: true },
+
+	{ name: 'Number  of lines', theme: true, prop: true },
 ];
 
 const MARK_START = '<!-- UTILS-GEN-START -->';
@@ -76,16 +78,16 @@ const themeNote = (key: string) =>
 const doc = Data.map((row) => {
 	const { name, theme: basedOnTheme } = row;
 
-	const title = `### ${name}\n\n`;
+	const title = `### ${name} ${row.prop ? '( prop )' : ''}\n\n`;
 	const moduleName = camelCase(name);
 
-	const {
-		[moduleName]: styleOf,
-	} = require(`../src/style/${moduleName}`);
+	const { [moduleName]: styleOf } = require(`../src/style/${
+		row.prop ? 'props/' : ''
+	}${moduleName}`);
 
 	const styles = styleOf(theme);
 
-	const columns = ['Name', 'Styles'];
+	const columns = row.prop ? ['Name', 'Prop(s)'] : ['Name', 'Style(s)'];
 
 	const values = Object.keys(styles)
 		.sort()

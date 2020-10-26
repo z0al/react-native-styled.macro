@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[props] snapshot 1`] = `
+Object {
+  "lines-1": Object {
+    "numberOfLines": 1,
+  },
+  "lines-10": Object {
+    "numberOfLines": 10,
+  },
+  "lines-2": Object {
+    "numberOfLines": 2,
+  },
+  "lines-3": Object {
+    "numberOfLines": 3,
+  },
+  "lines-4": Object {
+    "numberOfLines": 4,
+  },
+  "lines-5": Object {
+    "numberOfLines": 5,
+  },
+  "lines-6": Object {
+    "numberOfLines": 6,
+  },
+  "lines-7": Object {
+    "numberOfLines": 7,
+  },
+  "lines-8": Object {
+    "numberOfLines": 8,
+  },
+  "lines-9": Object {
+    "numberOfLines": 9,
+  },
+}
+`;

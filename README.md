@@ -57,6 +57,7 @@
   - [Position](#position)
   - [Top / Right / Bottom / Left](#top--right--bottom--left)
   - [Z-Index](#z-index)
+  - [Number of lines ( prop )](#number-of-lines--prop-)
 - [Variants](#variants)
   - [Platform (Built-in)](#platform-built-in)
   - [Layout (Built-in)](#layout-built-in)
@@ -159,7 +160,7 @@ The output for any code you write will look more or less the same as above. The 
 
 ### Display
 
-| Name   | Styles                |
+| Name   | Style(s)              |
 | ------ | --------------------- |
 | flex   | `{ display: "flex" }` |
 | hidden | `{ display: "none" }` |
@@ -168,7 +169,7 @@ The output for any code you write will look more or less the same as above. The 
 
 > _Tip:_ The following styles are generated based on `theme.flex` values.
 
-| Name         | Styles                                              |
+| Name         | Style(s)                                            |
 | ------------ | --------------------------------------------------- |
 | flex-1       | `{ flexGrow: 1, flexShrink: 1, flexBasis: "0%" }`   |
 | flex-auto    | `{ flexGrow: 1, flexShrink: 1, flexBasis: "auto" }` |
@@ -177,7 +178,7 @@ The output for any code you write will look more or less the same as above. The 
 
 ### Flex Direction
 
-| Name             | Styles                                |
+| Name             | Style(s)                              |
 | ---------------- | ------------------------------------- |
 | flex-col         | `{ flexDirection: "column" }`         |
 | flex-col-reverse | `{ flexDirection: "column-reverse" }` |
@@ -188,7 +189,7 @@ The output for any code you write will look more or less the same as above. The 
 
 > _Tip:_ The following styles are generated based on `theme.flexGrow` values.
 
-| Name        | Styles            |
+| Name        | Style(s)          |
 | ----------- | ----------------- |
 | flex-grow   | `{ flexGrow: 1 }` |
 | flex-grow-0 | `{ flexGrow: 0 }` |
@@ -197,14 +198,14 @@ The output for any code you write will look more or less the same as above. The 
 
 > _Tip:_ The following styles are generated based on `theme.flexShrink` values.
 
-| Name          | Styles              |
+| Name          | Style(s)            |
 | ------------- | ------------------- |
 | flex-shrink   | `{ flexShrink: 1 }` |
 | flex-shrink-0 | `{ flexShrink: 0 }` |
 
 ### Flex Wrap
 
-| Name              | Styles                         |
+| Name              | Style(s)                       |
 | ----------------- | ------------------------------ |
 | flex-no-wrap      | `{ flexWrap: "nowrap" }`       |
 | flex-wrap         | `{ flexWrap: "wrap" }`         |
@@ -212,7 +213,7 @@ The output for any code you write will look more or less the same as above. The 
 
 ### Align Self
 
-| Name         | Styles                        |
+| Name         | Style(s)                      |
 | ------------ | ----------------------------- |
 | self-auto    | `{ alignSelf: "auto" }`       |
 | self-center  | `{ alignSelf: "center" }`     |
@@ -222,7 +223,7 @@ The output for any code you write will look more or less the same as above. The 
 
 ### Align Items
 
-| Name           | Styles                         |
+| Name           | Style(s)                       |
 | -------------- | ------------------------------ |
 | items-baseline | `{ alignItems: "baseline" }`   |
 | items-center   | `{ alignItems: "center" }`     |
@@ -232,7 +233,7 @@ The output for any code you write will look more or less the same as above. The 
 
 ### Align Content
 
-| Name            | Styles                              |
+| Name            | Style(s)                            |
 | --------------- | ----------------------------------- |
 | content-around  | `{ alignContent: "space-around" }`  |
 | content-between | `{ alignContent: "space-between" }` |
@@ -243,7 +244,7 @@ The output for any code you write will look more or less the same as above. The 
 
 ### Justify Content
 
-| Name            | Styles                                |
+| Name            | Style(s)                              |
 | --------------- | ------------------------------------- |
 | justify-around  | `{ justifyContent: "space-around" }`  |
 | justify-between | `{ justifyContent: "space-between" }` |
@@ -256,7 +257,7 @@ The output for any code you write will look more or less the same as above. The 
 
 > _Tip:_ The following styles are generated based on `theme.fontSize` values.
 
-| Name      | Styles                     |
+| Name      | Style(s)                   |
 | --------- | -------------------------- |
 | text-2xl  | `{ fontSize: rem(1.5) }`   |
 | text-3xl  | `{ fontSize: rem(1.875) }` |
@@ -271,14 +272,14 @@ The output for any code you write will look more or less the same as above. The 
 
 ### Font Style
 
-| Name       | Styles                    |
+| Name       | Style(s)                  |
 | ---------- | ------------------------- |
 | italic     | `{ fontStyle: "italic" }` |
 | not-italic | `{ fontStyle: "normal" }` |
 
 ### Font Variant
 
-| Name              | Styles                                   |
+| Name              | Style(s)                                 |
 | ----------------- | ---------------------------------------- |
 | lining-nums       | `{ fontVariant: ["lining-nums"] }`       |
 | oldstyle-nums     | `{ fontVariant: ["oldstyle-nums"] }`     |
@@ -290,7 +291,7 @@ The output for any code you write will look more or less the same as above. The 
 
 > _Tip:_ The following styles are generated based on `theme.fontWeight` values.
 
-| Name           | Styles                  |
+| Name           | Style(s)                |
 | -------------- | ----------------------- |
 | font-black     | `{ fontWeight: "900" }` |
 | font-bold      | `{ fontWeight: "700" }` |
@@ -308,7 +309,7 @@ The output for any code you write will look more or less the same as above. The 
 
 <details><summary>Show all styles</summary>
 
-| Name | Styles                  |
+| Name | Style(s)                |
 | ---- | ----------------------- |
 | h-0  | `{ height: 0 }`         |
 | h-1  | `{ height: rem(0.25) }` |
@@ -338,7 +339,7 @@ The output for any code you write will look more or less the same as above. The 
 
 <details><summary>Show all styles</summary>
 
-| Name    | Styles                    |
+| Name    | Style(s)                  |
 | ------- | ------------------------- |
 | w-0     | `{ width: 0 }`            |
 | w-1     | `{ width: rem(0.25) }`    |
@@ -393,7 +394,7 @@ The output for any code you write will look more or less the same as above. The 
 
 > _Tip:_ The following styles are generated based on `theme.maxHeight` values.
 
-| Name       | Styles                  |
+| Name       | Style(s)                |
 | ---------- | ----------------------- |
 | max-h-full | `{ maxHeight: "100%" }` |
 
@@ -403,7 +404,7 @@ The output for any code you write will look more or less the same as above. The 
 
 <details><summary>Show all styles</summary>
 
-| Name       | Styles                  |
+| Name       | Style(s)                |
 | ---------- | ----------------------- |
 | max-w-2xl  | `{ maxWidth: rem(42) }` |
 | max-w-3xl  | `{ maxWidth: rem(48) }` |
@@ -424,7 +425,7 @@ The output for any code you write will look more or less the same as above. The 
 
 > _Tip:_ The following styles are generated based on `theme.minHeight` values.
 
-| Name       | Styles                  |
+| Name       | Style(s)                |
 | ---------- | ----------------------- |
 | min-h-0    | `{ minHeight: 0 }`      |
 | min-h-full | `{ minHeight: "100%" }` |
@@ -433,7 +434,7 @@ The output for any code you write will look more or less the same as above. The 
 
 > _Tip:_ The following styles are generated based on `theme.minWidth` values.
 
-| Name       | Styles                 |
+| Name       | Style(s)               |
 | ---------- | ---------------------- |
 | min-w-0    | `{ minWidth: 0 }`      |
 | min-w-full | `{ minWidth: "100%" }` |
@@ -444,7 +445,7 @@ The output for any code you write will look more or less the same as above. The 
 
 <details><summary>Show all styles</summary>
 
-| Name               | Styles                           |
+| Name               | Style(s)                         |
 | ------------------ | -------------------------------- |
 | border-black       | `{ borderColor: "black" }`       |
 | border-blue-100    | `{ borderColor: "#ebf8ff" }`     |
@@ -548,7 +549,7 @@ The output for any code you write will look more or less the same as above. The 
 
 <details><summary>Show all styles</summary>
 
-| Name            | Styles                                                                        |
+| Name            | Style(s)                                                                      |
 | --------------- | ----------------------------------------------------------------------------- |
 | rounded         | `{ borderRadius: rem(0.25) }`                                                 |
 | rounded-2xl     | `{ borderRadius: rem(1) }`                                                    |
@@ -654,7 +655,7 @@ The output for any code you write will look more or less the same as above. The 
 
 ### Border Style
 
-| Name          | Styles                      |
+| Name          | Style(s)                    |
 | ------------- | --------------------------- |
 | border-dashed | `{ borderStyle: "dashed" }` |
 | border-dotted | `{ borderStyle: "dotted" }` |
@@ -666,7 +667,7 @@ The output for any code you write will look more or less the same as above. The 
 
 <details><summary>Show all styles</summary>
 
-| Name       | Styles                     |
+| Name       | Style(s)                   |
 | ---------- | -------------------------- |
 | border     | `{ borderWidth: 1 }`       |
 | border-0   | `{ borderWidth: 0 }`       |
@@ -712,7 +713,7 @@ The output for any code you write will look more or less the same as above. The 
 
 <details><summary>Show all styles</summary>
 
-| Name           | Styles                               |
+| Name           | Style(s)                             |
 | -------------- | ------------------------------------ |
 | bg-black       | `{ backgroundColor: "black" }`       |
 | bg-blue-100    | `{ backgroundColor: "#ebf8ff" }`     |
@@ -814,7 +815,7 @@ The output for any code you write will look more or less the same as above. The 
 
 > _Tip:_ The following styles are generated based on `theme.letterSpacing` values.
 
-| Name           | Styles                           |
+| Name           | Style(s)                         |
 | -------------- | -------------------------------- |
 | letter-normal  | `{ letterSpacing: 0 }`           |
 | letter-tight   | `{ letterSpacing: rem(-0.025) }` |
@@ -825,7 +826,7 @@ The output for any code you write will look more or less the same as above. The 
 
 ### Text Align
 
-| Name         | Styles                     |
+| Name         | Style(s)                   |
 | ------------ | -------------------------- |
 | text-auto    | `{ textAlign: "auto" }`    |
 | text-center  | `{ textAlign: "center" }`  |
@@ -835,7 +836,7 @@ The output for any code you write will look more or less the same as above. The 
 
 ### Text Align (Vertical)
 
-| Name          | Styles                            |
+| Name          | Style(s)                          |
 | ------------- | --------------------------------- |
 | text-v-auto   | `{ textAlignVertical: "auto" }`   |
 | text-v-bottom | `{ textAlignVertical: "bottom" }` |
@@ -848,7 +849,7 @@ The output for any code you write will look more or less the same as above. The 
 
 <details><summary>Show all styles</summary>
 
-| Name             | Styles                     |
+| Name             | Style(s)                   |
 | ---------------- | -------------------------- |
 | text-black       | `{ color: "black" }`       |
 | text-blue-100    | `{ color: "#ebf8ff" }`     |
@@ -948,7 +949,7 @@ The output for any code you write will look more or less the same as above. The 
 
 ### Text Decoration
 
-| Name         | Styles                                   |
+| Name         | Style(s)                                 |
 | ------------ | ---------------------------------------- |
 | line-through | `{ textDecorationLine: "line-through" }` |
 | no-underline | `{ textDecorationLine: "none" }`         |
@@ -956,7 +957,7 @@ The output for any code you write will look more or less the same as above. The 
 
 ### Text Transform
 
-| Name        | Styles                            |
+| Name        | Style(s)                          |
 | ----------- | --------------------------------- |
 | capitalize  | `{ textTransform: "capitalize" }` |
 | lowercase   | `{ textTransform: "lowercase" }`  |
@@ -969,7 +970,7 @@ The output for any code you write will look more or less the same as above. The 
 
 <details><summary>Show all styles</summary>
 
-| Name   | Styles                               |
+| Name   | Style(s)                             |
 | ------ | ------------------------------------ |
 | -m-0   | `{ margin: 0 }`                      |
 | -m-1   | `{ margin: "-rem(0.25)" }`           |
@@ -1322,7 +1323,7 @@ The output for any code you write will look more or less the same as above. The 
 
 <details><summary>Show all styles</summary>
 
-| Name  | Styles                             |
+| Name  | Style(s)                           |
 | ----- | ---------------------------------- |
 | p-0   | `{ padding: 0 }`                   |
 | p-1   | `{ padding: rem(0.25) }`           |
@@ -1500,7 +1501,7 @@ The output for any code you write will look more or less the same as above. The 
 
 ### Overflow
 
-| Name             | Styles                    |
+| Name             | Style(s)                  |
 | ---------------- | ------------------------- |
 | overflow-hidden  | `{ overflow: "hidden" }`  |
 | overflow-scroll  | `{ overflow: "scroll" }`  |
@@ -1510,7 +1511,7 @@ The output for any code you write will look more or less the same as above. The 
 
 > _Tip:_ The following styles are generated based on `theme.opacity` values.
 
-| Name        | Styles              |
+| Name        | Style(s)            |
 | ----------- | ------------------- |
 | opacity-0   | `{ opacity: 0 }`    |
 | opacity-100 | `{ opacity: 1 }`    |
@@ -1524,7 +1525,7 @@ The output for any code you write will look more or less the same as above. The 
 
 <details><summary>Show all styles</summary>
 
-| Name          | Styles                                    |
+| Name          | Style(s)                                  |
 | ------------- | ----------------------------------------- |
 | -rotate-1     | `{ transform: [{ rotate: "-1deg" }] }`    |
 | -rotate-12    | `{ transform: [{ rotate: "-12deg" }] }`   |
@@ -1603,7 +1604,7 @@ The output for any code you write will look more or less the same as above. The 
 
 <details><summary>Show all styles</summary>
 
-| Name        | Styles                              |
+| Name        | Style(s)                            |
 | ----------- | ----------------------------------- |
 | scale-0     | `{ transform: [{ scale: 0 }] }`     |
 | scale-100   | `{ transform: [{ scale: 1 }] }`     |
@@ -1644,7 +1645,7 @@ The output for any code you write will look more or less the same as above. The 
 
 <details><summary>Show all styles</summary>
 
-| Name       | Styles                                 |
+| Name       | Style(s)                               |
 | ---------- | -------------------------------------- |
 | -skew-x-1  | `{ transform: [{ skewX: "-1deg" }] }`  |
 | -skew-x-12 | `{ transform: [{ skewX: "-12deg" }] }` |
@@ -1677,7 +1678,7 @@ The output for any code you write will look more or less the same as above. The 
 
 <details><summary>Show all styles</summary>
 
-| Name            | Styles                                          |
+| Name            | Style(s)                                        |
 | --------------- | ----------------------------------------------- |
 | -translate-x-0  | `{ transform: [{ translateX: 0 }] }`            |
 | -translate-x-1  | `{ transform: [{ translateX: "-rem(0.25)" }] }` |
@@ -1760,14 +1761,14 @@ The output for any code you write will look more or less the same as above. The 
 
 ### Position
 
-| Name     | Styles                     |
+| Name     | Style(s)                   |
 | -------- | -------------------------- |
 | absolute | `{ position: "absolute" }` |
 | relative | `{ position: "relative" }` |
 
 ### Top / Right / Bottom / Left
 
-| Name      | Styles                                     |
+| Name      | Style(s)                                   |
 | --------- | ------------------------------------------ |
 | bottom-0  | `{ bottom: 0 }`                            |
 | inset-0   | `{ top: 0, right: 0, bottom: 0, left: 0 }` |
@@ -1781,7 +1782,7 @@ The output for any code you write will look more or less the same as above. The 
 
 > _Tip:_ The following styles are generated based on `theme.zIndex` values.
 
-| Name | Styles           |
+| Name | Style(s)         |
 | ---- | ---------------- |
 | z-0  | `{ zIndex: 0 }`  |
 | z-10 | `{ zIndex: 10 }` |
@@ -1789,6 +1790,23 @@ The output for any code you write will look more or less the same as above. The 
 | z-30 | `{ zIndex: 30 }` |
 | z-40 | `{ zIndex: 40 }` |
 | z-50 | `{ zIndex: 50 }` |
+
+### Number of lines ( prop )
+
+> _Tip:_ The following styles are generated based on `theme.numberOfLines` values.
+
+| Name     | Prop(s)                 |
+| -------- | ----------------------- |
+| lines-1  | `{ numberOfLines: 1 }`  |
+| lines-10 | `{ numberOfLines: 10 }` |
+| lines-2  | `{ numberOfLines: 2 }`  |
+| lines-3  | `{ numberOfLines: 3 }`  |
+| lines-4  | `{ numberOfLines: 4 }`  |
+| lines-5  | `{ numberOfLines: 5 }`  |
+| lines-6  | `{ numberOfLines: 6 }`  |
+| lines-7  | `{ numberOfLines: 7 }`  |
+| lines-8  | `{ numberOfLines: 8 }`  |
+| lines-9  | `{ numberOfLines: 9 }`  |
 
 <!-- UTILS-GEN-END -->
 

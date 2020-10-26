@@ -61,6 +61,7 @@ export type Theme = {
 	rotate: Record<string, RotateTransform['rotate']>;
 	translate: Record<string, TranslateXTransform['translateX'] | string>;
 	skew: Record<string, SkewXTransform['skewX']>;
+	numberOfLines: Record<string, number>;
 };
 
 export type Configuration = {

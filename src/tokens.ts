@@ -3,22 +3,25 @@ import { dequal } from 'dequal';
 
 // Ours
 import createStyles from './style';
+import createProps from './style/props';
 import theme from './theme';
 import { VariantStyle } from './types';
 import { StyleUtils } from './utils';
 
-const styles = createStyles(theme);
+const themeStyles = createStyles(theme);
+const themeProps = createProps(theme);
 
 const resolveToken = (token: string): VariantStyle => {
 	const { styleId, variant } = StyleUtils.extractTokenInfo(token);
 
-	const style = styles[styleId];
+	const style = themeStyles[styleId];
+	const props = themeProps[styleId];
 
-	if (!style) {
+	if (!style && !props) {
 		throw new Error(`Unknown style: '${styleId}'`);
 	}
 
-	return { variant, style };
+	return { variant, style, ...props };
 };
 
 export const resolveTokens = (tokens: string[]) => {

@@ -349,4 +349,16 @@ export const baseTheme: Theme = {
 		'6': '6deg',
 		'12': '12deg',
 	},
+	numberOfLines: {
+		1: 1,
+		2: 2,
+		3: 3,
+		4: 4,
+		5: 5,
+		6: 6,
+		7: 7,
+		8: 8,
+		9: 9,
+		10: 10,
+	},
 };
