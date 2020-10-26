@@ -32,5 +32,11 @@ Object {
   "lines-9": Object {
     "numberOfLines": 9,
   },
+  "not-selectable": Object {
+    "selectable": false,
+  },
+  "selectable": Object {
+    "selectable": true,
+  },
 }
 `;
