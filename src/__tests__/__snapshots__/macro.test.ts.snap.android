@@ -102,3 +102,51 @@ console.log({});
 
 
 `;
+
+exports[`babel-plugin-macros 5. babel-plugin-macros: 5. babel-plugin-macros 1`] = `
+
+import { Text } from 'react-native'
+import styled from '../../lib/macro';
+
+const Heading = ({ text }) => (
+	<Text
+		{...styled([
+			'my-4',
+			'text-2xl',
+			'text-gray-900',
+			'font-semibold',
+			'letter-wide',
+		])}
+	>
+		{text}
+	</Text>
+);
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import { rem as _rem } from 'react-native-restyled/lib/utils/rem';
+import { StyleSheet as _StyleSheet } from 'react-native';
+import { Text } from 'react-native';
+
+const Heading = ({ text }) => (
+	<Text
+		{...{
+			style: _styles._default,
+		}}
+	>
+		{text}
+	</Text>
+);
+
+const _styles = _StyleSheet.create({
+	_default: {
+		marginVertical: _rem(1),
+		fontSize: _rem(1.5),
+		color: '#1a202c',
+		fontWeight: '600',
+		letterSpacing: _rem(0.025),
+	},
+});
+
+
+`;

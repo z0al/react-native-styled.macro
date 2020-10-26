@@ -33,5 +33,23 @@ pluginTester({
 
 		console.log(styled([]))
 		`,
+		`
+		import { Text } from 'react-native'
+		import styled from '../../lib/macro';
+
+		const Heading = ({ text }) => (
+			<Text
+				{...styled([
+					'my-4',
+					'text-2xl',
+					'text-gray-900',
+					'font-semibold',
+					'letter-wide',
+				])}
+			>
+				{text}
+			</Text>
+		);
+		`,
 	],
 });

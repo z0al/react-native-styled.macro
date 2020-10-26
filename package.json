@@ -37,6 +37,8 @@
 	},
 	"devDependencies": {
 		"@babel/types": "^7.12.1",
+		"@testing-library/jest-native": "^3.4.3",
+		"@testing-library/react-native": "^7.1.0",
 		"@types/babel-plugin-macros": "^2.8.3",
 		"@types/babel-plugin-tester": "^9.0.1",
 		"@types/babel__core": "^7.1.10",
@@ -56,6 +58,7 @@
 		"react-native": "^0.63.3",
 		"react-native-tailwindcss": "^1.1.11",
 		"react-native-web": "^0.14.3",
+		"react-test-renderer": "^17.0.1",
 		"semantic-release": "^17.2.1",
 		"ts-node": "^9.0.0",
 		"type-fest": "^0.18.0",
@@ -75,10 +78,16 @@
 	"jest": {
 		"projects": [
 			{
-				"preset": "jest-expo/android"
+				"preset": "jest-expo/android",
+				"setupFilesAfterEnv": [
+					"@testing-library/jest-native/extend-expect"
+				]
 			},
 			{
-				"preset": "jest-expo/ios"
+				"preset": "jest-expo/ios",
+				"setupFilesAfterEnv": [
+					"@testing-library/jest-native/extend-expect"
+				]
 			},
 			{
 				"preset": "jest-expo/node"

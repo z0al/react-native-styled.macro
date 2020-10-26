@@ -6,14 +6,14 @@
 
 ## Features
 
-- **Zero-overhead:** Used styles are injected using `StyleSheet.create` API during compilation hence no runtime overhead.
-- **Variants support:** Easily define style specific to Platform, Layout, Screen size, or your own condition.
-- **Customizable:** Optionally override the default theme by adding `styled.config.js` file.
+- ⚡ **Zero-overhead:** Styles get injected via the [StyleSheet][stylesheet] API during compilation.
+- 🍂 **Minimal footprint:** Styles that are never used won't make it to the final App bundle.
+- 🎲 **Variants support:** Conditionally style based on Platform, Layout or Screen size ... etc.
+- 🔌 **Customizable:** Optionally override the default theme by adding `styled.config.js` file
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [How it works](#how-it-works)
+- [Getting started](#getting-started)
 - [Utilities](#utilities)
   - [Display](#display)
   - [Flex](#flex)
@@ -57,15 +57,17 @@
   - [Position](#position)
   - [Top / Right / Bottom / Left](#top--right--bottom--left)
   - [Z-Index](#z-index)
-- [Built-in Variants](#built-in-variants)
-  - [Platform](#platform)
-  - [Layout](#layout)
+- [Variants](#variants)
+  - [Platform (Built-in)](#platform-built-in)
+  - [Layout (Built-in)](#layout-built-in)
+  - [Responsive](#responsive)
+  - [Dark mode](#dark-mode)
 - [Best Practices](#best-practices)
   - [Group variant styles together](#group-variant-styles-together)
 - [Prior Art](#prior-art)
 - [License](#license)
 
-## Installation
+## Getting started
 
 > _Compatible with React Native v0.62.0 or later_
 
@@ -105,9 +107,51 @@ const Heading = ({ text }) => (
 );
 ```
 
-## How it works
+The compiled output for the above code will look something like the following:
 
-TODO
+```diff
+import { Text } from 'react-native';
++import { StyleSheet } from 'react-native';
++import { rem } from 'react-native-restyled/path/not/relevant';
+-import styled from 'react-native-restyled/macro';
+
+const Heading = ({ text }) => (
+	<Text
+-		{...styled([
+-			'my-4',
+-			'text-2xl',
+-			'text-gray-900',
+-			'font-semibold',
+-			'letter-wide',
+-		])}
++		{...{
++			style: styles._default,
++   		// other props e.g. numberOfLines in case of 'lines-*'
++		}}
+	>
+		{text}
+	</Text>
+);
+
++const styles = StyleSheet.create({
++	_default: {
++		marginVertical: rem(1),
++		fontSize: rem(1.5),
++		color: '#1a202c',
++		fontWeight: '600',
++		letterSpacing: rem(0.025),
++	},
++});
+```
+
+How does it work?
+
+- `styled` (you can name it anything) is a [Babel Macro][macro] which means it will be executed during compilation.
+- It will map the given styles and resolve the necessary style attributes/props.
+- It will try to [merge styles of the same variant if possible](#group-variant-styles-together) so we don't end up creating an object for every style e.g. `text-2xl`.
+- For the best performance, it will then use the good/old `StyleSheet.create` to create the styles as you should normally do by yourself in a React Native app.
+
+The output for any code you write will look more or less the same as above. The only exception is a style with multiple variants because we need to add logic to switch styles at runtime (same as you would do e.g. using `Platform.select()`)
 
 ## Utilities
 
@@ -1748,11 +1792,13 @@ TODO
 
 <!-- UTILS-GEN-END -->
 
-## Built-in Variants
+## Variants
 
-### Platform
+### Platform (Built-in)
 
 Enables Platform-specific style. Based on the value of [Platform.OS][platform-os].
+
+**Possible values:** `android`, `ios`, `web` or whatever the value of `Platform.OS`.
 
 **Example:**
 
@@ -1765,14 +1811,79 @@ styled([
 ]);
 ```
 
-### Layout
+### Layout (Built-in)
 
 Enables Layout-specific style. Based on the value of `I18nManager.isRTL`.
+
+Possible keys: `ltr` or `rtl`.
 
 **Example:**
 
 ```javascript
 styled(['text-auto', 'rtl:text-right', 'ltr:text-left']);
+```
+
+### Responsive
+
+Built on the top of React Native's [useWindowDimensions][usewindowdimensions] hook. Possible keys: `sm`, `md`, `lg`, `xl` or custom values (see below).
+
+**Example**
+
+```javascript
+import styled from 'react-native-restyled/macro';
+import { useWindowVariant } from 'react-native-restyled';
+
+const MyComponent = () => {
+	const windowVariant = useWindowVariant();
+
+	return (
+		<Text
+			{...styled(['w-full', 'md:w-64'], {
+				...windowVariant /* other variants */,
+			})}
+		>
+			My text
+		</Text>
+	);
+};
+```
+
+You can also pass custom breakpoints as follows:
+
+```javascript
+// Note: passing a custom object will remove the default breakpoints e.g. `sm`.
+useWindowVariant({
+	tablet: 640,
+	laptop: 768,
+	// .. anything really
+});
+
+// use it later
+styled(['tablet:w-full', 'laptop:w-64']);
+```
+
+### Dark mode
+
+Since `styled` accepts arbitrary keys as variants supporting Dark mode can be easily acheived as follows:
+
+```javascript
+import { useColorScheme } from 'react-native';
+import styled from 'react-native-restyled/macro';
+
+const MyComponent = () => {
+	// Can either be 'dark' or 'light'
+	const colorScheme = useColorScheme();
+
+	return (
+		<Text
+			{...styled(['text-black', 'dark:text-white'], {
+				dark: colorScheme === 'dark',
+			})}
+		>
+			My text
+		</Text>
+	);
+};
 ```
 
 ## Best Practices
@@ -1805,3 +1916,6 @@ MIT © Ahmed T. Ali
 [tw]: https://tailwindcss.com/
 [tw-rn]: https://github.com/vadimdemedes/tailwind-rn
 [platform-os]: https://reactnative.dev/docs/platform-specific-code#platform-module
+[macro]: https://github.com/kentcdodds/babel-plugin-macros
+[stylesheet]: https://reactnative.dev/docs/stylesheet#create
+[usewindowdimensions]: https://reactnative.dev/docs/usewindowdimensions#docsNav
