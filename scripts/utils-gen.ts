@@ -63,10 +63,12 @@ const Data = [
 	{ name: 'Translate', theme: true },
 
 	{ name: 'Position' },
+	{ name: 'Resize Mode' },
 	{ name: 'Top / Right / Bottom / Left' },
 	{ name: 'Z-Index', theme: true },
 
 	{ name: 'Number  of lines', theme: true, prop: true },
+	{ name: 'Selectable', prop: true },
 ];
 
 const MARK_START = '<!-- UTILS-GEN-START -->';

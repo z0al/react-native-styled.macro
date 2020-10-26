@@ -31,6 +31,7 @@ import { opacity } from './opacity';
 import { overflow } from './overflow';
 import { padding } from './padding';
 import { position } from './position';
+import { resizeMode } from './resizeMode';
 import { rotate } from './rotate';
 import { scale } from './scale';
 import { skew } from './skew';
@@ -76,6 +77,7 @@ export default (theme: Theme) => ({
 	...overflow(),
 	...padding(theme),
 	...position(),
+	...resizeMode(),
 	...rotate(theme),
 	...scale(theme),
 	...skew(theme),

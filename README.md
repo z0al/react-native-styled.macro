@@ -1,3 +1,5 @@
+> **Status:** This library is only a few days/weeks old. While it works, it's considered to be in Beta.
+
 # React Native Restyled
 
 > A Utility-first Styling Library for [React Native][rn].
@@ -7,7 +9,8 @@
 - ⚡ **Zero-overhead:** Styles get injected via the [StyleSheet][stylesheet] API during compilation.
 - 🍂 **Minimal footprint:** Styles that are never used won't make it to the final App bundle.
 - 🎲 **Variants support:** Conditionally style based on Platform, Layout or Screen size ... etc.
-- 🔌 **Customizable:** Optionally override the default theme by adding `styled.config.js` file (Coming soon!)
+- 💅 **Style props:** Supports common style-related Component props e.g. `numberOfLines`, and `selectable`.
+- 🔌 **Customizable (Coming soon):** Optionally override the default theme by adding `styled.config.js` file
 
 ## Table of Contents
 
@@ -53,9 +56,11 @@
   - [Skew](#skew)
   - [Translate](#translate)
   - [Position](#position)
+  - [Resize Mode](#resize-mode)
   - [Top / Right / Bottom / Left](#top--right--bottom--left)
   - [Z-Index](#z-index)
   - [Number of lines ( prop )](#number-of-lines--prop-)
+  - [Selectable ( prop )](#selectable--prop-)
 - [Variants](#variants)
   - [Platform (Built-in)](#platform-built-in)
   - [Layout (Built-in)](#layout-built-in)
@@ -1764,6 +1769,16 @@ The output for any code you write will look more or less the same as above. The 
 | absolute | `{ position: "absolute" }` |
 | relative | `{ position: "relative" }` |
 
+### Resize Mode
+
+| Name        | Style(s)                    |
+| ----------- | --------------------------- |
+| img-center  | `{ resizeMode: "center" }`  |
+| img-contain | `{ resizeMode: "contain" }` |
+| img-cover   | `{ resizeMode: "cover" }`   |
+| img-repeat  | `{ resizeMode: "repeat" }`  |
+| img-stretch | `{ resizeMode: "stretch" }` |
+
 ### Top / Right / Bottom / Left
 
 | Name      | Style(s)                                   |
@@ -1805,6 +1820,13 @@ The output for any code you write will look more or less the same as above. The 
 | lines-7  | `{ numberOfLines: 7 }`  |
 | lines-8  | `{ numberOfLines: 8 }`  |
 | lines-9  | `{ numberOfLines: 9 }`  |
+
+### Selectable ( prop )
+
+| Name           | Prop(s)                 |
+| -------------- | ----------------------- |
+| not-selectable | `{ selectable: false }` |
+| selectable     | `{ selectable: true }`  |
 
 <!-- UTILS-GEN-END -->
 
