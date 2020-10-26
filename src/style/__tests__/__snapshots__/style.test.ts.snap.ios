@@ -1917,6 +1917,21 @@ Object {
   "hidden": Object {
     "display": "none",
   },
+  "img-center": Object {
+    "resizeMode": "center",
+  },
+  "img-contain": Object {
+    "resizeMode": "contain",
+  },
+  "img-cover": Object {
+    "resizeMode": "cover",
+  },
+  "img-repeat": Object {
+    "resizeMode": "repeat",
+  },
+  "img-stretch": Object {
+    "resizeMode": "stretch",
+  },
   "inset-0": Object {
     "bottom": 0,
     "left": 0,
