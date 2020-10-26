@@ -2,14 +2,12 @@
 
 > A Utility-first Styling Library for [React Native][rn].
 
-![](./docs/demo.png)
-
 ## Features
 
 - ⚡ **Zero-overhead:** Styles get injected via the [StyleSheet][stylesheet] API during compilation.
 - 🍂 **Minimal footprint:** Styles that are never used won't make it to the final App bundle.
 - 🎲 **Variants support:** Conditionally style based on Platform, Layout or Screen size ... etc.
-- 🔌 **Customizable:** Optionally override the default theme by adding `styled.config.js` file
+- 🔌 **Customizable:** Optionally override the default theme by adding `styled.config.js` file (Coming soon!)
 
 ## Table of Contents
 
