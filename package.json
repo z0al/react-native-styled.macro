@@ -6,28 +6,36 @@
 	"author": "Ahmed T. Ali",
 	"repository": "z0al/react-native-styled.macro",
 	"sideEffects": false,
-	"main": "build/macro.js",
-	"module": "build/macro.js",
-	"types": "build/macro.d.ts",
+	"main": "build/commonjs/macro.js",
+	"module": "build/module/macro.js",
+	"types": "build/typescript/macro.d.ts",
+	"react-native": "src/macro.ts",
+	"source": "src/macro.ts",
 	"files": [
+		"build",
 		"lib",
-		"build"
+		"src",
+		"!**/__tests__",
+		"!**/__mocks__"
 	],
 	"keywords": [
 		"expo",
+		"expo-web",
+		"android",
+		"ios",
 		"react-native",
 		"react-native-web",
 		"styled",
 		"babel-plugin-macros"
 	],
 	"scripts": {
-		"prebuild": "expo-module clean",
-		"build": "CI=true expo-module build",
-		"prepublishOnly": "expo-module build",
-		"lint": "expo-module lint",
-		"test": "yarn build && expo-module test",
+		"prepare": "bob build",
+		"lint": "eslint \"**/*.{js,ts,tsx}\"",
+		"test": "bob build && jest",
 		"semantic-release": "semantic-release",
-		"utils-gen": "ts-node ./scripts/utils-gen.ts"
+		"utils-gen": "ts-node ./scripts/utils-gen.ts",
+		"bootstrap:example": "yarn --cwd example",
+		"bootstrap": "yarn bootstrap:example && yarn"
 	},
 	"dependencies": {
 		"@babel/helper-module-imports": "^7.12.1",
@@ -37,19 +45,21 @@
 	},
 	"devDependencies": {
 		"@babel/types": "^7.12.1",
+		"@react-native-community/bob": "^0.16.2",
+		"@react-native-community/eslint-config": "^2.0.0",
 		"@testing-library/jest-native": "^3.4.3",
 		"@testing-library/react-native": "^7.1.0",
 		"@types/babel-plugin-macros": "^2.8.3",
 		"@types/babel-plugin-tester": "^9.0.1",
 		"@types/babel__core": "^7.1.10",
 		"@types/jest": "^26.0.14",
-		"@types/node": "^14.14.2",
 		"@types/react": "^16.9.53",
 		"@types/react-native": "^0.63.25",
 		"babel-plugin-tester": "^10.0.0",
 		"camel-case": "^4.1.1",
-		"eslint": "^7.11.0",
-		"expo-module-scripts": "^1.2.0",
+		"eslint": "^7.12.1",
+		"eslint-config-prettier": "^6.15.0",
+		"eslint-plugin-prettier": "^3.1.4",
 		"jest-expo": "^39.0.0",
 		"prettier": "^2.1.2",
 		"react": "^16.14.0",
@@ -67,11 +77,12 @@
 		"react-native": ">=0.62.0"
 	},
 	"prettier": {
-		"printWidth": 72,
-		"semi": true,
+		"quoteProps": "consistent",
 		"singleQuote": true,
+		"tabWidth": 2,
 		"trailingComma": "es5",
-		"useTabs": true
+		"useTabs": true,
+		"printWidth": 72
 	},
 	"jest": {
 		"projects": [
@@ -92,7 +103,13 @@
 			}
 		]
 	},
-	"publishConfig": {
-		"access": "public"
+	"@react-native-community/bob": {
+		"source": "src",
+		"output": "build",
+		"targets": [
+			"commonjs",
+			"module",
+			"typescript"
+		]
 	}
 }

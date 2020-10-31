@@ -2,13 +2,13 @@
 import { TextStyle } from 'react-native';
 
 export const textTransform = (): Record<string, TextStyle> => ({
-	uppercase: {
+	'uppercase': {
 		textTransform: 'uppercase',
 	},
-	lowercase: {
+	'lowercase': {
 		textTransform: 'lowercase',
 	},
-	capitalize: {
+	'capitalize': {
 		textTransform: 'capitalize',
 	},
 	'normal-case': {

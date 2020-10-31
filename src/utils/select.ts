@@ -12,7 +12,7 @@ export const select = (
 
 	return variantStyles
 		.filter(({ variant }) => Boolean(variants[variant]))
-		.map(({ variant, ...styleWithProps }) => styleWithProps)
+		.map(({ variant: _, ...styleWithProps }) => styleWithProps)
 		.reduce(
 			(props, next) => ({
 				...props,

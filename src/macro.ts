@@ -1,5 +1,6 @@
 // Packages
 import { NodePath } from '@babel/core';
+// @ts-expect-error
 import * as importHelper from '@babel/helper-module-imports';
 import * as t from '@babel/types';
 import toAST from 'babel-object-to-ast';
@@ -10,10 +11,8 @@ import { resolveTokens } from './tokens';
 import { StyleError, StyledMacro } from './types';
 import { DEFAULT_VARIANT } from './utils/defaultVariant';
 
-const pkg = 'react-native-styled.macro';
-
 const importUtil = (path: string) => {
-	return `${pkg}/build/utils/${path}`;
+	return `react-native-styled.macro/build/module/utils/${path}`;
 };
 
 const createStyleSheet = (
@@ -174,11 +173,13 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 				.elements[0] as t.ObjectExpression;
 
 			// => { style: defaultStyle , ... }
-			return refPath.parentPath.replaceWith(
+			refPath.parentPath.replaceWith(
 				t.objectExpression(
 					defaultStyle ? [defaultStyle.properties[1]] : []
 				)
 			);
+
+			return;
 		}
 
 		// Import StyleUtils.select

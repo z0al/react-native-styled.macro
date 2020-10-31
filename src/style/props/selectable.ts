@@ -1,5 +1,5 @@
 export const selectable = () => ({
-	selectable: {
+	'selectable': {
 		selectable: true,
 	},
 	'not-selectable': {

@@ -4,13 +4,13 @@ exports[`babel-plugin-macros 1. babel-plugin-macros: 1. babel-plugin-macros 1`] 
 
 import React from 'react'
 import { View } from 'react-native'
-import styled from '../../build/macro'
+import styled from '../../build/commonjs/macro.js'
 
 const Button = ()=> <View {...styled(['bg-white', 'text-xl'])} />
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-import { rem as _rem } from 'react-native-styled.macro/build/utils/rem';
+import { rem as _rem } from 'react-native-styled.macro/build/module/utils/rem';
 import { StyleSheet as _StyleSheet } from 'react-native';
 
 const _styles = _StyleSheet.create({
@@ -36,15 +36,15 @@ const Button = () => (
 
 exports[`babel-plugin-macros 2. babel-plugin-macros: 2. babel-plugin-macros 1`] = `
 
-import styled from '../../build/macro'
+import styled from '../../build/commonjs/macro.js'
 
 styled(['web:-m-2'], {dark: false})
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-import { rem as _rem } from 'react-native-styled.macro/build/utils/rem';
+import { rem as _rem } from 'react-native-styled.macro/build/module/utils/rem';
 import { StyleSheet as _StyleSheet } from 'react-native';
-import { select as _select } from 'react-native-styled.macro/build/utils/select';
+import { select as _select } from 'react-native-styled.macro/build/module/utils/select';
 
 const _styles = _StyleSheet.create({
 	_web: {
@@ -69,13 +69,13 @@ _select(
 
 exports[`babel-plugin-macros 3. babel-plugin-macros: 3. babel-plugin-macros 1`] = `
 
-import styled from '../../build/macro'
+import styled from '../../build/commonjs/macro.js'
 
 console.log(styled(['-m-2', 'p-4']))
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-import { rem as _rem } from 'react-native-styled.macro/build/utils/rem';
+import { rem as _rem } from 'react-native-styled.macro/build/module/utils/rem';
 import { StyleSheet as _StyleSheet } from 'react-native';
 
 const _styles = _StyleSheet.create({
@@ -94,7 +94,7 @@ console.log({
 
 exports[`babel-plugin-macros 4. babel-plugin-macros: 4. babel-plugin-macros 1`] = `
 
-import styled from '../../build/macro'
+import styled from '../../build/commonjs/macro.js'
 
 console.log(styled([]))
 
@@ -108,7 +108,7 @@ console.log({});
 exports[`babel-plugin-macros 5. babel-plugin-macros: 5. babel-plugin-macros 1`] = `
 
 import { Text } from 'react-native'
-import styled from '../../build/macro';
+import styled from '../../build/commonjs/macro.js';
 
 const Heading = ({ text }) => (
 	<Text
@@ -126,7 +126,7 @@ const Heading = ({ text }) => (
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-import { rem as _rem } from 'react-native-styled.macro/build/utils/rem';
+import { rem as _rem } from 'react-native-styled.macro/build/module/utils/rem';
 import { StyleSheet as _StyleSheet } from 'react-native';
 
 const _styles = _StyleSheet.create({
