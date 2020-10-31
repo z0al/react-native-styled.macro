@@ -21,5 +21,10 @@
 		"target": "esnext"
 	},
 	"include": ["./src"],
-	"exclude": ["**/__mocks__/*", "**/__tests__/*"]
+	"exclude": ["**/__mocks__/*", "**/__tests__/*"],
+	"ts-node": {
+		"compilerOptions": {
+			"module": "CommonJS"
+		}
+	}
 }

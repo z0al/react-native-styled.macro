@@ -35,7 +35,7 @@ export function writeToReadMe(
 	);
 }
 
-export function formatTableData(value: any, root = true) {
+export function formatTableData(value: any, root = true): any {
 	if (Array.isArray(value)) {
 		return `[${value
 			.map((val) => formatTableData(val, false))
@@ -50,7 +50,7 @@ export function formatTableData(value: any, root = true) {
 		return JSON.stringify(value);
 	}
 
-	const data = `{ ${Object.keys(value)
+	const data: any = `{ ${Object.keys(value)
 		.map((k) => `${k}: ${formatTableData(value[k], false)}`)
 		.join(', ')} }`;
 

@@ -1867,8 +1867,8 @@ Built on the top of React Native's [useWindowDimensions][usewindowdimensions] ho
 **Example**
 
 ```javascript
-import styled from 'react-native-styled.macro/macro';
-import { useWindowVariant } from 'react-native-styled.macro';
+import styled from 'react-native-styled.macro';
+import { useWindowVariant } from 'react-native-styled.macro/lib';
 
 const MyComponent = () => {
 	const windowVariant = useWindowVariant();
@@ -1905,7 +1905,7 @@ Since `styled` accepts arbitrary keys as variants supporting Dark mode can be ea
 
 ```javascript
 import { useColorScheme } from 'react-native';
-import styled from 'react-native-styled.macro/macro';
+import styled from 'react-native-styled.macro';
 
 const MyComponent = () => {
 	// Can either be 'dark' or 'light'
