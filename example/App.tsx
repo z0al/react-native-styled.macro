@@ -17,20 +17,24 @@ export default function App() {
 				<Pressable
 					{...styled(
 						[
-							// 'mx-2',
-							// 'px-4',
+							'mx-2',
 							'border',
-							// 'rounded-lg',
+							'rounded-lg',
 							'border-indigo-600',
-							'bg-black',
-							'md:bg-indigo-600',
+							'bg-indigo-600',
 							'sm:bg-green-600',
+							'md:bg-teal-600',
 							'lg:bg-yellow-600',
+							'xl:bg-orange-600',
 						],
 						variants
 					)}
 				>
-					<Text {...styled(['text-base', 'text-white'])}>Press me</Text>
+					<Text
+						{...styled(['px-2', 'py-1', 'text-base', 'text-white'])}
+					>
+						Press me
+					</Text>
 				</Pressable>
 			</SafeAreaView>
 		</SafeAreaProvider>

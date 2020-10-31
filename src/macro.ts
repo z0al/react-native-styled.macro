@@ -1,17 +1,48 @@
 // Packages
 import { NodePath } from '@babel/core';
-// @ts-expect-error
-import * as importHelper from '@babel/helper-module-imports';
 import * as t from '@babel/types';
+// @ts-expect-error
+import * as importHelpers from '@babel/helper-module-imports';
 import { createMacro, MacroHandler } from 'babel-plugin-macros';
+import traverse from '@babel/traverse';
 
 // Ours
 import { resolveTokens } from './tokens';
-import { StyleError, StyledMacro } from './types';
+import { StyledMacro } from './types';
 import { DEFAULT_VARIANT } from './utils/defaultVariant';
 
 const importUtil = (path: string) => {
 	return `react-native-styled.macro/build/module/utils/${path}`;
+};
+
+const transformRem = (program: NodePath<t.Node>) => {
+	traverse(program.parent, {
+		StringLiteral: (path) => {
+			if (!t.isObjectProperty(path.parent)) {
+				return;
+			}
+
+			// Transform values only
+			if (!t.isNodesEquivalent(path.parent.value, path.node)) {
+				return;
+			}
+
+			const { value } = path.node;
+
+			// Replace Rem values with function calls
+			if (value.match(/rem/)) {
+				const remValue = parseFloat(value.replace(/rem|\(|\)/g, ''));
+
+				// => { style: rem(number) }
+				path.replaceWith(
+					t.callExpression(
+						importHelpers.addNamed(program, 'rem', importUtil('rem')),
+						[t.numericLiteral(remValue)]
+					)
+				);
+			}
+		},
+	});
 };
 
 const createStyleSheet = (
@@ -19,73 +50,17 @@ const createStyleSheet = (
 	stylesId: t.Identifier,
 	styles: Record<string, Record<string, any>>
 ) => {
-	// Import StyleSheet API
-	// => import { StyleSheet } from 'react-native';
-	const api: t.Identifier = importHelper.addNamed(
-		program,
-		'StyleSheet',
-		'react-native'
-	);
-
-	// Replace Rem values with function calls
-	// => {style: "rem(1)"} => {style: rem(1)}
-	let remUtil: t.Identifier;
-
-	// const shouldImportRem = stylesJSON.match(/"rem\(/);
-	// const temp = template(stylesJSON);
-
-	const stylesObj = t.objectExpression(
-		Object.keys(styles).map((styleId) => {
-			const style = t.valueToNode(styles[styleId]);
-
-			return t.objectProperty(t.identifier(styleId), {
-				...style,
-				properties: style.properties.map((prop) => {
-					if (!t.isObjectProperty(prop)) {
-						return prop;
-					}
-
-					if (!t.isStringLiteral(prop.value)) {
-						return prop;
-					}
-
-					const { value } = prop.value;
-
-					// Replace Rem values with function calls
-					if (value.match(/rem/)) {
-						// => import { rem } from 'path/to/style/utils'
-						if (!remUtil) {
-							remUtil = importHelper.addNamed(
-								program,
-								'rem',
-								importUtil('rem')
-							);
-						}
-
-						const remValue = parseFloat(
-							value.replace(/rem|\(|\)/g, '')
-						);
-
-						// => { style: rem(number) }
-						prop.value = t.callExpression(remUtil, [
-							t.numericLiteral(remValue),
-						]);
-					}
-
-					return prop;
-				}),
-			});
-		})
-	);
-
 	// Use StyleSheet.create
 	// => const styles = StyleSheet.create({...})
 	const stylesheet = t.variableDeclaration('const', [
 		t.variableDeclarator(
 			stylesId,
 			t.callExpression(
-				t.memberExpression(api, t.identifier('create')),
-				[stylesObj]
+				t.memberExpression(
+					importHelpers.addNamed(program, 'StyleSheet', 'react-native'),
+					t.identifier('create')
+				),
+				[t.valueToNode(styles)]
 			)
 		),
 	]);
@@ -122,7 +97,7 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 
 		const tokens = tokensArg.elements.map((el) => {
 			if (!t.isStringLiteral(el)) {
-				throw new StyleError(
+				throw refPath.buildCodeFrameError(
 					'expected styled to be called with a list of string ' +
 						'literals. Found: ' +
 						el?.type
@@ -167,7 +142,7 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 				})
 			);
 		} catch (error) {
-			throw new StyleError(error.message);
+			throw refPath.buildCodeFrameError(error.message);
 		}
 
 		if (!shouldUseSelect) {
@@ -188,7 +163,7 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 		// Import StyleUtils.select
 		// => import { select } from 'path/to/util';
 		//    select([...], ...)
-		callExpr.callee = importHelper.addNamed(
+		callExpr.callee = importHelpers.addNamed(
 			program,
 			'select',
 			importUtil('select')
@@ -198,6 +173,9 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 	// Inject generated styles to the module
 	if (Object.keys(styles).length > 0) {
 		createStyleSheet(program, stylesId, styles);
+
+		// Convert Rem string literals to function calls
+		transformRem(program);
 	}
 };
 

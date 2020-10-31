@@ -15,7 +15,7 @@
 		"react-dom": "16.13.1",
 		"react-native": "https://github.com/expo/react-native/archive/sdk-39.0.4.tar.gz",
 		"react-native-web": "~0.13.12",
-		"react-native-styled.macro": "file:.."
+		"react-native-styled.macro": "^0.6.1"
 	},
 	"relativeDependencies": {
 		"react-native-styled.macro": ".."
