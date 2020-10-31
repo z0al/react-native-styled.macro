@@ -1,8 +1,8 @@
-> **Status:** This library is only a few days/weeks old. While it works, it's considered to be in Beta.
+<h2 align="center">💅 styled.macro</h2>
 
-# React Native Restyled
-
-> A Utility-first Styling Library for [React Native][rn].
+<p align="center">
+A Utility-first Styling Library for React Native.
+</p>
 
 ## Features
 
@@ -16,58 +16,58 @@
 
 - [Getting started](#getting-started)
 - [Utilities](#utilities)
-  - [Display](#display)
-  - [Flex](#flex)
-  - [Flex Direction](#flex-direction)
-  - [Flex Grow](#flex-grow)
-  - [Flex Shrink](#flex-shrink)
-  - [Flex Wrap](#flex-wrap)
-  - [Align Self](#align-self)
-  - [Align Items](#align-items)
-  - [Align Content](#align-content)
-  - [Justify Content](#justify-content)
-  - [Font Size](#font-size)
-  - [Font Style](#font-style)
-  - [Font Variant](#font-variant)
-  - [Font Weight](#font-weight)
-  - [Height](#height)
-  - [Width](#width)
-  - [Max-Height](#max-height)
-  - [Max-Width](#max-width)
-  - [Min-Height](#min-height)
-  - [Min-Width](#min-width)
-  - [Border Color](#border-color)
-  - [Border Radius](#border-radius)
-  - [Border Style](#border-style)
-  - [Border Width](#border-width)
-  - [Background Color](#background-color)
-  - [Letter Spacing](#letter-spacing)
-  - [Text Align](#text-align)
-  - [Text Align (Vertical)](#text-align-vertical)
-  - [Text Color](#text-color)
-  - [Text Decoration](#text-decoration)
-  - [Text Transform](#text-transform)
-  - [Margin](#margin)
-  - [Padding](#padding)
-  - [Overflow](#overflow)
-  - [Opacity](#opacity)
-  - [Rotate](#rotate)
-  - [Scale](#scale)
-  - [Skew](#skew)
-  - [Translate](#translate)
-  - [Position](#position)
-  - [Resize Mode](#resize-mode)
-  - [Top / Right / Bottom / Left](#top--right--bottom--left)
-  - [Z-Index](#z-index)
-  - [Number of lines ( prop )](#number-of-lines--prop-)
-  - [Selectable ( prop )](#selectable--prop-)
+	- [Display](#display)
+	- [Flex](#flex)
+	- [Flex Direction](#flex-direction)
+	- [Flex Grow](#flex-grow)
+	- [Flex Shrink](#flex-shrink)
+	- [Flex Wrap](#flex-wrap)
+	- [Align Self](#align-self)
+	- [Align Items](#align-items)
+	- [Align Content](#align-content)
+	- [Justify Content](#justify-content)
+	- [Font Size](#font-size)
+	- [Font Style](#font-style)
+	- [Font Variant](#font-variant)
+	- [Font Weight](#font-weight)
+	- [Height](#height)
+	- [Width](#width)
+	- [Max-Height](#max-height)
+	- [Max-Width](#max-width)
+	- [Min-Height](#min-height)
+	- [Min-Width](#min-width)
+	- [Border Color](#border-color)
+	- [Border Radius](#border-radius)
+	- [Border Style](#border-style)
+	- [Border Width](#border-width)
+	- [Background Color](#background-color)
+	- [Letter Spacing](#letter-spacing)
+	- [Text Align](#text-align)
+	- [Text Align (Vertical)](#text-align-vertical)
+	- [Text Color](#text-color)
+	- [Text Decoration](#text-decoration)
+	- [Text Transform](#text-transform)
+	- [Margin](#margin)
+	- [Padding](#padding)
+	- [Overflow](#overflow)
+	- [Opacity](#opacity)
+	- [Rotate](#rotate)
+	- [Scale](#scale)
+	- [Skew](#skew)
+	- [Translate](#translate)
+	- [Position](#position)
+	- [Resize Mode](#resize-mode)
+	- [Top / Right / Bottom / Left](#top--right--bottom--left)
+	- [Z-Index](#z-index)
+	- [Number of lines ( prop )](#number-of-lines--prop-)
+	- [Selectable ( prop )](#selectable--prop-)
 - [Variants](#variants)
-  - [Platform (Built-in)](#platform-built-in)
-  - [Layout (Built-in)](#layout-built-in)
-  - [Responsive](#responsive)
-  - [Dark mode](#dark-mode)
+	- [Platform (Built-in)](#platform-built-in)
+	- [Layout (Built-in)](#layout-built-in)
+	- [Responsive](#responsive)
+	- [Dark mode](#dark-mode)
 - [Best Practices](#best-practices)
-  - [Group variant styles together](#group-variant-styles-together)
+	- [Group variant styles together](#group-variant-styles-together)
 - [Prior Art](#prior-art)
 - [License](#license)
 
@@ -76,7 +76,7 @@
 > _Compatible with React Native v0.62.0 or later_
 
 ```
-yarn add react-native-restyled babel-plugin-macros
+yarn add react-native-styled.macro babel-plugin-macros
 ```
 
 Add `babel-plugin-macros` to your Babel config (if you haven't already)
@@ -94,7 +94,7 @@ module.exports = function (api) {
 To use the library simply import the macro as follows:
 
 ```jsx
-import styled from 'react-native-restyled/macro';
+import styled from 'react-native-styled.macro';
 
 const Heading = ({ text }) => (
 	<Text
@@ -116,8 +116,18 @@ The compiled output for the above code will look something like the following:
 ```diff
 import { Text } from 'react-native';
 +import { StyleSheet } from 'react-native';
-+import { rem } from 'react-native-restyled/path/not/relevant';
--import styled from 'react-native-restyled/macro';
++import { rem } from 'react-native-styled.macro/path/not/relevant';
+-import styled from 'react-native-styled.macro';
+
++const styles = StyleSheet.create({
++	_default: {
++		marginVertical: rem(1),
++		fontSize: rem(1.5),
++		color: '#1a202c',
++		fontWeight: '600',
++		letterSpacing: rem(0.025),
++	},
++});
 
 const Heading = ({ text }) => (
 	<Text
@@ -130,22 +140,12 @@ const Heading = ({ text }) => (
 -		])}
 +		{...{
 +			style: styles._default,
-+   		// other props e.g. numberOfLines in case of 'lines-*'
++ 		// other props e.g. numberOfLines in case of 'lines-*'
 +		}}
 	>
 		{text}
 	</Text>
 );
-
-+const styles = StyleSheet.create({
-+	_default: {
-+		marginVertical: rem(1),
-+		fontSize: rem(1.5),
-+		color: '#1a202c',
-+		fontWeight: '600',
-+		letterSpacing: rem(0.025),
-+	},
-+});
 ```
 
 How does it work?
@@ -1868,8 +1868,8 @@ Built on the top of React Native's [useWindowDimensions][usewindowdimensions] ho
 **Example**
 
 ```javascript
-import styled from 'react-native-restyled/macro';
-import { useWindowVariant } from 'react-native-restyled';
+import styled from 'react-native-styled.macro/macro';
+import { useWindowVariant } from 'react-native-styled.macro';
 
 const MyComponent = () => {
 	const windowVariant = useWindowVariant();
@@ -1906,7 +1906,7 @@ Since `styled` accepts arbitrary keys as variants supporting Dark mode can be ea
 
 ```javascript
 import { useColorScheme } from 'react-native';
-import styled from 'react-native-restyled/macro';
+import styled from 'react-native-styled.macro/macro';
 
 const MyComponent = () => {
 	// Can either be 'dark' or 'light'

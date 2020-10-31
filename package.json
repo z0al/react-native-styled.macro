@@ -1,17 +1,17 @@
 {
-	"name": "react-native-restyled",
+	"name": "react-native-styled.macro",
 	"version": "0.0.0-development",
 	"description": "A Utility-first Styling Library for React Native",
 	"license": "MIT",
 	"author": "Ahmed T. Ali",
-	"repository": "z0al/react-native-restyled",
+	"repository": "z0al/react-native-styled.macro",
 	"sideEffects": false,
-	"main": "lib/index.js",
-	"module": "lib/index.js",
-	"types": "lib/index.d.ts",
+	"main": "build/macro.js",
+	"module": "build/macro.js",
+	"types": "build/macro.d.ts",
 	"files": [
-		"macro",
-		"lib"
+		"lib",
+		"build"
 	],
 	"keywords": [
 		"expo",
@@ -21,9 +21,9 @@
 		"babel-plugin-macros"
 	],
 	"scripts": {
+		"prebuild": "expo-module clean",
 		"build": "CI=true expo-module build",
 		"prepublishOnly": "expo-module build",
-		"clean": "expo-module clean",
 		"lint": "expo-module lint",
 		"test": "yarn build && expo-module test",
 		"semantic-release": "semantic-release",

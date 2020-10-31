@@ -10,10 +10,10 @@ import { resolveTokens } from './tokens';
 import { StyleError, StyledMacro } from './types';
 import { DEFAULT_VARIANT } from './utils/defaultVariant';
 
-const pkg = 'react-native-restyled';
+const pkg = 'react-native-styled.macro';
 
 const importUtil = (path: string) => {
-	return `${pkg}/lib/utils/${path}`;
+	return `${pkg}/build/utils/${path}`;
 };
 
 const createStyleSheet = (
@@ -90,7 +90,7 @@ const createStyleSheet = (
 
 	// Create stylesheet
 	// => const styles = StyleSheet.create({...})
-	module.pushContainer('body' as any, stylesheet);
+	module.unshiftContainer('body' as any, stylesheet);
 };
 
 const styledMacro: MacroHandler = ({ references, state }) => {

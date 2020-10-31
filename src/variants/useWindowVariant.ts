@@ -23,5 +23,5 @@ export const useWindowVariant = (
 		const variant = sorted.find((b) => width >= b[1])?.[0];
 
 		return variant ? { [variant]: true } : {};
-	}, [width]);
+	}, [width, breakpoints]);
 };

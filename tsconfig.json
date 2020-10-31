@@ -2,7 +2,7 @@
 {
 	"extends": "expo-module-scripts/tsconfig.base",
 	"compilerOptions": {
-		"outDir": "./lib",
+		"outDir": "./build",
 		"types": ["@types/node"],
 		"noImplicitReturns": false,
 		"target": "ES6",

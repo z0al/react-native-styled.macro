@@ -4,14 +4,22 @@ exports[`babel-plugin-macros 1. babel-plugin-macros: 1. babel-plugin-macros 1`] 
 
 import React from 'react'
 import { View } from 'react-native'
-import styled from '../../lib/macro'
+import styled from '../../build/macro'
 
 const Button = ()=> <View {...styled(['bg-white', 'text-xl'])} />
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-import { rem as _rem } from 'react-native-restyled/lib/utils/rem';
+import { rem as _rem } from 'react-native-styled.macro/build/utils/rem';
 import { StyleSheet as _StyleSheet } from 'react-native';
+
+const _styles = _StyleSheet.create({
+	_default: {
+		backgroundColor: 'white',
+		fontSize: _rem(1.25),
+	},
+});
+
 import React from 'react';
 import { View } from 'react-native';
 
@@ -23,27 +31,26 @@ const Button = () => (
 	/>
 );
 
-const _styles = _StyleSheet.create({
-	_default: {
-		backgroundColor: 'white',
-		fontSize: _rem(1.25),
-	},
-});
-
 
 `;
 
 exports[`babel-plugin-macros 2. babel-plugin-macros: 2. babel-plugin-macros 1`] = `
 
-import styled from '../../lib/macro'
+import styled from '../../build/macro'
 
 styled(['web:-m-2'], {dark: false})
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-import { rem as _rem } from 'react-native-restyled/lib/utils/rem';
+import { rem as _rem } from 'react-native-styled.macro/build/utils/rem';
 import { StyleSheet as _StyleSheet } from 'react-native';
-import { select as _select } from 'react-native-restyled/lib/utils/select';
+import { select as _select } from 'react-native-styled.macro/build/utils/select';
+
+const _styles = _StyleSheet.create({
+	_web: {
+		margin: _rem(-0.5),
+	},
+});
 
 _select(
 	[
@@ -57,28 +64,19 @@ _select(
 	}
 );
 
-const _styles = _StyleSheet.create({
-	_web: {
-		margin: _rem(-0.5),
-	},
-});
-
 
 `;
 
 exports[`babel-plugin-macros 3. babel-plugin-macros: 3. babel-plugin-macros 1`] = `
 
-import styled from '../../lib/macro'
+import styled from '../../build/macro'
 
 console.log(styled(['-m-2', 'p-4']))
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-import { rem as _rem } from 'react-native-restyled/lib/utils/rem';
+import { rem as _rem } from 'react-native-styled.macro/build/utils/rem';
 import { StyleSheet as _StyleSheet } from 'react-native';
-console.log({
-	style: _styles._default,
-});
 
 const _styles = _StyleSheet.create({
 	_default: {
@@ -87,12 +85,16 @@ const _styles = _StyleSheet.create({
 	},
 });
 
+console.log({
+	style: _styles._default,
+});
+
 
 `;
 
 exports[`babel-plugin-macros 4. babel-plugin-macros: 4. babel-plugin-macros 1`] = `
 
-import styled from '../../lib/macro'
+import styled from '../../build/macro'
 
 console.log(styled([]))
 
@@ -106,7 +108,7 @@ console.log({});
 exports[`babel-plugin-macros 5. babel-plugin-macros: 5. babel-plugin-macros 1`] = `
 
 import { Text } from 'react-native'
-import styled from '../../lib/macro';
+import styled from '../../build/macro';
 
 const Heading = ({ text }) => (
 	<Text
@@ -124,8 +126,19 @@ const Heading = ({ text }) => (
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-import { rem as _rem } from 'react-native-restyled/lib/utils/rem';
+import { rem as _rem } from 'react-native-styled.macro/build/utils/rem';
 import { StyleSheet as _StyleSheet } from 'react-native';
+
+const _styles = _StyleSheet.create({
+	_default: {
+		marginVertical: _rem(1),
+		fontSize: _rem(1.5),
+		color: '#1a202c',
+		fontWeight: '600',
+		letterSpacing: _rem(0.025),
+	},
+});
+
 import { Text } from 'react-native';
 
 const Heading = ({ text }) => (
@@ -137,16 +150,6 @@ const Heading = ({ text }) => (
 		{text}
 	</Text>
 );
-
-const _styles = _StyleSheet.create({
-	_default: {
-		marginVertical: _rem(1),
-		fontSize: _rem(1.5),
-		color: '#1a202c',
-		fontWeight: '600',
-		letterSpacing: _rem(0.025),
-	},
-});
 
 
 `;
