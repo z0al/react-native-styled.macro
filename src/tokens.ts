@@ -6,13 +6,15 @@ import createStyles from './style';
 import createProps from './style/props';
 import theme from './theme';
 import { VariantStyle } from './types';
-import { StyleUtils } from './utils';
+import { extractTokenInfo } from './utils/extractTokenInfo';
+import { getOrderedTokens } from './utils/getOrderedTokens';
+import { reduce } from './utils/reduce';
 
 const themeStyles = createStyles(theme);
 const themeProps = createProps(theme);
 
 const resolveToken = (token: string): VariantStyle => {
-	const { styleId, variant } = StyleUtils.extractTokenInfo(token);
+	const { styleId, variant } = extractTokenInfo(token);
 
 	const style = themeStyles[styleId];
 	const props = themeProps[styleId];
@@ -25,7 +27,7 @@ const resolveToken = (token: string): VariantStyle => {
 };
 
 export const resolveTokens = (tokens: string[]) => {
-	const ordered = StyleUtils.getOrderedTokens(tokens);
+	const ordered = getOrderedTokens(tokens);
 
 	// Different order? warn the user
 	if (!dequal(ordered, tokens)) {
@@ -34,5 +36,5 @@ export const resolveTokens = (tokens: string[]) => {
 		);
 	}
 
-	return StyleUtils.reduce(ordered.map(resolveToken));
+	return reduce(ordered.map(resolveToken));
 };

@@ -1,8 +1,6 @@
-// Packages
-import { StyleSheet } from 'react-native';
-
 // Ours
 import { VariantStyle } from '../types';
+import { merge } from './merge';
 
 /**
  * Merging two or more consecutive styles/props into one if they
@@ -21,7 +19,7 @@ export const reduce = (variantStyles: VariantStyle[]) =>
 			next = {
 				...current,
 				...next,
-				style: StyleSheet.flatten([current?.style, next.style]),
+				style: merge(current?.style, next.style),
 			};
 
 			return [...combined, next];
