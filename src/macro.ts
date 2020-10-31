@@ -3,7 +3,6 @@ import { NodePath } from '@babel/core';
 // @ts-expect-error
 import * as importHelper from '@babel/helper-module-imports';
 import * as t from '@babel/types';
-import toAST from 'babel-object-to-ast';
 import { createMacro, MacroHandler } from 'babel-plugin-macros';
 
 // Ours
@@ -16,26 +15,30 @@ const importUtil = (path: string) => {
 };
 
 const createStyleSheet = (
-	module: NodePath<t.Node>,
+	program: NodePath<t.Node>,
 	stylesId: t.Identifier,
-	styles: Map<t.Identifier, t.ObjectExpression>
+	styles: Record<string, Record<string, any>>
 ) => {
 	// Import StyleSheet API
 	// => import { StyleSheet } from 'react-native';
 	const api: t.Identifier = importHelper.addNamed(
-		module,
+		program,
 		'StyleSheet',
 		'react-native'
 	);
 
-	// Reference StyleUtils.rem() import name
+	// Replace Rem values with function calls
+	// => {style: "rem(1)"} => {style: rem(1)}
 	let remUtil: t.Identifier;
 
-	// Convert styles to Object Expression
-	// => { styleId1: {...}, styleId2: {...}, ...}
+	// const shouldImportRem = stylesJSON.match(/"rem\(/);
+	// const temp = template(stylesJSON);
+
 	const stylesObj = t.objectExpression(
-		Array.from(styles).map(([styleId, style]) =>
-			t.objectProperty(styleId, {
+		Object.keys(styles).map((styleId) => {
+			const style = t.valueToNode(styles[styleId]);
+
+			return t.objectProperty(t.identifier(styleId), {
 				...style,
 				properties: style.properties.map((prop) => {
 					if (!t.isObjectProperty(prop)) {
@@ -53,7 +56,7 @@ const createStyleSheet = (
 						// => import { rem } from 'path/to/style/utils'
 						if (!remUtil) {
 							remUtil = importHelper.addNamed(
-								module,
+								program,
 								'rem',
 								importUtil('rem')
 							);
@@ -71,8 +74,8 @@ const createStyleSheet = (
 
 					return prop;
 				}),
-			})
-		)
+			});
+		})
 	);
 
 	// Use StyleSheet.create
@@ -89,17 +92,17 @@ const createStyleSheet = (
 
 	// Create stylesheet
 	// => const styles = StyleSheet.create({...})
-	module.unshiftContainer('body' as any, stylesheet);
+	program.unshiftContainer('body' as any, stylesheet);
 };
 
 const styledMacro: MacroHandler = ({ references, state }) => {
-	const module = state.file.path;
+	const program = state.file.path;
 
 	// A map that holds the key/value pairs of the generated styles.
-	const styles = new Map<t.Identifier, t.ObjectExpression>();
+	const styles: Record<string, Record<string, any>> = {};
 
 	// Variable name to be used later with StyleSheet.create
-	const stylesheetId = module.scope.generateUidIdentifier('styles');
+	const stylesId = program.scope.generateUidIdentifier('styles');
 
 	references.default?.forEach((refPath) => {
 		if (!t.isCallExpression(refPath.parent)) {
@@ -143,11 +146,11 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 
 					// Generate an Id to be used as a key in the StyleSheet
 					// later.
-					const styleId = module.scope.generateUidIdentifier(
+					const styleId = program.scope.generateUidIdentifier(
 						style.variant
 					);
 
-					styles.set(styleId, toAST(style.style));
+					styles[styleId.name] = style.style;
 
 					return t.objectExpression([
 						// => { vairant: style.variant }
@@ -158,7 +161,7 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 						// => { style: styles.styleId }
 						t.objectProperty(
 							t.identifier('style'),
-							t.memberExpression(stylesheetId, styleId)
+							t.memberExpression(stylesId, styleId)
 						),
 					]);
 				})
@@ -186,15 +189,15 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 		// => import { select } from 'path/to/util';
 		//    select([...], ...)
 		callExpr.callee = importHelper.addNamed(
-			module,
+			program,
 			'select',
 			importUtil('select')
 		);
 	});
 
 	// Inject generated styles to the module
-	if (styles.size > 0) {
-		createStyleSheet(module, stylesheetId, styles);
+	if (Object.keys(styles).length > 0) {
+		createStyleSheet(program, stylesId, styles);
 	}
 };
 

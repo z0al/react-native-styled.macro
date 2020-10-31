@@ -51,7 +51,7 @@
 		"@testing-library/react-native": "^7.1.0",
 		"@types/babel-plugin-macros": "^2.8.3",
 		"@types/babel-plugin-tester": "^9.0.1",
-		"@types/babel__core": "^7.1.10",
+		"@types/babel__core": "^7.1.11",
 		"@types/jest": "^26.0.14",
 		"@types/react": "^16.9.53",
 		"@types/react-native": "^0.63.25",

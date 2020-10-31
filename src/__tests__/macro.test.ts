@@ -53,5 +53,35 @@ pluginTester({
 			</Text>
 		);
 		`,
+		`
+		import React from 'react';
+		import { Text, Pressable, SafeAreaView } from 'react-native';
+
+		import styled from '${macroPath}';
+
+		export default function App() {
+			const variants = useWindowVariant();
+
+			return (
+				<SafeAreaView {...styled(['flex-1', 'items-center'])}>
+					<Pressable
+						{...styled(
+							[
+								'mx-2',
+								'px-4',
+								'border',
+								'rounded-lg',
+								'border-indigo-600',
+								'bg-indigo-600',
+							],
+							variants
+						)}
+					>
+						<Text {...styled(['text-base', 'text-white'])}>Press me</Text>
+					</Pressable>
+				</SafeAreaView>
+			);
+		}
+		`,
 	],
 });

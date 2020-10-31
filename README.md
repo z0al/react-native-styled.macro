@@ -1,3 +1,5 @@
+> **Disclaimer**: This library is only a few days/weeks old. While it works, it's considered to be in Beta.
+
 <h3 align="center">💅 styled.macro</h3>
 
 <p align="center">
