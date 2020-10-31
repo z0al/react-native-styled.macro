@@ -2,7 +2,7 @@
 import { TextStyle } from 'react-native';
 
 export const textDecoration = (): Record<string, TextStyle> => ({
-	underline: {
+	'underline': {
 		textDecorationLine: 'underline',
 	},
 	'no-underline': {

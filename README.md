@@ -1,4 +1,4 @@
-<h2 align="center">💅 styled.macro</h2>
+<h3 align="center">💅 styled.macro</h3>
 
 <p align="center">
 A Utility-first Styling Library for React Native.
@@ -9,7 +9,7 @@ A Utility-first Styling Library for React Native.
 - ⚡ **Zero-overhead:** Styles get injected via the [StyleSheet][stylesheet] API during compilation.
 - 🍂 **Minimal footprint:** Styles that are never used won't make it to the final App bundle.
 - 🎲 **Variants support:** Conditionally style based on Platform, Layout or Screen size ... etc.
-- 💅 **Style props:** Supports common style-related Component props e.g. `numberOfLines`, and `selectable`.
+- 💅 **Style props:** Supports common style-related Component props e.g. `numberOfLines`.
 - 🔌 **Customizable (Coming soon):** Optionally override the default theme by adding `styled.config.js` file
 
 ## Table of Contents
@@ -140,7 +140,6 @@ const Heading = ({ text }) => (
 -		])}
 +		{...{
 +			style: styles._default,
-+ 		// other props e.g. numberOfLines in case of 'lines-*'
 +		}}
 	>
 		{text}
