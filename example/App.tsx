@@ -1,19 +1,33 @@
 import React from 'react';
-import { Text, Pressable } from 'react-native';
+import { Alert, Text, Pressable } from 'react-native';
 import {
 	SafeAreaProvider,
 	SafeAreaView,
 } from 'react-native-safe-area-context';
-
 import styled from 'react-native-styled.macro';
 import { useWindowVariant } from 'react-native-styled.macro/lib';
 
+import { useStyles } from './styles';
+
 export default function App() {
 	const variants = useWindowVariant();
+	const styles = useStyles();
+
+	function handlePress() {
+		Alert.alert(
+			'Button Pressed',
+			'You pressed a button',
+			[{ text: 'OK' }],
+			{
+				cancelable: false,
+			}
+		);
+	}
 
 	return (
 		<SafeAreaProvider>
 			<SafeAreaView {...styled(['flex-1', 'items-center'])}>
+				{/* Inline Styling */}
 				<Pressable
 					{...styled(
 						[
@@ -29,12 +43,18 @@ export default function App() {
 						],
 						variants
 					)}
+					onPress={handlePress}
 				>
 					<Text
 						{...styled(['px-2', 'py-1', 'text-base', 'text-white'])}
 					>
 						Press me
 					</Text>
+				</Pressable>
+
+				{/* Imported Styling */}
+				<Pressable {...styles.button} onPress={handlePress}>
+					<Text {...styles.buttonText}>Press me too</Text>
 				</Pressable>
 			</SafeAreaView>
 		</SafeAreaProvider>
