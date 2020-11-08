@@ -15,7 +15,7 @@ const importUtil = (path: string) => {
 	return `react-native-styled.macro/build/module/utils/${path}`;
 };
 
-const transformRem = (program: NodePath<t.Node>) => {
+const transformRem = (program: NodePath<t.Program>) => {
 	traverse(program.parent, {
 		StringLiteral: (path) => {
 			if (!t.isObjectProperty(path.parent)) {
@@ -46,7 +46,7 @@ const transformRem = (program: NodePath<t.Node>) => {
 };
 
 const createStyleSheet = (
-	program: NodePath<t.Node>,
+	program: NodePath<t.Program>,
 	stylesId: t.Identifier,
 	styles: Record<string, Record<string, any>>
 ) => {
