@@ -1,2 +1,2 @@
-export { rem } from './utils/rem';
-export { useWindowVariant } from './variants/useWindowVariant';
+export { rem } from './styling/utils/rem';
+export { useWindowVariant } from './styling/variants/useWindowVariant';

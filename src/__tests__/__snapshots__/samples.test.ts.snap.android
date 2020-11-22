@@ -4,7 +4,7 @@ exports[`babel-plugin-macros 1. babel-plugin-macros: 1. babel-plugin-macros 1`] 
 
 import React from 'react'
 import { View } from 'react-native'
-import styled from '../../build/commonjs/macro.js'
+import styled from '../../build/module/macro.js'
 
 const Button = ()=> <View {...styled(['bg-white', 'text-xl'])} />
 
@@ -36,7 +36,7 @@ const Button = () => (
 
 exports[`babel-plugin-macros 2. babel-plugin-macros: 2. babel-plugin-macros 1`] = `
 
-import styled from '../../build/commonjs/macro.js'
+import styled from '../../build/module/macro.js'
 
 styled(['web:-m-2'], {dark: false})
 
@@ -69,7 +69,7 @@ _select(
 
 exports[`babel-plugin-macros 3. babel-plugin-macros: 3. babel-plugin-macros 1`] = `
 
-import styled from '../../build/commonjs/macro.js'
+import styled from '../../build/module/macro.js'
 
 console.log(styled(['-m-2', 'p-4']))
 
@@ -95,7 +95,7 @@ console.log({
 
 exports[`babel-plugin-macros 4. babel-plugin-macros: 4. babel-plugin-macros 1`] = `
 
-import styled from '../../build/commonjs/macro.js'
+import styled from '../../build/module/macro.js'
 
 console.log(styled([]))
 
@@ -109,7 +109,7 @@ console.log({});
 exports[`babel-plugin-macros 5. babel-plugin-macros: 5. babel-plugin-macros 1`] = `
 
 import { Text } from 'react-native'
-import styled from '../../build/commonjs/macro.js';
+import styled from '../../build/module/macro.js';
 
 const Heading = ({ text }) => (
 	<Text
@@ -162,7 +162,7 @@ exports[`babel-plugin-macros 6. babel-plugin-macros: 6. babel-plugin-macros 1`] 
 import React from 'react';
 import { Text, Pressable, SafeAreaView } from 'react-native';
 
-import styled from '../../build/commonjs/macro.js';
+import styled from '../../build/module/macro.js';
 
 export default function App() {
 	const variants = useWindowVariant();
@@ -243,6 +243,46 @@ export default function App() {
 		</SafeAreaView>
 	);
 }
+
+
+`;
+
+exports[`babel-plugin-macros 7. babel-plugin-macros: 7. babel-plugin-macros 1`] = `
+
+import styled from '../../build/module/macro.js';
+
+const bgWhite = 'bg-white'
+
+ const buttonStyle = [bgWhite, 'text-black']
+const inputStyle =  [bgWhite, 'text-black']
+
+console.log(styled(buttonStyle))
+console.log(styled(inputStyle))
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import { StyleSheet as _StyleSheet } from 'react-native';
+
+const _styles = _StyleSheet.create({
+	_default: {
+		backgroundColor: 'white',
+		color: 'black',
+	},
+	_default2: {
+		backgroundColor: 'white',
+		color: 'black',
+	},
+});
+
+const bgWhite = 'bg-white';
+const buttonStyle = [bgWhite, 'text-black'];
+const inputStyle = [bgWhite, 'text-black'];
+console.log({
+	style: _styles._default,
+});
+console.log({
+	style: _styles._default2,
+});
 
 
 `;

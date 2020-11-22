@@ -1,8 +1,10 @@
 // Packages
+import * as path from 'path';
 import plugin from 'babel-plugin-macros';
 import pluginTester from 'babel-plugin-tester';
+import { loadPackageJson } from 'json.macro';
 
-const macroPath = '../../build/commonjs/macro.js';
+const macroPath = path.join('..', '..', loadPackageJson().module);
 
 pluginTester({
 	plugin,
@@ -82,6 +84,17 @@ pluginTester({
 				</SafeAreaView>
 			);
 		}
+		`,
+		`
+		import styled from '${macroPath}';
+
+		const bgWhite = 'bg-white'
+
+	  const buttonStyle = [bgWhite, 'text-black']
+		const inputStyle =  [bgWhite, 'text-black']
+
+		console.log(styled(buttonStyle))
+		console.log(styled(inputStyle))
 		`,
 	],
 });

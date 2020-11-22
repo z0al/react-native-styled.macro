@@ -1,19 +1,15 @@
 // Packages
-import { NodePath } from '@babel/core';
 import * as t from '@babel/types';
-// @ts-expect-error
-import * as importHelpers from '@babel/helper-module-imports';
-import { createMacro, MacroHandler } from 'babel-plugin-macros';
 import traverse from '@babel/traverse';
+import { NodePath } from '@babel/core';
+import { createMacro, MacroHandler } from 'babel-plugin-macros';
 
 // Ours
-import { resolveTokens } from './tokens';
-import { StyledMacro } from './types';
-import { DEFAULT_VARIANT } from './utils/defaultVariant';
-
-const importUtil = (path: string) => {
-	return `react-native-styled.macro/build/module/utils/${path}`;
-};
+import { evalNode } from './babel/eval-node';
+import { StyledMacro } from './styling/types';
+import { resolveTokens } from './styling/tokens';
+import { DEFAULT_VARIANT } from './styling/utils/defaultVariant';
+import { importStyleSheet, importUtil } from './babel/add-import';
 
 const transformRem = (program: NodePath<t.Program>) => {
 	traverse(program.parent, {
@@ -35,10 +31,9 @@ const transformRem = (program: NodePath<t.Program>) => {
 
 				// => { style: rem(number) }
 				path.replaceWith(
-					t.callExpression(
-						importHelpers.addNamed(program, 'rem', importUtil('rem')),
-						[t.numericLiteral(remValue)]
-					)
+					t.callExpression(importUtil(program, 'rem'), [
+						t.numericLiteral(remValue),
+					])
 				);
 			}
 		},
@@ -57,7 +52,7 @@ const createStyleSheet = (
 			stylesId,
 			t.callExpression(
 				t.memberExpression(
-					importHelpers.addNamed(program, 'StyleSheet', 'react-native'),
+					importStyleSheet(program),
 					t.identifier('create')
 				),
 				[t.valueToNode(styles)]
@@ -88,24 +83,22 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 		const callExpr = refPath.parent;
 
 		// Parse token argument
-		const tokensArg = callExpr.arguments[0];
+		const { confident, value: tokens, deopt } = evalNode(
+			refPath.parentPath,
+			callExpr.arguments[0]
+		);
 
-		// tokens must be an array of strings
-		if (!t.isArrayExpression(tokensArg)) {
-			return;
+		if (!confident) {
+			throw deopt?.buildCodeFrameError(
+				'could not evaluate style names at compile time'
+			);
 		}
 
-		const tokens = tokensArg.elements.map((el) => {
-			if (!t.isStringLiteral(el)) {
-				throw refPath.buildCodeFrameError(
-					'expected styled to be called with a list of string ' +
-						'literals. Found: ' +
-						el?.type
-				);
-			}
-
-			return el.value;
-		});
+		if (!Array.isArray(tokens)) {
+			throw deopt?.buildCodeFrameError(
+				'style names must be an array of strings'
+			);
+		}
 
 		// Avoid wrapping styles around select(..) call if we only have
 		// defautl variant styles.
@@ -163,11 +156,7 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 		// Import StyleUtils.select
 		// => import { select } from 'path/to/util';
 		//    select([...], ...)
-		callExpr.callee = importHelpers.addNamed(
-			program,
-			'select',
-			importUtil('select')
-		);
+		callExpr.callee = importUtil(program, 'select');
 	});
 
 	// Inject generated styles to the module
