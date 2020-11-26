@@ -33,7 +33,7 @@
 		"lint": "eslint \"**/*.{js,ts,tsx}\"",
 		"test": "yarn build && jest",
 		"semantic-release": "semantic-release",
-		"utils-gen": "ts-node ./scripts/utils-gen.ts",
+		"docs-gen": "ts-node ./scripts/docs-gen.ts",
 		"bootstrap:example": "yarn --cwd example",
 		"bootstrap": "yarn bootstrap:example && yarn"
 	},
@@ -88,23 +88,7 @@
 		"printWidth": 72
 	},
 	"jest": {
-		"projects": [
-			{
-				"preset": "jest-expo/android",
-				"setupFilesAfterEnv": [
-					"@testing-library/jest-native/extend-expect"
-				]
-			},
-			{
-				"preset": "jest-expo/ios",
-				"setupFilesAfterEnv": [
-					"@testing-library/jest-native/extend-expect"
-				]
-			},
-			{
-				"preset": "jest-expo/node"
-			}
-		]
+		"preset": "jest-expo/universal"
 	},
 	"@react-native-community/bob": {
 		"source": "src",
