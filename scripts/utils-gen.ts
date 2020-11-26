@@ -2,7 +2,7 @@
 import { camelCase } from 'camel-case';
 
 // Ours
-import theme from '../src/theme';
+import theme from '../src/styling/theme';
 import {
 	formatTableData,
 	generateDetailsTag,
@@ -83,7 +83,7 @@ const doc = Data.map((row) => {
 	const title = `### ${name} ${row.prop ? '( prop )' : ''}\n\n`;
 	const moduleName = camelCase(name);
 
-	const { [moduleName]: styleOf } = require(`../src/style/${
+	const { [moduleName]: styleOf } = require(`../src/styling/style/${
 		row.prop ? 'props/' : ''
 	}${moduleName}`);
 

@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
 		"baseUrl": ".",
+		"outDir": "./build/typescript",
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
 		"esModuleInterop": true,
