@@ -29,9 +29,9 @@
 		"babel-plugin-macros"
 	],
 	"scripts": {
-		"prepare": "bob build",
+		"build": "rimraf -rf build && bob build",
 		"lint": "eslint \"**/*.{js,ts,tsx}\"",
-		"test": "bob build && jest",
+		"test": "yarn build && jest",
 		"semantic-release": "semantic-release",
 		"utils-gen": "ts-node ./scripts/utils-gen.ts",
 		"bootstrap:example": "yarn --cwd example",
@@ -69,6 +69,7 @@
 		"react-native": "^0.63.3",
 		"react-native-web": "^0.14.8",
 		"react-test-renderer": "^17.0.1",
+		"rimraf": "^3.0.2",
 		"semantic-release": "^17.3.0",
 		"ts-node": "^9.0.0",
 		"type-fest": "^0.20.1",

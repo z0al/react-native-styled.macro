@@ -1,69 +1,14 @@
 // Packages
 import * as t from '@babel/types';
-import traverse from '@babel/traverse';
-import { NodePath } from '@babel/core';
 import { createMacro, MacroHandler } from 'babel-plugin-macros';
 
 // Ours
 import { evalNode } from './babel/eval-node';
 import { StyledMacro } from './styling/types';
 import { resolveTokens } from './styling/tokens';
+import { importUtil } from './babel/add-import';
+import { injectStyles } from './babel/inject-styles';
 import { DEFAULT_VARIANT } from './styling/utils/defaultVariant';
-import { importStyleSheet, importUtil } from './babel/add-import';
-
-const transformRem = (program: NodePath<t.Program>) => {
-	traverse(program.parent, {
-		StringLiteral: (path) => {
-			if (!t.isObjectProperty(path.parent)) {
-				return;
-			}
-
-			// Transform values only
-			if (!t.isNodesEquivalent(path.parent.value, path.node)) {
-				return;
-			}
-
-			const { value } = path.node;
-
-			// Replace Rem values with function calls
-			if (value.match(/rem/)) {
-				const remValue = parseFloat(value.replace(/rem|\(|\)/g, ''));
-
-				// => { style: rem(number) }
-				path.replaceWith(
-					t.callExpression(importUtil(program, 'rem'), [
-						t.numericLiteral(remValue),
-					])
-				);
-			}
-		},
-	});
-};
-
-const createStyleSheet = (
-	program: NodePath<t.Program>,
-	stylesId: t.Identifier,
-	styles: Record<string, Record<string, any>>
-) => {
-	// Use StyleSheet.create
-	// => const styles = StyleSheet.create({...})
-	const stylesheet = t.variableDeclaration('const', [
-		t.variableDeclarator(
-			stylesId,
-			t.callExpression(
-				t.memberExpression(
-					importStyleSheet(program),
-					t.identifier('create')
-				),
-				[t.valueToNode(styles)]
-			)
-		),
-	]);
-
-	// Create stylesheet
-	// => const styles = StyleSheet.create({...})
-	program.unshiftContainer('body' as any, stylesheet);
-};
 
 const styledMacro: MacroHandler = ({ references, state }) => {
 	const program = state.file.path;
@@ -72,7 +17,9 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 	const styles: Record<string, Record<string, any>> = {};
 
 	// Variable name to be used later with StyleSheet.create
-	const stylesId = program.scope.generateUidIdentifier('styles');
+	const stylesVariableId = program.scope.generateUidIdentifier(
+		'styles'
+	);
 
 	references.default?.forEach((refPath) => {
 		if (!t.isCallExpression(refPath.parent)) {
@@ -129,7 +76,7 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 						// => { style: styles.styleId }
 						t.objectProperty(
 							t.identifier('style'),
-							t.memberExpression(stylesId, styleId)
+							t.memberExpression(stylesVariableId, styleId)
 						),
 					]);
 				})
@@ -161,10 +108,7 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 
 	// Inject generated styles to the module
 	if (Object.keys(styles).length > 0) {
-		createStyleSheet(program, stylesId, styles);
-
-		// Convert Rem string literals to function calls
-		transformRem(program);
+		injectStyles(program, stylesVariableId, styles);
 	}
 };
 
