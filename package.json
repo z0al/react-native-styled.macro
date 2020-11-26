@@ -56,6 +56,8 @@
 		"@types/jest": "^26.0.14",
 		"@types/react": "^17.0.0",
 		"@types/react-native": "^0.63.37",
+		"@typescript-eslint/eslint-plugin": "^4.8.2",
+		"@typescript-eslint/parser": "^4.8.2",
 		"babel-plugin-tester": "^10.0.0",
 		"camel-case": "^4.1.1",
 		"eslint": "^7.14.0",
