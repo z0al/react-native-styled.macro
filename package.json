@@ -39,9 +39,9 @@
 	},
 	"dependencies": {
 		"@babel/helper-module-imports": "^7.12.5",
-		"@babel/traverse": "^7.12.7",
+		"@babel/traverse": "^7.12.9",
 		"babel-helper-evaluate-path": "^0.5.0",
-		"babel-plugin-macros": "^2.8.0",
+		"babel-plugin-macros": "^3.0.0",
 		"dequal": "^2.0.2"
 	},
 	"devDependencies": {
@@ -54,8 +54,8 @@
 		"@types/babel-plugin-tester": "^9.0.1",
 		"@types/babel__core": "^7.1.12",
 		"@types/jest": "^26.0.14",
-		"@types/react": "^16.9.53",
-		"@types/react-native": "^0.63.25",
+		"@types/react": "^17.0.0",
+		"@types/react-native": "^0.63.37",
 		"babel-plugin-tester": "^10.0.0",
 		"camel-case": "^4.1.1",
 		"eslint": "^7.14.0",
@@ -63,15 +63,15 @@
 		"eslint-plugin-prettier": "^3.1.4",
 		"jest-expo": "^39.0.0",
 		"json.macro": "^1.3.0",
-		"prettier": "^2.1.2",
+		"prettier": "^2.2.0",
 		"react": "^16.14.0",
 		"react-dom": "^16.14.0",
 		"react-native": "^0.63.3",
 		"react-native-web": "^0.14.8",
 		"react-test-renderer": "^17.0.1",
-		"semantic-release": "^17.2.4",
+		"semantic-release": "^17.3.0",
 		"ts-node": "^9.0.0",
-		"type-fest": "^0.19.0",
+		"type-fest": "^0.20.1",
 		"typescript": "^4.1.2"
 	},
 	"peerDependencies": {
