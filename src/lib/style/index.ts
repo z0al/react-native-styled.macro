@@ -45,7 +45,7 @@ import { translate } from './translate';
 import { width } from './width';
 import { zIndex } from './zIndex';
 
-export default (theme: Theme) => ({
+export default <T extends Theme>(theme: T) => ({
 	...alignContent(),
 	...alignItems(),
 	...alignSelf(),

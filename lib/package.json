@@ -1,7 +1,7 @@
 {
 	"name": "react-native-styled.macro/lib",
 	"private": true,
-	"main": "../build/commonjs/lib.js",
-	"module": "../build/module/lib.js",
-	"types": "../build/typescript/lib.d.ts"
+	"main": "../build/commonjs/exports.js",
+	"module": "../build/module/exports.js",
+	"types": "../build/typescript/exports.d.ts"
 }

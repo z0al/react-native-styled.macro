@@ -1,5 +1,4 @@
 // Ours
-import { Theme } from '../types';
 import { negative, rem } from './utils';
 
 const colors = {
@@ -148,7 +147,7 @@ const opacity = {
 	100: 1,
 };
 
-export const baseTheme: Theme = {
+export const baseTheme = {
 	backgroundColor: colors,
 	borderColor: colors,
 	borderRadius: {
@@ -196,15 +195,15 @@ export const baseTheme: Theme = {
 		'6xl': rem(4),
 	},
 	fontWeight: {
-		hairline: '100',
-		thin: '200',
-		light: '300',
-		normal: '400',
-		medium: '500',
-		semibold: '600',
-		bold: '700',
-		extrabold: '800',
-		black: '900',
+		hairline: '100' as '100',
+		thin: '200' as '200',
+		light: '300' as '300',
+		normal: '400' as '400',
+		medium: '500' as '500',
+		semibold: '600' as '600',
+		bold: '700' as '700',
+		extrabold: '800' as '800',
+		black: '900' as '900',
 	},
 	height: spacing,
 	letterSpacing: {

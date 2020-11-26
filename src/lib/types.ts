@@ -67,10 +67,3 @@ export type Theme = {
 export type Configuration = {
 	theme: Theme;
 };
-
-export class StyleError extends Error {
-	constructor(message: string) {
-		super(message);
-		this.name = 'StyleError';
-	}
-}

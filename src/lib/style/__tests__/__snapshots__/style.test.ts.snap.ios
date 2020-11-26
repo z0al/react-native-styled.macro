@@ -3,514 +3,514 @@
 exports[`[styles] snapshot 1`] = `
 Object {
   "-m-0": Object {
-    "margin": -0,
+    "margin": 0,
   },
   "-m-1": Object {
-    "margin": "-rem(0.25)",
+    "margin": -8,
   },
   "-m-10": Object {
-    "margin": "-rem(2.5)",
+    "margin": -80,
   },
   "-m-12": Object {
-    "margin": "-rem(3)",
+    "margin": -96,
   },
   "-m-16": Object {
-    "margin": "-rem(4)",
+    "margin": -128,
   },
   "-m-2": Object {
-    "margin": "-rem(0.5)",
+    "margin": -16,
   },
   "-m-20": Object {
-    "margin": "-rem(5)",
+    "margin": -160,
   },
   "-m-24": Object {
-    "margin": "-rem(6)",
+    "margin": -192,
   },
   "-m-3": Object {
-    "margin": "-rem(0.75)",
+    "margin": -24,
   },
   "-m-32": Object {
-    "margin": "-rem(8)",
+    "margin": -256,
   },
   "-m-4": Object {
-    "margin": "-rem(1)",
+    "margin": -32,
   },
   "-m-40": Object {
-    "margin": "-rem(10)",
+    "margin": -320,
   },
   "-m-48": Object {
-    "margin": "-rem(12)",
+    "margin": -384,
   },
   "-m-5": Object {
-    "margin": "-rem(1.25)",
+    "margin": -40,
   },
   "-m-56": Object {
-    "margin": "-rem(14)",
+    "margin": -448,
   },
   "-m-6": Object {
-    "margin": "-rem(1.5)",
+    "margin": -48,
   },
   "-m-64": Object {
-    "margin": "-rem(16)",
+    "margin": -512,
   },
   "-m-8": Object {
-    "margin": "-rem(2)",
+    "margin": -64,
   },
   "-m-px": Object {
     "margin": -1,
   },
   "-mb-0": Object {
-    "marginBottom": -0,
+    "marginBottom": 0,
   },
   "-mb-1": Object {
-    "marginBottom": "-rem(0.25)",
+    "marginBottom": -8,
   },
   "-mb-10": Object {
-    "marginBottom": "-rem(2.5)",
+    "marginBottom": -80,
   },
   "-mb-12": Object {
-    "marginBottom": "-rem(3)",
+    "marginBottom": -96,
   },
   "-mb-16": Object {
-    "marginBottom": "-rem(4)",
+    "marginBottom": -128,
   },
   "-mb-2": Object {
-    "marginBottom": "-rem(0.5)",
+    "marginBottom": -16,
   },
   "-mb-20": Object {
-    "marginBottom": "-rem(5)",
+    "marginBottom": -160,
   },
   "-mb-24": Object {
-    "marginBottom": "-rem(6)",
+    "marginBottom": -192,
   },
   "-mb-3": Object {
-    "marginBottom": "-rem(0.75)",
+    "marginBottom": -24,
   },
   "-mb-32": Object {
-    "marginBottom": "-rem(8)",
+    "marginBottom": -256,
   },
   "-mb-4": Object {
-    "marginBottom": "-rem(1)",
+    "marginBottom": -32,
   },
   "-mb-40": Object {
-    "marginBottom": "-rem(10)",
+    "marginBottom": -320,
   },
   "-mb-48": Object {
-    "marginBottom": "-rem(12)",
+    "marginBottom": -384,
   },
   "-mb-5": Object {
-    "marginBottom": "-rem(1.25)",
+    "marginBottom": -40,
   },
   "-mb-56": Object {
-    "marginBottom": "-rem(14)",
+    "marginBottom": -448,
   },
   "-mb-6": Object {
-    "marginBottom": "-rem(1.5)",
+    "marginBottom": -48,
   },
   "-mb-64": Object {
-    "marginBottom": "-rem(16)",
+    "marginBottom": -512,
   },
   "-mb-8": Object {
-    "marginBottom": "-rem(2)",
+    "marginBottom": -64,
   },
   "-mb-px": Object {
     "marginBottom": -1,
   },
   "-me-0": Object {
-    "marginEnd": -0,
+    "marginEnd": 0,
   },
   "-me-1": Object {
-    "marginEnd": "-rem(0.25)",
+    "marginEnd": -8,
   },
   "-me-10": Object {
-    "marginEnd": "-rem(2.5)",
+    "marginEnd": -80,
   },
   "-me-12": Object {
-    "marginEnd": "-rem(3)",
+    "marginEnd": -96,
   },
   "-me-16": Object {
-    "marginEnd": "-rem(4)",
+    "marginEnd": -128,
   },
   "-me-2": Object {
-    "marginEnd": "-rem(0.5)",
+    "marginEnd": -16,
   },
   "-me-20": Object {
-    "marginEnd": "-rem(5)",
+    "marginEnd": -160,
   },
   "-me-24": Object {
-    "marginEnd": "-rem(6)",
+    "marginEnd": -192,
   },
   "-me-3": Object {
-    "marginEnd": "-rem(0.75)",
+    "marginEnd": -24,
   },
   "-me-32": Object {
-    "marginEnd": "-rem(8)",
+    "marginEnd": -256,
   },
   "-me-4": Object {
-    "marginEnd": "-rem(1)",
+    "marginEnd": -32,
   },
   "-me-40": Object {
-    "marginEnd": "-rem(10)",
+    "marginEnd": -320,
   },
   "-me-48": Object {
-    "marginEnd": "-rem(12)",
+    "marginEnd": -384,
   },
   "-me-5": Object {
-    "marginEnd": "-rem(1.25)",
+    "marginEnd": -40,
   },
   "-me-56": Object {
-    "marginEnd": "-rem(14)",
+    "marginEnd": -448,
   },
   "-me-6": Object {
-    "marginEnd": "-rem(1.5)",
+    "marginEnd": -48,
   },
   "-me-64": Object {
-    "marginEnd": "-rem(16)",
+    "marginEnd": -512,
   },
   "-me-8": Object {
-    "marginEnd": "-rem(2)",
+    "marginEnd": -64,
   },
   "-me-px": Object {
     "marginEnd": -1,
   },
   "-ml-0": Object {
-    "marginLeft": -0,
+    "marginLeft": 0,
   },
   "-ml-1": Object {
-    "marginLeft": "-rem(0.25)",
+    "marginLeft": -8,
   },
   "-ml-10": Object {
-    "marginLeft": "-rem(2.5)",
+    "marginLeft": -80,
   },
   "-ml-12": Object {
-    "marginLeft": "-rem(3)",
+    "marginLeft": -96,
   },
   "-ml-16": Object {
-    "marginLeft": "-rem(4)",
+    "marginLeft": -128,
   },
   "-ml-2": Object {
-    "marginLeft": "-rem(0.5)",
+    "marginLeft": -16,
   },
   "-ml-20": Object {
-    "marginLeft": "-rem(5)",
+    "marginLeft": -160,
   },
   "-ml-24": Object {
-    "marginLeft": "-rem(6)",
+    "marginLeft": -192,
   },
   "-ml-3": Object {
-    "marginLeft": "-rem(0.75)",
+    "marginLeft": -24,
   },
   "-ml-32": Object {
-    "marginLeft": "-rem(8)",
+    "marginLeft": -256,
   },
   "-ml-4": Object {
-    "marginLeft": "-rem(1)",
+    "marginLeft": -32,
   },
   "-ml-40": Object {
-    "marginLeft": "-rem(10)",
+    "marginLeft": -320,
   },
   "-ml-48": Object {
-    "marginLeft": "-rem(12)",
+    "marginLeft": -384,
   },
   "-ml-5": Object {
-    "marginLeft": "-rem(1.25)",
+    "marginLeft": -40,
   },
   "-ml-56": Object {
-    "marginLeft": "-rem(14)",
+    "marginLeft": -448,
   },
   "-ml-6": Object {
-    "marginLeft": "-rem(1.5)",
+    "marginLeft": -48,
   },
   "-ml-64": Object {
-    "marginLeft": "-rem(16)",
+    "marginLeft": -512,
   },
   "-ml-8": Object {
-    "marginLeft": "-rem(2)",
+    "marginLeft": -64,
   },
   "-ml-px": Object {
     "marginLeft": -1,
   },
   "-mr-0": Object {
-    "marginRight": -0,
+    "marginRight": 0,
   },
   "-mr-1": Object {
-    "marginRight": "-rem(0.25)",
+    "marginRight": -8,
   },
   "-mr-10": Object {
-    "marginRight": "-rem(2.5)",
+    "marginRight": -80,
   },
   "-mr-12": Object {
-    "marginRight": "-rem(3)",
+    "marginRight": -96,
   },
   "-mr-16": Object {
-    "marginRight": "-rem(4)",
+    "marginRight": -128,
   },
   "-mr-2": Object {
-    "marginRight": "-rem(0.5)",
+    "marginRight": -16,
   },
   "-mr-20": Object {
-    "marginRight": "-rem(5)",
+    "marginRight": -160,
   },
   "-mr-24": Object {
-    "marginRight": "-rem(6)",
+    "marginRight": -192,
   },
   "-mr-3": Object {
-    "marginRight": "-rem(0.75)",
+    "marginRight": -24,
   },
   "-mr-32": Object {
-    "marginRight": "-rem(8)",
+    "marginRight": -256,
   },
   "-mr-4": Object {
-    "marginRight": "-rem(1)",
+    "marginRight": -32,
   },
   "-mr-40": Object {
-    "marginRight": "-rem(10)",
+    "marginRight": -320,
   },
   "-mr-48": Object {
-    "marginRight": "-rem(12)",
+    "marginRight": -384,
   },
   "-mr-5": Object {
-    "marginRight": "-rem(1.25)",
+    "marginRight": -40,
   },
   "-mr-56": Object {
-    "marginRight": "-rem(14)",
+    "marginRight": -448,
   },
   "-mr-6": Object {
-    "marginRight": "-rem(1.5)",
+    "marginRight": -48,
   },
   "-mr-64": Object {
-    "marginRight": "-rem(16)",
+    "marginRight": -512,
   },
   "-mr-8": Object {
-    "marginRight": "-rem(2)",
+    "marginRight": -64,
   },
   "-mr-px": Object {
     "marginRight": -1,
   },
   "-ms-0": Object {
-    "marginStart": -0,
+    "marginStart": 0,
   },
   "-ms-1": Object {
-    "marginStart": "-rem(0.25)",
+    "marginStart": -8,
   },
   "-ms-10": Object {
-    "marginStart": "-rem(2.5)",
+    "marginStart": -80,
   },
   "-ms-12": Object {
-    "marginStart": "-rem(3)",
+    "marginStart": -96,
   },
   "-ms-16": Object {
-    "marginStart": "-rem(4)",
+    "marginStart": -128,
   },
   "-ms-2": Object {
-    "marginStart": "-rem(0.5)",
+    "marginStart": -16,
   },
   "-ms-20": Object {
-    "marginStart": "-rem(5)",
+    "marginStart": -160,
   },
   "-ms-24": Object {
-    "marginStart": "-rem(6)",
+    "marginStart": -192,
   },
   "-ms-3": Object {
-    "marginStart": "-rem(0.75)",
+    "marginStart": -24,
   },
   "-ms-32": Object {
-    "marginStart": "-rem(8)",
+    "marginStart": -256,
   },
   "-ms-4": Object {
-    "marginStart": "-rem(1)",
+    "marginStart": -32,
   },
   "-ms-40": Object {
-    "marginStart": "-rem(10)",
+    "marginStart": -320,
   },
   "-ms-48": Object {
-    "marginStart": "-rem(12)",
+    "marginStart": -384,
   },
   "-ms-5": Object {
-    "marginStart": "-rem(1.25)",
+    "marginStart": -40,
   },
   "-ms-56": Object {
-    "marginStart": "-rem(14)",
+    "marginStart": -448,
   },
   "-ms-6": Object {
-    "marginStart": "-rem(1.5)",
+    "marginStart": -48,
   },
   "-ms-64": Object {
-    "marginStart": "-rem(16)",
+    "marginStart": -512,
   },
   "-ms-8": Object {
-    "marginStart": "-rem(2)",
+    "marginStart": -64,
   },
   "-ms-px": Object {
     "marginStart": -1,
   },
   "-mt-0": Object {
-    "marginTop": -0,
+    "marginTop": 0,
   },
   "-mt-1": Object {
-    "marginTop": "-rem(0.25)",
+    "marginTop": -8,
   },
   "-mt-10": Object {
-    "marginTop": "-rem(2.5)",
+    "marginTop": -80,
   },
   "-mt-12": Object {
-    "marginTop": "-rem(3)",
+    "marginTop": -96,
   },
   "-mt-16": Object {
-    "marginTop": "-rem(4)",
+    "marginTop": -128,
   },
   "-mt-2": Object {
-    "marginTop": "-rem(0.5)",
+    "marginTop": -16,
   },
   "-mt-20": Object {
-    "marginTop": "-rem(5)",
+    "marginTop": -160,
   },
   "-mt-24": Object {
-    "marginTop": "-rem(6)",
+    "marginTop": -192,
   },
   "-mt-3": Object {
-    "marginTop": "-rem(0.75)",
+    "marginTop": -24,
   },
   "-mt-32": Object {
-    "marginTop": "-rem(8)",
+    "marginTop": -256,
   },
   "-mt-4": Object {
-    "marginTop": "-rem(1)",
+    "marginTop": -32,
   },
   "-mt-40": Object {
-    "marginTop": "-rem(10)",
+    "marginTop": -320,
   },
   "-mt-48": Object {
-    "marginTop": "-rem(12)",
+    "marginTop": -384,
   },
   "-mt-5": Object {
-    "marginTop": "-rem(1.25)",
+    "marginTop": -40,
   },
   "-mt-56": Object {
-    "marginTop": "-rem(14)",
+    "marginTop": -448,
   },
   "-mt-6": Object {
-    "marginTop": "-rem(1.5)",
+    "marginTop": -48,
   },
   "-mt-64": Object {
-    "marginTop": "-rem(16)",
+    "marginTop": -512,
   },
   "-mt-8": Object {
-    "marginTop": "-rem(2)",
+    "marginTop": -64,
   },
   "-mt-px": Object {
     "marginTop": -1,
   },
   "-mx-0": Object {
-    "marginHorizontal": -0,
+    "marginHorizontal": 0,
   },
   "-mx-1": Object {
-    "marginHorizontal": "-rem(0.25)",
+    "marginHorizontal": -8,
   },
   "-mx-10": Object {
-    "marginHorizontal": "-rem(2.5)",
+    "marginHorizontal": -80,
   },
   "-mx-12": Object {
-    "marginHorizontal": "-rem(3)",
+    "marginHorizontal": -96,
   },
   "-mx-16": Object {
-    "marginHorizontal": "-rem(4)",
+    "marginHorizontal": -128,
   },
   "-mx-2": Object {
-    "marginHorizontal": "-rem(0.5)",
+    "marginHorizontal": -16,
   },
   "-mx-20": Object {
-    "marginHorizontal": "-rem(5)",
+    "marginHorizontal": -160,
   },
   "-mx-24": Object {
-    "marginHorizontal": "-rem(6)",
+    "marginHorizontal": -192,
   },
   "-mx-3": Object {
-    "marginHorizontal": "-rem(0.75)",
+    "marginHorizontal": -24,
   },
   "-mx-32": Object {
-    "marginHorizontal": "-rem(8)",
+    "marginHorizontal": -256,
   },
   "-mx-4": Object {
-    "marginHorizontal": "-rem(1)",
+    "marginHorizontal": -32,
   },
   "-mx-40": Object {
-    "marginHorizontal": "-rem(10)",
+    "marginHorizontal": -320,
   },
   "-mx-48": Object {
-    "marginHorizontal": "-rem(12)",
+    "marginHorizontal": -384,
   },
   "-mx-5": Object {
-    "marginHorizontal": "-rem(1.25)",
+    "marginHorizontal": -40,
   },
   "-mx-56": Object {
-    "marginHorizontal": "-rem(14)",
+    "marginHorizontal": -448,
   },
   "-mx-6": Object {
-    "marginHorizontal": "-rem(1.5)",
+    "marginHorizontal": -48,
   },
   "-mx-64": Object {
-    "marginHorizontal": "-rem(16)",
+    "marginHorizontal": -512,
   },
   "-mx-8": Object {
-    "marginHorizontal": "-rem(2)",
+    "marginHorizontal": -64,
   },
   "-mx-px": Object {
     "marginHorizontal": -1,
   },
   "-my-0": Object {
-    "marginVertical": -0,
+    "marginVertical": 0,
   },
   "-my-1": Object {
-    "marginVertical": "-rem(0.25)",
+    "marginVertical": -8,
   },
   "-my-10": Object {
-    "marginVertical": "-rem(2.5)",
+    "marginVertical": -80,
   },
   "-my-12": Object {
-    "marginVertical": "-rem(3)",
+    "marginVertical": -96,
   },
   "-my-16": Object {
-    "marginVertical": "-rem(4)",
+    "marginVertical": -128,
   },
   "-my-2": Object {
-    "marginVertical": "-rem(0.5)",
+    "marginVertical": -16,
   },
   "-my-20": Object {
-    "marginVertical": "-rem(5)",
+    "marginVertical": -160,
   },
   "-my-24": Object {
-    "marginVertical": "-rem(6)",
+    "marginVertical": -192,
   },
   "-my-3": Object {
-    "marginVertical": "-rem(0.75)",
+    "marginVertical": -24,
   },
   "-my-32": Object {
-    "marginVertical": "-rem(8)",
+    "marginVertical": -256,
   },
   "-my-4": Object {
-    "marginVertical": "-rem(1)",
+    "marginVertical": -32,
   },
   "-my-40": Object {
-    "marginVertical": "-rem(10)",
+    "marginVertical": -320,
   },
   "-my-48": Object {
-    "marginVertical": "-rem(12)",
+    "marginVertical": -384,
   },
   "-my-5": Object {
-    "marginVertical": "-rem(1.25)",
+    "marginVertical": -40,
   },
   "-my-56": Object {
-    "marginVertical": "-rem(14)",
+    "marginVertical": -448,
   },
   "-my-6": Object {
-    "marginVertical": "-rem(1.5)",
+    "marginVertical": -48,
   },
   "-my-64": Object {
-    "marginVertical": "-rem(16)",
+    "marginVertical": -512,
   },
   "-my-8": Object {
-    "marginVertical": "-rem(2)",
+    "marginVertical": -64,
   },
   "-my-px": Object {
     "marginVertical": -1,
@@ -812,126 +812,126 @@ Object {
   "-translate-x-0": Object {
     "transform": Array [
       Object {
-        "translateX": -0,
+        "translateX": 0,
       },
     ],
   },
   "-translate-x-1": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(0.25)",
+        "translateX": -8,
       },
     ],
   },
   "-translate-x-10": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(2.5)",
+        "translateX": -80,
       },
     ],
   },
   "-translate-x-12": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(3)",
+        "translateX": -96,
       },
     ],
   },
   "-translate-x-16": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(4)",
+        "translateX": -128,
       },
     ],
   },
   "-translate-x-2": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(0.5)",
+        "translateX": -16,
       },
     ],
   },
   "-translate-x-20": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(5)",
+        "translateX": -160,
       },
     ],
   },
   "-translate-x-24": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(6)",
+        "translateX": -192,
       },
     ],
   },
   "-translate-x-3": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(0.75)",
+        "translateX": -24,
       },
     ],
   },
   "-translate-x-32": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(8)",
+        "translateX": -256,
       },
     ],
   },
   "-translate-x-4": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(1)",
+        "translateX": -32,
       },
     ],
   },
   "-translate-x-40": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(10)",
+        "translateX": -320,
       },
     ],
   },
   "-translate-x-48": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(12)",
+        "translateX": -384,
       },
     ],
   },
   "-translate-x-5": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(1.25)",
+        "translateX": -40,
       },
     ],
   },
   "-translate-x-56": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(14)",
+        "translateX": -448,
       },
     ],
   },
   "-translate-x-6": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(1.5)",
+        "translateX": -48,
       },
     ],
   },
   "-translate-x-64": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(16)",
+        "translateX": -512,
       },
     ],
   },
   "-translate-x-8": Object {
     "transform": Array [
       Object {
-        "translateX": "-rem(2)",
+        "translateX": -64,
       },
     ],
   },
@@ -945,126 +945,126 @@ Object {
   "-translate-y-0": Object {
     "transform": Array [
       Object {
-        "translateY": -0,
+        "translateY": 0,
       },
     ],
   },
   "-translate-y-1": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(0.25)",
+        "translateY": -8,
       },
     ],
   },
   "-translate-y-10": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(2.5)",
+        "translateY": -80,
       },
     ],
   },
   "-translate-y-12": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(3)",
+        "translateY": -96,
       },
     ],
   },
   "-translate-y-16": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(4)",
+        "translateY": -128,
       },
     ],
   },
   "-translate-y-2": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(0.5)",
+        "translateY": -16,
       },
     ],
   },
   "-translate-y-20": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(5)",
+        "translateY": -160,
       },
     ],
   },
   "-translate-y-24": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(6)",
+        "translateY": -192,
       },
     ],
   },
   "-translate-y-3": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(0.75)",
+        "translateY": -24,
       },
     ],
   },
   "-translate-y-32": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(8)",
+        "translateY": -256,
       },
     ],
   },
   "-translate-y-4": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(1)",
+        "translateY": -32,
       },
     ],
   },
   "-translate-y-40": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(10)",
+        "translateY": -320,
       },
     ],
   },
   "-translate-y-48": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(12)",
+        "translateY": -384,
       },
     ],
   },
   "-translate-y-5": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(1.25)",
+        "translateY": -40,
       },
     ],
   },
   "-translate-y-56": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(14)",
+        "translateY": -448,
       },
     ],
   },
   "-translate-y-6": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(1.5)",
+        "translateY": -48,
       },
     ],
   },
   "-translate-y-64": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(16)",
+        "translateY": -512,
       },
     ],
   },
   "-translate-y-8": Object {
     "transform": Array [
       Object {
-        "translateY": "-rem(2)",
+        "translateY": -64,
       },
     ],
   },
@@ -1861,55 +1861,55 @@ Object {
     "height": 0,
   },
   "h-1": Object {
-    "height": "rem(0.25)",
+    "height": 8,
   },
   "h-10": Object {
-    "height": "rem(2.5)",
+    "height": 80,
   },
   "h-12": Object {
-    "height": "rem(3)",
+    "height": 96,
   },
   "h-16": Object {
-    "height": "rem(4)",
+    "height": 128,
   },
   "h-2": Object {
-    "height": "rem(0.5)",
+    "height": 16,
   },
   "h-20": Object {
-    "height": "rem(5)",
+    "height": 160,
   },
   "h-24": Object {
-    "height": "rem(6)",
+    "height": 192,
   },
   "h-3": Object {
-    "height": "rem(0.75)",
+    "height": 24,
   },
   "h-32": Object {
-    "height": "rem(8)",
+    "height": 256,
   },
   "h-4": Object {
-    "height": "rem(1)",
+    "height": 32,
   },
   "h-40": Object {
-    "height": "rem(10)",
+    "height": 320,
   },
   "h-48": Object {
-    "height": "rem(12)",
+    "height": 384,
   },
   "h-5": Object {
-    "height": "rem(1.25)",
+    "height": 40,
   },
   "h-56": Object {
-    "height": "rem(14)",
+    "height": 448,
   },
   "h-6": Object {
-    "height": "rem(1.5)",
+    "height": 48,
   },
   "h-64": Object {
-    "height": "rem(16)",
+    "height": 512,
   },
   "h-8": Object {
-    "height": "rem(2)",
+    "height": 64,
   },
   "h-px": Object {
     "height": 1,
@@ -1989,43 +1989,43 @@ Object {
     "letterSpacing": 0,
   },
   "letter-tight": Object {
-    "letterSpacing": "rem(-0.025)",
+    "letterSpacing": -0.8,
   },
   "letter-tighter": Object {
-    "letterSpacing": "rem(-0.05)",
+    "letterSpacing": -1.6,
   },
   "letter-wide": Object {
-    "letterSpacing": "rem(0.025)",
+    "letterSpacing": 0.8,
   },
   "letter-wider": Object {
-    "letterSpacing": "rem(0.05)",
+    "letterSpacing": 1.6,
   },
   "letter-widest": Object {
-    "letterSpacing": "rem(0.1)",
+    "letterSpacing": 3.2,
   },
   "line-h-10": Object {
-    "lineHeight": "rem(2.5)",
+    "lineHeight": 80,
   },
   "line-h-3": Object {
-    "lineHeight": "rem(0.75)",
+    "lineHeight": 24,
   },
   "line-h-4": Object {
-    "lineHeight": "rem(1)",
+    "lineHeight": 32,
   },
   "line-h-5": Object {
-    "lineHeight": "rem(1.25)",
+    "lineHeight": 40,
   },
   "line-h-6": Object {
-    "lineHeight": "rem(1.5)",
+    "lineHeight": 48,
   },
   "line-h-7": Object {
-    "lineHeight": "rem(1.75)",
+    "lineHeight": 56,
   },
   "line-h-8": Object {
-    "lineHeight": "rem(2)",
+    "lineHeight": 64,
   },
   "line-h-9": Object {
-    "lineHeight": "rem(2.25)",
+    "lineHeight": 72,
   },
   "line-h-loose": Object {
     "lineHeight": 2,
@@ -2060,55 +2060,55 @@ Object {
     "margin": 0,
   },
   "m-1": Object {
-    "margin": "rem(0.25)",
+    "margin": 8,
   },
   "m-10": Object {
-    "margin": "rem(2.5)",
+    "margin": 80,
   },
   "m-12": Object {
-    "margin": "rem(3)",
+    "margin": 96,
   },
   "m-16": Object {
-    "margin": "rem(4)",
+    "margin": 128,
   },
   "m-2": Object {
-    "margin": "rem(0.5)",
+    "margin": 16,
   },
   "m-20": Object {
-    "margin": "rem(5)",
+    "margin": 160,
   },
   "m-24": Object {
-    "margin": "rem(6)",
+    "margin": 192,
   },
   "m-3": Object {
-    "margin": "rem(0.75)",
+    "margin": 24,
   },
   "m-32": Object {
-    "margin": "rem(8)",
+    "margin": 256,
   },
   "m-4": Object {
-    "margin": "rem(1)",
+    "margin": 32,
   },
   "m-40": Object {
-    "margin": "rem(10)",
+    "margin": 320,
   },
   "m-48": Object {
-    "margin": "rem(12)",
+    "margin": 384,
   },
   "m-5": Object {
-    "margin": "rem(1.25)",
+    "margin": 40,
   },
   "m-56": Object {
-    "margin": "rem(14)",
+    "margin": 448,
   },
   "m-6": Object {
-    "margin": "rem(1.5)",
+    "margin": 48,
   },
   "m-64": Object {
-    "margin": "rem(16)",
+    "margin": 512,
   },
   "m-8": Object {
-    "margin": "rem(2)",
+    "margin": 64,
   },
   "m-px": Object {
     "margin": 1,
@@ -2117,94 +2117,94 @@ Object {
     "maxHeight": "100%",
   },
   "max-w-2xl": Object {
-    "maxWidth": "rem(42)",
+    "maxWidth": 1344,
   },
   "max-w-3xl": Object {
-    "maxWidth": "rem(48)",
+    "maxWidth": 1536,
   },
   "max-w-4xl": Object {
-    "maxWidth": "rem(56)",
+    "maxWidth": 1792,
   },
   "max-w-5xl": Object {
-    "maxWidth": "rem(64)",
+    "maxWidth": 2048,
   },
   "max-w-6xl": Object {
-    "maxWidth": "rem(72)",
+    "maxWidth": 2304,
   },
   "max-w-full": Object {
     "maxWidth": "100%",
   },
   "max-w-lg": Object {
-    "maxWidth": "rem(32)",
+    "maxWidth": 1024,
   },
   "max-w-md": Object {
-    "maxWidth": "rem(28)",
+    "maxWidth": 896,
   },
   "max-w-none": Object {
     "maxWidth": "none",
   },
   "max-w-sm": Object {
-    "maxWidth": "rem(24)",
+    "maxWidth": 768,
   },
   "max-w-xl": Object {
-    "maxWidth": "rem(36)",
+    "maxWidth": 1152,
   },
   "max-w-xs": Object {
-    "maxWidth": "rem(20)",
+    "maxWidth": 640,
   },
   "mb-0": Object {
     "marginBottom": 0,
   },
   "mb-1": Object {
-    "marginBottom": "rem(0.25)",
+    "marginBottom": 8,
   },
   "mb-10": Object {
-    "marginBottom": "rem(2.5)",
+    "marginBottom": 80,
   },
   "mb-12": Object {
-    "marginBottom": "rem(3)",
+    "marginBottom": 96,
   },
   "mb-16": Object {
-    "marginBottom": "rem(4)",
+    "marginBottom": 128,
   },
   "mb-2": Object {
-    "marginBottom": "rem(0.5)",
+    "marginBottom": 16,
   },
   "mb-20": Object {
-    "marginBottom": "rem(5)",
+    "marginBottom": 160,
   },
   "mb-24": Object {
-    "marginBottom": "rem(6)",
+    "marginBottom": 192,
   },
   "mb-3": Object {
-    "marginBottom": "rem(0.75)",
+    "marginBottom": 24,
   },
   "mb-32": Object {
-    "marginBottom": "rem(8)",
+    "marginBottom": 256,
   },
   "mb-4": Object {
-    "marginBottom": "rem(1)",
+    "marginBottom": 32,
   },
   "mb-40": Object {
-    "marginBottom": "rem(10)",
+    "marginBottom": 320,
   },
   "mb-48": Object {
-    "marginBottom": "rem(12)",
+    "marginBottom": 384,
   },
   "mb-5": Object {
-    "marginBottom": "rem(1.25)",
+    "marginBottom": 40,
   },
   "mb-56": Object {
-    "marginBottom": "rem(14)",
+    "marginBottom": 448,
   },
   "mb-6": Object {
-    "marginBottom": "rem(1.5)",
+    "marginBottom": 48,
   },
   "mb-64": Object {
-    "marginBottom": "rem(16)",
+    "marginBottom": 512,
   },
   "mb-8": Object {
-    "marginBottom": "rem(2)",
+    "marginBottom": 64,
   },
   "mb-px": Object {
     "marginBottom": 1,
@@ -2213,55 +2213,55 @@ Object {
     "marginEnd": 0,
   },
   "me-1": Object {
-    "marginEnd": "rem(0.25)",
+    "marginEnd": 8,
   },
   "me-10": Object {
-    "marginEnd": "rem(2.5)",
+    "marginEnd": 80,
   },
   "me-12": Object {
-    "marginEnd": "rem(3)",
+    "marginEnd": 96,
   },
   "me-16": Object {
-    "marginEnd": "rem(4)",
+    "marginEnd": 128,
   },
   "me-2": Object {
-    "marginEnd": "rem(0.5)",
+    "marginEnd": 16,
   },
   "me-20": Object {
-    "marginEnd": "rem(5)",
+    "marginEnd": 160,
   },
   "me-24": Object {
-    "marginEnd": "rem(6)",
+    "marginEnd": 192,
   },
   "me-3": Object {
-    "marginEnd": "rem(0.75)",
+    "marginEnd": 24,
   },
   "me-32": Object {
-    "marginEnd": "rem(8)",
+    "marginEnd": 256,
   },
   "me-4": Object {
-    "marginEnd": "rem(1)",
+    "marginEnd": 32,
   },
   "me-40": Object {
-    "marginEnd": "rem(10)",
+    "marginEnd": 320,
   },
   "me-48": Object {
-    "marginEnd": "rem(12)",
+    "marginEnd": 384,
   },
   "me-5": Object {
-    "marginEnd": "rem(1.25)",
+    "marginEnd": 40,
   },
   "me-56": Object {
-    "marginEnd": "rem(14)",
+    "marginEnd": 448,
   },
   "me-6": Object {
-    "marginEnd": "rem(1.5)",
+    "marginEnd": 48,
   },
   "me-64": Object {
-    "marginEnd": "rem(16)",
+    "marginEnd": 512,
   },
   "me-8": Object {
-    "marginEnd": "rem(2)",
+    "marginEnd": 64,
   },
   "me-px": Object {
     "marginEnd": 1,
@@ -2282,55 +2282,55 @@ Object {
     "marginLeft": 0,
   },
   "ml-1": Object {
-    "marginLeft": "rem(0.25)",
+    "marginLeft": 8,
   },
   "ml-10": Object {
-    "marginLeft": "rem(2.5)",
+    "marginLeft": 80,
   },
   "ml-12": Object {
-    "marginLeft": "rem(3)",
+    "marginLeft": 96,
   },
   "ml-16": Object {
-    "marginLeft": "rem(4)",
+    "marginLeft": 128,
   },
   "ml-2": Object {
-    "marginLeft": "rem(0.5)",
+    "marginLeft": 16,
   },
   "ml-20": Object {
-    "marginLeft": "rem(5)",
+    "marginLeft": 160,
   },
   "ml-24": Object {
-    "marginLeft": "rem(6)",
+    "marginLeft": 192,
   },
   "ml-3": Object {
-    "marginLeft": "rem(0.75)",
+    "marginLeft": 24,
   },
   "ml-32": Object {
-    "marginLeft": "rem(8)",
+    "marginLeft": 256,
   },
   "ml-4": Object {
-    "marginLeft": "rem(1)",
+    "marginLeft": 32,
   },
   "ml-40": Object {
-    "marginLeft": "rem(10)",
+    "marginLeft": 320,
   },
   "ml-48": Object {
-    "marginLeft": "rem(12)",
+    "marginLeft": 384,
   },
   "ml-5": Object {
-    "marginLeft": "rem(1.25)",
+    "marginLeft": 40,
   },
   "ml-56": Object {
-    "marginLeft": "rem(14)",
+    "marginLeft": 448,
   },
   "ml-6": Object {
-    "marginLeft": "rem(1.5)",
+    "marginLeft": 48,
   },
   "ml-64": Object {
-    "marginLeft": "rem(16)",
+    "marginLeft": 512,
   },
   "ml-8": Object {
-    "marginLeft": "rem(2)",
+    "marginLeft": 64,
   },
   "ml-px": Object {
     "marginLeft": 1,
@@ -2339,55 +2339,55 @@ Object {
     "marginRight": 0,
   },
   "mr-1": Object {
-    "marginRight": "rem(0.25)",
+    "marginRight": 8,
   },
   "mr-10": Object {
-    "marginRight": "rem(2.5)",
+    "marginRight": 80,
   },
   "mr-12": Object {
-    "marginRight": "rem(3)",
+    "marginRight": 96,
   },
   "mr-16": Object {
-    "marginRight": "rem(4)",
+    "marginRight": 128,
   },
   "mr-2": Object {
-    "marginRight": "rem(0.5)",
+    "marginRight": 16,
   },
   "mr-20": Object {
-    "marginRight": "rem(5)",
+    "marginRight": 160,
   },
   "mr-24": Object {
-    "marginRight": "rem(6)",
+    "marginRight": 192,
   },
   "mr-3": Object {
-    "marginRight": "rem(0.75)",
+    "marginRight": 24,
   },
   "mr-32": Object {
-    "marginRight": "rem(8)",
+    "marginRight": 256,
   },
   "mr-4": Object {
-    "marginRight": "rem(1)",
+    "marginRight": 32,
   },
   "mr-40": Object {
-    "marginRight": "rem(10)",
+    "marginRight": 320,
   },
   "mr-48": Object {
-    "marginRight": "rem(12)",
+    "marginRight": 384,
   },
   "mr-5": Object {
-    "marginRight": "rem(1.25)",
+    "marginRight": 40,
   },
   "mr-56": Object {
-    "marginRight": "rem(14)",
+    "marginRight": 448,
   },
   "mr-6": Object {
-    "marginRight": "rem(1.5)",
+    "marginRight": 48,
   },
   "mr-64": Object {
-    "marginRight": "rem(16)",
+    "marginRight": 512,
   },
   "mr-8": Object {
-    "marginRight": "rem(2)",
+    "marginRight": 64,
   },
   "mr-px": Object {
     "marginRight": 1,
@@ -2396,55 +2396,55 @@ Object {
     "marginStart": 0,
   },
   "ms-1": Object {
-    "marginStart": "rem(0.25)",
+    "marginStart": 8,
   },
   "ms-10": Object {
-    "marginStart": "rem(2.5)",
+    "marginStart": 80,
   },
   "ms-12": Object {
-    "marginStart": "rem(3)",
+    "marginStart": 96,
   },
   "ms-16": Object {
-    "marginStart": "rem(4)",
+    "marginStart": 128,
   },
   "ms-2": Object {
-    "marginStart": "rem(0.5)",
+    "marginStart": 16,
   },
   "ms-20": Object {
-    "marginStart": "rem(5)",
+    "marginStart": 160,
   },
   "ms-24": Object {
-    "marginStart": "rem(6)",
+    "marginStart": 192,
   },
   "ms-3": Object {
-    "marginStart": "rem(0.75)",
+    "marginStart": 24,
   },
   "ms-32": Object {
-    "marginStart": "rem(8)",
+    "marginStart": 256,
   },
   "ms-4": Object {
-    "marginStart": "rem(1)",
+    "marginStart": 32,
   },
   "ms-40": Object {
-    "marginStart": "rem(10)",
+    "marginStart": 320,
   },
   "ms-48": Object {
-    "marginStart": "rem(12)",
+    "marginStart": 384,
   },
   "ms-5": Object {
-    "marginStart": "rem(1.25)",
+    "marginStart": 40,
   },
   "ms-56": Object {
-    "marginStart": "rem(14)",
+    "marginStart": 448,
   },
   "ms-6": Object {
-    "marginStart": "rem(1.5)",
+    "marginStart": 48,
   },
   "ms-64": Object {
-    "marginStart": "rem(16)",
+    "marginStart": 512,
   },
   "ms-8": Object {
-    "marginStart": "rem(2)",
+    "marginStart": 64,
   },
   "ms-px": Object {
     "marginStart": 1,
@@ -2453,55 +2453,55 @@ Object {
     "marginTop": 0,
   },
   "mt-1": Object {
-    "marginTop": "rem(0.25)",
+    "marginTop": 8,
   },
   "mt-10": Object {
-    "marginTop": "rem(2.5)",
+    "marginTop": 80,
   },
   "mt-12": Object {
-    "marginTop": "rem(3)",
+    "marginTop": 96,
   },
   "mt-16": Object {
-    "marginTop": "rem(4)",
+    "marginTop": 128,
   },
   "mt-2": Object {
-    "marginTop": "rem(0.5)",
+    "marginTop": 16,
   },
   "mt-20": Object {
-    "marginTop": "rem(5)",
+    "marginTop": 160,
   },
   "mt-24": Object {
-    "marginTop": "rem(6)",
+    "marginTop": 192,
   },
   "mt-3": Object {
-    "marginTop": "rem(0.75)",
+    "marginTop": 24,
   },
   "mt-32": Object {
-    "marginTop": "rem(8)",
+    "marginTop": 256,
   },
   "mt-4": Object {
-    "marginTop": "rem(1)",
+    "marginTop": 32,
   },
   "mt-40": Object {
-    "marginTop": "rem(10)",
+    "marginTop": 320,
   },
   "mt-48": Object {
-    "marginTop": "rem(12)",
+    "marginTop": 384,
   },
   "mt-5": Object {
-    "marginTop": "rem(1.25)",
+    "marginTop": 40,
   },
   "mt-56": Object {
-    "marginTop": "rem(14)",
+    "marginTop": 448,
   },
   "mt-6": Object {
-    "marginTop": "rem(1.5)",
+    "marginTop": 48,
   },
   "mt-64": Object {
-    "marginTop": "rem(16)",
+    "marginTop": 512,
   },
   "mt-8": Object {
-    "marginTop": "rem(2)",
+    "marginTop": 64,
   },
   "mt-px": Object {
     "marginTop": 1,
@@ -2510,55 +2510,55 @@ Object {
     "marginHorizontal": 0,
   },
   "mx-1": Object {
-    "marginHorizontal": "rem(0.25)",
+    "marginHorizontal": 8,
   },
   "mx-10": Object {
-    "marginHorizontal": "rem(2.5)",
+    "marginHorizontal": 80,
   },
   "mx-12": Object {
-    "marginHorizontal": "rem(3)",
+    "marginHorizontal": 96,
   },
   "mx-16": Object {
-    "marginHorizontal": "rem(4)",
+    "marginHorizontal": 128,
   },
   "mx-2": Object {
-    "marginHorizontal": "rem(0.5)",
+    "marginHorizontal": 16,
   },
   "mx-20": Object {
-    "marginHorizontal": "rem(5)",
+    "marginHorizontal": 160,
   },
   "mx-24": Object {
-    "marginHorizontal": "rem(6)",
+    "marginHorizontal": 192,
   },
   "mx-3": Object {
-    "marginHorizontal": "rem(0.75)",
+    "marginHorizontal": 24,
   },
   "mx-32": Object {
-    "marginHorizontal": "rem(8)",
+    "marginHorizontal": 256,
   },
   "mx-4": Object {
-    "marginHorizontal": "rem(1)",
+    "marginHorizontal": 32,
   },
   "mx-40": Object {
-    "marginHorizontal": "rem(10)",
+    "marginHorizontal": 320,
   },
   "mx-48": Object {
-    "marginHorizontal": "rem(12)",
+    "marginHorizontal": 384,
   },
   "mx-5": Object {
-    "marginHorizontal": "rem(1.25)",
+    "marginHorizontal": 40,
   },
   "mx-56": Object {
-    "marginHorizontal": "rem(14)",
+    "marginHorizontal": 448,
   },
   "mx-6": Object {
-    "marginHorizontal": "rem(1.5)",
+    "marginHorizontal": 48,
   },
   "mx-64": Object {
-    "marginHorizontal": "rem(16)",
+    "marginHorizontal": 512,
   },
   "mx-8": Object {
-    "marginHorizontal": "rem(2)",
+    "marginHorizontal": 64,
   },
   "mx-px": Object {
     "marginHorizontal": 1,
@@ -2567,55 +2567,55 @@ Object {
     "marginVertical": 0,
   },
   "my-1": Object {
-    "marginVertical": "rem(0.25)",
+    "marginVertical": 8,
   },
   "my-10": Object {
-    "marginVertical": "rem(2.5)",
+    "marginVertical": 80,
   },
   "my-12": Object {
-    "marginVertical": "rem(3)",
+    "marginVertical": 96,
   },
   "my-16": Object {
-    "marginVertical": "rem(4)",
+    "marginVertical": 128,
   },
   "my-2": Object {
-    "marginVertical": "rem(0.5)",
+    "marginVertical": 16,
   },
   "my-20": Object {
-    "marginVertical": "rem(5)",
+    "marginVertical": 160,
   },
   "my-24": Object {
-    "marginVertical": "rem(6)",
+    "marginVertical": 192,
   },
   "my-3": Object {
-    "marginVertical": "rem(0.75)",
+    "marginVertical": 24,
   },
   "my-32": Object {
-    "marginVertical": "rem(8)",
+    "marginVertical": 256,
   },
   "my-4": Object {
-    "marginVertical": "rem(1)",
+    "marginVertical": 32,
   },
   "my-40": Object {
-    "marginVertical": "rem(10)",
+    "marginVertical": 320,
   },
   "my-48": Object {
-    "marginVertical": "rem(12)",
+    "marginVertical": 384,
   },
   "my-5": Object {
-    "marginVertical": "rem(1.25)",
+    "marginVertical": 40,
   },
   "my-56": Object {
-    "marginVertical": "rem(14)",
+    "marginVertical": 448,
   },
   "my-6": Object {
-    "marginVertical": "rem(1.5)",
+    "marginVertical": 48,
   },
   "my-64": Object {
-    "marginVertical": "rem(16)",
+    "marginVertical": 512,
   },
   "my-8": Object {
-    "marginVertical": "rem(2)",
+    "marginVertical": 64,
   },
   "my-px": Object {
     "marginVertical": 1,
@@ -2662,55 +2662,55 @@ Object {
     "padding": 0,
   },
   "p-1": Object {
-    "padding": "rem(0.25)",
+    "padding": 8,
   },
   "p-10": Object {
-    "padding": "rem(2.5)",
+    "padding": 80,
   },
   "p-12": Object {
-    "padding": "rem(3)",
+    "padding": 96,
   },
   "p-16": Object {
-    "padding": "rem(4)",
+    "padding": 128,
   },
   "p-2": Object {
-    "padding": "rem(0.5)",
+    "padding": 16,
   },
   "p-20": Object {
-    "padding": "rem(5)",
+    "padding": 160,
   },
   "p-24": Object {
-    "padding": "rem(6)",
+    "padding": 192,
   },
   "p-3": Object {
-    "padding": "rem(0.75)",
+    "padding": 24,
   },
   "p-32": Object {
-    "padding": "rem(8)",
+    "padding": 256,
   },
   "p-4": Object {
-    "padding": "rem(1)",
+    "padding": 32,
   },
   "p-40": Object {
-    "padding": "rem(10)",
+    "padding": 320,
   },
   "p-48": Object {
-    "padding": "rem(12)",
+    "padding": 384,
   },
   "p-5": Object {
-    "padding": "rem(1.25)",
+    "padding": 40,
   },
   "p-56": Object {
-    "padding": "rem(14)",
+    "padding": 448,
   },
   "p-6": Object {
-    "padding": "rem(1.5)",
+    "padding": 48,
   },
   "p-64": Object {
-    "padding": "rem(16)",
+    "padding": 512,
   },
   "p-8": Object {
-    "padding": "rem(2)",
+    "padding": 64,
   },
   "p-px": Object {
     "padding": 1,
@@ -2719,55 +2719,55 @@ Object {
     "paddingBottom": 0,
   },
   "pb-1": Object {
-    "paddingBottom": "rem(0.25)",
+    "paddingBottom": 8,
   },
   "pb-10": Object {
-    "paddingBottom": "rem(2.5)",
+    "paddingBottom": 80,
   },
   "pb-12": Object {
-    "paddingBottom": "rem(3)",
+    "paddingBottom": 96,
   },
   "pb-16": Object {
-    "paddingBottom": "rem(4)",
+    "paddingBottom": 128,
   },
   "pb-2": Object {
-    "paddingBottom": "rem(0.5)",
+    "paddingBottom": 16,
   },
   "pb-20": Object {
-    "paddingBottom": "rem(5)",
+    "paddingBottom": 160,
   },
   "pb-24": Object {
-    "paddingBottom": "rem(6)",
+    "paddingBottom": 192,
   },
   "pb-3": Object {
-    "paddingBottom": "rem(0.75)",
+    "paddingBottom": 24,
   },
   "pb-32": Object {
-    "paddingBottom": "rem(8)",
+    "paddingBottom": 256,
   },
   "pb-4": Object {
-    "paddingBottom": "rem(1)",
+    "paddingBottom": 32,
   },
   "pb-40": Object {
-    "paddingBottom": "rem(10)",
+    "paddingBottom": 320,
   },
   "pb-48": Object {
-    "paddingBottom": "rem(12)",
+    "paddingBottom": 384,
   },
   "pb-5": Object {
-    "paddingBottom": "rem(1.25)",
+    "paddingBottom": 40,
   },
   "pb-56": Object {
-    "paddingBottom": "rem(14)",
+    "paddingBottom": 448,
   },
   "pb-6": Object {
-    "paddingBottom": "rem(1.5)",
+    "paddingBottom": 48,
   },
   "pb-64": Object {
-    "paddingBottom": "rem(16)",
+    "paddingBottom": 512,
   },
   "pb-8": Object {
-    "paddingBottom": "rem(2)",
+    "paddingBottom": 64,
   },
   "pb-px": Object {
     "paddingBottom": 1,
@@ -2776,55 +2776,55 @@ Object {
     "paddingEnd": 0,
   },
   "pe-1": Object {
-    "paddingEnd": "rem(0.25)",
+    "paddingEnd": 8,
   },
   "pe-10": Object {
-    "paddingEnd": "rem(2.5)",
+    "paddingEnd": 80,
   },
   "pe-12": Object {
-    "paddingEnd": "rem(3)",
+    "paddingEnd": 96,
   },
   "pe-16": Object {
-    "paddingEnd": "rem(4)",
+    "paddingEnd": 128,
   },
   "pe-2": Object {
-    "paddingEnd": "rem(0.5)",
+    "paddingEnd": 16,
   },
   "pe-20": Object {
-    "paddingEnd": "rem(5)",
+    "paddingEnd": 160,
   },
   "pe-24": Object {
-    "paddingEnd": "rem(6)",
+    "paddingEnd": 192,
   },
   "pe-3": Object {
-    "paddingEnd": "rem(0.75)",
+    "paddingEnd": 24,
   },
   "pe-32": Object {
-    "paddingEnd": "rem(8)",
+    "paddingEnd": 256,
   },
   "pe-4": Object {
-    "paddingEnd": "rem(1)",
+    "paddingEnd": 32,
   },
   "pe-40": Object {
-    "paddingEnd": "rem(10)",
+    "paddingEnd": 320,
   },
   "pe-48": Object {
-    "paddingEnd": "rem(12)",
+    "paddingEnd": 384,
   },
   "pe-5": Object {
-    "paddingEnd": "rem(1.25)",
+    "paddingEnd": 40,
   },
   "pe-56": Object {
-    "paddingEnd": "rem(14)",
+    "paddingEnd": 448,
   },
   "pe-6": Object {
-    "paddingEnd": "rem(1.5)",
+    "paddingEnd": 48,
   },
   "pe-64": Object {
-    "paddingEnd": "rem(16)",
+    "paddingEnd": 512,
   },
   "pe-8": Object {
-    "paddingEnd": "rem(2)",
+    "paddingEnd": 64,
   },
   "pe-px": Object {
     "paddingEnd": 1,
@@ -2833,55 +2833,55 @@ Object {
     "paddingLeft": 0,
   },
   "pl-1": Object {
-    "paddingLeft": "rem(0.25)",
+    "paddingLeft": 8,
   },
   "pl-10": Object {
-    "paddingLeft": "rem(2.5)",
+    "paddingLeft": 80,
   },
   "pl-12": Object {
-    "paddingLeft": "rem(3)",
+    "paddingLeft": 96,
   },
   "pl-16": Object {
-    "paddingLeft": "rem(4)",
+    "paddingLeft": 128,
   },
   "pl-2": Object {
-    "paddingLeft": "rem(0.5)",
+    "paddingLeft": 16,
   },
   "pl-20": Object {
-    "paddingLeft": "rem(5)",
+    "paddingLeft": 160,
   },
   "pl-24": Object {
-    "paddingLeft": "rem(6)",
+    "paddingLeft": 192,
   },
   "pl-3": Object {
-    "paddingLeft": "rem(0.75)",
+    "paddingLeft": 24,
   },
   "pl-32": Object {
-    "paddingLeft": "rem(8)",
+    "paddingLeft": 256,
   },
   "pl-4": Object {
-    "paddingLeft": "rem(1)",
+    "paddingLeft": 32,
   },
   "pl-40": Object {
-    "paddingLeft": "rem(10)",
+    "paddingLeft": 320,
   },
   "pl-48": Object {
-    "paddingLeft": "rem(12)",
+    "paddingLeft": 384,
   },
   "pl-5": Object {
-    "paddingLeft": "rem(1.25)",
+    "paddingLeft": 40,
   },
   "pl-56": Object {
-    "paddingLeft": "rem(14)",
+    "paddingLeft": 448,
   },
   "pl-6": Object {
-    "paddingLeft": "rem(1.5)",
+    "paddingLeft": 48,
   },
   "pl-64": Object {
-    "paddingLeft": "rem(16)",
+    "paddingLeft": 512,
   },
   "pl-8": Object {
-    "paddingLeft": "rem(2)",
+    "paddingLeft": 64,
   },
   "pl-px": Object {
     "paddingLeft": 1,
@@ -2890,55 +2890,55 @@ Object {
     "paddingRight": 0,
   },
   "pr-1": Object {
-    "paddingRight": "rem(0.25)",
+    "paddingRight": 8,
   },
   "pr-10": Object {
-    "paddingRight": "rem(2.5)",
+    "paddingRight": 80,
   },
   "pr-12": Object {
-    "paddingRight": "rem(3)",
+    "paddingRight": 96,
   },
   "pr-16": Object {
-    "paddingRight": "rem(4)",
+    "paddingRight": 128,
   },
   "pr-2": Object {
-    "paddingRight": "rem(0.5)",
+    "paddingRight": 16,
   },
   "pr-20": Object {
-    "paddingRight": "rem(5)",
+    "paddingRight": 160,
   },
   "pr-24": Object {
-    "paddingRight": "rem(6)",
+    "paddingRight": 192,
   },
   "pr-3": Object {
-    "paddingRight": "rem(0.75)",
+    "paddingRight": 24,
   },
   "pr-32": Object {
-    "paddingRight": "rem(8)",
+    "paddingRight": 256,
   },
   "pr-4": Object {
-    "paddingRight": "rem(1)",
+    "paddingRight": 32,
   },
   "pr-40": Object {
-    "paddingRight": "rem(10)",
+    "paddingRight": 320,
   },
   "pr-48": Object {
-    "paddingRight": "rem(12)",
+    "paddingRight": 384,
   },
   "pr-5": Object {
-    "paddingRight": "rem(1.25)",
+    "paddingRight": 40,
   },
   "pr-56": Object {
-    "paddingRight": "rem(14)",
+    "paddingRight": 448,
   },
   "pr-6": Object {
-    "paddingRight": "rem(1.5)",
+    "paddingRight": 48,
   },
   "pr-64": Object {
-    "paddingRight": "rem(16)",
+    "paddingRight": 512,
   },
   "pr-8": Object {
-    "paddingRight": "rem(2)",
+    "paddingRight": 64,
   },
   "pr-px": Object {
     "paddingRight": 1,
@@ -2952,55 +2952,55 @@ Object {
     "paddingStart": 0,
   },
   "ps-1": Object {
-    "paddingStart": "rem(0.25)",
+    "paddingStart": 8,
   },
   "ps-10": Object {
-    "paddingStart": "rem(2.5)",
+    "paddingStart": 80,
   },
   "ps-12": Object {
-    "paddingStart": "rem(3)",
+    "paddingStart": 96,
   },
   "ps-16": Object {
-    "paddingStart": "rem(4)",
+    "paddingStart": 128,
   },
   "ps-2": Object {
-    "paddingStart": "rem(0.5)",
+    "paddingStart": 16,
   },
   "ps-20": Object {
-    "paddingStart": "rem(5)",
+    "paddingStart": 160,
   },
   "ps-24": Object {
-    "paddingStart": "rem(6)",
+    "paddingStart": 192,
   },
   "ps-3": Object {
-    "paddingStart": "rem(0.75)",
+    "paddingStart": 24,
   },
   "ps-32": Object {
-    "paddingStart": "rem(8)",
+    "paddingStart": 256,
   },
   "ps-4": Object {
-    "paddingStart": "rem(1)",
+    "paddingStart": 32,
   },
   "ps-40": Object {
-    "paddingStart": "rem(10)",
+    "paddingStart": 320,
   },
   "ps-48": Object {
-    "paddingStart": "rem(12)",
+    "paddingStart": 384,
   },
   "ps-5": Object {
-    "paddingStart": "rem(1.25)",
+    "paddingStart": 40,
   },
   "ps-56": Object {
-    "paddingStart": "rem(14)",
+    "paddingStart": 448,
   },
   "ps-6": Object {
-    "paddingStart": "rem(1.5)",
+    "paddingStart": 48,
   },
   "ps-64": Object {
-    "paddingStart": "rem(16)",
+    "paddingStart": 512,
   },
   "ps-8": Object {
-    "paddingStart": "rem(2)",
+    "paddingStart": 64,
   },
   "ps-px": Object {
     "paddingStart": 1,
@@ -3009,55 +3009,55 @@ Object {
     "paddingTop": 0,
   },
   "pt-1": Object {
-    "paddingTop": "rem(0.25)",
+    "paddingTop": 8,
   },
   "pt-10": Object {
-    "paddingTop": "rem(2.5)",
+    "paddingTop": 80,
   },
   "pt-12": Object {
-    "paddingTop": "rem(3)",
+    "paddingTop": 96,
   },
   "pt-16": Object {
-    "paddingTop": "rem(4)",
+    "paddingTop": 128,
   },
   "pt-2": Object {
-    "paddingTop": "rem(0.5)",
+    "paddingTop": 16,
   },
   "pt-20": Object {
-    "paddingTop": "rem(5)",
+    "paddingTop": 160,
   },
   "pt-24": Object {
-    "paddingTop": "rem(6)",
+    "paddingTop": 192,
   },
   "pt-3": Object {
-    "paddingTop": "rem(0.75)",
+    "paddingTop": 24,
   },
   "pt-32": Object {
-    "paddingTop": "rem(8)",
+    "paddingTop": 256,
   },
   "pt-4": Object {
-    "paddingTop": "rem(1)",
+    "paddingTop": 32,
   },
   "pt-40": Object {
-    "paddingTop": "rem(10)",
+    "paddingTop": 320,
   },
   "pt-48": Object {
-    "paddingTop": "rem(12)",
+    "paddingTop": 384,
   },
   "pt-5": Object {
-    "paddingTop": "rem(1.25)",
+    "paddingTop": 40,
   },
   "pt-56": Object {
-    "paddingTop": "rem(14)",
+    "paddingTop": 448,
   },
   "pt-6": Object {
-    "paddingTop": "rem(1.5)",
+    "paddingTop": 48,
   },
   "pt-64": Object {
-    "paddingTop": "rem(16)",
+    "paddingTop": 512,
   },
   "pt-8": Object {
-    "paddingTop": "rem(2)",
+    "paddingTop": 64,
   },
   "pt-px": Object {
     "paddingTop": 1,
@@ -3066,55 +3066,55 @@ Object {
     "paddingHorizontal": 0,
   },
   "px-1": Object {
-    "paddingHorizontal": "rem(0.25)",
+    "paddingHorizontal": 8,
   },
   "px-10": Object {
-    "paddingHorizontal": "rem(2.5)",
+    "paddingHorizontal": 80,
   },
   "px-12": Object {
-    "paddingHorizontal": "rem(3)",
+    "paddingHorizontal": 96,
   },
   "px-16": Object {
-    "paddingHorizontal": "rem(4)",
+    "paddingHorizontal": 128,
   },
   "px-2": Object {
-    "paddingHorizontal": "rem(0.5)",
+    "paddingHorizontal": 16,
   },
   "px-20": Object {
-    "paddingHorizontal": "rem(5)",
+    "paddingHorizontal": 160,
   },
   "px-24": Object {
-    "paddingHorizontal": "rem(6)",
+    "paddingHorizontal": 192,
   },
   "px-3": Object {
-    "paddingHorizontal": "rem(0.75)",
+    "paddingHorizontal": 24,
   },
   "px-32": Object {
-    "paddingHorizontal": "rem(8)",
+    "paddingHorizontal": 256,
   },
   "px-4": Object {
-    "paddingHorizontal": "rem(1)",
+    "paddingHorizontal": 32,
   },
   "px-40": Object {
-    "paddingHorizontal": "rem(10)",
+    "paddingHorizontal": 320,
   },
   "px-48": Object {
-    "paddingHorizontal": "rem(12)",
+    "paddingHorizontal": 384,
   },
   "px-5": Object {
-    "paddingHorizontal": "rem(1.25)",
+    "paddingHorizontal": 40,
   },
   "px-56": Object {
-    "paddingHorizontal": "rem(14)",
+    "paddingHorizontal": 448,
   },
   "px-6": Object {
-    "paddingHorizontal": "rem(1.5)",
+    "paddingHorizontal": 48,
   },
   "px-64": Object {
-    "paddingHorizontal": "rem(16)",
+    "paddingHorizontal": 512,
   },
   "px-8": Object {
-    "paddingHorizontal": "rem(2)",
+    "paddingHorizontal": 64,
   },
   "px-px": Object {
     "paddingHorizontal": 1,
@@ -3123,55 +3123,55 @@ Object {
     "paddingVertical": 0,
   },
   "py-1": Object {
-    "paddingVertical": "rem(0.25)",
+    "paddingVertical": 8,
   },
   "py-10": Object {
-    "paddingVertical": "rem(2.5)",
+    "paddingVertical": 80,
   },
   "py-12": Object {
-    "paddingVertical": "rem(3)",
+    "paddingVertical": 96,
   },
   "py-16": Object {
-    "paddingVertical": "rem(4)",
+    "paddingVertical": 128,
   },
   "py-2": Object {
-    "paddingVertical": "rem(0.5)",
+    "paddingVertical": 16,
   },
   "py-20": Object {
-    "paddingVertical": "rem(5)",
+    "paddingVertical": 160,
   },
   "py-24": Object {
-    "paddingVertical": "rem(6)",
+    "paddingVertical": 192,
   },
   "py-3": Object {
-    "paddingVertical": "rem(0.75)",
+    "paddingVertical": 24,
   },
   "py-32": Object {
-    "paddingVertical": "rem(8)",
+    "paddingVertical": 256,
   },
   "py-4": Object {
-    "paddingVertical": "rem(1)",
+    "paddingVertical": 32,
   },
   "py-40": Object {
-    "paddingVertical": "rem(10)",
+    "paddingVertical": 320,
   },
   "py-48": Object {
-    "paddingVertical": "rem(12)",
+    "paddingVertical": 384,
   },
   "py-5": Object {
-    "paddingVertical": "rem(1.25)",
+    "paddingVertical": 40,
   },
   "py-56": Object {
-    "paddingVertical": "rem(14)",
+    "paddingVertical": 448,
   },
   "py-6": Object {
-    "paddingVertical": "rem(1.5)",
+    "paddingVertical": 48,
   },
   "py-64": Object {
-    "paddingVertical": "rem(16)",
+    "paddingVertical": 512,
   },
   "py-8": Object {
-    "paddingVertical": "rem(2)",
+    "paddingVertical": 64,
   },
   "py-px": Object {
     "paddingVertical": 1,
@@ -3435,337 +3435,337 @@ Object {
     ],
   },
   "rounded": Object {
-    "borderRadius": "rem(0.25)",
+    "borderRadius": 8,
   },
   "rounded-2xl": Object {
-    "borderRadius": "rem(1)",
+    "borderRadius": 32,
   },
   "rounded-3xl": Object {
-    "borderRadius": "rem(1.5)",
+    "borderRadius": 48,
   },
   "rounded-b": Object {
-    "borderBottomLeftRadius": "rem(0.25)",
-    "borderBottomRightRadius": "rem(0.25)",
+    "borderBottomLeftRadius": 8,
+    "borderBottomRightRadius": 8,
   },
   "rounded-b-2xl": Object {
-    "borderBottomLeftRadius": "rem(1)",
-    "borderBottomRightRadius": "rem(1)",
+    "borderBottomLeftRadius": 32,
+    "borderBottomRightRadius": 32,
   },
   "rounded-b-3xl": Object {
-    "borderBottomLeftRadius": "rem(1.5)",
-    "borderBottomRightRadius": "rem(1.5)",
+    "borderBottomLeftRadius": 48,
+    "borderBottomRightRadius": 48,
   },
   "rounded-b-full": Object {
     "borderBottomLeftRadius": 9999,
     "borderBottomRightRadius": 9999,
   },
   "rounded-b-lg": Object {
-    "borderBottomLeftRadius": "rem(0.5)",
-    "borderBottomRightRadius": "rem(0.5)",
+    "borderBottomLeftRadius": 16,
+    "borderBottomRightRadius": 16,
   },
   "rounded-b-md": Object {
-    "borderBottomLeftRadius": "rem(0.375)",
-    "borderBottomRightRadius": "rem(0.375)",
+    "borderBottomLeftRadius": 12,
+    "borderBottomRightRadius": 12,
   },
   "rounded-b-none": Object {
     "borderBottomLeftRadius": 0,
     "borderBottomRightRadius": 0,
   },
   "rounded-b-sm": Object {
-    "borderBottomLeftRadius": "rem(0.125)",
-    "borderBottomRightRadius": "rem(0.125)",
+    "borderBottomLeftRadius": 4,
+    "borderBottomRightRadius": 4,
   },
   "rounded-b-xl": Object {
-    "borderBottomLeftRadius": "rem(0.75)",
-    "borderBottomRightRadius": "rem(0.75)",
+    "borderBottomLeftRadius": 24,
+    "borderBottomRightRadius": 24,
   },
   "rounded-bl": Object {
-    "borderBottomLeftRadius": "rem(0.25)",
+    "borderBottomLeftRadius": 8,
   },
   "rounded-bl-2xl": Object {
-    "borderBottomLeftRadius": "rem(1)",
+    "borderBottomLeftRadius": 32,
   },
   "rounded-bl-3xl": Object {
-    "borderBottomLeftRadius": "rem(1.5)",
+    "borderBottomLeftRadius": 48,
   },
   "rounded-bl-full": Object {
     "borderBottomLeftRadius": 9999,
   },
   "rounded-bl-lg": Object {
-    "borderBottomLeftRadius": "rem(0.5)",
+    "borderBottomLeftRadius": 16,
   },
   "rounded-bl-md": Object {
-    "borderBottomLeftRadius": "rem(0.375)",
+    "borderBottomLeftRadius": 12,
   },
   "rounded-bl-none": Object {
     "borderBottomLeftRadius": 0,
   },
   "rounded-bl-sm": Object {
-    "borderBottomLeftRadius": "rem(0.125)",
+    "borderBottomLeftRadius": 4,
   },
   "rounded-bl-xl": Object {
-    "borderBottomLeftRadius": "rem(0.75)",
+    "borderBottomLeftRadius": 24,
   },
   "rounded-br": Object {
-    "borderBottomRightRadius": "rem(0.25)",
+    "borderBottomRightRadius": 8,
   },
   "rounded-br-2xl": Object {
-    "borderBottomRightRadius": "rem(1)",
+    "borderBottomRightRadius": 32,
   },
   "rounded-br-3xl": Object {
-    "borderBottomRightRadius": "rem(1.5)",
+    "borderBottomRightRadius": 48,
   },
   "rounded-br-full": Object {
     "borderBottomRightRadius": 9999,
   },
   "rounded-br-lg": Object {
-    "borderBottomRightRadius": "rem(0.5)",
+    "borderBottomRightRadius": 16,
   },
   "rounded-br-md": Object {
-    "borderBottomRightRadius": "rem(0.375)",
+    "borderBottomRightRadius": 12,
   },
   "rounded-br-none": Object {
     "borderBottomRightRadius": 0,
   },
   "rounded-br-sm": Object {
-    "borderBottomRightRadius": "rem(0.125)",
+    "borderBottomRightRadius": 4,
   },
   "rounded-br-xl": Object {
-    "borderBottomRightRadius": "rem(0.75)",
+    "borderBottomRightRadius": 24,
   },
   "rounded-full": Object {
     "borderRadius": 9999,
   },
   "rounded-l": Object {
-    "borderBottomLeftRadius": "rem(0.25)",
-    "borderTopLeftRadius": "rem(0.25)",
+    "borderBottomLeftRadius": 8,
+    "borderTopLeftRadius": 8,
   },
   "rounded-l-2xl": Object {
-    "borderBottomLeftRadius": "rem(1)",
-    "borderTopLeftRadius": "rem(1)",
+    "borderBottomLeftRadius": 32,
+    "borderTopLeftRadius": 32,
   },
   "rounded-l-3xl": Object {
-    "borderBottomLeftRadius": "rem(1.5)",
-    "borderTopLeftRadius": "rem(1.5)",
+    "borderBottomLeftRadius": 48,
+    "borderTopLeftRadius": 48,
   },
   "rounded-l-full": Object {
     "borderBottomLeftRadius": 9999,
     "borderTopLeftRadius": 9999,
   },
   "rounded-l-lg": Object {
-    "borderBottomLeftRadius": "rem(0.5)",
-    "borderTopLeftRadius": "rem(0.5)",
+    "borderBottomLeftRadius": 16,
+    "borderTopLeftRadius": 16,
   },
   "rounded-l-md": Object {
-    "borderBottomLeftRadius": "rem(0.375)",
-    "borderTopLeftRadius": "rem(0.375)",
+    "borderBottomLeftRadius": 12,
+    "borderTopLeftRadius": 12,
   },
   "rounded-l-none": Object {
     "borderBottomLeftRadius": 0,
     "borderTopLeftRadius": 0,
   },
   "rounded-l-sm": Object {
-    "borderBottomLeftRadius": "rem(0.125)",
-    "borderTopLeftRadius": "rem(0.125)",
+    "borderBottomLeftRadius": 4,
+    "borderTopLeftRadius": 4,
   },
   "rounded-l-xl": Object {
-    "borderBottomLeftRadius": "rem(0.75)",
-    "borderTopLeftRadius": "rem(0.75)",
+    "borderBottomLeftRadius": 24,
+    "borderTopLeftRadius": 24,
   },
   "rounded-lg": Object {
-    "borderRadius": "rem(0.5)",
+    "borderRadius": 16,
   },
   "rounded-md": Object {
-    "borderRadius": "rem(0.375)",
+    "borderRadius": 12,
   },
   "rounded-none": Object {
     "borderRadius": 0,
   },
   "rounded-r": Object {
-    "borderBottomRightRadius": "rem(0.25)",
-    "borderTopRightRadius": "rem(0.25)",
+    "borderBottomRightRadius": 8,
+    "borderTopRightRadius": 8,
   },
   "rounded-r-2xl": Object {
-    "borderBottomRightRadius": "rem(1)",
-    "borderTopRightRadius": "rem(1)",
+    "borderBottomRightRadius": 32,
+    "borderTopRightRadius": 32,
   },
   "rounded-r-3xl": Object {
-    "borderBottomRightRadius": "rem(1.5)",
-    "borderTopRightRadius": "rem(1.5)",
+    "borderBottomRightRadius": 48,
+    "borderTopRightRadius": 48,
   },
   "rounded-r-full": Object {
     "borderBottomRightRadius": 9999,
     "borderTopRightRadius": 9999,
   },
   "rounded-r-lg": Object {
-    "borderBottomRightRadius": "rem(0.5)",
-    "borderTopRightRadius": "rem(0.5)",
+    "borderBottomRightRadius": 16,
+    "borderTopRightRadius": 16,
   },
   "rounded-r-md": Object {
-    "borderBottomRightRadius": "rem(0.375)",
-    "borderTopRightRadius": "rem(0.375)",
+    "borderBottomRightRadius": 12,
+    "borderTopRightRadius": 12,
   },
   "rounded-r-none": Object {
     "borderBottomRightRadius": 0,
     "borderTopRightRadius": 0,
   },
   "rounded-r-sm": Object {
-    "borderBottomRightRadius": "rem(0.125)",
-    "borderTopRightRadius": "rem(0.125)",
+    "borderBottomRightRadius": 4,
+    "borderTopRightRadius": 4,
   },
   "rounded-r-xl": Object {
-    "borderBottomRightRadius": "rem(0.75)",
-    "borderTopRightRadius": "rem(0.75)",
+    "borderBottomRightRadius": 24,
+    "borderTopRightRadius": 24,
   },
   "rounded-sm": Object {
-    "borderRadius": "rem(0.125)",
+    "borderRadius": 4,
   },
   "rounded-t": Object {
-    "borderTopLeftRadius": "rem(0.25)",
-    "borderTopRightRadius": "rem(0.25)",
+    "borderTopLeftRadius": 8,
+    "borderTopRightRadius": 8,
   },
   "rounded-t-2xl": Object {
-    "borderTopLeftRadius": "rem(1)",
-    "borderTopRightRadius": "rem(1)",
+    "borderTopLeftRadius": 32,
+    "borderTopRightRadius": 32,
   },
   "rounded-t-3xl": Object {
-    "borderTopLeftRadius": "rem(1.5)",
-    "borderTopRightRadius": "rem(1.5)",
+    "borderTopLeftRadius": 48,
+    "borderTopRightRadius": 48,
   },
   "rounded-t-full": Object {
     "borderTopLeftRadius": 9999,
     "borderTopRightRadius": 9999,
   },
   "rounded-t-lg": Object {
-    "borderTopLeftRadius": "rem(0.5)",
-    "borderTopRightRadius": "rem(0.5)",
+    "borderTopLeftRadius": 16,
+    "borderTopRightRadius": 16,
   },
   "rounded-t-md": Object {
-    "borderTopLeftRadius": "rem(0.375)",
-    "borderTopRightRadius": "rem(0.375)",
+    "borderTopLeftRadius": 12,
+    "borderTopRightRadius": 12,
   },
   "rounded-t-none": Object {
     "borderTopLeftRadius": 0,
     "borderTopRightRadius": 0,
   },
   "rounded-t-sm": Object {
-    "borderTopLeftRadius": "rem(0.125)",
-    "borderTopRightRadius": "rem(0.125)",
+    "borderTopLeftRadius": 4,
+    "borderTopRightRadius": 4,
   },
   "rounded-t-xl": Object {
-    "borderTopLeftRadius": "rem(0.75)",
-    "borderTopRightRadius": "rem(0.75)",
+    "borderTopLeftRadius": 24,
+    "borderTopRightRadius": 24,
   },
   "rounded-te": Object {
-    "borderTopEndRadius": "rem(0.25)",
+    "borderTopEndRadius": 8,
   },
   "rounded-te-2xl": Object {
-    "borderTopEndRadius": "rem(1)",
+    "borderTopEndRadius": 32,
   },
   "rounded-te-3xl": Object {
-    "borderTopEndRadius": "rem(1.5)",
+    "borderTopEndRadius": 48,
   },
   "rounded-te-full": Object {
     "borderTopEndRadius": 9999,
   },
   "rounded-te-lg": Object {
-    "borderTopEndRadius": "rem(0.5)",
+    "borderTopEndRadius": 16,
   },
   "rounded-te-md": Object {
-    "borderTopEndRadius": "rem(0.375)",
+    "borderTopEndRadius": 12,
   },
   "rounded-te-none": Object {
     "borderTopEndRadius": 0,
   },
   "rounded-te-sm": Object {
-    "borderTopEndRadius": "rem(0.125)",
+    "borderTopEndRadius": 4,
   },
   "rounded-te-xl": Object {
-    "borderTopEndRadius": "rem(0.75)",
+    "borderTopEndRadius": 24,
   },
   "rounded-tl": Object {
-    "borderTopLeftRadius": "rem(0.25)",
+    "borderTopLeftRadius": 8,
   },
   "rounded-tl-2xl": Object {
-    "borderTopLeftRadius": "rem(1)",
+    "borderTopLeftRadius": 32,
   },
   "rounded-tl-3xl": Object {
-    "borderTopLeftRadius": "rem(1.5)",
+    "borderTopLeftRadius": 48,
   },
   "rounded-tl-full": Object {
     "borderTopLeftRadius": 9999,
   },
   "rounded-tl-lg": Object {
-    "borderTopLeftRadius": "rem(0.5)",
+    "borderTopLeftRadius": 16,
   },
   "rounded-tl-md": Object {
-    "borderTopLeftRadius": "rem(0.375)",
+    "borderTopLeftRadius": 12,
   },
   "rounded-tl-none": Object {
     "borderTopLeftRadius": 0,
   },
   "rounded-tl-sm": Object {
-    "borderTopLeftRadius": "rem(0.125)",
+    "borderTopLeftRadius": 4,
   },
   "rounded-tl-xl": Object {
-    "borderTopLeftRadius": "rem(0.75)",
+    "borderTopLeftRadius": 24,
   },
   "rounded-tr": Object {
-    "borderTopRightRadius": "rem(0.25)",
+    "borderTopRightRadius": 8,
   },
   "rounded-tr-2xl": Object {
-    "borderTopRightRadius": "rem(1)",
+    "borderTopRightRadius": 32,
   },
   "rounded-tr-3xl": Object {
-    "borderTopRightRadius": "rem(1.5)",
+    "borderTopRightRadius": 48,
   },
   "rounded-tr-full": Object {
     "borderTopRightRadius": 9999,
   },
   "rounded-tr-lg": Object {
-    "borderTopRightRadius": "rem(0.5)",
+    "borderTopRightRadius": 16,
   },
   "rounded-tr-md": Object {
-    "borderTopRightRadius": "rem(0.375)",
+    "borderTopRightRadius": 12,
   },
   "rounded-tr-none": Object {
     "borderTopRightRadius": 0,
   },
   "rounded-tr-sm": Object {
-    "borderTopRightRadius": "rem(0.125)",
+    "borderTopRightRadius": 4,
   },
   "rounded-tr-xl": Object {
-    "borderTopRightRadius": "rem(0.75)",
+    "borderTopRightRadius": 24,
   },
   "rounded-ts": Object {
-    "borderTopStartRadius": "rem(0.25)",
+    "borderTopStartRadius": 8,
   },
   "rounded-ts-2xl": Object {
-    "borderTopStartRadius": "rem(1)",
+    "borderTopStartRadius": 32,
   },
   "rounded-ts-3xl": Object {
-    "borderTopStartRadius": "rem(1.5)",
+    "borderTopStartRadius": 48,
   },
   "rounded-ts-full": Object {
     "borderTopStartRadius": 9999,
   },
   "rounded-ts-lg": Object {
-    "borderTopStartRadius": "rem(0.5)",
+    "borderTopStartRadius": 16,
   },
   "rounded-ts-md": Object {
-    "borderTopStartRadius": "rem(0.375)",
+    "borderTopStartRadius": 12,
   },
   "rounded-ts-none": Object {
     "borderTopStartRadius": 0,
   },
   "rounded-ts-sm": Object {
-    "borderTopStartRadius": "rem(0.125)",
+    "borderTopStartRadius": 4,
   },
   "rounded-ts-xl": Object {
-    "borderTopStartRadius": "rem(0.75)",
+    "borderTopStartRadius": 24,
   },
   "rounded-xl": Object {
-    "borderRadius": "rem(0.75)",
+    "borderRadius": 24,
   },
   "scale-0": Object {
     "transform": Array [
@@ -4087,25 +4087,25 @@ Object {
     ],
   },
   "text-2xl": Object {
-    "fontSize": "rem(1.5)",
+    "fontSize": 48,
   },
   "text-3xl": Object {
-    "fontSize": "rem(1.875)",
+    "fontSize": 60,
   },
   "text-4xl": Object {
-    "fontSize": "rem(2.25)",
+    "fontSize": 72,
   },
   "text-5xl": Object {
-    "fontSize": "rem(3)",
+    "fontSize": 96,
   },
   "text-6xl": Object {
-    "fontSize": "rem(4)",
+    "fontSize": 128,
   },
   "text-auto": Object {
     "textAlign": "auto",
   },
   "text-base": Object {
-    "fontSize": "rem(1)",
+    "fontSize": 32,
   },
   "text-black": Object {
     "color": "black",
@@ -4228,7 +4228,7 @@ Object {
     "textAlign": "left",
   },
   "text-lg": Object {
-    "fontSize": "rem(1.125)",
+    "fontSize": 36,
   },
   "text-orange-100": Object {
     "color": "#fffaf0",
@@ -4342,7 +4342,7 @@ Object {
     "textAlign": "right",
   },
   "text-sm": Object {
-    "fontSize": "rem(0.875)",
+    "fontSize": 28,
   },
   "text-teal-100": Object {
     "color": "#e6fffa",
@@ -4390,10 +4390,10 @@ Object {
     "color": "white",
   },
   "text-xl": Object {
-    "fontSize": "rem(1.25)",
+    "fontSize": 40,
   },
   "text-xs": Object {
-    "fontSize": "rem(0.75)",
+    "fontSize": 24,
   },
   "text-yellow-100": Object {
     "color": "#fffff0",
@@ -4435,119 +4435,119 @@ Object {
   "translate-x-1": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(0.25)",
+        "translateX": 8,
       },
     ],
   },
   "translate-x-10": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(2.5)",
+        "translateX": 80,
       },
     ],
   },
   "translate-x-12": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(3)",
+        "translateX": 96,
       },
     ],
   },
   "translate-x-16": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(4)",
+        "translateX": 128,
       },
     ],
   },
   "translate-x-2": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(0.5)",
+        "translateX": 16,
       },
     ],
   },
   "translate-x-20": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(5)",
+        "translateX": 160,
       },
     ],
   },
   "translate-x-24": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(6)",
+        "translateX": 192,
       },
     ],
   },
   "translate-x-3": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(0.75)",
+        "translateX": 24,
       },
     ],
   },
   "translate-x-32": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(8)",
+        "translateX": 256,
       },
     ],
   },
   "translate-x-4": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(1)",
+        "translateX": 32,
       },
     ],
   },
   "translate-x-40": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(10)",
+        "translateX": 320,
       },
     ],
   },
   "translate-x-48": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(12)",
+        "translateX": 384,
       },
     ],
   },
   "translate-x-5": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(1.25)",
+        "translateX": 40,
       },
     ],
   },
   "translate-x-56": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(14)",
+        "translateX": 448,
       },
     ],
   },
   "translate-x-6": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(1.5)",
+        "translateX": 48,
       },
     ],
   },
   "translate-x-64": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(16)",
+        "translateX": 512,
       },
     ],
   },
   "translate-x-8": Object {
     "transform": Array [
       Object {
-        "translateX": "rem(2)",
+        "translateX": 64,
       },
     ],
   },
@@ -4568,119 +4568,119 @@ Object {
   "translate-y-1": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(0.25)",
+        "translateY": 8,
       },
     ],
   },
   "translate-y-10": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(2.5)",
+        "translateY": 80,
       },
     ],
   },
   "translate-y-12": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(3)",
+        "translateY": 96,
       },
     ],
   },
   "translate-y-16": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(4)",
+        "translateY": 128,
       },
     ],
   },
   "translate-y-2": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(0.5)",
+        "translateY": 16,
       },
     ],
   },
   "translate-y-20": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(5)",
+        "translateY": 160,
       },
     ],
   },
   "translate-y-24": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(6)",
+        "translateY": 192,
       },
     ],
   },
   "translate-y-3": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(0.75)",
+        "translateY": 24,
       },
     ],
   },
   "translate-y-32": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(8)",
+        "translateY": 256,
       },
     ],
   },
   "translate-y-4": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(1)",
+        "translateY": 32,
       },
     ],
   },
   "translate-y-40": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(10)",
+        "translateY": 320,
       },
     ],
   },
   "translate-y-48": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(12)",
+        "translateY": 384,
       },
     ],
   },
   "translate-y-5": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(1.25)",
+        "translateY": 40,
       },
     ],
   },
   "translate-y-56": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(14)",
+        "translateY": 448,
       },
     ],
   },
   "translate-y-6": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(1.5)",
+        "translateY": 48,
       },
     ],
   },
   "translate-y-64": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(16)",
+        "translateY": 512,
       },
     ],
   },
   "translate-y-8": Object {
     "transform": Array [
       Object {
-        "translateY": "rem(2)",
+        "translateY": 64,
       },
     ],
   },
@@ -4701,7 +4701,7 @@ Object {
     "width": 0,
   },
   "w-1": Object {
-    "width": "rem(0.25)",
+    "width": 8,
   },
   "w-1/12": Object {
     "width": "8.333333%",
@@ -4722,7 +4722,7 @@ Object {
     "width": "16.666667%",
   },
   "w-10": Object {
-    "width": "rem(2.5)",
+    "width": 80,
   },
   "w-10/12": Object {
     "width": "83.333333%",
@@ -4731,13 +4731,13 @@ Object {
     "width": "91.666667%",
   },
   "w-12": Object {
-    "width": "rem(3)",
+    "width": 96,
   },
   "w-16": Object {
-    "width": "rem(4)",
+    "width": 128,
   },
   "w-2": Object {
-    "width": "rem(0.5)",
+    "width": 16,
   },
   "w-2/12": Object {
     "width": "16.666667%",
@@ -4755,13 +4755,13 @@ Object {
     "width": "33.333333%",
   },
   "w-20": Object {
-    "width": "rem(5)",
+    "width": 160,
   },
   "w-24": Object {
-    "width": "rem(6)",
+    "width": 192,
   },
   "w-3": Object {
-    "width": "rem(0.75)",
+    "width": 24,
   },
   "w-3/12": Object {
     "width": "25%",
@@ -4776,10 +4776,10 @@ Object {
     "width": "50%",
   },
   "w-32": Object {
-    "width": "rem(8)",
+    "width": 256,
   },
   "w-4": Object {
-    "width": "rem(1)",
+    "width": 32,
   },
   "w-4/12": Object {
     "width": "33.333333%",
@@ -4791,13 +4791,13 @@ Object {
     "width": "66.666667%",
   },
   "w-40": Object {
-    "width": "rem(10)",
+    "width": 320,
   },
   "w-48": Object {
-    "width": "rem(12)",
+    "width": 384,
   },
   "w-5": Object {
-    "width": "rem(1.25)",
+    "width": 40,
   },
   "w-5/12": Object {
     "width": "41.666667%",
@@ -4806,22 +4806,22 @@ Object {
     "width": "83.333333%",
   },
   "w-56": Object {
-    "width": "rem(14)",
+    "width": 448,
   },
   "w-6": Object {
-    "width": "rem(1.5)",
+    "width": 48,
   },
   "w-6/12": Object {
     "width": "50%",
   },
   "w-64": Object {
-    "width": "rem(16)",
+    "width": 512,
   },
   "w-7/12": Object {
     "width": "58.333333%",
   },
   "w-8": Object {
-    "width": "rem(2)",
+    "width": 64,
   },
   "w-8/12": Object {
     "width": "66.666667%",
