@@ -3,9 +3,9 @@ import * as t from '@babel/types';
 import { createMacro, MacroHandler } from 'babel-plugin-macros';
 
 // Ours
-import { evalNode } from './babel/eval-node';
 import { StyledMacro } from './lib/types';
 import { resolveTokens } from './lib/tokens';
+import { evalNode } from './babel/eval-node';
 import { importUtil } from './babel/add-import';
 import { injectStyles } from './babel/inject-styles';
 import { DEFAULT_VARIANT } from './lib/utils/defaultVariant';

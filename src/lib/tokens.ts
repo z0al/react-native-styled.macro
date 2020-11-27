@@ -2,13 +2,13 @@
 import { dequal } from 'dequal';
 
 // Ours
-import createStyles from './style';
-import createProps from './style/props';
 import theme from './theme';
+import createStyles from './style';
 import { VariantStyle } from './types';
+import { reduce } from './utils/reduce';
+import createProps from './style/props';
 import { extractTokenInfo } from './utils/extractTokenInfo';
 import { getOrderedTokens } from './utils/getOrderedTokens';
-import { reduce } from './utils/reduce';
 
 const themeStyles = createStyles(theme);
 const themeProps = createProps(theme);
