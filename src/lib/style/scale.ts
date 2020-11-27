@@ -1,14 +1,22 @@
 // Packages
-import { TransformsStyle } from 'react-native';
+import { ViewStyle } from 'react-native';
 
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const scale = (
-	theme: Theme
-): Record<string, TransformsStyle> => {
+type Sizes = keyof Theme['scale'];
+type ScaleStyle = Record<
+	| StyleName<'scale', Sizes>
+	| StyleName<'scale-x', Sizes>
+	| StyleName<'scale-y', Sizes>,
+	{
+		transform: ViewStyle['transform'];
+	}
+>;
+
+export const scale = (theme: Theme) => {
 	const sizes = Object.keys(theme.scale);
 
 	const x = sizes
@@ -47,5 +55,5 @@ export const scale = (
 		}))
 		.reduce(merge, {});
 
-	return [x, y, xy].reduce(merge, {});
+	return [x, y, xy].reduce(merge, {}) as ScaleStyle;
 };

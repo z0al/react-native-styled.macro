@@ -1,19 +1,18 @@
-// Packages
-import { ViewStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const borderColor = (
-	theme: Theme
-): Record<string, ViewStyle> => {
-	return Object.keys(theme.borderColor)
+type BorderColorStyle = Record<
+	StyleName<'border', keyof Theme['borderColor']>,
+	{ borderColor: string }
+>;
+
+export const borderColor = (theme: Theme) =>
+	Object.keys(theme.borderColor)
 		.map((key) => ({
 			[id('border', key)]: {
 				borderColor: theme.borderColor[key] as string,
 			},
 		}))
-		.reduce(merge, {});
-};
+		.reduce(merge, {}) as BorderColorStyle;

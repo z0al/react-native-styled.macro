@@ -1,7 +1,14 @@
 // Ours
-import { Theme } from '../../types';
-import { id } from '../../utils/id';
+import { Theme } from '../../theme';
 import { merge } from '../../utils/merge';
+import { id, StyleName } from '../../utils/id';
+
+type NumberOfLinesStyle = Record<
+	StyleName<'lines', keyof Theme['numberOfLines']>,
+	{
+		numberOfLines: number;
+	}
+>;
 
 export const numberOfLines = (theme: Theme) =>
 	Object.keys(theme.numberOfLines)
@@ -10,4 +17,4 @@ export const numberOfLines = (theme: Theme) =>
 				numberOfLines: theme.numberOfLines[key],
 			},
 		}))
-		.reduce(merge);
+		.reduce(merge) as NumberOfLinesStyle;

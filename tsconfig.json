@@ -19,6 +19,7 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": true,
+		"noImplicitAny": false,
 		"target": "esnext"
 	},
 	"include": ["./src"],

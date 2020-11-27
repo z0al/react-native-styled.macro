@@ -4,17 +4,17 @@ import { TextStyle } from 'react-native';
 // Ours
 import { id } from '../utils/id';
 
-export const textAlignVertical = (): Record<string, TextStyle> => ({
+export const textAlignVertical = () => ({
 	[id('text-v', 'auto')]: {
-		textAlignVertical: 'auto',
+		textAlignVertical: 'auto' as TextStyle['textAlignVertical'],
 	},
 	[id('text-v', 'top')]: {
-		textAlignVertical: 'top',
+		textAlignVertical: 'top' as TextStyle['textAlignVertical'],
 	},
 	[id('text-v', 'bottom')]: {
-		textAlignVertical: 'bottom',
+		textAlignVertical: 'bottom' as TextStyle['textAlignVertical'],
 	},
 	[id('text-v', 'center')]: {
-		textAlignVertical: 'center',
+		textAlignVertical: 'center' as TextStyle['textAlignVertical'],
 	},
 });

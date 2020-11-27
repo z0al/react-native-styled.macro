@@ -1,17 +1,18 @@
-// Packages
-import { TextStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const lineHeight = (theme: Theme): Record<string, TextStyle> => {
-	return Object.keys(theme.lineHeight)
+type LineHeightStyle = Record<
+	StyleName<'line-h', keyof Theme['lineHeight']>,
+	{ lineHeight: number }
+>;
+
+export const lineHeight = (theme: Theme) =>
+	Object.keys(theme.lineHeight)
 		.map((key) => ({
 			[id('line-h', key)]: {
 				lineHeight: theme.lineHeight[key] as number,
 			},
 		}))
-		.reduce(merge, {});
-};
+		.reduce(merge, {}) as LineHeightStyle;

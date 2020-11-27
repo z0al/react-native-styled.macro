@@ -1,14 +1,30 @@
-// Packages
-import { ViewStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const borderWidth = (
-	theme: Theme
-): Record<string, ViewStyle> => {
+type Sizes = keyof Theme['borderWidth'];
+
+type BorderWidthStyle = Record<
+	| StyleName<'border', Sizes>
+	| StyleName<'border-t', Sizes>
+	| StyleName<'border-r', Sizes>
+	| StyleName<'border-b', Sizes>
+	| StyleName<'border-l', Sizes>
+	| StyleName<'border-s', Sizes>
+	| StyleName<'border-e', Sizes>,
+	{
+		borderWidth?: number;
+		borderTopWidth?: number;
+		borderLeftWidth?: number;
+		borderRightWidth?: number;
+		borderBottomWidth?: number;
+		borderStartWidth?: number;
+		borderEndWidth?: number;
+	}
+>;
+
+export const borderWidth = (theme: Theme) => {
 	const sizes = Object.keys(theme.borderWidth);
 
 	const border = sizes
@@ -75,5 +91,5 @@ export const borderWidth = (
 		borderB,
 		borderS,
 		borderE,
-	].reduce(merge, {});
+	].reduce(merge, {}) as BorderWidthStyle;
 };

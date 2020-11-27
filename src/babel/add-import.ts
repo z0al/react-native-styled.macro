@@ -2,7 +2,6 @@
 import * as t from '@babel/types';
 import { NodePath } from '@babel/core';
 import { loadPackageJson } from 'json.macro';
-// @ts-expect-error
 import * as importHelpers from '@babel/helper-module-imports';
 
 const pkgJson = loadPackageJson();

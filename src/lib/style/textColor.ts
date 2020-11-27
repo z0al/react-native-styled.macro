@@ -1,17 +1,20 @@
-// Packages
-import { TextStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const textColor = (theme: Theme): Record<string, TextStyle> => {
-	return Object.keys(theme.textColor)
+type TextColorStyle = Record<
+	StyleName<'text', keyof Theme['textColor']>,
+	{
+		color: string;
+	}
+>;
+
+export const textColor = (theme: Theme) =>
+	Object.keys(theme.textColor)
 		.map((key) => ({
 			[id('text', key)]: {
 				color: theme.textColor[key] as string,
 			},
 		}))
-		.reduce(merge, {});
-};
+		.reduce(merge, {}) as TextColorStyle;

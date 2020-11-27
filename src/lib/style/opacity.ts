@@ -1,17 +1,18 @@
-// Package
-import { ViewStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const opacity = (theme: Theme): Record<string, ViewStyle> => {
-	return Object.keys(theme.opacity)
+type OpacityStyle = Record<
+	StyleName<'opacity', keyof Theme['opacity']>,
+	{ opacity: number }
+>;
+
+export const opacity = (theme: Theme) =>
+	Object.keys(theme.opacity)
 		.map((key) => ({
 			[id('opacity', key)]: {
 				opacity: theme.opacity[key],
 			},
 		}))
-		.reduce(merge, {});
-};
+		.reduce(merge, {}) as OpacityStyle;

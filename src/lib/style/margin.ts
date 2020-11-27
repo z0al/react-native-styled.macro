@@ -1,12 +1,34 @@
-// Packages
-import { FlexStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const margin = (theme: Theme): Record<string, FlexStyle> => {
+type Spacing = keyof Theme['margin'];
+
+type MarginStyle = Record<
+	| StyleName<'m', Spacing>
+	| StyleName<'mt', Spacing>
+	| StyleName<'ml', Spacing>
+	| StyleName<'mr', Spacing>
+	| StyleName<'mb', Spacing>
+	| StyleName<'ms', Spacing>
+	| StyleName<'me', Spacing>
+	| StyleName<'mx', Spacing>
+	| StyleName<'my', Spacing>,
+	{
+		margin?: any;
+		marginTop?: any;
+		marginLeft?: any;
+		marginRight?: any;
+		marginBottom?: any;
+		marginStart?: any;
+		marginEnd?: any;
+		marginHorizontal?: any;
+		marginVertical?: any;
+	}
+>;
+
+export const margin = (theme: Theme) => {
 	const sizes = Object.keys(theme.margin);
 
 	const m = sizes
@@ -81,5 +103,8 @@ export const margin = (theme: Theme): Record<string, FlexStyle> => {
 		}))
 		.reduce(merge, {});
 
-	return [m, mt, ml, mr, mb, ms, me, mx, my].reduce(merge, {});
+	return [m, mt, ml, mr, mb, ms, me, mx, my].reduce(
+		merge,
+		{}
+	) as MarginStyle;
 };

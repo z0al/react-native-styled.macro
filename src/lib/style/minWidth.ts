@@ -1,17 +1,18 @@
-// Packages
-import { FlexStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const minWidth = (theme: Theme): Record<string, FlexStyle> => {
-	return Object.keys(theme.minWidth)
+type MinWidthStyle = Record<
+	StyleName<'min-w', keyof Theme['minWidth']>,
+	{ minWidth: any }
+>;
+
+export const minWidth = (theme: Theme) =>
+	Object.keys(theme.minWidth)
 		.map((key) => ({
 			[id('min-w', key)]: {
 				minWidth: theme.minWidth[key],
 			},
 		}))
-		.reduce(merge, {});
-};
+		.reduce(merge, {}) as MinWidthStyle;

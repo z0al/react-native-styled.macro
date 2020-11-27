@@ -1,17 +1,18 @@
-// Packages
-import { FlexStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const maxWidth = (theme: Theme): Record<string, FlexStyle> => {
-	return Object.keys(theme.maxWidth)
+type MaxWidthStyle = Record<
+	StyleName<'max-w', keyof Theme['maxWidth']>,
+	{ maxWidth: any }
+>;
+
+export const maxWidth = (theme: Theme) =>
+	Object.keys(theme.maxWidth)
 		.map((key) => ({
 			[id('max-w', key)]: {
 				maxWidth: theme.maxWidth[key],
 			},
 		}))
-		.reduce(merge, {});
-};
+		.reduce(merge, {}) as MaxWidthStyle;

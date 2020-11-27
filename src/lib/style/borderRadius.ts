@@ -1,15 +1,36 @@
-// Packages
-import { ViewStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const borderRadius = (
-	theme: Theme
-): Record<string, ViewStyle> => {
+type Sizes = keyof Theme['borderRadius'];
+
+type BorderRadiusStyle = Record<
+	| StyleName<'rounded', Sizes>
+	| StyleName<'rounded-t', Sizes>
+	| StyleName<'rounded-r', Sizes>
+	| StyleName<'rounded-b', Sizes>
+	| StyleName<'rounded-l', Sizes>
+	| StyleName<'rounded-ts', Sizes>
+	| StyleName<'rounded-te', Sizes>
+	| StyleName<'rounded-tl', Sizes>
+	| StyleName<'rounded-tr', Sizes>
+	| StyleName<'rounded-br', Sizes>
+	| StyleName<'rounded-bl', Sizes>,
+	{
+		borderRadius?: number;
+		borderTopLeftRadius?: number;
+		borderTopRightRadius?: number;
+		borderBottomRightRadius?: number;
+		borderBottomLeftRadius?: number;
+		borderTopStartRadius?: number;
+		borderTopEndRadius?: number;
+	}
+>;
+
+export const borderRadius = (theme: Theme) => {
 	const sizes = Object.keys(theme.borderRadius);
+
 	const rounded = sizes
 		.map((key) => ({
 			[id('rounded', key)]: {
@@ -114,5 +135,5 @@ export const borderRadius = (
 		roundedBR,
 		roundedTS,
 		roundedTE,
-	].reduce(merge, {});
+	].reduce(merge, {}) as BorderRadiusStyle;
 };

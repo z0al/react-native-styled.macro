@@ -1,19 +1,18 @@
-// Packages
-import { ViewStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const backgroundColor = (
-	theme: Theme
-): Record<string, ViewStyle> => {
-	return Object.keys(theme.backgroundColor)
+type BackgroundColorStyle = Record<
+	StyleName<'bg', keyof Theme['backgroundColor']>,
+	{ backgroundColor: string }
+>;
+
+export const backgroundColor = (theme: Theme) =>
+	Object.keys(theme.backgroundColor)
 		.map((key) => ({
 			[id('bg', key)]: {
 				backgroundColor: theme.backgroundColor[key] as string,
 			},
 		}))
-		.reduce(merge, {});
-};
+		.reduce(merge, {}) as BackgroundColorStyle;

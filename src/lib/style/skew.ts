@@ -1,12 +1,20 @@
 // Packages
-import { TransformsStyle } from 'react-native';
+import { ViewStyle } from 'react-native';
 
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const skew = (theme: Theme): Record<string, TransformsStyle> => {
+type Sizes = keyof Theme['skew'];
+type SkewStyle = Record<
+	StyleName<'skew-x', Sizes> | StyleName<'skew-y', Sizes>,
+	{
+		transform: ViewStyle['transform'];
+	}
+>;
+
+export const skew = (theme: Theme) => {
 	const sizes = Object.keys(theme.skew);
 
 	const x = sizes
@@ -33,5 +41,5 @@ export const skew = (theme: Theme): Record<string, TransformsStyle> => {
 		}))
 		.reduce(merge, {});
 
-	return [x, y].reduce(merge, {});
+	return [x, y].reduce(merge, {}) as SkewStyle;
 };

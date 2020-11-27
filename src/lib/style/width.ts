@@ -1,17 +1,20 @@
-// Packages
-import { FlexStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const width = (theme: Theme): Record<string, FlexStyle> => {
-	return Object.keys(theme.width)
+type WidthStyle = Record<
+	StyleName<'w', keyof Theme['width']>,
+	{
+		width: string;
+	}
+>;
+
+export const width = (theme: Theme) =>
+	Object.keys(theme.width)
 		.map((key) => ({
 			[id('w', key)]: {
 				width: theme.width[key],
 			},
 		}))
-		.reduce(merge, {});
-};
+		.reduce(merge, {}) as WidthStyle;

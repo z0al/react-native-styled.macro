@@ -1,14 +1,23 @@
 // Packages
-import { TransformsStyle } from 'react-native';
+import { ViewStyle } from 'react-native';
 
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const rotate = (
-	theme: Theme
-): Record<string, TransformsStyle> => {
+type Sizes = keyof Theme['rotate'];
+type RotateStyle = Record<
+	| StyleName<'rotate', Sizes>
+	| StyleName<'rotate-x', Sizes>
+	| StyleName<'rotate-y', Sizes>
+	| StyleName<'rotate-z', Sizes>,
+	{
+		transform: ViewStyle['transform'];
+	}
+>;
+
+export const rotate = (theme: Theme) => {
 	const sizes = Object.keys(theme.rotate);
 
 	const x = sizes
@@ -59,5 +68,5 @@ export const rotate = (
 		}))
 		.reduce(merge, {});
 
-	return [x, y, z, xy].reduce(merge, {});
+	return [x, y, z, xy].reduce(merge, {}) as RotateStyle;
 };

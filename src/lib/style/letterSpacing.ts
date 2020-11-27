@@ -1,19 +1,20 @@
-// Packages
-import { TextStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const letterSpacing = (
-	theme: Theme
-): Record<string, TextStyle> => {
-	return Object.keys(theme.letterSpacing)
+type LetterSpacingStyle = Record<
+	StyleName<'letter', keyof Theme['letterSpacing']>,
+	{
+		letterSpacing: number;
+	}
+>;
+
+export const letterSpacing = (theme: Theme) =>
+	Object.keys(theme.letterSpacing)
 		.map((key) => ({
 			[id('letter', key)]: {
-				letterSpacing: theme.letterSpacing[key] as number,
+				letterSpacing: theme.letterSpacing[key],
 			},
 		}))
-		.reduce(merge, {});
-};
+		.reduce(merge, {}) as LetterSpacingStyle;

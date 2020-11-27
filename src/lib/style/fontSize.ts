@@ -1,17 +1,18 @@
-// Packages
-import { TextStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const fontSize = (theme: Theme): Record<string, TextStyle> => {
-	return Object.keys(theme.fontSize)
+type FontSizeStyle = Record<
+	StyleName<'text', keyof Theme['fontSize']>,
+	{ fontSize: number }
+>;
+
+export const fontSize = (theme: Theme) =>
+	Object.keys(theme.fontSize)
 		.map((key) => ({
 			[id('text', key)]: {
-				fontSize: theme.fontSize[key] as number,
+				fontSize: theme.fontSize[key],
 			},
 		}))
-		.reduce(merge, {});
-};
+		.reduce(merge, {}) as FontSizeStyle;

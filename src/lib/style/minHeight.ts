@@ -1,17 +1,18 @@
-// Packages
-import { FlexStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const minHeight = (theme: Theme): Record<string, FlexStyle> => {
-	return Object.keys(theme.minHeight)
+type MinHeightStyle = Record<
+	StyleName<'min-h', keyof Theme['minHeight']>,
+	{ minHeight: any }
+>;
+
+export const minHeight = (theme: Theme) =>
+	Object.keys(theme.minHeight)
 		.map((key) => ({
 			[id('min-h', key)]: {
 				minHeight: theme.minHeight[key],
 			},
 		}))
-		.reduce(merge, {});
-};
+		.reduce(merge, {}) as MinHeightStyle;

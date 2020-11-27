@@ -1,11 +1,11 @@
 // Packages
-import { FlexStyle } from 'react-native';
+import { ViewStyle } from 'react-native';
 
-export const display = (): Record<string, FlexStyle> => ({
+export const display = () => ({
 	flex: {
-		display: 'flex',
+		display: 'flex' as ViewStyle['display'],
 	},
 	hidden: {
-		display: 'none',
+		display: 'none' as ViewStyle['display'],
 	},
 });

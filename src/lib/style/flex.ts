@@ -1,13 +1,18 @@
 // Packages
-import { FlexStyle } from 'react-native';
+import { ViewStyle } from 'react-native';
 
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const flex = (theme: Theme): Record<string, FlexStyle> => {
-	return Object.keys(theme.flex)
+type FlexStyle = Record<
+	StyleName<'flex', keyof Theme['flex']>,
+	{ flex: ViewStyle['flex'] }
+>;
+
+export const flex = (theme: Theme) =>
+	Object.keys(theme.flex)
 		.map((key) => {
 			const value = theme.flex[key] || {};
 
@@ -17,5 +22,4 @@ export const flex = (theme: Theme): Record<string, FlexStyle> => {
 				},
 			};
 		})
-		.reduce(merge, {});
-};
+		.reduce(merge, {}) as FlexStyle;

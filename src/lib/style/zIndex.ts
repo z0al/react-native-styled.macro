@@ -1,17 +1,20 @@
-// Packages
-import { FlexStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const zIndex = (theme: Theme): Record<string, FlexStyle> => {
-	return ['0', '10', '20', '30', '40', '50']
+type ZIndexStyle = Record<
+	StyleName<'z', keyof Theme['zIndex']>,
+	{
+		zIndex: string;
+	}
+>;
+
+export const zIndex = (theme: Theme) =>
+	Object.keys(theme.zIndex)
 		.map((key) => ({
 			[id('z', key)]: {
 				zIndex: theme.zIndex[key],
 			},
 		}))
-		.reduce(merge, {});
-};
+		.reduce(merge, {}) as ZIndexStyle;

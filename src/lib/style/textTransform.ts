@@ -1,17 +1,17 @@
 // Packages
 import { TextStyle } from 'react-native';
 
-export const textTransform = (): Record<string, TextStyle> => ({
+export const textTransform = () => ({
 	'uppercase': {
-		textTransform: 'uppercase',
+		textTransform: 'uppercase' as TextStyle['textTransform'],
 	},
 	'lowercase': {
-		textTransform: 'lowercase',
+		textTransform: 'lowercase' as TextStyle['textTransform'],
 	},
 	'capitalize': {
-		textTransform: 'capitalize',
+		textTransform: 'capitalize' as TextStyle['textTransform'],
 	},
 	'normal-case': {
-		textTransform: 'none',
+		textTransform: 'none' as TextStyle['textTransform'],
 	},
 });

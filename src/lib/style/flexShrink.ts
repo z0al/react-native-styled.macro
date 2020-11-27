@@ -1,17 +1,18 @@
-// Packages
-import { FlexStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const flexShrink = (theme: Theme): Record<string, FlexStyle> => {
-	return Object.keys(theme.flexShrink)
+type FlexShrinkStyle = Record<
+	StyleName<'flex-shrink', keyof Theme['flexShrink']>,
+	{ flexShrink: number }
+>;
+
+export const flexShrink = (theme: Theme) =>
+	Object.keys(theme.flexShrink)
 		.map((key) => ({
 			[id('flex-shrink', key)]: {
 				flexShrink: theme.flexShrink[key],
 			},
 		}))
-		.reduce(merge, {});
-};
+		.reduce(merge, {}) as FlexShrinkStyle;

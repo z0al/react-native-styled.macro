@@ -1,7 +1,6 @@
 import { dequal } from 'dequal';
 import * as t from '@babel/types';
 import { NodePath } from '@babel/core';
-// @ts-expect-error
 import evaluatePath from 'babel-helper-evaluate-path';
 
 type EvaluationResult = {

@@ -1,12 +1,34 @@
-// Packages
-import { FlexStyle } from 'react-native';
-
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const padding = (theme: Theme): Record<string, FlexStyle> => {
+type Spacing = keyof Theme['padding'];
+
+type PaddingStyle = Record<
+	| StyleName<'p', Spacing>
+	| StyleName<'pt', Spacing>
+	| StyleName<'pl', Spacing>
+	| StyleName<'pr', Spacing>
+	| StyleName<'pb', Spacing>
+	| StyleName<'ps', Spacing>
+	| StyleName<'pe', Spacing>
+	| StyleName<'px', Spacing>
+	| StyleName<'py', Spacing>,
+	{
+		padding?: any;
+		paddingTop?: any;
+		paddingLeft?: any;
+		paddingRight?: any;
+		paddingBottom?: any;
+		paddingStart?: any;
+		paddingEnd?: any;
+		paddingHorizontal?: any;
+		paddingVertical?: any;
+	}
+>;
+
+export const padding = (theme: Theme) => {
 	const sizes = Object.keys(theme.padding);
 
 	const p = sizes
@@ -81,5 +103,8 @@ export const padding = (theme: Theme): Record<string, FlexStyle> => {
 		}))
 		.reduce(merge, {});
 
-	return [p, pt, pl, pr, pb, ps, pe, px, py].reduce(merge, {});
+	return [p, pt, pl, pr, pb, ps, pe, px, py].reduce(
+		merge,
+		{}
+	) as PaddingStyle;
 };

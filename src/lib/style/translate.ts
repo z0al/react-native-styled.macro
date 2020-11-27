@@ -1,14 +1,20 @@
 // Packages
-import { TransformsStyle } from 'react-native';
+import { ViewStyle } from 'react-native';
 
 // Ours
-import { Theme } from '../types';
-import { id } from '../utils/id';
+import { Theme } from '../theme';
 import { merge } from '../utils/merge';
+import { id, StyleName } from '../utils/id';
 
-export const translate = (
-	theme: Theme
-): Record<string, TransformsStyle> => {
+type Sizes = keyof Theme['translate'];
+type TranslateStyle = Record<
+	StyleName<'translate-x', Sizes> | StyleName<'translate-y', Sizes>,
+	{
+		transform: ViewStyle['transform'];
+	}
+>;
+
+export const translate = (theme: Theme) => {
 	const sizes = Object.keys(theme.translate);
 
 	const x = sizes
@@ -35,5 +41,5 @@ export const translate = (
 		}))
 		.reduce(merge, {});
 
-	return [x, y].reduce(merge, {});
+	return [x, y].reduce(merge, {}) as TranslateStyle;
 };

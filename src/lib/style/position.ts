@@ -1,7 +1,7 @@
 // Packages
-import { FlexStyle } from 'react-native';
+import { ViewStyle } from 'react-native';
 
-export const position = (): Record<string, FlexStyle> => ({
-	absolute: { position: 'absolute' },
-	relative: { position: 'relative' },
+export const position = () => ({
+	absolute: { position: 'absolute' as ViewStyle['position'] },
+	relative: { position: 'relative' as ViewStyle['position'] },
 });
