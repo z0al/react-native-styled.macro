@@ -1,27 +1,46 @@
 // Ours
-import { StyleProps, VariantStyle, ToggleVariants } from '../types';
 import { builtin } from '../variants';
+import { StyleProps, VariantStyle, VariantFlags } from '../types';
 
 export const select = (
-	variantStyles: VariantStyle[],
-	variants: ToggleVariants = builtin
+	styles: VariantStyle[],
+	variantFlags: VariantFlags = builtin
 ): StyleProps => {
 	// Override built-in variants with user provided values but always
 	// include default variant styles
-	variants = { ...builtin, ...variants, default: true };
+	variantFlags = { ...builtin, ...variantFlags, default: true };
 
-	return variantStyles
-		.filter(({ variant }) => Boolean(variants[variant]))
-		.map(({ variant: _, ...styleWithProps }) => styleWithProps)
+	// Check if a variant is enabled
+	const isEnabled = (variant: string) => {
+		return variant
+			.split(':')
+			.map((v) => variantFlags[v])
+			.every(Boolean);
+	};
+
+	const mergeStyles = (
+		base: Partial<VariantStyle>,
+		override: Partial<VariantStyle>
+	) => {
+		if (!base.style) {
+			return [override.style];
+		}
+
+		if (Array.isArray(base.style)) {
+			return [...base.style, override.style];
+		}
+
+		return [base.style, override.style];
+	};
+
+	return styles
+		.filter(({ variant }) => isEnabled(variant))
+		.map(({ variant: _, ...style }) => style)
 		.reduce(
-			(props, next) => ({
-				...props,
+			(current, next) => ({
+				...current,
 				...next,
-				style: props.style
-					? Array.isArray(props.style)
-						? [...props.style, next.style]
-						: [props.style, next.style]
-					: [next.style],
+				style: mergeStyles(current, next),
 			}),
 			{} as VariantStyle
 		);

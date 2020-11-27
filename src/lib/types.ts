@@ -12,11 +12,11 @@ export type VariantStyle = StyleProps & {
 	variant: string;
 };
 
-export type ToggleVariants = Record<string, boolean | undefined>;
+export type VariantFlags = Record<string, boolean | undefined>;
 
 export type StyledMacro = (
 	tokens: string[],
-	variants?: ToggleVariants
+	variants?: VariantFlags
 ) => StyleProps;
 
 export type Configuration = {
