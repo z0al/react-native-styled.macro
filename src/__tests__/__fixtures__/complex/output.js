@@ -1,8 +1,8 @@
-import { rem as _rem3 } from 'react-native-styled.macro/build/module/utils/rem';
-import { rem as _rem2 } from 'react-native-styled.macro/build/module/utils/rem';
-import { rem as _rem } from 'react-native-styled.macro/build/module/utils/rem';
+import { rem as _rem3 } from 'react-native-styled.macro/build/module/lib/utils/rem';
+import { rem as _rem2 } from 'react-native-styled.macro/build/module/lib/utils/rem';
+import { rem as _rem } from 'react-native-styled.macro/build/module/lib/utils/rem';
 import { StyleSheet as _StyleSheet } from 'react-native';
-import { select as _select } from 'react-native-styled.macro/build/module/utils/select';
+import { select as _select } from 'react-native-styled.macro/build/module/lib/utils/select';
 
 const _styles = _StyleSheet.create({
 	_default: {

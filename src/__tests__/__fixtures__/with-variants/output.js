@@ -1,5 +1,5 @@
 import { StyleSheet as _StyleSheet } from 'react-native';
-import { select as _select } from 'react-native-styled.macro/build/module/utils/select';
+import { select as _select } from 'react-native-styled.macro/build/module/lib/utils/select';
 
 const _styles = _StyleSheet.create({
 	_default: {
