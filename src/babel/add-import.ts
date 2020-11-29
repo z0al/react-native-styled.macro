@@ -1,10 +1,7 @@
 // Packages
 import * as t from '@babel/types';
 import { NodePath } from '@babel/core';
-import { loadPackageJson } from 'json.macro';
 import * as importHelpers from '@babel/helper-module-imports';
-
-const pkgJson = loadPackageJson();
 
 function importModule(
 	program: NodePath<t.Program>,
@@ -29,6 +26,6 @@ export function importUtil(
 	return importModule(
 		program,
 		utilName,
-		`${pkgJson.name}/build/module/utils/${utilName}`
+		`react-native-styled.macro/build/module/utils/${utilName}`
 	);
 }
