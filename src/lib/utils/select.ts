@@ -1,26 +1,30 @@
 // Ours
-import { builtin } from '../variants';
-import { StyleProps, VariantStyle, VariantFlags } from '../types';
+import { builtinVariants } from '../variants';
+import { TokenInfo, VariantFlags } from '../types';
 
 export const select = (
-	styles: VariantStyle[],
-	variantFlags: VariantFlags = builtin
-): StyleProps => {
+	styles: TokenInfo[],
+	variantFlags?: VariantFlags
+) => {
 	// Override built-in variants with user provided values but always
 	// include default variant styles
-	variantFlags = { ...builtin, ...variantFlags, default: true };
+	const flags = {
+		...builtinVariants,
+		...variantFlags,
+		default: true,
+	};
 
 	// Check if a variant is enabled
 	const isEnabled = (variant: string) => {
 		return variant
 			.split(':')
-			.map((v) => variantFlags[v])
+			.map((v) => flags[v])
 			.every(Boolean);
 	};
 
 	const mergeStyles = (
-		base: Partial<VariantStyle>,
-		override: Partial<VariantStyle>
+		base: Partial<TokenInfo>,
+		override: Partial<TokenInfo>
 	) => {
 		if (!base.style) {
 			return [override.style];
@@ -42,6 +46,6 @@ export const select = (
 				...next,
 				style: mergeStyles(current, next),
 			}),
-			{} as VariantStyle
+			{} as TokenInfo
 		);
 };

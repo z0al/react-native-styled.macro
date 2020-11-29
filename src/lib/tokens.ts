@@ -4,7 +4,7 @@ import { dequal } from 'dequal';
 // Ours
 import theme from './theme';
 import createStyles from './style';
-import { VariantStyle } from './types';
+import { TokenInfo } from './types';
 import { reduce } from './utils/reduce';
 import createProps from './style/props';
 import { extractTokenInfo } from './utils/extractTokenInfo';
@@ -13,7 +13,7 @@ import { getOrderedTokens } from './utils/getOrderedTokens';
 const themeStyles = createStyles(theme);
 const themeProps = createProps(theme);
 
-const resolveToken = (token: string): VariantStyle => {
+const resolveToken = (token: string): TokenInfo => {
 	const { styleId, variant } = extractTokenInfo(token);
 
 	const style = themeStyles[styleId];

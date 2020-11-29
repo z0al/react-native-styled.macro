@@ -26,7 +26,7 @@ import { View } from 'react-native';
 const Button = () => (
 	<View
 		{...{
-			style: _styles._default,
+			style: [_styles._default],
 		}}
 	/>
 );
@@ -87,7 +87,7 @@ const _styles = _StyleSheet.create({
 });
 
 console.log({
-	style: _styles._default,
+	style: [_styles._default],
 });
 
 
@@ -147,7 +147,7 @@ import { Text } from 'react-native';
 const Heading = ({ text }) => (
 	<Text
 		{...{
-			style: _styles._default,
+			style: [_styles._default],
 		}}
 	>
 		{text}
@@ -224,17 +224,17 @@ export default function App() {
 	return (
 		<SafeAreaView
 			{...{
-				style: _styles._default,
+				style: [_styles._default],
 			}}
 		>
 			<Pressable
 				{...{
-					style: _styles._default2,
+					style: [_styles._default2],
 				}}
 			>
 				<Text
 					{...{
-						style: _styles._default3,
+						style: [_styles._default3],
 					}}
 				>
 					Press me
@@ -278,10 +278,34 @@ const bgWhite = 'bg-white';
 const buttonStyle = [bgWhite, 'text-black'];
 const inputStyle = [bgWhite, 'text-black'];
 console.log({
-	style: _styles._default,
+	style: [_styles._default],
 });
 console.log({
-	style: _styles._default2,
+	style: [_styles._default2],
+});
+
+
+`;
+
+exports[`babel-plugin-macros 8. babel-plugin-macros: 8. babel-plugin-macros 1`] = `
+
+import styled from '../../build/module/macro.js';
+
+console.log(styled(['bg-black', 'selectable']))
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import { StyleSheet as _StyleSheet } from 'react-native';
+
+const _styles = _StyleSheet.create({
+	_default: {
+		backgroundColor: 'black',
+	},
+});
+
+console.log({
+	selectable: true,
+	style: [_styles._default],
 });
 
 

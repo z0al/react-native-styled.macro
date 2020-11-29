@@ -96,5 +96,10 @@ pluginTester({
 		console.log(styled(buttonStyle))
 		console.log(styled(inputStyle))
 		`,
+		`
+		import styled from '${macroPath}';
+
+		console.log(styled(['bg-black', 'selectable']))
+		`,
 	],
 });

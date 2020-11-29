@@ -47,7 +47,7 @@ describe('[style-utils] select', () => {
 		},
 	};
 
-	const variantStyles = [
+	const tokens = [
 		defaultVariant,
 		darkVariant,
 		focusVariant,
@@ -62,8 +62,8 @@ describe('[style-utils] select', () => {
 			selectable: true,
 		};
 
-		expect(select(variantStyles)).toEqual(expected);
-		expect(select(variantStyles, { default: false })).toEqual(expected);
+		expect(select(tokens)).toEqual(expected);
+		expect(select(tokens, { default: false })).toEqual(expected);
 	});
 
 	test('should select enabled variants only', () => {
@@ -78,7 +78,7 @@ describe('[style-utils] select', () => {
 		};
 
 		expect(
-			select(variantStyles, { dark: true, right: true, focus: false })
+			select(tokens, { dark: true, right: true, focus: false })
 		).toEqual(expected);
 	});
 
@@ -97,7 +97,7 @@ describe('[style-utils] select', () => {
 		};
 
 		expect(
-			select(variantStyles, { dark: true, focus: true, right: true })
+			select(tokens, { dark: true, focus: true, right: true })
 		).toEqual(expected);
 	});
 });

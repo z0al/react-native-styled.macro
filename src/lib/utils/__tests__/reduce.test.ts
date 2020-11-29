@@ -2,7 +2,7 @@
 import { reduce } from '../reduce';
 
 test('[style-utils] reduce', () => {
-	const variantStyles = [
+	const tokens = [
 		{ variant: 'dark', style: { color: 'white', bgColor: 'black' } },
 		{
 			variant: 'default',
@@ -19,7 +19,7 @@ test('[style-utils] reduce', () => {
 		{ variant: 'green', style: { bgColor: 'black' } },
 	];
 
-	expect(reduce(variantStyles)).toEqual([
+	expect(reduce(tokens)).toEqual([
 		{ variant: 'dark', style: { color: 'white', bgColor: 'black' } },
 		{
 			variant: 'default',
