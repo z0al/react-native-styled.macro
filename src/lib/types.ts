@@ -1,11 +1,10 @@
 // Packages
-import { UnionToIntersection, ValueOf, LiteralUnion } from 'type-fest';
+import { UnionToIntersection, ValueOf } from 'type-fest';
 
 // Ours
 import { Theme } from './theme';
 import createStyles from './style';
 import createProps from './style/props';
-import { builtinVariants } from './variants';
 
 export type TokenInfo = {
 	variant: string;
@@ -22,17 +21,9 @@ export type Configuration = {
 type Styles = UnionToIntersection<ReturnType<typeof createStyles>>;
 type Props = UnionToIntersection<ReturnType<typeof createProps>>;
 
-type Variant = LiteralUnion<
-	keyof UnionToIntersection<typeof builtinVariants>,
-	string
->;
-
 type Token = keyof UnionToIntersection<Styles | Props>;
 
-type TokenWithVariant =
-	| Token
-	| `${Variant}:${Token}`
-	| `${Variant}:${Variant}:${Token}`;
+type TokenWithVariant = Token | `${string}:${Token}`;
 
 type ExtractToken<T extends string> = T extends `${string}:${infer V}`
 	? V extends Token
