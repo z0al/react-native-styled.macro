@@ -26,6 +26,6 @@ export function importUtil(
 	return importModule(
 		program,
 		utilName,
-		`react-native-styled.macro/build/module/utils/${utilName}`
+		`react-native-styled.macro/build/module/lib/utils/${utilName}`
 	);
 }
