@@ -14,12 +14,8 @@ export function generateTable(cols: string[], rows: any[][]) {
 	return [header, headerLine, data].join('\n');
 }
 
-export function writeToReadMe(
-	start: string,
-	end: string,
-	value: string
-) {
-	const filePath = path.join(__dirname, '..', 'README.md');
+export function writeToDocs(start: string, end: string, value: string) {
+	const filePath = path.join(__dirname, '..', 'docs', 'styles.md');
 	const ReadMe = fs.readFileSync(filePath, 'utf8');
 
 	const contentBefore = ReadMe.slice(

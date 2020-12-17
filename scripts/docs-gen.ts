@@ -7,7 +7,7 @@ import {
 	formatTableData,
 	generateDetailsTag,
 	generateTable,
-	writeToReadMe,
+	writeToDocs,
 } from './helpers';
 
 const Data = [
@@ -107,4 +107,4 @@ const doc = Data.map((row) => {
 		: title + content;
 }).join('\n\n');
 
-writeToReadMe(MARK_START, MARK_END, doc);
+writeToDocs(MARK_START, MARK_END, doc);
