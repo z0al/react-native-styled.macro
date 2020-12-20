@@ -1,4 +1,4 @@
-> **Disclaimer**: This library is only a few days/weeks old. While it works, it's considered to be in Beta.
+> **Disclaimer**: This library is still in Beta. Use with caution. The Roadmap for v1.0.0 is [available here][roadmap].
 
 <h3 align="center">💅 styled.macro</h3>
 
@@ -244,3 +244,4 @@ MIT © Ahmed T. Ali
 [macro]: https://github.com/kentcdodds/babel-plugin-macros
 [stylesheet]: https://reactnative.dev/docs/stylesheet#create
 [usewindowdimensions]: https://reactnative.dev/docs/usewindowdimensions#docsNav
+[roadmap]: https://github.com/z0al/react-native-styled.macro/issues/55
