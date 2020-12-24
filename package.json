@@ -39,36 +39,36 @@
 	},
 	"dependencies": {
 		"@babel/helper-module-imports": "^7.12.5",
-		"@babel/traverse": "^7.12.9",
+		"@babel/traverse": "^7.12.12",
 		"babel-helper-evaluate-path": "^0.5.0",
-		"babel-plugin-macros": "^3.0.0",
+		"babel-plugin-macros": "^3.0.1",
 		"dequal": "^2.0.2"
 	},
 	"devDependencies": {
-		"@babel/types": "^7.12.7",
-		"@react-native-community/bob": "^0.16.2",
+		"@babel/types": "^7.12.12",
 		"@react-native-community/eslint-config": "^2.0.0",
 		"@testing-library/jest-native": "^3.4.3",
 		"@testing-library/react-native": "^7.1.0",
 		"@types/babel-plugin-macros": "^2.8.4",
 		"@types/babel-plugin-tester": "^9.0.1",
 		"@types/babel__core": "^7.1.12",
-		"@types/jest": "^26.0.14",
+		"@types/jest": "^26.0.19",
 		"@types/react": "^17.0.0",
-		"@types/react-native": "^0.63.37",
-		"@typescript-eslint/eslint-plugin": "^4.8.2",
-		"@typescript-eslint/parser": "^4.8.2",
+		"@types/react-native": "^0.63.42",
+		"@typescript-eslint/eslint-plugin": "^4.11.0",
+		"@typescript-eslint/parser": "^4.11.0",
 		"babel-plugin-tester": "^10.0.0",
-		"camel-case": "^4.1.1",
-		"eslint": "^7.14.0",
-		"eslint-config-prettier": "^6.15.0",
-		"eslint-plugin-prettier": "^3.1.4",
+		"camel-case": "^4.1.2",
+		"eslint": "^7.16.0",
+		"eslint-config-prettier": "^7.1.0",
+		"eslint-plugin-prettier": "^3.3.0",
 		"jest-expo": "^40.0.1",
 		"prettier": "^2.2.1",
-		"react": "^16.14.0",
-		"react-dom": "^16.14.0",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
 		"react-native": "^0.63.3",
-		"react-native-web": "^0.14.8",
+		"react-native-builder-bob": "^0.17.1",
+		"react-native-web": "^0.14.10",
 		"react-test-renderer": "^17.0.1",
 		"rimraf": "^3.0.2",
 		"semantic-release": "^17.3.0",
@@ -89,9 +89,12 @@
 		"printWidth": 72
 	},
 	"jest": {
-		"preset": "jest-expo/universal"
+		"preset": "jest-expo/universal",
+		"modulePathIgnorePatterns": [
+			"<rootDir>/build/"
+		]
 	},
-	"@react-native-community/bob": {
+	"react-native-builder-bob": {
 		"source": "src",
 		"output": "build",
 		"targets": [
