@@ -26,6 +26,7 @@ A Utility-first Styling Library for React Native.
 - [Best Practices](#best-practices)
 	- [Group variant styles together](#group-variant-styles-together)
 - [Prior Art](#prior-art)
+- [Alternatives](#alternatives)
 - [License](#license)
 
 ## Getting started
@@ -233,6 +234,10 @@ In addition to the readability concern, it also enables some compile-time optimi
 
 - **Tailwind CSS** ([website][tw]): Tailwind is a great utility-first CSS framework. We borrowed the utility-first approach from there and re-imagined how it can be used in React Native apps to build user interfaces faster without additional Runtime overhead.
 
+## Alternatives
+
+- **tailwind-react-native** ([github][tailwind-rn]): A very promising Tailwind-like library made with React Native in mind.
+
 ## License
 
 MIT © Ahmed T. Ali
@@ -245,3 +250,4 @@ MIT © Ahmed T. Ali
 [stylesheet]: https://reactnative.dev/docs/stylesheet#create
 [usewindowdimensions]: https://reactnative.dev/docs/usewindowdimensions#docsNav
 [roadmap]: https://github.com/z0al/react-native-styled.macro/issues/55
+[tailwind-rn]: https://github.com/ajsmth/tailwind-react-native
