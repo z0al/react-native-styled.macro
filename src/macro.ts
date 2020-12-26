@@ -7,6 +7,7 @@ import { Macro } from './lib/types';
 import { resolveTokens } from './lib/tokens';
 import { evalNode } from './babel/eval-node';
 import { importUtil } from './babel/add-import';
+import { generateUid } from './babel/generate-uid';
 import { injectStyles } from './babel/inject-styles';
 import { transformTokens } from './babel/transform-tokens';
 
@@ -17,7 +18,7 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 	const stylesheet: Record<string, Record<string, any>> = {};
 
 	// Variable name to be used later with StyleSheet.create
-	const stylesheetId = program.scope.generateUidIdentifier('styles');
+	const stylesheetId = generateUid(program, 'styles');
 
 	references.default?.forEach((refPath) => {
 		if (!t.isCallExpression(refPath.parent)) {
@@ -50,7 +51,7 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 				resolveTokens(tokens),
 				stylesheetId,
 				({ variant, style }) => {
-					const id = program.scope.generateUidIdentifier(variant);
+					const id = generateUid(program, variant);
 					stylesheet[id.name] = style;
 					return id;
 				}
@@ -83,4 +84,6 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 	}
 };
 
-export default createMacro(styledMacro) as Macro;
+export default createMacro(styledMacro, {
+	configName: 'styled',
+}) as Macro;

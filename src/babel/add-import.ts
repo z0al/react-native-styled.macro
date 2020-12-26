@@ -7,7 +7,7 @@ function importModule(
 	program: NodePath<t.Program>,
 	exportName: string,
 	moduleName: string
-): t.Identifier {
+) {
 	return importHelpers.addNamed(
 		program,
 		exportName,
