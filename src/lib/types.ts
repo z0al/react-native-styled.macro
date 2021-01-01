@@ -42,6 +42,6 @@ type ComputedStyle<T extends Token> = UnionToIntersection<
 >;
 
 export type Macro = <T extends TokenWithVariant>(
-	tokens: T[],
+	tokens: T[] | string,
 	variants?: VariantFlags
 ) => ComputedStyle<ExtractToken<T>>;

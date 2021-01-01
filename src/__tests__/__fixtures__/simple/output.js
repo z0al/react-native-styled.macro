@@ -4,9 +4,16 @@ const _styles = _StyleSheet.create({
 	_default: {
 		backgroundColor: 'white',
 	},
+	_default2: {
+		backgroundColor: 'white',
+	},
 });
 
 console.log({
 	selectable: true,
 	style: [_styles._default],
+});
+console.log({
+	selectable: true,
+	style: [_styles._default2],
 });

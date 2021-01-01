@@ -29,7 +29,7 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 		const callExpr = refPath.parent;
 
 		// Parse token argument
-		const { confident, value: tokens, deopt } = evalNode(
+		let { confident, value: tokens, deopt } = evalNode(
 			refPath.parentPath,
 			callExpr.arguments[0]
 		);
@@ -38,6 +38,10 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 			throw deopt?.buildCodeFrameError(
 				'could not evaluate style names at compile time'
 			);
+		}
+
+		if (typeof tokens === 'string') {
+			tokens = tokens.trim().replace(/\s+/g, ' ').split(' ');
 		}
 
 		if (!Array.isArray(tokens)) {
