@@ -1,4 +1,51 @@
-## Default Styles
+**Table of Contents**
+
+- [Display](#display)
+- [Flex](#flex)
+- [Flex Direction](#flex-direction)
+- [Flex Grow](#flex-grow)
+- [Flex Shrink](#flex-shrink)
+- [Flex Wrap](#flex-wrap)
+- [Align Self](#align-self)
+- [Align Items](#align-items)
+- [Align Content](#align-content)
+- [Justify Content](#justify-content)
+- [Font Size](#font-size)
+- [Font Style](#font-style)
+- [Font Variant](#font-variant)
+- [Font Weight](#font-weight)
+- [Line Height](#line-height)
+- [Height](#height)
+- [Width](#width)
+- [Max-Height](#max-height)
+- [Max-Width](#max-width)
+- [Min-Height](#min-height)
+- [Min-Width](#min-width)
+- [Border Color](#border-color)
+- [Border Radius](#border-radius)
+- [Border Style](#border-style)
+- [Border Width](#border-width)
+- [Background Color](#background-color)
+- [Letter Spacing](#letter-spacing)
+- [Text Align](#text-align)
+- [Text Align (Vertical)](#text-align-vertical)
+- [Text Color](#text-color)
+- [Text Decoration](#text-decoration)
+- [Text Transform](#text-transform)
+- [Margin](#margin)
+- [Padding](#padding)
+- [Overflow](#overflow)
+- [Opacity](#opacity)
+- [Rotate](#rotate)
+- [Scale](#scale)
+- [Skew](#skew)
+- [Translate](#translate)
+- [Position](#position)
+- [Resize Mode](#resize-mode)
+- [Top / Right / Bottom / Left](#top--right--bottom--left)
+- [Z-Index](#z-index)
+- [Number of lines ( prop )](#number-of-lines--prop-)
+- [Selectable ( prop )](#selectable--prop-)
 
 <!-- UTILS-GEN-START -->
 
@@ -146,6 +193,31 @@
 | font-normal    | `{ fontWeight: "400" }` |
 | font-semibold  | `{ fontWeight: "600" }` |
 | font-thin      | `{ fontWeight: "200" }` |
+
+### Line Height
+
+> _Tip:_ The following styles are generated based on `theme.lineHeight` values.
+
+<details><summary>Show all styles</summary>
+
+| Name           | Style(s)                    |
+| -------------- | --------------------------- |
+| line-h-10      | `{ lineHeight: rem(2.5) }`  |
+| line-h-3       | `{ lineHeight: rem(0.75) }` |
+| line-h-4       | `{ lineHeight: rem(1) }`    |
+| line-h-5       | `{ lineHeight: rem(1.25) }` |
+| line-h-6       | `{ lineHeight: rem(1.5) }`  |
+| line-h-7       | `{ lineHeight: rem(1.75) }` |
+| line-h-8       | `{ lineHeight: rem(2) }`    |
+| line-h-9       | `{ lineHeight: rem(2.25) }` |
+| line-h-loose   | `{ lineHeight: 2 }`         |
+| line-h-none    | `{ lineHeight: 1 }`         |
+| line-h-normal  | `{ lineHeight: 1.5 }`       |
+| line-h-relaxed | `{ lineHeight: 1.625 }`     |
+| line-h-snug    | `{ lineHeight: 1.375 }`     |
+| line-h-tight   | `{ lineHeight: 1.25 }`      |
+
+</details>
 
 ### Height
 

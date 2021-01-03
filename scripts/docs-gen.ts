@@ -27,6 +27,7 @@ const Data = [
 	{ name: 'Font Style' },
 	{ name: 'Font Variant' },
 	{ name: 'Font Weight', theme: true },
+	{ name: 'Line Height', theme: true },
 
 	{ name: 'Height', theme: true },
 	{ name: 'Width', theme: true },
