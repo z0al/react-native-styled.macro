@@ -5,7 +5,7 @@ on:
 
 jobs:
   test:
-    name: Test
+    name: Test & Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -52,6 +52,7 @@ jobs:
         run: npx semantic-release
 
   automerge:
+    name: Auto-Merge Dependabot PRs
     needs: test
     runs-on: ubuntu-latest
     steps:
