@@ -1911,6 +1911,9 @@ Object {
   "h-8": Object {
     "height": "2rem",
   },
+  "h-full": Object {
+    "height": "100%",
+  },
   "h-px": Object {
     "height": 1,
   },

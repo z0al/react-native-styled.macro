@@ -8,8 +8,10 @@ pluginTester({
 	pluginName: 'babel-plugin-macros',
 	snapshot: true,
 	fixtures: path.join(__dirname, '__fixtures__'),
+	comments: true,
 	babelOptions: {
 		filename: __filename,
 		parserOpts: { plugins: ['jsx'] },
+		comments: true,
 	},
 });

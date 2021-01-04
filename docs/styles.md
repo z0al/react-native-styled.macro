@@ -225,27 +225,28 @@
 
 <details><summary>Show all styles</summary>
 
-| Name | Style(s)                |
-| ---- | ----------------------- |
-| h-0  | `{ height: 0 }`         |
-| h-1  | `{ height: rem(0.25) }` |
-| h-10 | `{ height: rem(2.5) }`  |
-| h-12 | `{ height: rem(3) }`    |
-| h-16 | `{ height: rem(4) }`    |
-| h-2  | `{ height: rem(0.5) }`  |
-| h-20 | `{ height: rem(5) }`    |
-| h-24 | `{ height: rem(6) }`    |
-| h-3  | `{ height: rem(0.75) }` |
-| h-32 | `{ height: rem(8) }`    |
-| h-4  | `{ height: rem(1) }`    |
-| h-40 | `{ height: rem(10) }`   |
-| h-48 | `{ height: rem(12) }`   |
-| h-5  | `{ height: rem(1.25) }` |
-| h-56 | `{ height: rem(14) }`   |
-| h-6  | `{ height: rem(1.5) }`  |
-| h-64 | `{ height: rem(16) }`   |
-| h-8  | `{ height: rem(2) }`    |
-| h-px | `{ height: 1 }`         |
+| Name   | Style(s)                |
+| ------ | ----------------------- |
+| h-0    | `{ height: 0 }`         |
+| h-1    | `{ height: rem(0.25) }` |
+| h-10   | `{ height: rem(2.5) }`  |
+| h-12   | `{ height: rem(3) }`    |
+| h-16   | `{ height: rem(4) }`    |
+| h-2    | `{ height: rem(0.5) }`  |
+| h-20   | `{ height: rem(5) }`    |
+| h-24   | `{ height: rem(6) }`    |
+| h-3    | `{ height: rem(0.75) }` |
+| h-32   | `{ height: rem(8) }`    |
+| h-4    | `{ height: rem(1) }`    |
+| h-40   | `{ height: rem(10) }`   |
+| h-48   | `{ height: rem(12) }`   |
+| h-5    | `{ height: rem(1.25) }` |
+| h-56   | `{ height: rem(14) }`   |
+| h-6    | `{ height: rem(1.5) }`  |
+| h-64   | `{ height: rem(16) }`   |
+| h-8    | `{ height: rem(2) }`    |
+| h-full | `{ height: "100%" }`    |
+| h-px   | `{ height: 1 }`         |
 
 </details>
 

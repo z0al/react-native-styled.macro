@@ -205,7 +205,10 @@ export const baseTheme = {
 		extrabold: '800' as '800',
 		black: '900' as '900',
 	},
-	height: spacing,
+	height: {
+		...spacing,
+		full: '100%',
+	},
 	letterSpacing: {
 		tighter: rem(-0.05),
 		tight: rem(-0.025),
