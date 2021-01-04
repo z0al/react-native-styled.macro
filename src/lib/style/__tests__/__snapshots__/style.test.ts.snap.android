@@ -1911,6 +1911,9 @@ Object {
   "h-8": Object {
     "height": 64,
   },
+  "h-auto": Object {
+    "height": "auto",
+  },
   "h-full": Object {
     "height": "100%",
   },
@@ -4831,6 +4834,9 @@ Object {
   },
   "w-9/12": Object {
     "width": "75%",
+  },
+  "w-auto": Object {
+    "width": "auto",
   },
   "w-full": Object {
     "width": "100%",
