@@ -208,6 +208,7 @@ export const baseTheme = {
 	height: {
 		...spacing,
 		full: '100%',
+		auto: 'auto',
 	},
 	letterSpacing: {
 		tighter: rem(-0.05),
@@ -267,6 +268,7 @@ export const baseTheme = {
 	textColor: colors,
 	width: {
 		...spacing,
+		'auto': 'auto',
 		'1/2': '50%',
 		'1/3': '33.333333%',
 		'2/3': '66.666667%',
