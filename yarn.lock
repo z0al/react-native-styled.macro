@@ -6052,9 +6052,9 @@ jest-environment-node@^25.5.0:
     semver "^6.3.0"
 
 jest-expo@^40.0.1:
-  version "40.0.1"
-  resolved "https://registry.yarnpkg.com/jest-expo/-/jest-expo-40.0.1.tgz#3ee1e955036eff1e0b7d0b4ec599701bc65eaa2d"
-  integrity sha512-4X6x4Xj4ErUxhfDhZJyWob/xg3KuOReQidQYXPMTEUEG1Qw5LchCV2wm4fcuQwRGTks9DGpB/2eM3PosVdwCpA==
+  version "40.0.2"
+  resolved "https://registry.yarnpkg.com/jest-expo/-/jest-expo-40.0.2.tgz#f30cf1c260cea4d26998a742d1d8cd1f55f7ccd4"
+  integrity sha512-JTDOejimRu8MioZvOUe1tK0I3poLSgYXoFHxOar+u3RDh+pri1uRzQT5XXJMoW1tUOgH2ogYBOR5XBAhNae11w==
   dependencies:
     "@expo/config" "^3.2.3"
     babel-jest "^25.2.0"
