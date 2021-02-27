@@ -61,7 +61,7 @@
 		"babel-plugin-tester": "^10.0.0",
 		"camel-case": "^4.1.2",
 		"eslint": "^7.16.0",
-		"eslint-config-prettier": "^7.1.0",
+		"eslint-config-prettier": "^8.1.0",
 		"eslint-plugin-prettier": "^3.3.0",
 		"jest-expo": "^40.0.1",
 		"prettier": "^2.2.1",
