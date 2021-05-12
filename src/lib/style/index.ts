@@ -3,6 +3,7 @@ import { Theme } from '../theme';
 import { alignContent } from './alignContent';
 import { alignItems } from './alignItems';
 import { alignSelf } from './alignSelf';
+import { aspectRatio } from './aspectRatio';
 import { backgroundColor } from './backgroundColor';
 import { borderColor } from './borderColor';
 import { borderRadius } from './borderRadius';
@@ -51,6 +52,7 @@ export default (theme: Theme) =>
 		alignContent(),
 		alignItems(),
 		alignSelf(),
+		aspectRatio(theme),
 		backgroundColor(theme),
 		borderColor(theme),
 		borderRadius(theme),

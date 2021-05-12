@@ -227,7 +227,6 @@
 
 | Name   | Style(s)                |
 | ------ | ----------------------- |
-| h-auto | `{ height: "auto" }`    |
 | h-0    | `{ height: 0 }`         |
 | h-1    | `{ height: rem(0.25) }` |
 | h-10   | `{ height: rem(2.5) }`  |
@@ -246,6 +245,7 @@
 | h-6    | `{ height: rem(1.5) }`  |
 | h-64   | `{ height: rem(16) }`   |
 | h-8    | `{ height: rem(2) }`    |
+| h-auto | `{ height: "auto" }`    |
 | h-full | `{ height: "100%" }`    |
 | h-px   | `{ height: 1 }`         |
 
@@ -259,7 +259,6 @@
 
 | Name    | Style(s)                  |
 | ------- | ------------------------- |
-| w-auto  | `{ width: "auto" }`       |
 | w-0     | `{ width: 0 }`            |
 | w-1     | `{ width: rem(0.25) }`    |
 | w-1/12  | `{ width: "8.333333%" }`  |
@@ -304,6 +303,7 @@
 | w-8     | `{ width: rem(2) }`       |
 | w-8/12  | `{ width: "66.666667%" }` |
 | w-9/12  | `{ width: "75%" }`        |
+| w-auto  | `{ width: "auto" }`       |
 | w-full  | `{ width: "100%" }`       |
 | w-px    | `{ width: 1 }`            |
 
@@ -1425,6 +1425,29 @@
 | overflow-hidden  | `{ overflow: "hidden" }`  |
 | overflow-scroll  | `{ overflow: "scroll" }`  |
 | overflow-visible | `{ overflow: "visible" }` |
+
+### AspectRatio
+
+> _Tip:_ The following styles are generated based on `theme.aspectRatio` values.
+
+<details><summary>Show all styles</summary>
+
+| Name        | Style(s)              |
+| ----------- | --------------------- |
+| aspect-1/1  | `{ aspectRatio: 1 }`  |
+| aspect-10/1 | `{ aspectRatio: 10 }` |
+| aspect-11/1 | `{ aspectRatio: 11 }` |
+| aspect-12/1 | `{ aspectRatio: 12 }` |
+| aspect-2/1  | `{ aspectRatio: 2 }`  |
+| aspect-3/1  | `{ aspectRatio: 3 }`  |
+| aspect-4/1  | `{ aspectRatio: 4 }`  |
+| aspect-5/1  | `{ aspectRatio: 5 }`  |
+| aspect-6/1  | `{ aspectRatio: 6 }`  |
+| aspect-7/1  | `{ aspectRatio: 7 }`  |
+| aspect-8/1  | `{ aspectRatio: 8 }`  |
+| aspect-9/1  | `{ aspectRatio: 9 }`  |
+
+</details>
 
 ### Opacity
 
