@@ -1078,6 +1078,21 @@ Object {
   "absolute": Object {
     "position": "absolute",
   },
+  "aspect-1/1": Object {
+    "aspectRatio": 1,
+  },
+  "aspect-16/9": Object {
+    "aspectRatio": 1.7777777777777777,
+  },
+  "aspect-2/1": Object {
+    "aspectRatio": 2,
+  },
+  "aspect-3/2": Object {
+    "aspectRatio": 1.5,
+  },
+  "aspect-4/3": Object {
+    "aspectRatio": 1.3333333333333333,
+  },
   "bg-black": Object {
     "backgroundColor": "black",
   },

@@ -1430,24 +1430,13 @@
 
 > _Tip:_ The following styles are generated based on `theme.aspectRatio` values.
 
-<details><summary>Show all styles</summary>
-
-| Name        | Style(s)              |
-| ----------- | --------------------- |
-| aspect-1/1  | `{ aspectRatio: 1 }`  |
-| aspect-10/1 | `{ aspectRatio: 10 }` |
-| aspect-11/1 | `{ aspectRatio: 11 }` |
-| aspect-12/1 | `{ aspectRatio: 12 }` |
-| aspect-2/1  | `{ aspectRatio: 2 }`  |
-| aspect-3/1  | `{ aspectRatio: 3 }`  |
-| aspect-4/1  | `{ aspectRatio: 4 }`  |
-| aspect-5/1  | `{ aspectRatio: 5 }`  |
-| aspect-6/1  | `{ aspectRatio: 6 }`  |
-| aspect-7/1  | `{ aspectRatio: 7 }`  |
-| aspect-8/1  | `{ aspectRatio: 8 }`  |
-| aspect-9/1  | `{ aspectRatio: 9 }`  |
-
-</details>
+| Name        | Style(s)                              |
+| ----------- | ------------------------------------- |
+| aspect-1/1  | `{ aspectRatio: 1 }`                  |
+| aspect-16/9 | `{ aspectRatio: 1.7777777777777777 }` |
+| aspect-2/1  | `{ aspectRatio: 2 }`                  |
+| aspect-3/2  | `{ aspectRatio: 1.5 }`                |
+| aspect-4/3  | `{ aspectRatio: 1.3333333333333333 }` |
 
 ### Opacity
 
