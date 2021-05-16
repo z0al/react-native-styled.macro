@@ -56,6 +56,8 @@ const Data = [
 
 	{ name: 'Overflow' },
 
+	{ name: 'AspectRatio', theme: true },
+
 	{ name: 'Opacity', theme: true },
 
 	{ name: 'Rotate', theme: true },
