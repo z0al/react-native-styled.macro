@@ -35,6 +35,7 @@
 - [Margin](#margin)
 - [Padding](#padding)
 - [Overflow](#overflow)
+- [Aspect Ratio](#aspect-ratio)
 - [Opacity](#opacity)
 - [Rotate](#rotate)
 - [Scale](#scale)
@@ -1426,7 +1427,7 @@
 | overflow-scroll  | `{ overflow: "scroll" }`  |
 | overflow-visible | `{ overflow: "visible" }` |
 
-### AspectRatio
+### Aspect Ratio
 
 > _Tip:_ The following styles are generated based on `theme.aspectRatio` values.
 
