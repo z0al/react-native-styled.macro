@@ -9,6 +9,7 @@ export const textDecoration = () => ({
 		textDecorationLine: 'none' as TextStyle['textDecorationLine'],
 	},
 	'line-through': {
-		textDecorationLine: 'line-through' as TextStyle['textDecorationLine'],
+		textDecorationLine:
+			'line-through' as TextStyle['textDecorationLine'],
 	},
 });

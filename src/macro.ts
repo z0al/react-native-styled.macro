@@ -29,10 +29,11 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 		const callExpr = refPath.parent;
 
 		// Parse token argument
-		let { confident, value: tokens, deopt } = evalNode(
-			refPath.parentPath,
-			callExpr.arguments[0]
-		);
+		let {
+			confident,
+			value: tokens,
+			deopt,
+		} = evalNode(refPath.parentPath, callExpr.arguments[0]);
 
 		if (!confident) {
 			throw deopt?.buildCodeFrameError(
@@ -62,10 +63,10 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 			);
 
 			// Avoid wrapping styles around select(..) call if we only have
-			// defautl variant styles.
+			// default variant styles.
 			if (styleAST.isDefaultOnly) {
 				// => { style: [defaultStyle] , ...props }
-				refPath.parentPath.replaceWith(styleAST.ast);
+				refPath.parentPath?.replaceWith(styleAST.ast);
 
 				return;
 			}
