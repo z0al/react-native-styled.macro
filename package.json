@@ -103,5 +103,10 @@
 			"module",
 			"typescript"
 		]
+	},
+	"release": {
+		"branches": [
+			"main"
+		]
 	}
 }
