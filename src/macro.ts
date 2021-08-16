@@ -25,6 +25,10 @@ const styledMacro: MacroHandler = ({ references, state }) => {
 			return;
 		}
 
+		if (!refPath.parentPath) {
+			return;
+		}
+
 		// Get the call expression
 		const callExpr = refPath.parent;
 
