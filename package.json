@@ -55,7 +55,7 @@
 		"@types/babel__core": "^7.1.15",
 		"@types/jest": "^27.0.1",
 		"@types/react": "^17.0.0",
-		"@types/react-native": "^0.64.2",
+		"@types/react-native": "^0.65.0",
 		"@typescript-eslint/eslint-plugin": "^4.11.0",
 		"@typescript-eslint/parser": "^4.11.0",
 		"babel-plugin-tester": "^10.0.0",
