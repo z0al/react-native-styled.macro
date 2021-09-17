@@ -10637,9 +10637,9 @@ type-fest@^0.8.1:
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
 type-fest@^2.0.0:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-2.3.1.tgz#80170f6f74929fef59251107d2e4175faf743a50"
-  integrity sha512-gaUs9+6d/aNSYsgC/aNnuporKL2Ic7ckfoNoaWAextvwr0K/QMq4fiEhhawensM7AysdmUZDRjcDgbFF7XQL2w==
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-2.3.3.tgz#2d3b07dacd3c14f4a200fb9f8e616d742ccc56a3"
+  integrity sha512-4r1ygCTovO9M+cJOdhlit7JkDmMgYwOXmttU1Nd/9a5UY8oebN0+wN/b5N5i/f8aQ/pTDS2oQ3CBxnu+/1p4aA==
 
 typedarray-to-buffer@^3.1.5:
   version "3.1.5"
