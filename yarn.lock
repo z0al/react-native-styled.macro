@@ -1927,9 +1927,9 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^17.0.0":
-  version "17.0.24"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.24.tgz#7e1b3f78d0fc53782543f9bce6d949959a5880bd"
-  integrity sha512-eIpyco99gTH+FTI3J7Oi/OH8MZoFMJuztNRimDOJwH4iGIsKV2qkGnk4M9VzlaVWeEEWLWSQRy0FEA0Kz218cg==
+  version "17.0.25"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.25.tgz#8b88c226e54910762decc9de2aa36b4dc9240503"
+  integrity sha512-IXrzSOr3CVbEQgmjEdCWF57J7CVaJ7lL/n4penxHm8h0XIcr0AxqGucogh2zj3qRxgk4M4JImOP/MfomkPOhvQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -8967,9 +8967,9 @@ react-native-builder-bob@^0.18.1:
     jetifier "^1.6.6"
 
 react-native-web@^0.17.1:
-  version "0.17.2"
-  resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.17.2.tgz#2c1aa95641ce855cd8a97673cad07c7cf01ef634"
-  integrity sha512-OjbU9tTxCtF60+vVSSdt62u9njYu30d6Bhk7jZpM4o5UEa9z5Xf//UzROPnWnKjYQRnw7+AmVqKMi+SEbqfq+w==
+  version "0.17.5"
+  resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.17.5.tgz#2c27452b4654fb098c3c412cb04c379add1015a6"
+  integrity sha512-pdieIZi2/YeVTaOuIaeaLC6FMkk8h3pvPNruedH+6cWiE15Oz6BGjJ+5IafdXEyiipb1Y0+QuecW81fa3DVM4g==
   dependencies:
     array-find-index "^1.0.2"
     create-react-class "^15.7.0"
