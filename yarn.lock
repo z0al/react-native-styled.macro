@@ -1802,9 +1802,9 @@
     "@types/babel__core" "*"
 
 "@types/babel-plugin-tester@^9.0.0", "@types/babel-plugin-tester@^9.0.1":
-  version "9.0.4"
-  resolved "https://registry.yarnpkg.com/@types/babel-plugin-tester/-/babel-plugin-tester-9.0.4.tgz#f5f9274149c6c789984f69ae4edbc383e33f679c"
-  integrity sha512-s7SxUNtUWO/bWZZqJbFqY/tbqJFoYnW/M2zPkTHl406PAPoWVSaVyYElo/O3GcRAQ5CV/pLPTFV4tQYTpMDWEQ==
+  version "9.0.5"
+  resolved "https://registry.yarnpkg.com/@types/babel-plugin-tester/-/babel-plugin-tester-9.0.5.tgz#fa110e4c7c6a69dfa29942c528fe01263e812e01"
+  integrity sha512-NRBPlhi5VkrTXMqDB1hSUnHs7vqLGRopeukC9u1zilOIFe9O1siwqeKZRiuJiVYakgpeDso/HE2Q5DU1aDqBog==
   dependencies:
     "@types/babel__core" "*"
     "@types/prettier" "*"
